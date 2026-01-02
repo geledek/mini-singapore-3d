@@ -54,7 +54,7 @@ export default class extends Panel {
                 {direction: ascending, altDirection: altAscending},
                 {direction: descending, altDirection: altDescending}
             ]) {
-                if (altDirection === null) {
+                if (altDirection === null || !direction) {
                     continue;
                 }
                 if (!alternate) {

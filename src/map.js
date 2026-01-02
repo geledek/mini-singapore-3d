@@ -621,8 +621,12 @@ export default class extends Evented {
                         layer: altitude === 0 ? 'ground' : 'underground'
                     });
                 }
-            } else if (!(altitude <= 0)) {
-                // airways and railways (no railway sections)
+            } else if (properties.section) {
+                // railway sections (altitude 0)
+                featureLookup.set(properties.section, feature);
+                helpersGeojson.updateDistances(feature);
+            } else if (properties.id) {
+                // railway lines and airways (stored by id.zoom or just id)
                 featureLookup.set(properties.id, feature);
                 helpersGeojson.updateDistances(feature);
             }
@@ -857,9 +861,11 @@ export default class extends Evented {
             colorData = [];
 
         for (const {id, color} of me.railways.getAll()) {
+            const features = [13, 14, 15, 16, 17, 18].map(zoom => me.featureLookup.get(`${id}.${zoom}`));
+            console.log(`Railway ${id}: features =`, features);
             routeData.push({
                 id,
-                feature: [13, 14, 15, 16, 17, 18].map(zoom => me.featureLookup.get(`${id}.${zoom}`))
+                feature: features
             });
             colorData.push({id, color});
         }
@@ -2482,6 +2488,11 @@ export default class extends Evented {
         const me = this;
 
         loadDynamicFlightData(me.secrets).then(({atisData, flightData}) => {
+            // Skip if no flight data available (Singapore doesn't have flight data yet)
+            if (!atisData || atisData.length === 0 || !flightData || flightData.length === 0) {
+                return;
+            }
+
             const flightLookup = me.flightLookup,
                 {landing, departure} = atisData,
                 pattern = [landing.join('/'), departure.join('/')].join(' '),
@@ -3339,10 +3350,12 @@ export default class extends Evented {
                     colors[me.getLocalizedRailwayTitle(railway)] = railway.color;
                 }
                 popup.setHTML([
-                    '<div class="thumbnail-image-container">',
-                    '<div class="ball-pulse"><div></div><div></div><div></div></div>',
-                    `<div class="thumbnail-image" style="background-image: url(\'${stations[0].thumbnail}\');"></div>`,
-                    '</div>',
+                    stations[0].thumbnail ? [
+                        '<div class="thumbnail-image-container">',
+                        '<div class="ball-pulse"><div></div><div></div><div></div></div>',
+                        `<div class="thumbnail-image" style="background-image: url(\'${stations[0].thumbnail}\');"></div>`,
+                        '</div>'
+                    ].join('') : '',
                     '<div class="railway-list">',
                     Object.keys(railwayColors).map(stationTitle => {
                         const railwayTitles = Object.keys(railwayColors[stationTitle])
@@ -3605,7 +3618,7 @@ function initContainer(container) {
     helpers.createElement('div', {
         id: 'loading-error'
     }, container);
-    container.classList.add('mini-tokyo-3d');
+    container.classList.add('mini-singapore-3d');
     return map;
 }
 

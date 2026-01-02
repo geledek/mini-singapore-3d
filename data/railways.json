@@ -11,6 +11,8 @@
 		"color": "#D42E12",
 		"operator": "SMRT",
 		"type": "heavy-rail",
+		"ascending": "SMRT.NSL.Northbound",
+		"descending": "SMRT.NSL.Southbound",
 		"stations": [
 			"SMRT.NSL.JurongEast",
 			"SMRT.NSL.BukitBatok",
@@ -52,6 +54,8 @@
 		"color": "#009645",
 		"operator": "SMRT",
 		"type": "heavy-rail",
+		"ascending": "SMRT.EWL.Eastbound",
+		"descending": "SMRT.EWL.Westbound",
 		"stations": [
 			"SMRT.EWL.Expo",
 			"SMRT.EWL.ChangiAirport",
@@ -102,6 +106,8 @@
 		"color": "#FA9E0D",
 		"operator": "SMRT",
 		"type": "heavy-rail",
+		"ascending": "SMRT.CCL.Clockwise",
+		"descending": "SMRT.CCL.AntiClockwise",
 		"stations": [
 			"SMRT.CCL.DhobyGhaut",
 			"SMRT.CCL.BrasBasah",
@@ -147,6 +153,8 @@
 		"color": "#9900AA",
 		"operator": "SBS",
 		"type": "heavy-rail",
+		"ascending": "SBS.NEL.NorthEastbound",
+		"descending": "SBS.NEL.SouthWestbound",
 		"stations": [
 			"SBS.NEL.HarbourFront",
 			"SBS.NEL.OutramPark",
@@ -178,6 +186,8 @@
 		"color": "#005EC4",
 		"operator": "SBS",
 		"type": "heavy-rail",
+		"ascending": "SBS.DTL.Eastbound",
+		"descending": "SBS.DTL.Westbound",
 		"stations": [
 			"SBS.DTL.BukitPanjang",
 			"SBS.DTL.Cashew",
@@ -229,6 +239,8 @@
 		"color": "#9D5B25",
 		"operator": "SMRT",
 		"type": "heavy-rail",
+		"ascending": "SMRT.TEL.Northbound",
+		"descending": "SMRT.TEL.Southbound",
 		"stations": [
 			"SMRT.TEL.WoodlandsNorth",
 			"SMRT.TEL.Woodlands",
