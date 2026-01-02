@@ -36,7 +36,7 @@
 	"helicopter": "Helicopter",
 	"drone": "Drone",
 	"bird": "Bird",
-	"about": "About Mini Tokyo 3D",
+	"about": "About Mini Singapore 3D",
 
 	"share-this": "Share this $1",
 	"train": "train",
@@ -90,18 +90,12 @@
 	"transfer-and-wait": "Transfer & wait for $1 min",
 	"cannot-find-train": "Cannot find a train that arrives that day",
 
-	"description": "<h3>About Mini Tokyo 3D</h3><p>This data visualization is provided by <a href=\"https://nagix.github.io\" target=\"_blank\">Akihiko Kusanagi</a>. The source of the public transportation data in this app is the <a href=\"https://www.odpt.org\" target=\"_blank\">Public Transportation Open Data Center</a>. They are based on the data provided by the public transportation operators. The accuracy and integrity of the data are not guaranteed. Please do not contact the public transportation operators directly regarding the content of the app.</p><p>For more info, please see the <a href=\"https://minitokyo3d.com/docs/master/\" target=\"_blank\">Mini Tokyo 3D User Guide</a>. Source code is available at <a href=\"https://github.com/nagix/mini-tokyo-3d\" target=\"_blank\">GitHub repository</a>.</p>",
+	"description": "<h3>About Mini Singapore 3D</h3><p>Mini Singapore 3D is a real-time 3D digital map of Singapore's public transport system, based on <a href=\"https://github.com/nagix/mini-tokyo-3d\" target=\"_blank\">Mini Tokyo 3D</a> by Akihiko Kusanagi. The source of the public transportation data in this app is the <a href=\"https://datamall.lta.gov.sg\" target=\"_blank\">LTA DataMall</a>, provided by Singapore's Land Transport Authority. The accuracy and integrity of the data are not guaranteed. Please do not contact the public transportation operators directly regarding the content of the app.</p>",
 	"static-update": "Latest update on static data",
 	"dynamic-update": "Latest update on dynamic data",
 	"gtfs-feed-version": "GTFS feed version",
-	"jr-east": "JR East",
-	"tokyo-metro": "Tokyo Metro",
-	"toei": "Metropolitan Gov't",
-	"keikyu": "Keikyu Corporation",
-	"tobu": "Tobu Railway",
-	"hnd-jat": "Japan Airport Terminal",
-	"hnd-tiat": "Tokyo Int'l Air Terminal",
-	"naa": "Narita Int'l Airport",
-	"jal": "Japan Airlines",
-	"ana": "All Nippon Airways"
+	"smrt": "SMRT Corporation",
+	"sbs": "SBS Transit",
+	"lta": "Land Transport Authority",
+	"changi": "Changi Airport Group"
 }

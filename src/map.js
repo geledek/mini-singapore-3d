@@ -18,10 +18,6 @@ import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, TrackingMode
 import Plugin from './plugin';
 import nearestCloserPointOnLine from './turf/nearest-closer-point-on-line';
 
-const RAILWAY_NAMBOKU = 'TokyoMetro.Namboku',
-    RAILWAY_MITA = 'Toei.Mita',
-    RAILWAY_ARAKAWA = 'Toei.Arakawa';
-
 const AIRLINES_FOR_ANA_CODE_SHARE = ['ADO', 'SFJ', 'SNJ'];
 
 const DEGREE_TO_RADIAN = Math.PI / 180;
@@ -2450,16 +2446,6 @@ export default class extends Evented {
                 }
 
                 if (!r) {
-                    continue;
-                }
-
-                // Exclude Namboku line trains that connect to/from Mita line
-                if (r === RAILWAY_NAMBOKU && (os[0].startsWith(RAILWAY_MITA) || ds[0].startsWith(RAILWAY_MITA))) {
-                    continue;
-                }
-
-                // Exclude Arakawa line trains
-                if (r === RAILWAY_ARAKAWA) {
                     continue;
                 }
 
