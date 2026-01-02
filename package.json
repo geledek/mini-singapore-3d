@@ -1,7 +1,7 @@
 {
-  "name": "mini-tokyo-3d",
-  "version": "4.0.0-beta.1",
-  "description": "A real-time 3D digital map of Tokyo's public transport system",
+  "name": "mini-singapore-3d",
+  "version": "0.1.0-alpha.1",
+  "description": "A real-time 3D digital map of Singapore's public transport system",
   "main": "dist/mini-tokyo-3d.js",
   "module": "dist/mini-tokyo-3d.esm.js",
   "style": "dist/mini-tokyo-3d.css",
@@ -33,7 +33,6 @@
     "fflate": "^0.8.2",
     "geobuf": "^3.0.2",
     "gtfs-realtime-bindings": "^1.1.1",
-    "japanese-holidays": "^1.0.10",
     "mapbox-gl": "^3.9.3",
     "mapbox-gl-animated-popup": "^0.4.0",
     "pbf": "^4.0.1",
@@ -79,14 +78,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nagix/mini-tokyo-3d.git"
+    "url": "git+https://github.com/yourusername/mini-singapore-3d.git"
   },
-  "author": "Akihiko Kusanagi",
+  "author": "Your Name (based on Mini Tokyo 3D by Akihiko Kusanagi)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nagix/mini-tokyo-3d/issues"
+    "url": "https://github.com/yourusername/mini-singapore-3d/issues"
   },
-  "homepage": "https://minitokyo3d.com",
+  "homepage": "http://localhost:8080",
   "jsdelivr": "dist/mini-tokyo-3d.min.js",
   "unpkg": "dist/mini-tokyo-3d.min.js"
 }

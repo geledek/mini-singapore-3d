@@ -1,11 +1,11 @@
 {
     "version": 8,
-    "name": "Mini Tokyo 3D",
+    "name": "Mini Singapore 3D",
     "center": [
-        139.7670,
-        35.6814
+        103.8519,
+        1.2929
     ],
-    "zoom": 14,
+    "zoom": 12,
     "bearing": 0,
     "pitch": 60,
     "fog": {

@@ -98,11 +98,11 @@ const configs = {
     // Fade duration when an object is added or removed
     fadeDuration: 1000,
 
-    // Origin of coordinates (around Tokyo station)
-    defaultCenter: [139.7670, 35.6814],
+    // Origin of coordinates (Singapore City Hall MRT)
+    defaultCenter: [103.8519, 1.2929],
 
-    // Default zoom level
-    defaultZoom: 14,
+    // Default zoom level (higher for smaller Singapore area)
+    defaultZoom: 12,
 
     // Default bearing (rotation) of the map
     defaultBearing: 0,
@@ -125,49 +125,50 @@ const configs = {
     // Default clock mode
     defaultEcoMode: 'normal',
 
-    // API URL
+    // API URL - Singapore LTA DataMall
     apiUrl: {
 
-        // ODPT URL
-        odpt: 'https://api.odpt.org/api/v4/',
+        // LTA DataMall base URL
+        lta: 'http://datamall2.mytransport.sg/ltaodataservice/',
 
-        // Challenge 2025 URL
-        challenge2025: 'https://api-challenge.odpt.org/api/v4/'
+        // LTA DataMall API Key
+        ltaAccountKey: '+Z3IvSNwTlmKVY92BS4/nQ=='
 
     },
 
-    // TID URL
-    tidUrl: 'https://mini-tokyo.appspot.com/tid',
+    // Bus arrival URL (LTA DataMall)
+    busArrivalUrl: 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2',
 
-    // Train information URL
-    trainInfoUrl: 'https://mini-tokyo.appspot.com/traininfo',
+    // Train service alerts URL (LTA DataMall)
+    trainAlertUrl: 'http://datamall2.mytransport.sg/ltaodataservice/TrainServiceAlerts',
 
-    // ATIS URL
-    atisUrl: 'https://mini-tokyo.appspot.com/atisinfo',
+    // Passenger volume URL (LTA DataMall)
+    passengerVolumeUrl: 'http://datamall2.mytransport.sg/ltaodataservice/PCDRealTime',
 
-    // Flight URL
-    flightUrl: 'https://mini-tokyo.appspot.com/flight',
+    // TODO: Set up your own backend proxy server for data aggregation
+    // Backend proxy URL (to be implemented)
+    proxyUrl: 'http://localhost:3000/api',
 
-    // Default data URL
-    dataUrl: 'https://minitokyo3d.com/data',
+    // Default data URL (TODO: Replace with your own CDN after building data)
+    dataUrl: './data',
 
     // Default data sources
     dataSources: [],
 
-    // Route search URL
-    searchUrl: 'https://search.minitokyo3d.com/api/v1/routes',
+    // Route search URL (TODO: Implement Singapore route search)
+    searchUrl: null,
 
     // Timestamp when the static data was last updated
-    lastStaticUpdate: '2025-03-17 12:00:00',
+    lastStaticUpdate: '2026-01-01 00:00:00',
 
     // String to show in an Mapbox's AttributionControl
-    customAttribution: '<a href="https://github.com/nagix/mini-tokyo-3d">© Akihiko Kusanagi</a>',
+    customAttribution: '<a href="https://github.com/nagix/mini-tokyo-3d">Based on Mini Tokyo 3D by Akihiko Kusanagi</a> | <a href="https://datamall.lta.gov.sg">LTA DataMall</a>',
 
     // Copyright string
-    copyright: '© 2019-2025 Akihiko Kusanagi',
+    copyright: '© 2026 Mini Singapore 3D | Data © LTA Singapore',
 
-    // Share URL
-    shareUrl: 'https://minitokyo3d.com',
+    // Share URL (TODO: Update with your deployment URL)
+    shareUrl: 'http://localhost:8080',
 
     // Supported events
     events: [
@@ -207,8 +208,11 @@ const configs = {
         'zoomstart'
     ],
 
-    // Supported languages
-    langs: ['de', 'en', 'es', 'fr', 'ja', 'ko', 'ne', 'pt-BR', 'th', 'zh-Hans', 'zh-Hant']
+    // Supported languages (Singapore focus: English, Chinese, Malay, Tamil)
+    langs: ['en', 'zh-Hans', 'zh-Hant', 'ms', 'ta'],
+
+    // Mapbox access token
+    mapboxAccessToken: 'pk.eyJ1IjoiZ2VsZWRlayIsImEiOiJjbWp2Z2kxeGs1YXowM2RvdDAwZzA5eDdmIn0.cvxqYNPcROKg8kqsH7nNrQ'
 
 };
 

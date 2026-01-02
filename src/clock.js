@@ -1,10 +1,26 @@
-import JapaneseHolidays from 'japanese-holidays';
+// Singapore public holidays list (update annually)
+const SINGAPORE_HOLIDAYS = [
+    // 2026
+    '2026-01-01', // New Year's Day
+    '2026-01-29', // Chinese New Year
+    '2026-01-30', // Chinese New Year
+    '2026-04-10', // Good Friday
+    '2026-05-01', // Labour Day
+    '2026-05-04', // Vesak Day
+    '2026-06-15', // Hari Raya Puasa
+    '2026-08-09', // National Day
+    '2026-08-10', // National Day (observed)
+    '2026-08-21', // Hari Raya Haji
+    '2026-10-24', // Deepavali
+    '2026-12-25', // Christmas Day
+];
+
 import configs from './configs';
 import {valueOrDefault} from './helpers/helpers';
 
 export default class {
 
-    constructor(date, speed, offset = -540) {
+    constructor(date, speed, offset = -480) { // SGT = UTC+8 = -480 minutes
         this.reset()
             .setTimezoneOffset(offset)
             .setDate(date)
@@ -189,9 +205,11 @@ export default class {
             month = date.getMonth(),
             day = date.getDate();
 
-        if (dayOfWeek === 0 || JapaneseHolidays.isHoliday(date) ||
-            (month === 11 && day >= 30) ||
-            (month === 0 && day <= 3)) {
+        // Format date as YYYY-MM-DD for comparison
+        const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+        // Check if it's a public holiday in Singapore
+        if (dayOfWeek === 0 || SINGAPORE_HOLIDAYS.includes(dateString)) {
             return 'Holiday';
         }
         if (dayOfWeek === 6) {

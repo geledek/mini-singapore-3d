@@ -6,54 +6,32 @@ import configs from './configs';
 import {isString, loadJSON, removePrefix} from './helpers/helpers';
 import {decode} from './helpers/helpers-gtfs';
 
+// Singapore MRT/LRT railways for real-time data
 const RAILWAYS_FOR_TRAINS = {
-    odpt: [
-        'Toei.Asakusa',
-        'Toei.Mita',
-        'Toei.Shinjuku',
-        'Toei.Oedo',
-        'Toei.Arakawa'
-    ],
-    challenge2025: [
-        'Keikyu.Main',
-        'Keikyu.Airport',
-        'Keikyu.Daishi',
-        'Keikyu.Zushi',
-        'Keikyu.Kurihama',
-        'Tobu.TobuSkytree',
-        'Tobu.TobuSkytreeBranch',
-        'Tobu.Isesaki',
-        'Tobu.Nikko',
-        'Tobu.TobuUrbanPark',
-        'Tobu.Kameido',
-        'Tobu.Daishi',
-        'Tobu.Tojo',
-        'Tobu.Ogose'
+    lta: [
+        'SMRT.NSL',
+        'SMRT.EWL',
+        'SMRT.CCL',
+        'SBS.NEL',
+        'SBS.DTL',
+        'SMRT.TEL',
+        'SMRT.BPLRT',
+        'SBS.SKLRT',
+        'SBS.PGLRT'
     ]
 };
 
+// Singapore operators for service alerts
 const OPERATORS_FOR_TRAININFORMATION = {
-    odpt: [
-        'TWR',
-        'TokyoMetro',
-        'Toei',
-        'YokohamaMunicipal',
-        'MIR',
-        'TamaMonorail'
-    ],
-    challenge2025: [
-        'jre-is',
-        'Tokyu',
-        'Keikyu',
-        'Tobu',
-        'Seibu',
-        'Keio'
+    lta: [
+        'SMRT',
+        'SBS',
+        'LTA'
     ]
 };
 
-const RAILWAY_SOBURAPID = 'JR-East.SobuRapid';
-
-const TRAINTYPE_JREAST_LIMITEDEXPRESS = 'JR-East.LimitedExpress';
+// Singapore doesn't have complex train types like Tokyo
+const TRAINTYPE_REGULAR = 'SMRT.Regular';
 
 function getTimetableFileName(clock) {
     const calendar = clock.getCalendar() === 'Weekday' ? 'weekday' : 'holiday';
@@ -68,16 +46,13 @@ function getExtraTimetableFileNames(clock) {
         return ['timetable-saturday.json.gz'];
     }
     if (calendar === 'Holiday') {
-        return ['timetable-sunday-holiday.json.gz'];
+        return ['timetable-holiday.json.gz'];
     }
     return [];
 }
 
+// Singapore trains are simpler - no special ID adjustments needed
 function adjustTrainID(id, type, destination) {
-    if (type === TRAINTYPE_JREAST_LIMITEDEXPRESS &&
-        destination[0].match(/NaritaAirportTerminal1|Takao|Ofuna|Omiya|Ikebukuro|Shinjuku/)) {
-        return id.replace(/JR-East\.(NaritaAirportBranch|Narita|Sobu)/, RAILWAY_SOBURAPID);
-    }
     return id;
 }
 
