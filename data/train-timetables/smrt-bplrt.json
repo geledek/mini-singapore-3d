@@ -5,6 +5,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "001",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -88,6 +89,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "002",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -171,6 +173,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "003",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -254,6 +257,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "004",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -337,6 +341,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "005",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -420,6 +425,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "006",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -503,6 +509,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "007",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -586,6 +593,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "008",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -669,6 +677,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "009",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -752,6 +761,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "010",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -835,6 +845,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "011",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -918,6 +929,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "012",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1001,6 +1013,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "013",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -1084,6 +1097,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "014",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1167,6 +1181,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "015",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -1250,6 +1265,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "016",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1333,6 +1349,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "017",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -1416,6 +1433,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "018",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1499,6 +1517,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "019",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -1582,6 +1601,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "020",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1665,6 +1685,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "021",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -1748,6 +1769,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "022",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1831,6 +1853,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "023",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -1914,6 +1937,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "024",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -1997,6 +2021,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "025",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -2080,6 +2105,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "026",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -2163,6 +2189,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "027",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -2246,6 +2273,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "028",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -2329,6 +2357,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "029",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -2412,6 +2441,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "030",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -2495,6 +2525,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "031",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -2578,6 +2609,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "032",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -2661,6 +2693,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "033",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -2744,6 +2777,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "034",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -2827,6 +2861,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "035",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -2910,6 +2945,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "036",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -2993,6 +3029,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "037",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -3076,6 +3113,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "038",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -3159,6 +3197,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "039",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -3242,6 +3281,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "040",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -3325,6 +3365,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "041",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -3408,6 +3449,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "042",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -3491,6 +3533,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "043",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -3574,6 +3617,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "044",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -3657,6 +3701,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "045",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -3740,6 +3785,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "046",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -3823,6 +3869,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "047",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -3906,6 +3953,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "048",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -3989,6 +4037,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "049",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -4072,6 +4121,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "050",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -4155,6 +4205,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "051",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -4238,6 +4289,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "052",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -4321,6 +4373,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "053",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -4404,6 +4457,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "054",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -4487,6 +4541,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "055",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -4570,6 +4625,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "056",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -4653,6 +4709,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "057",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -4736,6 +4793,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "058",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -4819,6 +4877,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "059",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -4902,6 +4961,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "060",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -4985,6 +5045,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "061",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -5068,6 +5129,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "062",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -5151,6 +5213,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "063",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -5234,6 +5297,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "064",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -5317,6 +5381,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "065",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -5400,6 +5465,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "066",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -5483,6 +5549,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "067",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -5566,6 +5633,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "068",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -5649,6 +5717,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "069",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -5732,6 +5801,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "070",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -5815,6 +5885,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "071",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -5898,6 +5969,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "072",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -5981,6 +6053,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "073",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -6064,6 +6137,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "074",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -6147,6 +6221,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "075",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -6230,6 +6305,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "076",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -6313,6 +6389,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "077",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -6396,6 +6473,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "078",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -6479,6 +6557,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "079",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -6562,6 +6641,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "080",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -6645,6 +6725,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "081",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -6728,6 +6809,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "082",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -6811,6 +6893,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "083",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -6894,6 +6977,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "084",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -6977,6 +7061,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "085",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -7060,6 +7145,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "086",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -7143,6 +7229,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "087",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -7226,6 +7313,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "088",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -7309,6 +7397,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "089",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -7392,6 +7481,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "090",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -7475,6 +7565,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "091",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -7558,6 +7649,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "092",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -7641,6 +7733,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "093",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -7724,6 +7817,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "094",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -7807,6 +7901,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "095",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -7890,6 +7985,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "096",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -7973,6 +8069,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "097",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -8056,6 +8153,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "098",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -8139,6 +8237,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "099",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -8222,6 +8321,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "100",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -8305,6 +8405,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "101",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -8388,6 +8489,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "102",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -8471,6 +8573,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "103",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -8554,6 +8657,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "104",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -8637,6 +8741,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "105",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -8720,6 +8825,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "106",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -8803,6 +8909,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "107",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -8886,6 +8993,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "108",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -8969,6 +9077,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "109",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -9052,6 +9161,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "110",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -9135,6 +9245,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "111",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -9218,6 +9329,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "112",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -9301,6 +9413,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "113",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -9384,6 +9497,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "114",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -9467,6 +9581,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "115",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -9550,6 +9665,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "116",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -9633,6 +9749,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "117",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -9716,6 +9833,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "118",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -9799,6 +9917,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "119",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -9882,6 +10001,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "120",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -9965,6 +10085,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "121",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -10048,6 +10169,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "122",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -10131,6 +10253,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "123",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -10214,6 +10337,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "124",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -10297,6 +10421,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "125",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -10380,6 +10505,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "126",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -10463,6 +10589,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "127",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -10546,6 +10673,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "128",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -10629,6 +10757,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "129",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -10712,6 +10841,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "130",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -10795,6 +10925,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "131",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -10878,6 +11009,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "132",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -10961,6 +11093,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "133",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -11044,6 +11177,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "134",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -11127,6 +11261,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "135",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -11210,6 +11345,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "136",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -11293,6 +11429,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "137",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -11376,6 +11513,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "138",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -11459,6 +11597,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "139",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -11542,6 +11681,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "140",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -11625,6 +11765,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "141",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -11708,6 +11849,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "142",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -11791,6 +11933,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "143",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -11874,6 +12017,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "144",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -11957,6 +12101,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "145",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -12040,6 +12185,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "146",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -12123,6 +12269,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "147",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -12206,6 +12353,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "148",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -12289,6 +12437,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "149",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -12372,6 +12521,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "150",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -12455,6 +12605,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "151",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -12538,6 +12689,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "152",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -12621,6 +12773,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "153",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -12704,6 +12857,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "154",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -12787,6 +12941,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "155",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -12870,6 +13025,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "156",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -12953,6 +13109,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "157",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -13036,6 +13193,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "158",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -13119,6 +13277,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "159",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -13202,6 +13361,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "160",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -13285,6 +13445,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "161",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -13368,6 +13529,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "162",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -13451,6 +13613,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "163",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -13534,6 +13697,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "164",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -13617,6 +13781,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "165",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -13700,6 +13865,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "166",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -13783,6 +13949,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "167",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -13866,6 +14033,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "168",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -13949,6 +14117,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "169",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -14032,6 +14201,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "170",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -14115,6 +14285,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "171",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -14198,6 +14369,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "172",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -14281,6 +14453,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "173",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -14364,6 +14537,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "174",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -14447,6 +14621,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "175",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -14530,6 +14705,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "176",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -14613,6 +14789,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "177",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -14696,6 +14873,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "178",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -14779,6 +14957,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "179",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -14862,6 +15041,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "180",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -14945,6 +15125,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "181",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -15028,6 +15209,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "182",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -15111,6 +15293,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "183",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -15194,6 +15377,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "184",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -15277,6 +15461,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "185",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -15360,6 +15545,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "186",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -15443,6 +15629,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "187",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -15526,6 +15713,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "188",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -15609,6 +15797,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "189",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -15692,6 +15881,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "190",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -15775,6 +15965,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "191",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -15858,6 +16049,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "192",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -15941,6 +16133,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "193",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -16024,6 +16217,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "194",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -16107,6 +16301,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "195",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -16190,6 +16385,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "196",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -16273,6 +16469,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "197",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -16356,6 +16553,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "198",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -16439,6 +16637,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "199",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -16522,6 +16721,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "200",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -16605,6 +16805,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "201",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -16688,6 +16889,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "202",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -16771,6 +16973,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "203",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -16854,6 +17057,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "204",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -16937,6 +17141,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "205",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -17020,6 +17225,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "206",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -17103,6 +17309,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "207",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -17186,6 +17393,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "208",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -17269,6 +17477,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "209",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -17352,6 +17561,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "210",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -17435,6 +17645,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "211",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -17518,6 +17729,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "212",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -17601,6 +17813,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "213",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -17684,6 +17897,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "214",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -17767,6 +17981,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "215",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -17850,6 +18065,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "216",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -17933,6 +18149,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "217",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -18016,6 +18233,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "218",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -18099,6 +18317,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "219",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -18182,6 +18401,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "220",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -18265,6 +18485,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "221",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -18348,6 +18569,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "222",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -18431,6 +18653,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "223",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -18514,6 +18737,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "224",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -18597,6 +18821,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "225",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -18680,6 +18905,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "226",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -18763,6 +18989,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "227",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -18846,6 +19073,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "228",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -18929,6 +19157,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "229",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -19012,6 +19241,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "230",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -19095,6 +19325,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "231",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -19178,6 +19409,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "232",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -19261,6 +19493,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "233",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -19344,6 +19577,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "234",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -19427,6 +19661,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "235",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -19510,6 +19745,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "236",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -19593,6 +19829,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "237",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -19676,6 +19913,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "238",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -19759,6 +19997,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "239",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -19842,6 +20081,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "240",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -19925,6 +20165,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "241",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -20008,6 +20249,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "242",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -20091,6 +20333,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "243",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -20174,6 +20417,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "244",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -20257,6 +20501,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "245",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -20340,6 +20585,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "246",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -20423,6 +20669,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "247",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -20506,6 +20753,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "248",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -20589,6 +20837,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "249",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -20672,6 +20921,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "250",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -20755,6 +21005,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "251",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -20838,6 +21089,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "252",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],
@@ -20921,6 +21173,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "253",
 		"y": "default",
+		"d": "SMRT.BPLRT.Clockwise",
 		"os": [
 			"SMRT.BPLRT.TenMileJunction"
 		],
@@ -21004,6 +21257,7 @@
 		"r": "SMRT.BPLRT",
 		"n": "254",
 		"y": "default",
+		"d": "SMRT.BPLRT.AntiClockwise",
 		"os": [
 			"SMRT.BPLRT.ChoaChuKang"
 		],

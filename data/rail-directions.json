@@ -118,5 +118,65 @@
 			"ms": "Arah Selatan",
 			"ta": "தெற்கு நோக்கி"
 		}
+	},
+	{
+		"id": "SMRT.BPLRT.Clockwise",
+		"title": {
+			"en": "Clockwise",
+			"zh-Hans": "顺时针",
+			"zh-Hant": "順時針",
+			"ms": "Ikut Jam",
+			"ta": "வலஞ்சுழியாக"
+		}
+	},
+	{
+		"id": "SMRT.BPLRT.AntiClockwise",
+		"title": {
+			"en": "Anti-Clockwise",
+			"zh-Hans": "逆时针",
+			"zh-Hant": "逆時針",
+			"ms": "Lawan Jam",
+			"ta": "எதிர் சுழியாக"
+		}
+	},
+	{
+		"id": "SBS.SKLRT.Clockwise",
+		"title": {
+			"en": "Clockwise",
+			"zh-Hans": "顺时针",
+			"zh-Hant": "順時針",
+			"ms": "Ikut Jam",
+			"ta": "வலஞ்சுழியாக"
+		}
+	},
+	{
+		"id": "SBS.SKLRT.AntiClockwise",
+		"title": {
+			"en": "Anti-Clockwise",
+			"zh-Hans": "逆时针",
+			"zh-Hant": "逆時針",
+			"ms": "Lawan Jam",
+			"ta": "எதிர் சுழியாக"
+		}
+	},
+	{
+		"id": "SBS.PGLRT.Clockwise",
+		"title": {
+			"en": "Clockwise",
+			"zh-Hans": "顺时针",
+			"zh-Hant": "順時針",
+			"ms": "Ikut Jam",
+			"ta": "வலஞ்சுழியாக"
+		}
+	},
+	{
+		"id": "SBS.PGLRT.AntiClockwise",
+		"title": {
+			"en": "Anti-Clockwise",
+			"zh-Hans": "逆时针",
+			"zh-Hant": "逆時針",
+			"ms": "Lawan Jam",
+			"ta": "எதிர் சுழியாக"
+		}
 	}
 ]

@@ -5,6 +5,7 @@
 		"r": "SBS.SKLRT",
 		"n": "001",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -83,6 +84,7 @@
 		"r": "SBS.SKLRT",
 		"n": "002",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -161,6 +163,7 @@
 		"r": "SBS.SKLRT",
 		"n": "003",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -239,6 +242,7 @@
 		"r": "SBS.SKLRT",
 		"n": "004",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -317,6 +321,7 @@
 		"r": "SBS.SKLRT",
 		"n": "005",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -395,6 +400,7 @@
 		"r": "SBS.SKLRT",
 		"n": "006",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -473,6 +479,7 @@
 		"r": "SBS.SKLRT",
 		"n": "007",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -551,6 +558,7 @@
 		"r": "SBS.SKLRT",
 		"n": "008",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -629,6 +637,7 @@
 		"r": "SBS.SKLRT",
 		"n": "009",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -707,6 +716,7 @@
 		"r": "SBS.SKLRT",
 		"n": "010",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -785,6 +795,7 @@
 		"r": "SBS.SKLRT",
 		"n": "011",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -863,6 +874,7 @@
 		"r": "SBS.SKLRT",
 		"n": "012",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -941,6 +953,7 @@
 		"r": "SBS.SKLRT",
 		"n": "013",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1019,6 +1032,7 @@
 		"r": "SBS.SKLRT",
 		"n": "014",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -1097,6 +1111,7 @@
 		"r": "SBS.SKLRT",
 		"n": "015",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1175,6 +1190,7 @@
 		"r": "SBS.SKLRT",
 		"n": "016",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -1253,6 +1269,7 @@
 		"r": "SBS.SKLRT",
 		"n": "017",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1331,6 +1348,7 @@
 		"r": "SBS.SKLRT",
 		"n": "018",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -1409,6 +1427,7 @@
 		"r": "SBS.SKLRT",
 		"n": "019",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1487,6 +1506,7 @@
 		"r": "SBS.SKLRT",
 		"n": "020",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -1565,6 +1585,7 @@
 		"r": "SBS.SKLRT",
 		"n": "021",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1643,6 +1664,7 @@
 		"r": "SBS.SKLRT",
 		"n": "022",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -1721,6 +1743,7 @@
 		"r": "SBS.SKLRT",
 		"n": "023",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1799,6 +1822,7 @@
 		"r": "SBS.SKLRT",
 		"n": "024",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -1877,6 +1901,7 @@
 		"r": "SBS.SKLRT",
 		"n": "025",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -1955,6 +1980,7 @@
 		"r": "SBS.SKLRT",
 		"n": "026",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2033,6 +2059,7 @@
 		"r": "SBS.SKLRT",
 		"n": "027",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -2111,6 +2138,7 @@
 		"r": "SBS.SKLRT",
 		"n": "028",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2189,6 +2217,7 @@
 		"r": "SBS.SKLRT",
 		"n": "029",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -2267,6 +2296,7 @@
 		"r": "SBS.SKLRT",
 		"n": "030",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2345,6 +2375,7 @@
 		"r": "SBS.SKLRT",
 		"n": "031",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -2423,6 +2454,7 @@
 		"r": "SBS.SKLRT",
 		"n": "032",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2501,6 +2533,7 @@
 		"r": "SBS.SKLRT",
 		"n": "033",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -2579,6 +2612,7 @@
 		"r": "SBS.SKLRT",
 		"n": "034",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2657,6 +2691,7 @@
 		"r": "SBS.SKLRT",
 		"n": "035",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -2735,6 +2770,7 @@
 		"r": "SBS.SKLRT",
 		"n": "036",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2813,6 +2849,7 @@
 		"r": "SBS.SKLRT",
 		"n": "037",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -2891,6 +2928,7 @@
 		"r": "SBS.SKLRT",
 		"n": "038",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -2969,6 +3007,7 @@
 		"r": "SBS.SKLRT",
 		"n": "039",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3047,6 +3086,7 @@
 		"r": "SBS.SKLRT",
 		"n": "040",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -3125,6 +3165,7 @@
 		"r": "SBS.SKLRT",
 		"n": "041",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3203,6 +3244,7 @@
 		"r": "SBS.SKLRT",
 		"n": "042",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -3281,6 +3323,7 @@
 		"r": "SBS.SKLRT",
 		"n": "043",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3359,6 +3402,7 @@
 		"r": "SBS.SKLRT",
 		"n": "044",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -3437,6 +3481,7 @@
 		"r": "SBS.SKLRT",
 		"n": "045",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3515,6 +3560,7 @@
 		"r": "SBS.SKLRT",
 		"n": "046",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -3593,6 +3639,7 @@
 		"r": "SBS.SKLRT",
 		"n": "047",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3671,6 +3718,7 @@
 		"r": "SBS.SKLRT",
 		"n": "048",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -3749,6 +3797,7 @@
 		"r": "SBS.SKLRT",
 		"n": "049",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3827,6 +3876,7 @@
 		"r": "SBS.SKLRT",
 		"n": "050",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -3905,6 +3955,7 @@
 		"r": "SBS.SKLRT",
 		"n": "051",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -3983,6 +4034,7 @@
 		"r": "SBS.SKLRT",
 		"n": "052",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4061,6 +4113,7 @@
 		"r": "SBS.SKLRT",
 		"n": "053",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -4139,6 +4192,7 @@
 		"r": "SBS.SKLRT",
 		"n": "054",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4217,6 +4271,7 @@
 		"r": "SBS.SKLRT",
 		"n": "055",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -4295,6 +4350,7 @@
 		"r": "SBS.SKLRT",
 		"n": "056",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4373,6 +4429,7 @@
 		"r": "SBS.SKLRT",
 		"n": "057",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -4451,6 +4508,7 @@
 		"r": "SBS.SKLRT",
 		"n": "058",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4529,6 +4587,7 @@
 		"r": "SBS.SKLRT",
 		"n": "059",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -4607,6 +4666,7 @@
 		"r": "SBS.SKLRT",
 		"n": "060",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4685,6 +4745,7 @@
 		"r": "SBS.SKLRT",
 		"n": "061",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -4763,6 +4824,7 @@
 		"r": "SBS.SKLRT",
 		"n": "062",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4841,6 +4903,7 @@
 		"r": "SBS.SKLRT",
 		"n": "063",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -4919,6 +4982,7 @@
 		"r": "SBS.SKLRT",
 		"n": "064",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -4997,6 +5061,7 @@
 		"r": "SBS.SKLRT",
 		"n": "065",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -5075,6 +5140,7 @@
 		"r": "SBS.SKLRT",
 		"n": "066",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -5153,6 +5219,7 @@
 		"r": "SBS.SKLRT",
 		"n": "067",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -5231,6 +5298,7 @@
 		"r": "SBS.SKLRT",
 		"n": "068",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -5309,6 +5377,7 @@
 		"r": "SBS.SKLRT",
 		"n": "069",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -5387,6 +5456,7 @@
 		"r": "SBS.SKLRT",
 		"n": "070",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -5465,6 +5535,7 @@
 		"r": "SBS.SKLRT",
 		"n": "071",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -5543,6 +5614,7 @@
 		"r": "SBS.SKLRT",
 		"n": "072",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -5621,6 +5693,7 @@
 		"r": "SBS.SKLRT",
 		"n": "073",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -5699,6 +5772,7 @@
 		"r": "SBS.SKLRT",
 		"n": "074",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -5777,6 +5851,7 @@
 		"r": "SBS.SKLRT",
 		"n": "075",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -5855,6 +5930,7 @@
 		"r": "SBS.SKLRT",
 		"n": "076",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -5933,6 +6009,7 @@
 		"r": "SBS.SKLRT",
 		"n": "077",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6011,6 +6088,7 @@
 		"r": "SBS.SKLRT",
 		"n": "078",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -6089,6 +6167,7 @@
 		"r": "SBS.SKLRT",
 		"n": "079",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6167,6 +6246,7 @@
 		"r": "SBS.SKLRT",
 		"n": "080",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -6245,6 +6325,7 @@
 		"r": "SBS.SKLRT",
 		"n": "081",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6323,6 +6404,7 @@
 		"r": "SBS.SKLRT",
 		"n": "082",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -6401,6 +6483,7 @@
 		"r": "SBS.SKLRT",
 		"n": "083",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6479,6 +6562,7 @@
 		"r": "SBS.SKLRT",
 		"n": "084",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -6557,6 +6641,7 @@
 		"r": "SBS.SKLRT",
 		"n": "085",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6635,6 +6720,7 @@
 		"r": "SBS.SKLRT",
 		"n": "086",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -6713,6 +6799,7 @@
 		"r": "SBS.SKLRT",
 		"n": "087",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6791,6 +6878,7 @@
 		"r": "SBS.SKLRT",
 		"n": "088",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -6869,6 +6957,7 @@
 		"r": "SBS.SKLRT",
 		"n": "089",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -6947,6 +7036,7 @@
 		"r": "SBS.SKLRT",
 		"n": "090",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7025,6 +7115,7 @@
 		"r": "SBS.SKLRT",
 		"n": "091",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -7103,6 +7194,7 @@
 		"r": "SBS.SKLRT",
 		"n": "092",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7181,6 +7273,7 @@
 		"r": "SBS.SKLRT",
 		"n": "093",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -7259,6 +7352,7 @@
 		"r": "SBS.SKLRT",
 		"n": "094",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7337,6 +7431,7 @@
 		"r": "SBS.SKLRT",
 		"n": "095",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -7415,6 +7510,7 @@
 		"r": "SBS.SKLRT",
 		"n": "096",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7493,6 +7589,7 @@
 		"r": "SBS.SKLRT",
 		"n": "097",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -7571,6 +7668,7 @@
 		"r": "SBS.SKLRT",
 		"n": "098",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7649,6 +7747,7 @@
 		"r": "SBS.SKLRT",
 		"n": "099",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -7727,6 +7826,7 @@
 		"r": "SBS.SKLRT",
 		"n": "100",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7805,6 +7905,7 @@
 		"r": "SBS.SKLRT",
 		"n": "101",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -7883,6 +7984,7 @@
 		"r": "SBS.SKLRT",
 		"n": "102",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -7961,6 +8063,7 @@
 		"r": "SBS.SKLRT",
 		"n": "103",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8039,6 +8142,7 @@
 		"r": "SBS.SKLRT",
 		"n": "104",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -8117,6 +8221,7 @@
 		"r": "SBS.SKLRT",
 		"n": "105",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8195,6 +8300,7 @@
 		"r": "SBS.SKLRT",
 		"n": "106",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -8273,6 +8379,7 @@
 		"r": "SBS.SKLRT",
 		"n": "107",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8351,6 +8458,7 @@
 		"r": "SBS.SKLRT",
 		"n": "108",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -8429,6 +8537,7 @@
 		"r": "SBS.SKLRT",
 		"n": "109",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8507,6 +8616,7 @@
 		"r": "SBS.SKLRT",
 		"n": "110",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -8585,6 +8695,7 @@
 		"r": "SBS.SKLRT",
 		"n": "111",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8663,6 +8774,7 @@
 		"r": "SBS.SKLRT",
 		"n": "112",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -8741,6 +8853,7 @@
 		"r": "SBS.SKLRT",
 		"n": "113",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8819,6 +8932,7 @@
 		"r": "SBS.SKLRT",
 		"n": "114",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -8897,6 +9011,7 @@
 		"r": "SBS.SKLRT",
 		"n": "115",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -8975,6 +9090,7 @@
 		"r": "SBS.SKLRT",
 		"n": "116",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9053,6 +9169,7 @@
 		"r": "SBS.SKLRT",
 		"n": "117",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -9131,6 +9248,7 @@
 		"r": "SBS.SKLRT",
 		"n": "118",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9209,6 +9327,7 @@
 		"r": "SBS.SKLRT",
 		"n": "119",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -9287,6 +9406,7 @@
 		"r": "SBS.SKLRT",
 		"n": "120",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9365,6 +9485,7 @@
 		"r": "SBS.SKLRT",
 		"n": "121",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -9443,6 +9564,7 @@
 		"r": "SBS.SKLRT",
 		"n": "122",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9521,6 +9643,7 @@
 		"r": "SBS.SKLRT",
 		"n": "123",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -9599,6 +9722,7 @@
 		"r": "SBS.SKLRT",
 		"n": "124",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9677,6 +9801,7 @@
 		"r": "SBS.SKLRT",
 		"n": "125",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -9755,6 +9880,7 @@
 		"r": "SBS.SKLRT",
 		"n": "126",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9833,6 +9959,7 @@
 		"r": "SBS.SKLRT",
 		"n": "127",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -9911,6 +10038,7 @@
 		"r": "SBS.SKLRT",
 		"n": "128",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -9989,6 +10117,7 @@
 		"r": "SBS.SKLRT",
 		"n": "129",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -10067,6 +10196,7 @@
 		"r": "SBS.SKLRT",
 		"n": "130",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -10145,6 +10275,7 @@
 		"r": "SBS.SKLRT",
 		"n": "131",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -10223,6 +10354,7 @@
 		"r": "SBS.SKLRT",
 		"n": "132",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -10301,6 +10433,7 @@
 		"r": "SBS.SKLRT",
 		"n": "133",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -10379,6 +10512,7 @@
 		"r": "SBS.SKLRT",
 		"n": "134",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -10457,6 +10591,7 @@
 		"r": "SBS.SKLRT",
 		"n": "135",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -10535,6 +10670,7 @@
 		"r": "SBS.SKLRT",
 		"n": "136",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -10613,6 +10749,7 @@
 		"r": "SBS.SKLRT",
 		"n": "137",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -10691,6 +10828,7 @@
 		"r": "SBS.SKLRT",
 		"n": "138",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -10769,6 +10907,7 @@
 		"r": "SBS.SKLRT",
 		"n": "139",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -10847,6 +10986,7 @@
 		"r": "SBS.SKLRT",
 		"n": "140",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -10925,6 +11065,7 @@
 		"r": "SBS.SKLRT",
 		"n": "141",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11003,6 +11144,7 @@
 		"r": "SBS.SKLRT",
 		"n": "142",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -11081,6 +11223,7 @@
 		"r": "SBS.SKLRT",
 		"n": "143",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11159,6 +11302,7 @@
 		"r": "SBS.SKLRT",
 		"n": "144",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -11237,6 +11381,7 @@
 		"r": "SBS.SKLRT",
 		"n": "145",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11315,6 +11460,7 @@
 		"r": "SBS.SKLRT",
 		"n": "146",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -11393,6 +11539,7 @@
 		"r": "SBS.SKLRT",
 		"n": "147",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11471,6 +11618,7 @@
 		"r": "SBS.SKLRT",
 		"n": "148",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -11549,6 +11697,7 @@
 		"r": "SBS.SKLRT",
 		"n": "149",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11627,6 +11776,7 @@
 		"r": "SBS.SKLRT",
 		"n": "150",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -11705,6 +11855,7 @@
 		"r": "SBS.SKLRT",
 		"n": "151",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11783,6 +11934,7 @@
 		"r": "SBS.SKLRT",
 		"n": "152",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -11861,6 +12013,7 @@
 		"r": "SBS.SKLRT",
 		"n": "153",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -11939,6 +12092,7 @@
 		"r": "SBS.SKLRT",
 		"n": "154",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12017,6 +12171,7 @@
 		"r": "SBS.SKLRT",
 		"n": "155",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -12095,6 +12250,7 @@
 		"r": "SBS.SKLRT",
 		"n": "156",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12173,6 +12329,7 @@
 		"r": "SBS.SKLRT",
 		"n": "157",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -12251,6 +12408,7 @@
 		"r": "SBS.SKLRT",
 		"n": "158",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12329,6 +12487,7 @@
 		"r": "SBS.SKLRT",
 		"n": "159",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -12407,6 +12566,7 @@
 		"r": "SBS.SKLRT",
 		"n": "160",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12485,6 +12645,7 @@
 		"r": "SBS.SKLRT",
 		"n": "161",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -12563,6 +12724,7 @@
 		"r": "SBS.SKLRT",
 		"n": "162",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12641,6 +12803,7 @@
 		"r": "SBS.SKLRT",
 		"n": "163",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -12719,6 +12882,7 @@
 		"r": "SBS.SKLRT",
 		"n": "164",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12797,6 +12961,7 @@
 		"r": "SBS.SKLRT",
 		"n": "165",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -12875,6 +13040,7 @@
 		"r": "SBS.SKLRT",
 		"n": "166",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -12953,6 +13119,7 @@
 		"r": "SBS.SKLRT",
 		"n": "167",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13031,6 +13198,7 @@
 		"r": "SBS.SKLRT",
 		"n": "168",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -13109,6 +13277,7 @@
 		"r": "SBS.SKLRT",
 		"n": "169",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13187,6 +13356,7 @@
 		"r": "SBS.SKLRT",
 		"n": "170",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -13265,6 +13435,7 @@
 		"r": "SBS.SKLRT",
 		"n": "171",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13343,6 +13514,7 @@
 		"r": "SBS.SKLRT",
 		"n": "172",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -13421,6 +13593,7 @@
 		"r": "SBS.SKLRT",
 		"n": "173",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13499,6 +13672,7 @@
 		"r": "SBS.SKLRT",
 		"n": "174",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -13577,6 +13751,7 @@
 		"r": "SBS.SKLRT",
 		"n": "175",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13655,6 +13830,7 @@
 		"r": "SBS.SKLRT",
 		"n": "176",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -13733,6 +13909,7 @@
 		"r": "SBS.SKLRT",
 		"n": "177",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13811,6 +13988,7 @@
 		"r": "SBS.SKLRT",
 		"n": "178",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -13889,6 +14067,7 @@
 		"r": "SBS.SKLRT",
 		"n": "179",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -13967,6 +14146,7 @@
 		"r": "SBS.SKLRT",
 		"n": "180",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14045,6 +14225,7 @@
 		"r": "SBS.SKLRT",
 		"n": "181",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -14123,6 +14304,7 @@
 		"r": "SBS.SKLRT",
 		"n": "182",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14201,6 +14383,7 @@
 		"r": "SBS.SKLRT",
 		"n": "183",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -14279,6 +14462,7 @@
 		"r": "SBS.SKLRT",
 		"n": "184",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14357,6 +14541,7 @@
 		"r": "SBS.SKLRT",
 		"n": "185",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -14435,6 +14620,7 @@
 		"r": "SBS.SKLRT",
 		"n": "186",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14513,6 +14699,7 @@
 		"r": "SBS.SKLRT",
 		"n": "187",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -14591,6 +14778,7 @@
 		"r": "SBS.SKLRT",
 		"n": "188",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14669,6 +14857,7 @@
 		"r": "SBS.SKLRT",
 		"n": "189",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -14747,6 +14936,7 @@
 		"r": "SBS.SKLRT",
 		"n": "190",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14825,6 +15015,7 @@
 		"r": "SBS.SKLRT",
 		"n": "191",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -14903,6 +15094,7 @@
 		"r": "SBS.SKLRT",
 		"n": "192",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -14981,6 +15173,7 @@
 		"r": "SBS.SKLRT",
 		"n": "193",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15059,6 +15252,7 @@
 		"r": "SBS.SKLRT",
 		"n": "194",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -15137,6 +15331,7 @@
 		"r": "SBS.SKLRT",
 		"n": "195",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15215,6 +15410,7 @@
 		"r": "SBS.SKLRT",
 		"n": "196",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -15293,6 +15489,7 @@
 		"r": "SBS.SKLRT",
 		"n": "197",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15371,6 +15568,7 @@
 		"r": "SBS.SKLRT",
 		"n": "198",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -15449,6 +15647,7 @@
 		"r": "SBS.SKLRT",
 		"n": "199",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15527,6 +15726,7 @@
 		"r": "SBS.SKLRT",
 		"n": "200",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -15605,6 +15805,7 @@
 		"r": "SBS.SKLRT",
 		"n": "201",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15683,6 +15884,7 @@
 		"r": "SBS.SKLRT",
 		"n": "202",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -15761,6 +15963,7 @@
 		"r": "SBS.SKLRT",
 		"n": "203",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15839,6 +16042,7 @@
 		"r": "SBS.SKLRT",
 		"n": "204",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -15917,6 +16121,7 @@
 		"r": "SBS.SKLRT",
 		"n": "205",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -15995,6 +16200,7 @@
 		"r": "SBS.SKLRT",
 		"n": "206",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -16073,6 +16279,7 @@
 		"r": "SBS.SKLRT",
 		"n": "207",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -16151,6 +16358,7 @@
 		"r": "SBS.SKLRT",
 		"n": "208",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -16229,6 +16437,7 @@
 		"r": "SBS.SKLRT",
 		"n": "209",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -16307,6 +16516,7 @@
 		"r": "SBS.SKLRT",
 		"n": "210",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -16385,6 +16595,7 @@
 		"r": "SBS.SKLRT",
 		"n": "211",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -16463,6 +16674,7 @@
 		"r": "SBS.SKLRT",
 		"n": "212",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -16541,6 +16753,7 @@
 		"r": "SBS.SKLRT",
 		"n": "213",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -16619,6 +16832,7 @@
 		"r": "SBS.SKLRT",
 		"n": "214",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -16697,6 +16911,7 @@
 		"r": "SBS.SKLRT",
 		"n": "215",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -16775,6 +16990,7 @@
 		"r": "SBS.SKLRT",
 		"n": "216",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -16853,6 +17069,7 @@
 		"r": "SBS.SKLRT",
 		"n": "217",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -16931,6 +17148,7 @@
 		"r": "SBS.SKLRT",
 		"n": "218",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17009,6 +17227,7 @@
 		"r": "SBS.SKLRT",
 		"n": "219",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -17087,6 +17306,7 @@
 		"r": "SBS.SKLRT",
 		"n": "220",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17165,6 +17385,7 @@
 		"r": "SBS.SKLRT",
 		"n": "221",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -17243,6 +17464,7 @@
 		"r": "SBS.SKLRT",
 		"n": "222",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17321,6 +17543,7 @@
 		"r": "SBS.SKLRT",
 		"n": "223",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -17399,6 +17622,7 @@
 		"r": "SBS.SKLRT",
 		"n": "224",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17477,6 +17701,7 @@
 		"r": "SBS.SKLRT",
 		"n": "225",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -17555,6 +17780,7 @@
 		"r": "SBS.SKLRT",
 		"n": "226",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17633,6 +17859,7 @@
 		"r": "SBS.SKLRT",
 		"n": "227",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -17711,6 +17938,7 @@
 		"r": "SBS.SKLRT",
 		"n": "228",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17789,6 +18017,7 @@
 		"r": "SBS.SKLRT",
 		"n": "229",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -17867,6 +18096,7 @@
 		"r": "SBS.SKLRT",
 		"n": "230",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -17945,6 +18175,7 @@
 		"r": "SBS.SKLRT",
 		"n": "231",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18023,6 +18254,7 @@
 		"r": "SBS.SKLRT",
 		"n": "232",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -18101,6 +18333,7 @@
 		"r": "SBS.SKLRT",
 		"n": "233",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18179,6 +18412,7 @@
 		"r": "SBS.SKLRT",
 		"n": "234",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -18257,6 +18491,7 @@
 		"r": "SBS.SKLRT",
 		"n": "235",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18335,6 +18570,7 @@
 		"r": "SBS.SKLRT",
 		"n": "236",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -18413,6 +18649,7 @@
 		"r": "SBS.SKLRT",
 		"n": "237",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18491,6 +18728,7 @@
 		"r": "SBS.SKLRT",
 		"n": "238",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -18569,6 +18807,7 @@
 		"r": "SBS.SKLRT",
 		"n": "239",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18647,6 +18886,7 @@
 		"r": "SBS.SKLRT",
 		"n": "240",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -18725,6 +18965,7 @@
 		"r": "SBS.SKLRT",
 		"n": "241",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18803,6 +19044,7 @@
 		"r": "SBS.SKLRT",
 		"n": "242",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -18881,6 +19123,7 @@
 		"r": "SBS.SKLRT",
 		"n": "243",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -18959,6 +19202,7 @@
 		"r": "SBS.SKLRT",
 		"n": "244",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -19037,6 +19281,7 @@
 		"r": "SBS.SKLRT",
 		"n": "245",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -19115,6 +19360,7 @@
 		"r": "SBS.SKLRT",
 		"n": "246",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -19193,6 +19439,7 @@
 		"r": "SBS.SKLRT",
 		"n": "247",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -19271,6 +19518,7 @@
 		"r": "SBS.SKLRT",
 		"n": "248",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -19349,6 +19597,7 @@
 		"r": "SBS.SKLRT",
 		"n": "249",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -19427,6 +19676,7 @@
 		"r": "SBS.SKLRT",
 		"n": "250",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -19505,6 +19755,7 @@
 		"r": "SBS.SKLRT",
 		"n": "251",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -19583,6 +19834,7 @@
 		"r": "SBS.SKLRT",
 		"n": "252",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],
@@ -19661,6 +19913,7 @@
 		"r": "SBS.SKLRT",
 		"n": "253",
 		"y": "default",
+		"d": "SBS.SKLRT.Clockwise",
 		"os": [
 			"SBS.SKLRT.Renjong"
 		],
@@ -19739,6 +19992,7 @@
 		"r": "SBS.SKLRT",
 		"n": "254",
 		"y": "default",
+		"d": "SBS.SKLRT.AntiClockwise",
 		"os": [
 			"SBS.SKLRT.Compassvale"
 		],

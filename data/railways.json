@@ -287,6 +287,8 @@
 		"color": "#748477",
 		"operator": "SMRT",
 		"type": "light-rail",
+		"ascending": "SMRT.BPLRT.Clockwise",
+		"descending": "SMRT.BPLRT.AntiClockwise",
 		"stations": [
 			"SMRT.BPLRT.ChoaChuKang",
 			"SMRT.BPLRT.SouthView",
@@ -316,6 +318,8 @@
 		"color": "#748477",
 		"operator": "SBS",
 		"type": "light-rail",
+		"ascending": "SBS.SKLRT.Clockwise",
+		"descending": "SBS.SKLRT.AntiClockwise",
 		"stations": [
 			"SBS.SKLRT.Compassvale",
 			"SBS.SKLRT.Rumbia",
@@ -344,6 +348,8 @@
 		"color": "#748477",
 		"operator": "SBS",
 		"type": "light-rail",
+		"ascending": "SBS.PGLRT.Clockwise",
+		"descending": "SBS.PGLRT.AntiClockwise",
 		"stations": [
 			"SBS.PGLRT.Cove",
 			"SBS.PGLRT.Meridian",
