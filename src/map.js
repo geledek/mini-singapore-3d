@@ -618,8 +618,8 @@ export default class extends Evented {
                     });
                 }
             } else if (properties.section) {
-                // railway sections (altitude 0)
-                featureLookup.set(properties.section, feature);
+                // railway sections - skip storing in featureLookup to avoid collision with zoom-based railway IDs
+                // Section features are never retrieved from featureLookup, only railway features are used
                 helpersGeojson.updateDistances(feature);
             } else if (properties.id) {
                 // railway lines and airways (stored by id.zoom or just id)
