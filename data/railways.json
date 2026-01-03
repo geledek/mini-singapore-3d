@@ -11,8 +11,8 @@
 		"color": "#D42E12",
 		"operator": "SMRT",
 		"type": "heavy-rail",
-		"ascending": "SMRT.NSL.Northbound",
-		"descending": "SMRT.NSL.Southbound",
+		"ascending": "SMRT.NSL.Southbound",
+		"descending": "SMRT.NSL.Northbound",
 		"stations": [
 			"SMRT.NSL.JurongEast",
 			"SMRT.NSL.BukitBatok",

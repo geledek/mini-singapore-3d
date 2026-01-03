@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Spawn Test</title>
+</head>
+<body>
+    <h1>Train Spawn Debug Test</h1>
+    <pre id="output"></pre>
+    <script>
+        // Copy this into browser console when app is running:
+        const debugTrains = () => {
+            console.log('=== TRAIN DEBUG INFO ===');
+            console.log('Current time offset:', window.map._clock.getTimeOffset());
+            console.log('Timetables count:', window.map.timetables.getAll().length);
+
+            const timetables = window.map.timetables.getAll();
+            const now = window.map._clock.getTimeOffset();
+
+            console.log('First 5 timetables:');
+            timetables.slice(0, 5).forEach(tt => {
+                console.log({
+                    id: tt.id,
+                    railway: tt.r?.id,
+                    start: tt.start,
+                    end: tt.end,
+                    shouldSpawn: tt.start <= now && now <= tt.end,
+                    inStandby: window.map.standbyTrainLookup.has(tt.id)
+                });
+            });
+
+            console.log('Active trains:', window.map.activeTrains.size);
+            console.log('Standby trains:', window.map.standbyTrainLookup.size);
+            console.log('Railways:', Array.from(window.map.railwayData.keys()));
+
+            // Check if checkStandbyTrains is being called
+            console.log('Animation running:', window.map.lastDynamicUpdate);
+        };
+
+        document.getElementById('output').textContent =
+            'Open browser console and run: debugTrains()\n' +
+            'Or paste this code directly into the console when the map is loaded.';
+    </script>
+</body>
+</html>
