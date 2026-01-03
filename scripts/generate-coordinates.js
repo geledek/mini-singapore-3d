@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Generate coordinates.json with route geometries
- * Uses linear interpolation between stations for MVP
- * Can be enhanced later with actual route shapes from OSM
+ * Generate coordinates.json with route geometries in correct format
+ * Format: { "railways": [{id, sublines: [{type, coords}]}] }
  */
 
 const fs = require('fs');
@@ -30,19 +29,11 @@ function interpolate(coord1, coord2, steps = 10) {
     return points;
 }
 
-// Helper: Round coordinates to 7 decimal places (matching Tokyo format)
-function roundCoord(coord) {
-    return [
-        Math.round(coord[0] * 10000000) / 10000000,
-        Math.round(coord[1] * 10000000) / 10000000
-    ];
-}
-
 // Generate route coordinates for all railways
 function generateCoordinates() {
     console.log('Generating route coordinates...\n');
 
-    const allCoordinates = [];
+    const railwayCoords = [];
 
     railways.forEach(railway => {
         console.log(`Processing ${railway.title.en} (${railway.id})...`);
@@ -53,7 +44,8 @@ function generateCoordinates() {
             return;
         }
 
-        let segmentCount = 0;
+        // Collect all coordinates for this railway
+        const coords = [];
 
         // For each consecutive pair of stations
         for (let i = 0; i < railwayStations.length - 1; i++) {
@@ -70,41 +62,43 @@ function generateCoordinates() {
 
             // Generate interpolated points between stations
             const points = interpolate(station1.coord, station2.coord, 10);
-
-            // Add each point as a coordinate entry
-            points.forEach(point => {
-                allCoordinates.push(roundCoord(point));
-            });
-
-            segmentCount++;
+            coords.push(...points);
         }
 
-        console.log(`  ✓ Generated ${segmentCount} segments`);
+        // Add the railway with its coordinates and metadata
+        railwayCoords.push({
+            id: railway.id,
+            color: railway.color,
+            altitude: railway.altitude,
+            loop: railway.loop,
+            sublines: [{
+                type: 'main',
+                coords: coords
+            }]
+        });
+
+        console.log(`  ✓ Generated ${coords.length} coordinate points`);
     });
 
-    return allCoordinates;
+    return {
+        railways: railwayCoords,
+        airways: []
+    };
 }
 
 // Save coordinates
-function saveCoordinates(coordinates) {
+function saveCoordinates(data) {
     const outputPath = path.join(__dirname, '../data/coordinates.json');
 
-    // Format as compact JSON (one array per line for readability)
-    const json = JSON.stringify(coordinates, null, 0);
-
-    fs.writeFileSync(outputPath, json);
+    fs.writeFileSync(outputPath, JSON.stringify(data, null, '\t'));
 
     const sizeKB = (fs.statSync(outputPath).size / 1024).toFixed(1);
-    console.log(`\n✓ Saved ${coordinates.length} coordinate points to coordinates.json`);
+    console.log(`\n✓ Saved coordinates.json`);
     console.log(`  File size: ${sizeKB} KB`);
 }
 
 // Main execution
-const coordinates = generateCoordinates();
-saveCoordinates(coordinates);
+const data = generateCoordinates();
+saveCoordinates(data);
 
-console.log('\n✅ Coordinate generation complete!');
-console.log('\nNote: This uses linear interpolation. For production, consider:');
-console.log('  - Extracting actual route shapes from OpenStreetMap');
-console.log('  - Using GTFS shapes.txt if available');
-console.log('  - Manual digitization for better accuracy\n');
+console.log('\n✅ Coordinate generation complete!\n');

@@ -1,8 +1,52 @@
+# Build artifacts
 /build
 /dist
+/stats.html
+
+# Dependencies
 /node_modules
 /package-lock.json
-/stats.html
-secrets
+
+# Environment variables (NEVER COMMIT THESE)
+.env
+.env.local
+.env.*.local
+secrets/
+*-secrets.js
+*-keys.json
+
+# Raw data downloads (large files)
+gtfs-data/Static_*
+*.zip
+
+# Source maps (optional - can be regenerated)
+*.map
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS files
 .DS_Store
+**/.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ESLint cache
 .eslintcache
+
+# Testing
+coverage/
+.nyc_output/

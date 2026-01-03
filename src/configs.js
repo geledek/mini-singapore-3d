@@ -1,3 +1,5 @@
+import envConfig from './env-config';
+
 const configs = {
 
     // Standing duration at origin and destination in milliseconds
@@ -131,8 +133,10 @@ const configs = {
         // LTA DataMall base URL
         lta: 'http://datamall2.mytransport.sg/ltaodataservice/',
 
-        // LTA DataMall API Key
-        ltaAccountKey: '+Z3IvSNwTlmKVY92BS4/nQ=='
+        // LTA DataMall API Key - loaded from environment
+        get ltaAccountKey() {
+            return envConfig.ltaAccountKey;
+        }
 
     },
 
@@ -145,9 +149,10 @@ const configs = {
     // Passenger volume URL (LTA DataMall)
     passengerVolumeUrl: 'http://datamall2.mytransport.sg/ltaodataservice/PCDRealTime',
 
-    // TODO: Set up your own backend proxy server for data aggregation
-    // Backend proxy URL (to be implemented)
-    proxyUrl: 'http://localhost:3000/api',
+    // Backend proxy URL - loaded from environment
+    get proxyUrl() {
+        return envConfig.proxyUrl;
+    },
 
     // Default data URL (TODO: Replace with your own CDN after building data)
     dataUrl: './data',
@@ -158,8 +163,10 @@ const configs = {
     // Route search URL (TODO: Implement Singapore route search)
     searchUrl: null,
 
-    // Timestamp when the static data was last updated
-    lastStaticUpdate: '2026-01-01 00:00:00',
+    // Timestamp when the static data was last updated - loaded from environment
+    get lastStaticUpdate() {
+        return envConfig.lastStaticUpdate;
+    },
 
     // String to show in an Mapbox's AttributionControl
     customAttribution: '<a href="https://github.com/nagix/mini-tokyo-3d">Based on Mini Tokyo 3D by Akihiko Kusanagi</a> | <a href="https://datamall.lta.gov.sg">LTA DataMall</a>',
@@ -167,8 +174,10 @@ const configs = {
     // Copyright string
     copyright: '© 2026 Mini Singapore 3D | Data © LTA Singapore',
 
-    // Share URL (TODO: Update with your deployment URL)
-    shareUrl: 'http://localhost:8080',
+    // Share URL - loaded from environment
+    get shareUrl() {
+        return envConfig.shareUrl;
+    },
 
     // Supported events
     events: [
@@ -211,8 +220,10 @@ const configs = {
     // Supported languages (Singapore focus: English, Chinese, Malay, Tamil)
     langs: ['en', 'zh-Hans', 'zh-Hant', 'ms', 'ta'],
 
-    // Mapbox access token
-    mapboxAccessToken: 'pk.eyJ1IjoiZ2VsZWRlayIsImEiOiJjbWp2Z2kxeGs1YXowM2RvdDAwZzA5eDdmIn0.cvxqYNPcROKg8kqsH7nNrQ'
+    // Mapbox access token - loaded from environment
+    get mapboxAccessToken() {
+        return envConfig.mapboxAccessToken;
+    }
 
 };
 

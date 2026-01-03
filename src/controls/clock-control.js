@@ -1,5 +1,6 @@
 import {Evented} from 'mapbox-gl';
 import {createElement} from '../helpers/helpers';
+import SingaporeHolidays from '../singapore-holidays';
 
 const DATE_FORMAT = {
     year: 'numeric',
@@ -212,8 +213,9 @@ export default class extends Evented {
             const lang = me._lang;
             let dateString = date.toLocaleDateString(lang, DATE_FORMAT);
 
-            if (lang === 'ja' && JapaneseHolidays.isHoliday(date)) {
-                dateString = dateString.replace(/\(.+\)/, '(祝)');
+            // Mark Singapore public holidays
+            if (SingaporeHolidays.isHoliday(date)) {
+                dateString = dateString.replace(/\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b/, 'PH');
             }
             element.querySelector('#date').innerHTML = dateString;
             element.querySelector('#time').innerHTML = date.toLocaleTimeString(lang);

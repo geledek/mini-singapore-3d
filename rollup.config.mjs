@@ -10,10 +10,14 @@ import cssimport from 'postcss-import';
 import inlinesvg from 'postcss-inline-svg';
 import strip from '@rollup/plugin-strip';
 import {createFilter} from '@rollup/pluginutils';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
 
 const pkg = JSON.parse(fs.readFileSync('package.json'));
 const banner = `/*!
- * Mini Tokyo 3D v${pkg.version}
+ * Mini Singapore 3D v${pkg.version}
  * ${pkg.homepage}
  * (c) 2019-${new Date().getFullYear()} ${pkg.author}
  * Released under the ${pkg.license} license
@@ -59,7 +63,7 @@ const glsl = () => {
 export default [{
 	input: 'src/loader/index.js',
 	output: {
-		name: 'MiniTokyo3DLoader',
+		name: 'MiniSingapore3DLoader',
 		file: 'dist/loader.js',
 		format: 'cjs',
 		indent: false,
@@ -112,6 +116,17 @@ export default [{
 			extract: `${pkg.name}.css`
 		}),
 		commonjs(),
+		replace({
+			preventAssignment: true,
+			values: {
+				'BUILD_MAPBOX_ACCESS_TOKEN': JSON.stringify(process.env.MAPBOX_ACCESS_TOKEN || ''),
+				'BUILD_LTA_ACCOUNT_KEY': JSON.stringify(process.env.LTA_ACCOUNT_KEY || ''),
+				'BUILD_GOOGLE_ANALYTICS_ID': JSON.stringify(process.env.GOOGLE_ANALYTICS_ID || ''),
+				'BUILD_PROXY_URL': JSON.stringify(process.env.PROXY_URL || 'http://localhost:3000/api'),
+				'BUILD_SHARE_URL': JSON.stringify(process.env.SHARE_URL || 'http://localhost:8080'),
+				'BUILD_LAST_STATIC_UPDATE': JSON.stringify(process.env.LAST_STATIC_UPDATE || '2026-01-01 00:00:00')
+			}
+		}),
 		replace({
 			preventAssignment: true,
 			'process.env.NODE_ENV': '\'development\'',
@@ -170,6 +185,17 @@ export default [{
 			minimize: true
 		}),
 		commonjs(),
+		replace({
+			preventAssignment: true,
+			values: {
+				'BUILD_MAPBOX_ACCESS_TOKEN': JSON.stringify(process.env.MAPBOX_ACCESS_TOKEN || ''),
+				'BUILD_LTA_ACCOUNT_KEY': JSON.stringify(process.env.LTA_ACCOUNT_KEY || ''),
+				'BUILD_GOOGLE_ANALYTICS_ID': JSON.stringify(process.env.GOOGLE_ANALYTICS_ID || ''),
+				'BUILD_PROXY_URL': JSON.stringify(process.env.PROXY_URL || 'http://localhost:3000/api'),
+				'BUILD_SHARE_URL': JSON.stringify(process.env.SHARE_URL || 'http://localhost:8080'),
+				'BUILD_LAST_STATIC_UPDATE': JSON.stringify(process.env.LAST_STATIC_UPDATE || '2026-01-01 00:00:00')
+			}
+		}),
 		replace({
 			preventAssignment: true,
 			'process.env.NODE_ENV': '\'production\'',
@@ -233,6 +259,17 @@ export default [{
 			]
 		}),
 		commonjs(),
+		replace({
+			preventAssignment: true,
+			values: {
+				'BUILD_MAPBOX_ACCESS_TOKEN': JSON.stringify(process.env.MAPBOX_ACCESS_TOKEN || ''),
+				'BUILD_LTA_ACCOUNT_KEY': JSON.stringify(process.env.LTA_ACCOUNT_KEY || ''),
+				'BUILD_GOOGLE_ANALYTICS_ID': JSON.stringify(process.env.GOOGLE_ANALYTICS_ID || ''),
+				'BUILD_PROXY_URL': JSON.stringify(process.env.PROXY_URL || 'http://localhost:3000/api'),
+				'BUILD_SHARE_URL': JSON.stringify(process.env.SHARE_URL || 'http://localhost:8080'),
+				'BUILD_LAST_STATIC_UPDATE': JSON.stringify(process.env.LAST_STATIC_UPDATE || '2026-01-01 00:00:00')
+			}
+		}),
 		replace({
 			preventAssignment: true,
 			'process.env.NODE_ENV': '\'production\'',

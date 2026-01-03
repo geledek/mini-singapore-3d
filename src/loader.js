@@ -30,9 +30,6 @@ const OPERATORS_FOR_TRAININFORMATION = {
     ]
 };
 
-// Singapore doesn't have complex train types like Tokyo
-const TRAINTYPE_REGULAR = 'SMRT.Regular';
-
 function getTimetableFileName(clock) {
     const calendar = clock.getCalendar() === 'Weekday' ? 'weekday' : 'holiday';
 
@@ -52,7 +49,7 @@ function getExtraTimetableFileNames(clock) {
 }
 
 // Singapore trains are simpler - no special ID adjustments needed
-function adjustTrainID(id, type, destination) {
+function adjustTrainID(id) {
     return id;
 }
 
@@ -117,7 +114,7 @@ export function loadTimetableData(dataUrl, clock) {
  * @param {Object} secrets - Secrets object
  * @returns {Object} Loaded data
  */
-export function loadDynamicTrainData(secrets) {
+export function loadDynamicTrainData(secrets = {}) {
     const trainData = new Map(),
         trainInfoData = [],
         urls = [];
@@ -133,13 +130,17 @@ export function loadDynamicTrainData(secrets) {
 
             urls.push(`${url}odpt:Train?odpt:railway=${railways}&acl:consumerKey=${key}`);
         }
+        // eslint-disable-next-line no-warning-comments
+        // TODO: Implement LTA real-time train position data
+        // Singapore LTA DataMall doesn't provide real-time train position data like Tokyo's ODPT
     }
 
-    urls.push(configs.tidUrl);
+    // NOTE: tidUrl removed - was undefined, specific to Tokyo
+    // urls.push(configs.tidUrl);
 
     for (const source of Object.keys(OPERATORS_FOR_TRAININFORMATION)) {
         const url = configs.apiUrl[source],
-            key = secrets[source];
+            key = secrets && secrets[source];
 
         if (source === 'odpt' || source === 'challenge2025') {
             const operators = OPERATORS_FOR_TRAININFORMATION[source]
@@ -148,16 +149,27 @@ export function loadDynamicTrainData(secrets) {
 
             urls.push(`${url}odpt:TrainInformation?odpt:operator=${operators}&acl:consumerKey=${key}`);
         }
+        // eslint-disable-next-line no-warning-comments
+        // TODO: Implement LTA train service alerts
+        // Use configs.trainAlertUrl for Singapore train service alerts
     }
 
-    urls.push(configs.trainInfoUrl);
+    // NOTE: trainInfoUrl removed - was undefined, specific to Tokyo
+    // urls.push(configs.trainInfoUrl);
+
+    // If no URLs (e.g., LTA doesn't have real-time train position data), return empty data
+    if (urls.length === 0) {
+        return Promise.resolve({trainData, trainInfoData});
+    }
 
     return Promise.all(urls.map(loadJSON)).then(data => {
         // Train data from ODPT and Challenge 2025
-        for (const train of [...data.shift(), ...data.shift()]) {
+        const odptTrainData1 = data.shift() || [];
+        const odptTrainData2 = data.shift() || [];
+        for (const train of [...odptTrainData1, ...odptTrainData2]) {
             const trainType = removePrefix(train['odpt:trainType']),
                 destinationStation = removePrefix(train['odpt:destinationStation']),
-                id = adjustTrainID(removePrefix(train['owl:sameAs']), trainType, destinationStation);
+                id = adjustTrainID(removePrefix(train['owl:sameAs']));
 
             trainData.set(id, {
                 id,
@@ -177,7 +189,8 @@ export function loadDynamicTrainData(secrets) {
         }
 
         // Train data from others
-        for (const train of data.shift()) {
+        const otherTrainData = data.shift() || [];
+        for (const train of otherTrainData) {
             const id = train.id;
 
             if (trainData.has(id)) {
@@ -188,7 +201,9 @@ export function loadDynamicTrainData(secrets) {
         }
 
         // Train information data from ODPT and Challenge 2025
-        for (const trainInfo of [...data.shift(), ...data.shift()]) {
+        const odptTrainInfo1 = data.shift() || [];
+        const odptTrainInfo2 = data.shift() || [];
+        for (const trainInfo of [...odptTrainInfo1, ...odptTrainInfo2]) {
             trainInfoData.push({
                 operator: removePrefix(trainInfo['odpt:operator']),
                 railway: removePrefix(trainInfo['odpt:railway']),
@@ -198,7 +213,8 @@ export function loadDynamicTrainData(secrets) {
         }
 
         // Train information data from others
-        for (const trainInfo of data.shift()) {
+        const otherTrainInfo = data.shift() || [];
+        for (const trainInfo of otherTrainInfo) {
             trainInfoData.push(trainInfo);
         }
 
@@ -214,13 +230,14 @@ export function loadDynamicTrainData(secrets) {
  * @returns {Object} Loaded data
  */
 export function loadDynamicFlightData() {
-    return Promise.all([
-        configs.atisUrl,
-        configs.flightUrl
-    ].map(loadJSON)).then(data => ({
-        atisData: data[0],
-        flightData: data[1]
-    }));
+    // eslint-disable-next-line no-warning-comments
+    // TODO: Implement Singapore flight data
+    // Singapore's Changi Airport flight data would need to come from a different source
+    // For now, return empty data to prevent undefined URL errors
+    return Promise.resolve({
+        atisData: [],
+        flightData: []
+    });
 }
 
 export function loadBusData(source, clock, lang) {

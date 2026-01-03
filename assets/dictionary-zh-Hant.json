@@ -90,7 +90,7 @@
 	"transfer-and-wait": "轉車並等待 $1分",
 	"cannot-find-train": "找不到當天到達的火車",
 
-	"description": "<h3>關於Mini Tokyo 3D</h3><p>此數據可視化由<a href=\"https://nagix.github.io\" target=\"_blank\">草薙昭彦</a>提供。此應用程序中公共交通數據的來源是<a href=\"https://www.odpt.org\" target=\"_blank\">公共交通開放數據中心</a>。它們基於公共交通運營商提供的數據。 不能保證數據的準確性和完整性。 請不要就應用程序的內容直接聯繫公共交通運營商。</p><p>有關更多信息，請參閱<a href=\"https://minitokyo3d.com/docs/master/\" target=\"_blank\">Mini Tokyo 3D用戶指南</a>。 源代碼可從<a href=\"https://github.com/nagix/mini-tokyo-3d\" target=\"_blank\">GitHub存儲庫</a>中獲得。</p>",
+	"description": "<h3>關於Mini Singapore 3D</h3><p>Mini Singapore 3D 以<a href=\"https://github.com/nagix/mini-tokyo-3d\" target=\"_blank\">Mini Tokyo 3D</a>（草薙昭彦）為基礎，呈現新加坡公共交通的即時三維地圖。應用程式使用的公共交通資料來自新加坡陸路交通管理局提供的<a href=\"https://datamall.lta.gov.sg\" target=\"_blank\">LTA DataMall</a>。資料源於各營運商，無法保證其準確性與完整性，請勿就應用內容直接聯絡公共交通營運單位。</p>",
 	"static-update": "靜態數據的最新更新",
 	"dynamic-update": "動態數據的最新更新",
 	"gtfs-feed-version": "GTFS來源版本",
