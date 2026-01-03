@@ -5,7 +5,7 @@
 		"r": "SBS.NEL",
 		"n": "001",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -99,7 +99,7 @@
 		"r": "SBS.NEL",
 		"n": "002",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -193,7 +193,7 @@
 		"r": "SBS.NEL",
 		"n": "003",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -287,7 +287,7 @@
 		"r": "SBS.NEL",
 		"n": "004",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -381,7 +381,7 @@
 		"r": "SBS.NEL",
 		"n": "005",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -475,7 +475,7 @@
 		"r": "SBS.NEL",
 		"n": "006",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -569,7 +569,7 @@
 		"r": "SBS.NEL",
 		"n": "007",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -663,7 +663,7 @@
 		"r": "SBS.NEL",
 		"n": "008",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -757,7 +757,7 @@
 		"r": "SBS.NEL",
 		"n": "009",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -851,7 +851,7 @@
 		"r": "SBS.NEL",
 		"n": "010",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -945,7 +945,7 @@
 		"r": "SBS.NEL",
 		"n": "011",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -1039,7 +1039,7 @@
 		"r": "SBS.NEL",
 		"n": "012",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -1133,7 +1133,7 @@
 		"r": "SBS.NEL",
 		"n": "013",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -1227,7 +1227,7 @@
 		"r": "SBS.NEL",
 		"n": "014",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -1321,7 +1321,7 @@
 		"r": "SBS.NEL",
 		"n": "015",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -1415,7 +1415,7 @@
 		"r": "SBS.NEL",
 		"n": "016",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -1509,7 +1509,7 @@
 		"r": "SBS.NEL",
 		"n": "017",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -1603,7 +1603,7 @@
 		"r": "SBS.NEL",
 		"n": "018",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -1697,7 +1697,7 @@
 		"r": "SBS.NEL",
 		"n": "019",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -1791,7 +1791,7 @@
 		"r": "SBS.NEL",
 		"n": "020",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -1885,7 +1885,7 @@
 		"r": "SBS.NEL",
 		"n": "021",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -1979,7 +1979,7 @@
 		"r": "SBS.NEL",
 		"n": "022",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -2073,7 +2073,7 @@
 		"r": "SBS.NEL",
 		"n": "023",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -2167,7 +2167,7 @@
 		"r": "SBS.NEL",
 		"n": "024",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -2261,7 +2261,7 @@
 		"r": "SBS.NEL",
 		"n": "025",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -2355,7 +2355,7 @@
 		"r": "SBS.NEL",
 		"n": "026",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -2449,7 +2449,7 @@
 		"r": "SBS.NEL",
 		"n": "027",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -2543,7 +2543,7 @@
 		"r": "SBS.NEL",
 		"n": "028",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -2637,7 +2637,7 @@
 		"r": "SBS.NEL",
 		"n": "029",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -2731,7 +2731,7 @@
 		"r": "SBS.NEL",
 		"n": "030",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -2825,7 +2825,7 @@
 		"r": "SBS.NEL",
 		"n": "031",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -2919,7 +2919,7 @@
 		"r": "SBS.NEL",
 		"n": "032",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -3013,7 +3013,7 @@
 		"r": "SBS.NEL",
 		"n": "033",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -3107,7 +3107,7 @@
 		"r": "SBS.NEL",
 		"n": "034",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -3201,7 +3201,7 @@
 		"r": "SBS.NEL",
 		"n": "035",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -3295,7 +3295,7 @@
 		"r": "SBS.NEL",
 		"n": "036",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -3389,7 +3389,7 @@
 		"r": "SBS.NEL",
 		"n": "037",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -3483,7 +3483,7 @@
 		"r": "SBS.NEL",
 		"n": "038",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -3577,7 +3577,7 @@
 		"r": "SBS.NEL",
 		"n": "039",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -3671,7 +3671,7 @@
 		"r": "SBS.NEL",
 		"n": "040",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -3765,7 +3765,7 @@
 		"r": "SBS.NEL",
 		"n": "041",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -3859,7 +3859,7 @@
 		"r": "SBS.NEL",
 		"n": "042",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -3953,7 +3953,7 @@
 		"r": "SBS.NEL",
 		"n": "043",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -4047,7 +4047,7 @@
 		"r": "SBS.NEL",
 		"n": "044",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -4141,7 +4141,7 @@
 		"r": "SBS.NEL",
 		"n": "045",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -4235,7 +4235,7 @@
 		"r": "SBS.NEL",
 		"n": "046",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -4329,7 +4329,7 @@
 		"r": "SBS.NEL",
 		"n": "047",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -4423,7 +4423,7 @@
 		"r": "SBS.NEL",
 		"n": "048",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -4517,7 +4517,7 @@
 		"r": "SBS.NEL",
 		"n": "049",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -4611,7 +4611,7 @@
 		"r": "SBS.NEL",
 		"n": "050",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -4705,7 +4705,7 @@
 		"r": "SBS.NEL",
 		"n": "051",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -4799,7 +4799,7 @@
 		"r": "SBS.NEL",
 		"n": "052",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -4893,7 +4893,7 @@
 		"r": "SBS.NEL",
 		"n": "053",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -4987,7 +4987,7 @@
 		"r": "SBS.NEL",
 		"n": "054",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -5081,7 +5081,7 @@
 		"r": "SBS.NEL",
 		"n": "055",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -5175,7 +5175,7 @@
 		"r": "SBS.NEL",
 		"n": "056",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -5269,7 +5269,7 @@
 		"r": "SBS.NEL",
 		"n": "057",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -5363,7 +5363,7 @@
 		"r": "SBS.NEL",
 		"n": "058",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -5457,7 +5457,7 @@
 		"r": "SBS.NEL",
 		"n": "059",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -5551,7 +5551,7 @@
 		"r": "SBS.NEL",
 		"n": "060",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -5645,7 +5645,7 @@
 		"r": "SBS.NEL",
 		"n": "061",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -5739,7 +5739,7 @@
 		"r": "SBS.NEL",
 		"n": "062",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -5833,7 +5833,7 @@
 		"r": "SBS.NEL",
 		"n": "063",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -5927,7 +5927,7 @@
 		"r": "SBS.NEL",
 		"n": "064",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -6021,7 +6021,7 @@
 		"r": "SBS.NEL",
 		"n": "065",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -6115,7 +6115,7 @@
 		"r": "SBS.NEL",
 		"n": "066",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -6209,7 +6209,7 @@
 		"r": "SBS.NEL",
 		"n": "067",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -6303,7 +6303,7 @@
 		"r": "SBS.NEL",
 		"n": "068",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -6397,7 +6397,7 @@
 		"r": "SBS.NEL",
 		"n": "069",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -6491,7 +6491,7 @@
 		"r": "SBS.NEL",
 		"n": "070",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -6585,7 +6585,7 @@
 		"r": "SBS.NEL",
 		"n": "071",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -6679,7 +6679,7 @@
 		"r": "SBS.NEL",
 		"n": "072",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -6773,7 +6773,7 @@
 		"r": "SBS.NEL",
 		"n": "073",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -6867,7 +6867,7 @@
 		"r": "SBS.NEL",
 		"n": "074",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -6961,7 +6961,7 @@
 		"r": "SBS.NEL",
 		"n": "075",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -7055,7 +7055,7 @@
 		"r": "SBS.NEL",
 		"n": "076",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -7149,7 +7149,7 @@
 		"r": "SBS.NEL",
 		"n": "077",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -7243,7 +7243,7 @@
 		"r": "SBS.NEL",
 		"n": "078",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -7337,7 +7337,7 @@
 		"r": "SBS.NEL",
 		"n": "079",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -7431,7 +7431,7 @@
 		"r": "SBS.NEL",
 		"n": "080",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -7525,7 +7525,7 @@
 		"r": "SBS.NEL",
 		"n": "081",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -7619,7 +7619,7 @@
 		"r": "SBS.NEL",
 		"n": "082",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -7713,7 +7713,7 @@
 		"r": "SBS.NEL",
 		"n": "083",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -7807,7 +7807,7 @@
 		"r": "SBS.NEL",
 		"n": "084",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -7901,7 +7901,7 @@
 		"r": "SBS.NEL",
 		"n": "085",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -7995,7 +7995,7 @@
 		"r": "SBS.NEL",
 		"n": "086",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -8089,7 +8089,7 @@
 		"r": "SBS.NEL",
 		"n": "087",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -8183,7 +8183,7 @@
 		"r": "SBS.NEL",
 		"n": "088",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -8277,7 +8277,7 @@
 		"r": "SBS.NEL",
 		"n": "089",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -8371,7 +8371,7 @@
 		"r": "SBS.NEL",
 		"n": "090",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -8465,7 +8465,7 @@
 		"r": "SBS.NEL",
 		"n": "091",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -8559,7 +8559,7 @@
 		"r": "SBS.NEL",
 		"n": "092",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -8653,7 +8653,7 @@
 		"r": "SBS.NEL",
 		"n": "093",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -8747,7 +8747,7 @@
 		"r": "SBS.NEL",
 		"n": "094",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -8841,7 +8841,7 @@
 		"r": "SBS.NEL",
 		"n": "095",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -8935,7 +8935,7 @@
 		"r": "SBS.NEL",
 		"n": "096",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -9029,7 +9029,7 @@
 		"r": "SBS.NEL",
 		"n": "097",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -9123,7 +9123,7 @@
 		"r": "SBS.NEL",
 		"n": "098",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -9217,7 +9217,7 @@
 		"r": "SBS.NEL",
 		"n": "099",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -9311,7 +9311,7 @@
 		"r": "SBS.NEL",
 		"n": "100",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -9405,7 +9405,7 @@
 		"r": "SBS.NEL",
 		"n": "101",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -9499,7 +9499,7 @@
 		"r": "SBS.NEL",
 		"n": "102",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -9593,7 +9593,7 @@
 		"r": "SBS.NEL",
 		"n": "103",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -9687,7 +9687,7 @@
 		"r": "SBS.NEL",
 		"n": "104",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -9781,7 +9781,7 @@
 		"r": "SBS.NEL",
 		"n": "105",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -9875,7 +9875,7 @@
 		"r": "SBS.NEL",
 		"n": "106",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -9969,7 +9969,7 @@
 		"r": "SBS.NEL",
 		"n": "107",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -10063,7 +10063,7 @@
 		"r": "SBS.NEL",
 		"n": "108",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -10157,7 +10157,7 @@
 		"r": "SBS.NEL",
 		"n": "109",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -10251,7 +10251,7 @@
 		"r": "SBS.NEL",
 		"n": "110",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -10345,7 +10345,7 @@
 		"r": "SBS.NEL",
 		"n": "111",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -10439,7 +10439,7 @@
 		"r": "SBS.NEL",
 		"n": "112",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -10533,7 +10533,7 @@
 		"r": "SBS.NEL",
 		"n": "113",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -10627,7 +10627,7 @@
 		"r": "SBS.NEL",
 		"n": "114",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -10721,7 +10721,7 @@
 		"r": "SBS.NEL",
 		"n": "115",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -10815,7 +10815,7 @@
 		"r": "SBS.NEL",
 		"n": "116",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -10909,7 +10909,7 @@
 		"r": "SBS.NEL",
 		"n": "117",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -11003,7 +11003,7 @@
 		"r": "SBS.NEL",
 		"n": "118",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -11097,7 +11097,7 @@
 		"r": "SBS.NEL",
 		"n": "119",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -11191,7 +11191,7 @@
 		"r": "SBS.NEL",
 		"n": "120",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -11285,7 +11285,7 @@
 		"r": "SBS.NEL",
 		"n": "121",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -11379,7 +11379,7 @@
 		"r": "SBS.NEL",
 		"n": "122",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -11473,7 +11473,7 @@
 		"r": "SBS.NEL",
 		"n": "123",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -11567,7 +11567,7 @@
 		"r": "SBS.NEL",
 		"n": "124",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -11661,7 +11661,7 @@
 		"r": "SBS.NEL",
 		"n": "125",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -11755,7 +11755,7 @@
 		"r": "SBS.NEL",
 		"n": "126",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -11849,7 +11849,7 @@
 		"r": "SBS.NEL",
 		"n": "127",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -11943,7 +11943,7 @@
 		"r": "SBS.NEL",
 		"n": "128",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -12037,7 +12037,7 @@
 		"r": "SBS.NEL",
 		"n": "129",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -12131,7 +12131,7 @@
 		"r": "SBS.NEL",
 		"n": "130",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -12225,7 +12225,7 @@
 		"r": "SBS.NEL",
 		"n": "131",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -12319,7 +12319,7 @@
 		"r": "SBS.NEL",
 		"n": "132",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -12413,7 +12413,7 @@
 		"r": "SBS.NEL",
 		"n": "133",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -12507,7 +12507,7 @@
 		"r": "SBS.NEL",
 		"n": "134",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -12601,7 +12601,7 @@
 		"r": "SBS.NEL",
 		"n": "135",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -12695,7 +12695,7 @@
 		"r": "SBS.NEL",
 		"n": "136",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -12789,7 +12789,7 @@
 		"r": "SBS.NEL",
 		"n": "137",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -12883,7 +12883,7 @@
 		"r": "SBS.NEL",
 		"n": "138",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -12977,7 +12977,7 @@
 		"r": "SBS.NEL",
 		"n": "139",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -13071,7 +13071,7 @@
 		"r": "SBS.NEL",
 		"n": "140",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -13165,7 +13165,7 @@
 		"r": "SBS.NEL",
 		"n": "141",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -13259,7 +13259,7 @@
 		"r": "SBS.NEL",
 		"n": "142",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -13353,7 +13353,7 @@
 		"r": "SBS.NEL",
 		"n": "143",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -13447,7 +13447,7 @@
 		"r": "SBS.NEL",
 		"n": "144",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -13541,7 +13541,7 @@
 		"r": "SBS.NEL",
 		"n": "145",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -13635,7 +13635,7 @@
 		"r": "SBS.NEL",
 		"n": "146",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -13729,7 +13729,7 @@
 		"r": "SBS.NEL",
 		"n": "147",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -13823,7 +13823,7 @@
 		"r": "SBS.NEL",
 		"n": "148",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -13917,7 +13917,7 @@
 		"r": "SBS.NEL",
 		"n": "149",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -14011,7 +14011,7 @@
 		"r": "SBS.NEL",
 		"n": "150",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -14105,7 +14105,7 @@
 		"r": "SBS.NEL",
 		"n": "151",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -14199,7 +14199,7 @@
 		"r": "SBS.NEL",
 		"n": "152",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -14293,7 +14293,7 @@
 		"r": "SBS.NEL",
 		"n": "153",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -14387,7 +14387,7 @@
 		"r": "SBS.NEL",
 		"n": "154",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -14481,7 +14481,7 @@
 		"r": "SBS.NEL",
 		"n": "155",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -14575,7 +14575,7 @@
 		"r": "SBS.NEL",
 		"n": "156",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -14669,7 +14669,7 @@
 		"r": "SBS.NEL",
 		"n": "157",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -14763,7 +14763,7 @@
 		"r": "SBS.NEL",
 		"n": "158",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -14857,7 +14857,7 @@
 		"r": "SBS.NEL",
 		"n": "159",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -14951,7 +14951,7 @@
 		"r": "SBS.NEL",
 		"n": "160",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -15045,7 +15045,7 @@
 		"r": "SBS.NEL",
 		"n": "161",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -15139,7 +15139,7 @@
 		"r": "SBS.NEL",
 		"n": "162",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -15233,7 +15233,7 @@
 		"r": "SBS.NEL",
 		"n": "163",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -15327,7 +15327,7 @@
 		"r": "SBS.NEL",
 		"n": "164",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -15421,7 +15421,7 @@
 		"r": "SBS.NEL",
 		"n": "165",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -15515,7 +15515,7 @@
 		"r": "SBS.NEL",
 		"n": "166",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -15609,7 +15609,7 @@
 		"r": "SBS.NEL",
 		"n": "167",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -15703,7 +15703,7 @@
 		"r": "SBS.NEL",
 		"n": "168",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -15797,7 +15797,7 @@
 		"r": "SBS.NEL",
 		"n": "169",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -15891,7 +15891,7 @@
 		"r": "SBS.NEL",
 		"n": "170",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -15985,7 +15985,7 @@
 		"r": "SBS.NEL",
 		"n": "171",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -16079,7 +16079,7 @@
 		"r": "SBS.NEL",
 		"n": "172",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -16173,7 +16173,7 @@
 		"r": "SBS.NEL",
 		"n": "173",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -16267,7 +16267,7 @@
 		"r": "SBS.NEL",
 		"n": "174",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -16361,7 +16361,7 @@
 		"r": "SBS.NEL",
 		"n": "175",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -16455,7 +16455,7 @@
 		"r": "SBS.NEL",
 		"n": "176",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -16549,7 +16549,7 @@
 		"r": "SBS.NEL",
 		"n": "177",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -16643,7 +16643,7 @@
 		"r": "SBS.NEL",
 		"n": "178",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -16737,7 +16737,7 @@
 		"r": "SBS.NEL",
 		"n": "179",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -16831,7 +16831,7 @@
 		"r": "SBS.NEL",
 		"n": "180",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -16925,7 +16925,7 @@
 		"r": "SBS.NEL",
 		"n": "181",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -17019,7 +17019,7 @@
 		"r": "SBS.NEL",
 		"n": "182",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -17113,7 +17113,7 @@
 		"r": "SBS.NEL",
 		"n": "183",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -17207,7 +17207,7 @@
 		"r": "SBS.NEL",
 		"n": "184",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -17301,7 +17301,7 @@
 		"r": "SBS.NEL",
 		"n": "185",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -17395,7 +17395,7 @@
 		"r": "SBS.NEL",
 		"n": "186",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -17489,7 +17489,7 @@
 		"r": "SBS.NEL",
 		"n": "187",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -17583,7 +17583,7 @@
 		"r": "SBS.NEL",
 		"n": "188",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -17677,7 +17677,7 @@
 		"r": "SBS.NEL",
 		"n": "189",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -17771,7 +17771,7 @@
 		"r": "SBS.NEL",
 		"n": "190",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -17865,7 +17865,7 @@
 		"r": "SBS.NEL",
 		"n": "191",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -17959,7 +17959,7 @@
 		"r": "SBS.NEL",
 		"n": "192",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -18053,7 +18053,7 @@
 		"r": "SBS.NEL",
 		"n": "193",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -18147,7 +18147,7 @@
 		"r": "SBS.NEL",
 		"n": "194",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -18241,7 +18241,7 @@
 		"r": "SBS.NEL",
 		"n": "195",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -18335,7 +18335,7 @@
 		"r": "SBS.NEL",
 		"n": "196",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -18429,7 +18429,7 @@
 		"r": "SBS.NEL",
 		"n": "197",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -18523,7 +18523,7 @@
 		"r": "SBS.NEL",
 		"n": "198",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -18617,7 +18617,7 @@
 		"r": "SBS.NEL",
 		"n": "199",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -18711,7 +18711,7 @@
 		"r": "SBS.NEL",
 		"n": "200",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -18805,7 +18805,7 @@
 		"r": "SBS.NEL",
 		"n": "201",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -18899,7 +18899,7 @@
 		"r": "SBS.NEL",
 		"n": "202",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -18993,7 +18993,7 @@
 		"r": "SBS.NEL",
 		"n": "203",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -19087,7 +19087,7 @@
 		"r": "SBS.NEL",
 		"n": "204",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -19181,7 +19181,7 @@
 		"r": "SBS.NEL",
 		"n": "205",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -19275,7 +19275,7 @@
 		"r": "SBS.NEL",
 		"n": "206",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -19369,7 +19369,7 @@
 		"r": "SBS.NEL",
 		"n": "207",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -19463,7 +19463,7 @@
 		"r": "SBS.NEL",
 		"n": "208",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -19557,7 +19557,7 @@
 		"r": "SBS.NEL",
 		"n": "209",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -19651,7 +19651,7 @@
 		"r": "SBS.NEL",
 		"n": "210",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -19745,7 +19745,7 @@
 		"r": "SBS.NEL",
 		"n": "211",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -19839,7 +19839,7 @@
 		"r": "SBS.NEL",
 		"n": "212",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -19933,7 +19933,7 @@
 		"r": "SBS.NEL",
 		"n": "213",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -20027,7 +20027,7 @@
 		"r": "SBS.NEL",
 		"n": "214",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -20121,7 +20121,7 @@
 		"r": "SBS.NEL",
 		"n": "215",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -20215,7 +20215,7 @@
 		"r": "SBS.NEL",
 		"n": "216",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -20309,7 +20309,7 @@
 		"r": "SBS.NEL",
 		"n": "217",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -20403,7 +20403,7 @@
 		"r": "SBS.NEL",
 		"n": "218",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -20497,7 +20497,7 @@
 		"r": "SBS.NEL",
 		"n": "219",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -20591,7 +20591,7 @@
 		"r": "SBS.NEL",
 		"n": "220",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -20685,7 +20685,7 @@
 		"r": "SBS.NEL",
 		"n": "221",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -20779,7 +20779,7 @@
 		"r": "SBS.NEL",
 		"n": "222",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -20873,7 +20873,7 @@
 		"r": "SBS.NEL",
 		"n": "223",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -20967,7 +20967,7 @@
 		"r": "SBS.NEL",
 		"n": "224",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -21061,7 +21061,7 @@
 		"r": "SBS.NEL",
 		"n": "225",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -21155,7 +21155,7 @@
 		"r": "SBS.NEL",
 		"n": "226",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -21249,7 +21249,7 @@
 		"r": "SBS.NEL",
 		"n": "227",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -21343,7 +21343,7 @@
 		"r": "SBS.NEL",
 		"n": "228",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -21437,7 +21437,7 @@
 		"r": "SBS.NEL",
 		"n": "229",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -21531,7 +21531,7 @@
 		"r": "SBS.NEL",
 		"n": "230",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -21625,7 +21625,7 @@
 		"r": "SBS.NEL",
 		"n": "231",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -21719,7 +21719,7 @@
 		"r": "SBS.NEL",
 		"n": "232",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -21813,7 +21813,7 @@
 		"r": "SBS.NEL",
 		"n": "233",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -21907,7 +21907,7 @@
 		"r": "SBS.NEL",
 		"n": "234",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -22001,7 +22001,7 @@
 		"r": "SBS.NEL",
 		"n": "235",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -22095,7 +22095,7 @@
 		"r": "SBS.NEL",
 		"n": "236",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -22189,7 +22189,7 @@
 		"r": "SBS.NEL",
 		"n": "237",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -22283,7 +22283,7 @@
 		"r": "SBS.NEL",
 		"n": "238",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -22377,7 +22377,7 @@
 		"r": "SBS.NEL",
 		"n": "239",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -22471,7 +22471,7 @@
 		"r": "SBS.NEL",
 		"n": "240",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -22565,7 +22565,7 @@
 		"r": "SBS.NEL",
 		"n": "241",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -22659,7 +22659,7 @@
 		"r": "SBS.NEL",
 		"n": "242",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -22753,7 +22753,7 @@
 		"r": "SBS.NEL",
 		"n": "243",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -22847,7 +22847,7 @@
 		"r": "SBS.NEL",
 		"n": "244",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -22941,7 +22941,7 @@
 		"r": "SBS.NEL",
 		"n": "245",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -23035,7 +23035,7 @@
 		"r": "SBS.NEL",
 		"n": "246",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -23129,7 +23129,7 @@
 		"r": "SBS.NEL",
 		"n": "247",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -23223,7 +23223,7 @@
 		"r": "SBS.NEL",
 		"n": "248",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -23317,7 +23317,7 @@
 		"r": "SBS.NEL",
 		"n": "249",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -23411,7 +23411,7 @@
 		"r": "SBS.NEL",
 		"n": "250",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -23505,7 +23505,7 @@
 		"r": "SBS.NEL",
 		"n": "251",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -23599,7 +23599,7 @@
 		"r": "SBS.NEL",
 		"n": "252",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -23693,7 +23693,7 @@
 		"r": "SBS.NEL",
 		"n": "253",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -23787,7 +23787,7 @@
 		"r": "SBS.NEL",
 		"n": "254",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -23881,7 +23881,7 @@
 		"r": "SBS.NEL",
 		"n": "255",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -23975,7 +23975,7 @@
 		"r": "SBS.NEL",
 		"n": "256",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -24069,7 +24069,7 @@
 		"r": "SBS.NEL",
 		"n": "257",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -24163,7 +24163,7 @@
 		"r": "SBS.NEL",
 		"n": "258",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -24257,7 +24257,7 @@
 		"r": "SBS.NEL",
 		"n": "259",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -24351,7 +24351,7 @@
 		"r": "SBS.NEL",
 		"n": "260",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -24445,7 +24445,7 @@
 		"r": "SBS.NEL",
 		"n": "261",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -24539,7 +24539,7 @@
 		"r": "SBS.NEL",
 		"n": "262",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -24633,7 +24633,7 @@
 		"r": "SBS.NEL",
 		"n": "263",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -24727,7 +24727,7 @@
 		"r": "SBS.NEL",
 		"n": "264",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -24821,7 +24821,7 @@
 		"r": "SBS.NEL",
 		"n": "265",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -24915,7 +24915,7 @@
 		"r": "SBS.NEL",
 		"n": "266",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -25009,7 +25009,7 @@
 		"r": "SBS.NEL",
 		"n": "267",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -25103,7 +25103,7 @@
 		"r": "SBS.NEL",
 		"n": "268",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -25197,7 +25197,7 @@
 		"r": "SBS.NEL",
 		"n": "269",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -25291,7 +25291,7 @@
 		"r": "SBS.NEL",
 		"n": "270",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -25385,7 +25385,7 @@
 		"r": "SBS.NEL",
 		"n": "271",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -25479,7 +25479,7 @@
 		"r": "SBS.NEL",
 		"n": "272",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -25573,7 +25573,7 @@
 		"r": "SBS.NEL",
 		"n": "273",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -25667,7 +25667,7 @@
 		"r": "SBS.NEL",
 		"n": "274",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -25761,7 +25761,7 @@
 		"r": "SBS.NEL",
 		"n": "275",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -25855,7 +25855,7 @@
 		"r": "SBS.NEL",
 		"n": "276",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -25949,7 +25949,7 @@
 		"r": "SBS.NEL",
 		"n": "277",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -26043,7 +26043,7 @@
 		"r": "SBS.NEL",
 		"n": "278",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -26137,7 +26137,7 @@
 		"r": "SBS.NEL",
 		"n": "279",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -26231,7 +26231,7 @@
 		"r": "SBS.NEL",
 		"n": "280",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -26325,7 +26325,7 @@
 		"r": "SBS.NEL",
 		"n": "281",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -26419,7 +26419,7 @@
 		"r": "SBS.NEL",
 		"n": "282",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -26513,7 +26513,7 @@
 		"r": "SBS.NEL",
 		"n": "283",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -26607,7 +26607,7 @@
 		"r": "SBS.NEL",
 		"n": "284",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -26701,7 +26701,7 @@
 		"r": "SBS.NEL",
 		"n": "285",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -26795,7 +26795,7 @@
 		"r": "SBS.NEL",
 		"n": "286",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -26889,7 +26889,7 @@
 		"r": "SBS.NEL",
 		"n": "287",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -26983,7 +26983,7 @@
 		"r": "SBS.NEL",
 		"n": "288",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -27077,7 +27077,7 @@
 		"r": "SBS.NEL",
 		"n": "289",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -27171,7 +27171,7 @@
 		"r": "SBS.NEL",
 		"n": "290",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -27265,7 +27265,7 @@
 		"r": "SBS.NEL",
 		"n": "291",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -27359,7 +27359,7 @@
 		"r": "SBS.NEL",
 		"n": "292",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -27453,7 +27453,7 @@
 		"r": "SBS.NEL",
 		"n": "293",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -27547,7 +27547,7 @@
 		"r": "SBS.NEL",
 		"n": "294",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -27641,7 +27641,7 @@
 		"r": "SBS.NEL",
 		"n": "295",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -27735,7 +27735,7 @@
 		"r": "SBS.NEL",
 		"n": "296",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -27829,7 +27829,7 @@
 		"r": "SBS.NEL",
 		"n": "297",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -27923,7 +27923,7 @@
 		"r": "SBS.NEL",
 		"n": "298",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -28017,7 +28017,7 @@
 		"r": "SBS.NEL",
 		"n": "299",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -28111,7 +28111,7 @@
 		"r": "SBS.NEL",
 		"n": "300",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -28205,7 +28205,7 @@
 		"r": "SBS.NEL",
 		"n": "301",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -28299,7 +28299,7 @@
 		"r": "SBS.NEL",
 		"n": "302",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -28393,7 +28393,7 @@
 		"r": "SBS.NEL",
 		"n": "303",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -28487,7 +28487,7 @@
 		"r": "SBS.NEL",
 		"n": "304",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -28581,7 +28581,7 @@
 		"r": "SBS.NEL",
 		"n": "305",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -28675,7 +28675,7 @@
 		"r": "SBS.NEL",
 		"n": "306",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -28769,7 +28769,7 @@
 		"r": "SBS.NEL",
 		"n": "307",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -28863,7 +28863,7 @@
 		"r": "SBS.NEL",
 		"n": "308",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],
@@ -28957,7 +28957,7 @@
 		"r": "SBS.NEL",
 		"n": "309",
 		"y": "default",
-		"d": "SBS.NEL.NorthEastbound",
+		"d": "SBS.NEL.SouthWestbound",
 		"os": [
 			"SBS.NEL.Punggol"
 		],
@@ -29051,7 +29051,7 @@
 		"r": "SBS.NEL",
 		"n": "310",
 		"y": "default",
-		"d": "SBS.NEL.SouthWestbound",
+		"d": "SBS.NEL.NorthEastbound",
 		"os": [
 			"SBS.NEL.HarbourFront"
 		],

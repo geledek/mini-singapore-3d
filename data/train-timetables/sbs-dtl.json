@@ -5,7 +5,7 @@
 		"r": "SBS.DTL",
 		"n": "001",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -199,7 +199,7 @@
 		"r": "SBS.DTL",
 		"n": "002",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -393,7 +393,7 @@
 		"r": "SBS.DTL",
 		"n": "003",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -587,7 +587,7 @@
 		"r": "SBS.DTL",
 		"n": "004",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -781,7 +781,7 @@
 		"r": "SBS.DTL",
 		"n": "005",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -975,7 +975,7 @@
 		"r": "SBS.DTL",
 		"n": "006",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -1169,7 +1169,7 @@
 		"r": "SBS.DTL",
 		"n": "007",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -1363,7 +1363,7 @@
 		"r": "SBS.DTL",
 		"n": "008",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -1557,7 +1557,7 @@
 		"r": "SBS.DTL",
 		"n": "009",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -1751,7 +1751,7 @@
 		"r": "SBS.DTL",
 		"n": "010",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -1945,7 +1945,7 @@
 		"r": "SBS.DTL",
 		"n": "011",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -2139,7 +2139,7 @@
 		"r": "SBS.DTL",
 		"n": "012",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -2333,7 +2333,7 @@
 		"r": "SBS.DTL",
 		"n": "013",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -2527,7 +2527,7 @@
 		"r": "SBS.DTL",
 		"n": "014",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -2721,7 +2721,7 @@
 		"r": "SBS.DTL",
 		"n": "015",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -2915,7 +2915,7 @@
 		"r": "SBS.DTL",
 		"n": "016",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -3109,7 +3109,7 @@
 		"r": "SBS.DTL",
 		"n": "017",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -3303,7 +3303,7 @@
 		"r": "SBS.DTL",
 		"n": "018",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -3497,7 +3497,7 @@
 		"r": "SBS.DTL",
 		"n": "019",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -3691,7 +3691,7 @@
 		"r": "SBS.DTL",
 		"n": "020",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -3885,7 +3885,7 @@
 		"r": "SBS.DTL",
 		"n": "021",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -4079,7 +4079,7 @@
 		"r": "SBS.DTL",
 		"n": "022",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -4273,7 +4273,7 @@
 		"r": "SBS.DTL",
 		"n": "023",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -4467,7 +4467,7 @@
 		"r": "SBS.DTL",
 		"n": "024",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -4661,7 +4661,7 @@
 		"r": "SBS.DTL",
 		"n": "025",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -4855,7 +4855,7 @@
 		"r": "SBS.DTL",
 		"n": "026",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -5049,7 +5049,7 @@
 		"r": "SBS.DTL",
 		"n": "027",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -5243,7 +5243,7 @@
 		"r": "SBS.DTL",
 		"n": "028",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -5437,7 +5437,7 @@
 		"r": "SBS.DTL",
 		"n": "029",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -5631,7 +5631,7 @@
 		"r": "SBS.DTL",
 		"n": "030",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -5825,7 +5825,7 @@
 		"r": "SBS.DTL",
 		"n": "031",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -6019,7 +6019,7 @@
 		"r": "SBS.DTL",
 		"n": "032",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -6213,7 +6213,7 @@
 		"r": "SBS.DTL",
 		"n": "033",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -6407,7 +6407,7 @@
 		"r": "SBS.DTL",
 		"n": "034",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -6601,7 +6601,7 @@
 		"r": "SBS.DTL",
 		"n": "035",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -6795,7 +6795,7 @@
 		"r": "SBS.DTL",
 		"n": "036",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -6989,7 +6989,7 @@
 		"r": "SBS.DTL",
 		"n": "037",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -7183,7 +7183,7 @@
 		"r": "SBS.DTL",
 		"n": "038",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -7377,7 +7377,7 @@
 		"r": "SBS.DTL",
 		"n": "039",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -7571,7 +7571,7 @@
 		"r": "SBS.DTL",
 		"n": "040",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -7765,7 +7765,7 @@
 		"r": "SBS.DTL",
 		"n": "041",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -7959,7 +7959,7 @@
 		"r": "SBS.DTL",
 		"n": "042",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -8153,7 +8153,7 @@
 		"r": "SBS.DTL",
 		"n": "043",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -8347,7 +8347,7 @@
 		"r": "SBS.DTL",
 		"n": "044",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -8541,7 +8541,7 @@
 		"r": "SBS.DTL",
 		"n": "045",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -8735,7 +8735,7 @@
 		"r": "SBS.DTL",
 		"n": "046",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -8929,7 +8929,7 @@
 		"r": "SBS.DTL",
 		"n": "047",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -9123,7 +9123,7 @@
 		"r": "SBS.DTL",
 		"n": "048",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -9317,7 +9317,7 @@
 		"r": "SBS.DTL",
 		"n": "049",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -9511,7 +9511,7 @@
 		"r": "SBS.DTL",
 		"n": "050",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -9705,7 +9705,7 @@
 		"r": "SBS.DTL",
 		"n": "051",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -9899,7 +9899,7 @@
 		"r": "SBS.DTL",
 		"n": "052",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -10093,7 +10093,7 @@
 		"r": "SBS.DTL",
 		"n": "053",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -10287,7 +10287,7 @@
 		"r": "SBS.DTL",
 		"n": "054",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -10481,7 +10481,7 @@
 		"r": "SBS.DTL",
 		"n": "055",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -10675,7 +10675,7 @@
 		"r": "SBS.DTL",
 		"n": "056",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -10869,7 +10869,7 @@
 		"r": "SBS.DTL",
 		"n": "057",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -11063,7 +11063,7 @@
 		"r": "SBS.DTL",
 		"n": "058",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -11257,7 +11257,7 @@
 		"r": "SBS.DTL",
 		"n": "059",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -11451,7 +11451,7 @@
 		"r": "SBS.DTL",
 		"n": "060",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -11645,7 +11645,7 @@
 		"r": "SBS.DTL",
 		"n": "061",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -11839,7 +11839,7 @@
 		"r": "SBS.DTL",
 		"n": "062",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -12033,7 +12033,7 @@
 		"r": "SBS.DTL",
 		"n": "063",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -12227,7 +12227,7 @@
 		"r": "SBS.DTL",
 		"n": "064",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -12421,7 +12421,7 @@
 		"r": "SBS.DTL",
 		"n": "065",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -12615,7 +12615,7 @@
 		"r": "SBS.DTL",
 		"n": "066",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -12809,7 +12809,7 @@
 		"r": "SBS.DTL",
 		"n": "067",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -13003,7 +13003,7 @@
 		"r": "SBS.DTL",
 		"n": "068",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -13197,7 +13197,7 @@
 		"r": "SBS.DTL",
 		"n": "069",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -13391,7 +13391,7 @@
 		"r": "SBS.DTL",
 		"n": "070",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -13585,7 +13585,7 @@
 		"r": "SBS.DTL",
 		"n": "071",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -13779,7 +13779,7 @@
 		"r": "SBS.DTL",
 		"n": "072",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -13973,7 +13973,7 @@
 		"r": "SBS.DTL",
 		"n": "073",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -14167,7 +14167,7 @@
 		"r": "SBS.DTL",
 		"n": "074",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -14361,7 +14361,7 @@
 		"r": "SBS.DTL",
 		"n": "075",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -14555,7 +14555,7 @@
 		"r": "SBS.DTL",
 		"n": "076",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -14749,7 +14749,7 @@
 		"r": "SBS.DTL",
 		"n": "077",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -14943,7 +14943,7 @@
 		"r": "SBS.DTL",
 		"n": "078",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -15137,7 +15137,7 @@
 		"r": "SBS.DTL",
 		"n": "079",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -15331,7 +15331,7 @@
 		"r": "SBS.DTL",
 		"n": "080",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -15525,7 +15525,7 @@
 		"r": "SBS.DTL",
 		"n": "081",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -15719,7 +15719,7 @@
 		"r": "SBS.DTL",
 		"n": "082",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -15913,7 +15913,7 @@
 		"r": "SBS.DTL",
 		"n": "083",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -16107,7 +16107,7 @@
 		"r": "SBS.DTL",
 		"n": "084",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -16301,7 +16301,7 @@
 		"r": "SBS.DTL",
 		"n": "085",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -16495,7 +16495,7 @@
 		"r": "SBS.DTL",
 		"n": "086",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -16689,7 +16689,7 @@
 		"r": "SBS.DTL",
 		"n": "087",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -16883,7 +16883,7 @@
 		"r": "SBS.DTL",
 		"n": "088",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -17077,7 +17077,7 @@
 		"r": "SBS.DTL",
 		"n": "089",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -17271,7 +17271,7 @@
 		"r": "SBS.DTL",
 		"n": "090",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -17465,7 +17465,7 @@
 		"r": "SBS.DTL",
 		"n": "091",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -17659,7 +17659,7 @@
 		"r": "SBS.DTL",
 		"n": "092",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -17853,7 +17853,7 @@
 		"r": "SBS.DTL",
 		"n": "093",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -18047,7 +18047,7 @@
 		"r": "SBS.DTL",
 		"n": "094",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -18241,7 +18241,7 @@
 		"r": "SBS.DTL",
 		"n": "095",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -18435,7 +18435,7 @@
 		"r": "SBS.DTL",
 		"n": "096",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -18629,7 +18629,7 @@
 		"r": "SBS.DTL",
 		"n": "097",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -18823,7 +18823,7 @@
 		"r": "SBS.DTL",
 		"n": "098",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -19017,7 +19017,7 @@
 		"r": "SBS.DTL",
 		"n": "099",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -19211,7 +19211,7 @@
 		"r": "SBS.DTL",
 		"n": "100",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -19405,7 +19405,7 @@
 		"r": "SBS.DTL",
 		"n": "101",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -19599,7 +19599,7 @@
 		"r": "SBS.DTL",
 		"n": "102",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -19793,7 +19793,7 @@
 		"r": "SBS.DTL",
 		"n": "103",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -19987,7 +19987,7 @@
 		"r": "SBS.DTL",
 		"n": "104",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -20181,7 +20181,7 @@
 		"r": "SBS.DTL",
 		"n": "105",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -20375,7 +20375,7 @@
 		"r": "SBS.DTL",
 		"n": "106",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -20569,7 +20569,7 @@
 		"r": "SBS.DTL",
 		"n": "107",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -20763,7 +20763,7 @@
 		"r": "SBS.DTL",
 		"n": "108",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -20957,7 +20957,7 @@
 		"r": "SBS.DTL",
 		"n": "109",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -21151,7 +21151,7 @@
 		"r": "SBS.DTL",
 		"n": "110",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -21345,7 +21345,7 @@
 		"r": "SBS.DTL",
 		"n": "111",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -21539,7 +21539,7 @@
 		"r": "SBS.DTL",
 		"n": "112",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -21733,7 +21733,7 @@
 		"r": "SBS.DTL",
 		"n": "113",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -21927,7 +21927,7 @@
 		"r": "SBS.DTL",
 		"n": "114",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -22121,7 +22121,7 @@
 		"r": "SBS.DTL",
 		"n": "115",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -22315,7 +22315,7 @@
 		"r": "SBS.DTL",
 		"n": "116",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -22509,7 +22509,7 @@
 		"r": "SBS.DTL",
 		"n": "117",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -22703,7 +22703,7 @@
 		"r": "SBS.DTL",
 		"n": "118",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -22897,7 +22897,7 @@
 		"r": "SBS.DTL",
 		"n": "119",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -23091,7 +23091,7 @@
 		"r": "SBS.DTL",
 		"n": "120",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -23285,7 +23285,7 @@
 		"r": "SBS.DTL",
 		"n": "121",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -23479,7 +23479,7 @@
 		"r": "SBS.DTL",
 		"n": "122",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -23673,7 +23673,7 @@
 		"r": "SBS.DTL",
 		"n": "123",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -23867,7 +23867,7 @@
 		"r": "SBS.DTL",
 		"n": "124",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -24061,7 +24061,7 @@
 		"r": "SBS.DTL",
 		"n": "125",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -24255,7 +24255,7 @@
 		"r": "SBS.DTL",
 		"n": "126",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -24449,7 +24449,7 @@
 		"r": "SBS.DTL",
 		"n": "127",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -24643,7 +24643,7 @@
 		"r": "SBS.DTL",
 		"n": "128",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -24837,7 +24837,7 @@
 		"r": "SBS.DTL",
 		"n": "129",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -25031,7 +25031,7 @@
 		"r": "SBS.DTL",
 		"n": "130",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -25225,7 +25225,7 @@
 		"r": "SBS.DTL",
 		"n": "131",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -25419,7 +25419,7 @@
 		"r": "SBS.DTL",
 		"n": "132",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -25613,7 +25613,7 @@
 		"r": "SBS.DTL",
 		"n": "133",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -25807,7 +25807,7 @@
 		"r": "SBS.DTL",
 		"n": "134",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -26001,7 +26001,7 @@
 		"r": "SBS.DTL",
 		"n": "135",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -26195,7 +26195,7 @@
 		"r": "SBS.DTL",
 		"n": "136",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -26389,7 +26389,7 @@
 		"r": "SBS.DTL",
 		"n": "137",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -26583,7 +26583,7 @@
 		"r": "SBS.DTL",
 		"n": "138",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -26777,7 +26777,7 @@
 		"r": "SBS.DTL",
 		"n": "139",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -26971,7 +26971,7 @@
 		"r": "SBS.DTL",
 		"n": "140",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -27165,7 +27165,7 @@
 		"r": "SBS.DTL",
 		"n": "141",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -27359,7 +27359,7 @@
 		"r": "SBS.DTL",
 		"n": "142",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -27553,7 +27553,7 @@
 		"r": "SBS.DTL",
 		"n": "143",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -27747,7 +27747,7 @@
 		"r": "SBS.DTL",
 		"n": "144",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -27941,7 +27941,7 @@
 		"r": "SBS.DTL",
 		"n": "145",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -28135,7 +28135,7 @@
 		"r": "SBS.DTL",
 		"n": "146",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -28329,7 +28329,7 @@
 		"r": "SBS.DTL",
 		"n": "147",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -28523,7 +28523,7 @@
 		"r": "SBS.DTL",
 		"n": "148",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -28717,7 +28717,7 @@
 		"r": "SBS.DTL",
 		"n": "149",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -28911,7 +28911,7 @@
 		"r": "SBS.DTL",
 		"n": "150",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -29105,7 +29105,7 @@
 		"r": "SBS.DTL",
 		"n": "151",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -29299,7 +29299,7 @@
 		"r": "SBS.DTL",
 		"n": "152",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -29493,7 +29493,7 @@
 		"r": "SBS.DTL",
 		"n": "153",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -29687,7 +29687,7 @@
 		"r": "SBS.DTL",
 		"n": "154",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -29881,7 +29881,7 @@
 		"r": "SBS.DTL",
 		"n": "155",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -30075,7 +30075,7 @@
 		"r": "SBS.DTL",
 		"n": "156",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -30269,7 +30269,7 @@
 		"r": "SBS.DTL",
 		"n": "157",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -30463,7 +30463,7 @@
 		"r": "SBS.DTL",
 		"n": "158",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -30657,7 +30657,7 @@
 		"r": "SBS.DTL",
 		"n": "159",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -30851,7 +30851,7 @@
 		"r": "SBS.DTL",
 		"n": "160",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -31045,7 +31045,7 @@
 		"r": "SBS.DTL",
 		"n": "161",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -31239,7 +31239,7 @@
 		"r": "SBS.DTL",
 		"n": "162",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -31433,7 +31433,7 @@
 		"r": "SBS.DTL",
 		"n": "163",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -31627,7 +31627,7 @@
 		"r": "SBS.DTL",
 		"n": "164",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -31821,7 +31821,7 @@
 		"r": "SBS.DTL",
 		"n": "165",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -32015,7 +32015,7 @@
 		"r": "SBS.DTL",
 		"n": "166",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -32209,7 +32209,7 @@
 		"r": "SBS.DTL",
 		"n": "167",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -32403,7 +32403,7 @@
 		"r": "SBS.DTL",
 		"n": "168",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -32597,7 +32597,7 @@
 		"r": "SBS.DTL",
 		"n": "169",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -32791,7 +32791,7 @@
 		"r": "SBS.DTL",
 		"n": "170",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -32985,7 +32985,7 @@
 		"r": "SBS.DTL",
 		"n": "171",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -33179,7 +33179,7 @@
 		"r": "SBS.DTL",
 		"n": "172",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -33373,7 +33373,7 @@
 		"r": "SBS.DTL",
 		"n": "173",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -33567,7 +33567,7 @@
 		"r": "SBS.DTL",
 		"n": "174",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -33761,7 +33761,7 @@
 		"r": "SBS.DTL",
 		"n": "175",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -33955,7 +33955,7 @@
 		"r": "SBS.DTL",
 		"n": "176",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -34149,7 +34149,7 @@
 		"r": "SBS.DTL",
 		"n": "177",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -34343,7 +34343,7 @@
 		"r": "SBS.DTL",
 		"n": "178",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -34537,7 +34537,7 @@
 		"r": "SBS.DTL",
 		"n": "179",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -34731,7 +34731,7 @@
 		"r": "SBS.DTL",
 		"n": "180",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -34925,7 +34925,7 @@
 		"r": "SBS.DTL",
 		"n": "181",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -35119,7 +35119,7 @@
 		"r": "SBS.DTL",
 		"n": "182",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -35313,7 +35313,7 @@
 		"r": "SBS.DTL",
 		"n": "183",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -35507,7 +35507,7 @@
 		"r": "SBS.DTL",
 		"n": "184",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -35701,7 +35701,7 @@
 		"r": "SBS.DTL",
 		"n": "185",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -35895,7 +35895,7 @@
 		"r": "SBS.DTL",
 		"n": "186",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -36089,7 +36089,7 @@
 		"r": "SBS.DTL",
 		"n": "187",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -36283,7 +36283,7 @@
 		"r": "SBS.DTL",
 		"n": "188",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -36477,7 +36477,7 @@
 		"r": "SBS.DTL",
 		"n": "189",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -36671,7 +36671,7 @@
 		"r": "SBS.DTL",
 		"n": "190",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -36865,7 +36865,7 @@
 		"r": "SBS.DTL",
 		"n": "191",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -37059,7 +37059,7 @@
 		"r": "SBS.DTL",
 		"n": "192",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -37253,7 +37253,7 @@
 		"r": "SBS.DTL",
 		"n": "193",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -37447,7 +37447,7 @@
 		"r": "SBS.DTL",
 		"n": "194",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -37641,7 +37641,7 @@
 		"r": "SBS.DTL",
 		"n": "195",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -37835,7 +37835,7 @@
 		"r": "SBS.DTL",
 		"n": "196",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -38029,7 +38029,7 @@
 		"r": "SBS.DTL",
 		"n": "197",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -38223,7 +38223,7 @@
 		"r": "SBS.DTL",
 		"n": "198",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -38417,7 +38417,7 @@
 		"r": "SBS.DTL",
 		"n": "199",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -38611,7 +38611,7 @@
 		"r": "SBS.DTL",
 		"n": "200",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -38805,7 +38805,7 @@
 		"r": "SBS.DTL",
 		"n": "201",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -38999,7 +38999,7 @@
 		"r": "SBS.DTL",
 		"n": "202",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -39193,7 +39193,7 @@
 		"r": "SBS.DTL",
 		"n": "203",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -39387,7 +39387,7 @@
 		"r": "SBS.DTL",
 		"n": "204",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -39581,7 +39581,7 @@
 		"r": "SBS.DTL",
 		"n": "205",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -39775,7 +39775,7 @@
 		"r": "SBS.DTL",
 		"n": "206",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -39969,7 +39969,7 @@
 		"r": "SBS.DTL",
 		"n": "207",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -40163,7 +40163,7 @@
 		"r": "SBS.DTL",
 		"n": "208",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -40357,7 +40357,7 @@
 		"r": "SBS.DTL",
 		"n": "209",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -40551,7 +40551,7 @@
 		"r": "SBS.DTL",
 		"n": "210",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -40745,7 +40745,7 @@
 		"r": "SBS.DTL",
 		"n": "211",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -40939,7 +40939,7 @@
 		"r": "SBS.DTL",
 		"n": "212",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -41133,7 +41133,7 @@
 		"r": "SBS.DTL",
 		"n": "213",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -41327,7 +41327,7 @@
 		"r": "SBS.DTL",
 		"n": "214",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -41521,7 +41521,7 @@
 		"r": "SBS.DTL",
 		"n": "215",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -41715,7 +41715,7 @@
 		"r": "SBS.DTL",
 		"n": "216",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -41909,7 +41909,7 @@
 		"r": "SBS.DTL",
 		"n": "217",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -42103,7 +42103,7 @@
 		"r": "SBS.DTL",
 		"n": "218",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -42297,7 +42297,7 @@
 		"r": "SBS.DTL",
 		"n": "219",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -42491,7 +42491,7 @@
 		"r": "SBS.DTL",
 		"n": "220",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -42685,7 +42685,7 @@
 		"r": "SBS.DTL",
 		"n": "221",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -42879,7 +42879,7 @@
 		"r": "SBS.DTL",
 		"n": "222",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -43073,7 +43073,7 @@
 		"r": "SBS.DTL",
 		"n": "223",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -43267,7 +43267,7 @@
 		"r": "SBS.DTL",
 		"n": "224",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -43461,7 +43461,7 @@
 		"r": "SBS.DTL",
 		"n": "225",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -43655,7 +43655,7 @@
 		"r": "SBS.DTL",
 		"n": "226",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -43849,7 +43849,7 @@
 		"r": "SBS.DTL",
 		"n": "227",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -44043,7 +44043,7 @@
 		"r": "SBS.DTL",
 		"n": "228",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -44237,7 +44237,7 @@
 		"r": "SBS.DTL",
 		"n": "229",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -44431,7 +44431,7 @@
 		"r": "SBS.DTL",
 		"n": "230",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -44625,7 +44625,7 @@
 		"r": "SBS.DTL",
 		"n": "231",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -44819,7 +44819,7 @@
 		"r": "SBS.DTL",
 		"n": "232",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -45013,7 +45013,7 @@
 		"r": "SBS.DTL",
 		"n": "233",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -45207,7 +45207,7 @@
 		"r": "SBS.DTL",
 		"n": "234",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -45401,7 +45401,7 @@
 		"r": "SBS.DTL",
 		"n": "235",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -45595,7 +45595,7 @@
 		"r": "SBS.DTL",
 		"n": "236",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -45789,7 +45789,7 @@
 		"r": "SBS.DTL",
 		"n": "237",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -45983,7 +45983,7 @@
 		"r": "SBS.DTL",
 		"n": "238",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -46177,7 +46177,7 @@
 		"r": "SBS.DTL",
 		"n": "239",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -46371,7 +46371,7 @@
 		"r": "SBS.DTL",
 		"n": "240",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -46565,7 +46565,7 @@
 		"r": "SBS.DTL",
 		"n": "241",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -46759,7 +46759,7 @@
 		"r": "SBS.DTL",
 		"n": "242",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -46953,7 +46953,7 @@
 		"r": "SBS.DTL",
 		"n": "243",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -47147,7 +47147,7 @@
 		"r": "SBS.DTL",
 		"n": "244",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -47341,7 +47341,7 @@
 		"r": "SBS.DTL",
 		"n": "245",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -47535,7 +47535,7 @@
 		"r": "SBS.DTL",
 		"n": "246",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -47729,7 +47729,7 @@
 		"r": "SBS.DTL",
 		"n": "247",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -47923,7 +47923,7 @@
 		"r": "SBS.DTL",
 		"n": "248",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -48117,7 +48117,7 @@
 		"r": "SBS.DTL",
 		"n": "249",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -48311,7 +48311,7 @@
 		"r": "SBS.DTL",
 		"n": "250",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -48505,7 +48505,7 @@
 		"r": "SBS.DTL",
 		"n": "251",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -48699,7 +48699,7 @@
 		"r": "SBS.DTL",
 		"n": "252",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -48893,7 +48893,7 @@
 		"r": "SBS.DTL",
 		"n": "253",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -49087,7 +49087,7 @@
 		"r": "SBS.DTL",
 		"n": "254",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -49281,7 +49281,7 @@
 		"r": "SBS.DTL",
 		"n": "255",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -49475,7 +49475,7 @@
 		"r": "SBS.DTL",
 		"n": "256",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -49669,7 +49669,7 @@
 		"r": "SBS.DTL",
 		"n": "257",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -49863,7 +49863,7 @@
 		"r": "SBS.DTL",
 		"n": "258",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -50057,7 +50057,7 @@
 		"r": "SBS.DTL",
 		"n": "259",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -50251,7 +50251,7 @@
 		"r": "SBS.DTL",
 		"n": "260",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -50445,7 +50445,7 @@
 		"r": "SBS.DTL",
 		"n": "261",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -50639,7 +50639,7 @@
 		"r": "SBS.DTL",
 		"n": "262",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -50833,7 +50833,7 @@
 		"r": "SBS.DTL",
 		"n": "263",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -51027,7 +51027,7 @@
 		"r": "SBS.DTL",
 		"n": "264",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -51221,7 +51221,7 @@
 		"r": "SBS.DTL",
 		"n": "265",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -51415,7 +51415,7 @@
 		"r": "SBS.DTL",
 		"n": "266",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -51609,7 +51609,7 @@
 		"r": "SBS.DTL",
 		"n": "267",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -51803,7 +51803,7 @@
 		"r": "SBS.DTL",
 		"n": "268",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -51997,7 +51997,7 @@
 		"r": "SBS.DTL",
 		"n": "269",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -52191,7 +52191,7 @@
 		"r": "SBS.DTL",
 		"n": "270",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -52385,7 +52385,7 @@
 		"r": "SBS.DTL",
 		"n": "271",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -52579,7 +52579,7 @@
 		"r": "SBS.DTL",
 		"n": "272",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -52773,7 +52773,7 @@
 		"r": "SBS.DTL",
 		"n": "273",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -52967,7 +52967,7 @@
 		"r": "SBS.DTL",
 		"n": "274",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -53161,7 +53161,7 @@
 		"r": "SBS.DTL",
 		"n": "275",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -53355,7 +53355,7 @@
 		"r": "SBS.DTL",
 		"n": "276",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -53549,7 +53549,7 @@
 		"r": "SBS.DTL",
 		"n": "277",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -53743,7 +53743,7 @@
 		"r": "SBS.DTL",
 		"n": "278",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -53937,7 +53937,7 @@
 		"r": "SBS.DTL",
 		"n": "279",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -54131,7 +54131,7 @@
 		"r": "SBS.DTL",
 		"n": "280",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -54325,7 +54325,7 @@
 		"r": "SBS.DTL",
 		"n": "281",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -54519,7 +54519,7 @@
 		"r": "SBS.DTL",
 		"n": "282",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -54713,7 +54713,7 @@
 		"r": "SBS.DTL",
 		"n": "283",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -54907,7 +54907,7 @@
 		"r": "SBS.DTL",
 		"n": "284",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -55101,7 +55101,7 @@
 		"r": "SBS.DTL",
 		"n": "285",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -55295,7 +55295,7 @@
 		"r": "SBS.DTL",
 		"n": "286",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -55489,7 +55489,7 @@
 		"r": "SBS.DTL",
 		"n": "287",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -55683,7 +55683,7 @@
 		"r": "SBS.DTL",
 		"n": "288",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -55877,7 +55877,7 @@
 		"r": "SBS.DTL",
 		"n": "289",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -56071,7 +56071,7 @@
 		"r": "SBS.DTL",
 		"n": "290",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -56265,7 +56265,7 @@
 		"r": "SBS.DTL",
 		"n": "291",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -56459,7 +56459,7 @@
 		"r": "SBS.DTL",
 		"n": "292",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -56653,7 +56653,7 @@
 		"r": "SBS.DTL",
 		"n": "293",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -56847,7 +56847,7 @@
 		"r": "SBS.DTL",
 		"n": "294",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -57041,7 +57041,7 @@
 		"r": "SBS.DTL",
 		"n": "295",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -57235,7 +57235,7 @@
 		"r": "SBS.DTL",
 		"n": "296",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -57429,7 +57429,7 @@
 		"r": "SBS.DTL",
 		"n": "297",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -57623,7 +57623,7 @@
 		"r": "SBS.DTL",
 		"n": "298",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -57817,7 +57817,7 @@
 		"r": "SBS.DTL",
 		"n": "299",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -58011,7 +58011,7 @@
 		"r": "SBS.DTL",
 		"n": "300",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -58205,7 +58205,7 @@
 		"r": "SBS.DTL",
 		"n": "301",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -58399,7 +58399,7 @@
 		"r": "SBS.DTL",
 		"n": "302",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -58593,7 +58593,7 @@
 		"r": "SBS.DTL",
 		"n": "303",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -58787,7 +58787,7 @@
 		"r": "SBS.DTL",
 		"n": "304",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -58981,7 +58981,7 @@
 		"r": "SBS.DTL",
 		"n": "305",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -59175,7 +59175,7 @@
 		"r": "SBS.DTL",
 		"n": "306",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -59369,7 +59369,7 @@
 		"r": "SBS.DTL",
 		"n": "307",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -59563,7 +59563,7 @@
 		"r": "SBS.DTL",
 		"n": "308",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
@@ -59757,7 +59757,7 @@
 		"r": "SBS.DTL",
 		"n": "309",
 		"y": "default",
-		"d": "SBS.DTL.Eastbound",
+		"d": "SBS.DTL.Westbound",
 		"os": [
 			"SBS.DTL.SungeiBedok"
 		],
@@ -59951,7 +59951,7 @@
 		"r": "SBS.DTL",
 		"n": "310",
 		"y": "default",
-		"d": "SBS.DTL.Westbound",
+		"d": "SBS.DTL.Eastbound",
 		"os": [
 			"SBS.DTL.BukitPanjang"
 		],
