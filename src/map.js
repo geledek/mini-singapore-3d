@@ -1898,7 +1898,7 @@ export default class extends Evented {
             '<div><strong>',
             me.getLocalizedTrainNameOrRailwayTitle(train.nm, railway),
             '</strong>',
-            `<br> <span class="train-type-label">${me.getLocalizedTrainTypeTitle(train.y)}</span> `,
+            railway.operator ? `<br> <span class="train-type-label">${me.getLocalizedOperatorTitle(me.operators.get(railway.operator))}</span> ` : '<br>',
             me.getLocalizedDestinationTitle(train.ds, train.d),
             '</div></div>',
             `<strong>${dict['train-number']}:</strong> ${train.n}`,

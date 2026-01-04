@@ -57,6 +57,12 @@ export default class {
         me.color = params.color;
 
         /**
+         * Railway operator.
+         * @type {string}
+         */
+        me.operator = params.operator;
+
+        /**
          * Railway car composition.
          * @type {number}
          */

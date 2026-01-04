@@ -67,7 +67,7 @@ export default class extends Panel {
                 '<div><div class="desc-first-row">',
                 map.getLocalizedTrainNameOrRailwayTitle(train.nm, railway),
                 '</div><div class="desc-second-row">',
-                `<span class="train-type-label">${map.getLocalizedTrainTypeTitle(train.y)}</span> `,
+                railway.operator ? `<span class="train-type-label">${map.getLocalizedOperatorTitle(map.operators.get(railway.operator))}</span> ` : '',
                 map.getLocalizedDestinationTitle(train.ds, train.d),
                 '</div></div></div>'
             ].join(''))

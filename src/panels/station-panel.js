@@ -369,7 +369,7 @@ export default class extends Panel {
                     '<div class="train-row">',
                     `<div class="train-time-box${train.delay >= 60000 ? ' desc-caution' : ''}">${getTimeString(time)}</div>`,
                     '<div class="train-title-box">',
-                    `<span class="train-type-label">${map.getLocalizedTrainTypeTitle(train.y)}</span> `,
+                    train.r && train.r.operator ? `<span class="train-type-label">${map.getLocalizedOperatorTitle(map.operators.get(train.r.operator))}</span> ` : '',
                     train.nm ? `${map.getLocalizedTrainNameOrRailwayTitle(train.nm)} ` : '',
                     map.getLocalizedDestinationTitle(train.ds, train.d),
                     train.delay >= 60000 ? ` <span class="desc-caution">${dict['delay'].replace('$1', Math.floor(train.delay / 60000))}</span>` : '',
@@ -495,8 +495,9 @@ export default class extends Panel {
                 for (const {r, y, ds, d, tt, nm, transfer, delay} of route.trains) {
                     const departure = tt[0],
                         arrival = tt[tt.length - 1],
-                        railwayTitle = map.getLocalizedTrainNameOrRailwayTitle(nm, map.railways.get(r)),
-                        trainTypeTitle = map.getLocalizedTrainTypeTitle(map.trainTypes.get(y)),
+                        railway = map.railways.get(r),
+                        railwayTitle = map.getLocalizedTrainNameOrRailwayTitle(nm, railway),
+                        operatorTitle = railway && railway.operator ? map.getLocalizedOperatorTitle(map.operators.get(railway.operator)) : '',
                         destinationTitle = map.getLocalizedDestinationTitle(ds ? ds.map(id => map.stations.get(id)) : undefined, map.railDirections.get(d)),
                         section = {};
 
@@ -511,7 +512,7 @@ export default class extends Panel {
                     ].join(''));
                     stations.push([
                         '<div class="station-row">',
-                        `<div class="train-title-box">${railwayTitle} <span class="train-type-label">${trainTypeTitle}</span> ${destinationTitle}`,
+                        `<div class="train-title-box">${railwayTitle}${operatorTitle ? ` <span class="train-type-label">${operatorTitle}</span>` : ''} ${destinationTitle}`,
                         delay ? ` <span class="desc-caution">${dict['delay'].replace('$1', delay)}</span>` : '',
                         '</div></div>'
                     ].join(''));
