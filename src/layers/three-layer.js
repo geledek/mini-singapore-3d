@@ -118,19 +118,23 @@ export default class {
     _render(gl, matrix) {
         // These parameters are copied from mapbox-gl/src/geo/transform.js
         const {modelOrigin, mbox, renderer, camera, light, scene} = this,
-            {_fov, _camera, _horizonShift, pixelsPerMeter, worldSize, _pitch, width, height} = mbox.transform,
+            {_fov, _nearZ, _farZ, _camera, _horizonShift, pixelsPerMeter, worldSize, _pitch, width, height} = mbox.transform,
             halfFov = _fov / 2,
-            cameraToSeaLevelDistance = _camera.position[2] * worldSize / Math.cos(_pitch),
-            horizonDistance = cameraToSeaLevelDistance / _horizonShift,
-            undergroundDistance = 1000 * pixelsPerMeter / Math.cos(_pitch),
-            farZ = camera.far = Math.max(horizonDistance, cameraToSeaLevelDistance + undergroundDistance),
-            nearZ = camera.near = height / 50,
+            computedNearZ = height / 50,
+            computedFarZ = (() => {
+                const cameraToSeaLevelDistance = _camera.position[2] * worldSize / Math.cos(_pitch);
+                const horizonDistance = cameraToSeaLevelDistance / _horizonShift;
+                const undergroundDistance = 1000 * pixelsPerMeter / Math.cos(_pitch);
+                return Math.max(horizonDistance, cameraToSeaLevelDistance + undergroundDistance);
+            })(),
+            nearZ = camera.near = _nearZ || computedNearZ,
+            farZ = camera.far = _farZ || computedFarZ,
             halfHeight = Math.tan(halfFov) * nearZ,
             halfWidth = halfHeight * width / height,
 
             m = new Matrix4().fromArray(matrix),
             l = new Matrix4()
-                .makeTranslation(modelOrigin.x, modelOrigin.y, 0)
+                .makeTranslation(modelOrigin.x, modelOrigin.y, modelOrigin.z)
                 .scale(new Vector3(1, -1, 1));
 
         camera.projectionMatrix.makePerspective(

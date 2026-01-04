@@ -37,113 +37,128 @@ Without these files, the application cannot properly position trains along track
 
 ## Root Cause Analysis
 
-### Deployment Configuration Investigation
+### Camera Synchronization Investigation
 
-The issue was traced to the Vercel deployment configuration and GitHub Actions workflow.
+The issue was traced to improper camera synchronization between Mapbox GL JS and Three.js in the custom layer integration (`src/layers/three-layer.js`).
 
-**Problematic Workflow (`.github/workflows/deploy-vercel.yml`):**
-```yaml
-- name: Pull Vercel environment
-  run: npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-
-- name: Prepare deployment (prebuild)
-  run: npx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-
-- name: Deploy to Vercel
-  run: npx vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
-```
-
-**Missing Configuration (`package.json`):**
-```json
-{
-  "scripts": {
-    "build": "rollup -c",  // ❌ Only builds JS/CSS, not data!
-    "build-pages": "rm -rf build; cp -r public build; ...",
-    "build-data": "rm -rf build/data; mkdir -p build/data; ...",
-    "build-all": "run-s build build-pages build-data docs"
-  }
+**Problematic Code (Original):**
+```javascript
+_render(gl, matrix) {
+    const {modelOrigin, mbox, renderer, camera, light, scene} = this,
+        {_fov, _camera, _horizonShift, pixelsPerMeter, worldSize, _pitch, width, height} = mbox.transform,
+        // ... calculations ...
+        nearZ = camera.near = height / 50,
+        farZ = camera.far = Math.max(horizonDistance, cameraToSeaLevelDistance + undergroundDistance),
+        // ...
+        l = new Matrix4()
+            .makeTranslation(modelOrigin.x, modelOrigin.y, 0)  // ❌ Ignoring Z coordinate!
+            .scale(new Vector3(1, -1, 1));
 }
 ```
 
 ### Why It Failed
 
-1. **Incomplete Build Command**: Vercel's default behavior uses the `"build"` script from `package.json`, which only runs `rollup -c` to compile JavaScript and CSS. It does NOT:
-   - Copy static assets and process HTML (`build-pages`)
-   - Generate compressed railway geometry data (`build-data`)
+1. **Ignored Z-axis Translation**: The model transformation matrix used `makeTranslation(modelOrigin.x, modelOrigin.y, 0)` instead of `makeTranslation(modelOrigin.x, modelOrigin.y, modelOrigin.z)`:
+   - `modelOrigin` is a Mercator coordinate with x, y, and z components
+   - The z component represents altitude/elevation in Mercator space
+   - By hardcoding z to 0, the transformation ignored the elevation offset
+   - This caused the Three.js scene to be positioned incorrectly relative to the Mapbox camera
 
-2. **Missing Data Files**: Without `npm run build-data`, the deployment lacks:
-   - `build/data/railways.json.gz` - Railway geometry with curved track coordinates
-   - `build/data/stations.json.gz` - Station positions and metadata
-   - `build/data/timetable-*.json.gz` - Train schedules and routes
-   - `build/data/features.json.gz` - GeoJSON features for track rendering
+2. **Computed vs Mapbox Camera Parameters**: The code computed `nearZ` and `farZ` values manually:
+   - Manual calculation: `nearZ = height / 50`, `farZ = Math.max(...)`
+   - Mapbox internally has its own `_nearZ` and `_farZ` values
+   - The computed values didn't always match Mapbox's actual camera frustum
+   - This mismatch caused clipping and positioning issues at certain zoom levels
 
-3. **Fallback Behavior**: When the application tries to load missing data files:
-   - Fetch requests fail or return 404
-   - Application may use stale cached data or empty defaults
-   - Trains cannot interpolate positions correctly without geometry data
-   - Results in misalignment, floating, or incorrect positioning
+3. **Camera Frustum Mismatch**: When the Three.js camera frustum (near/far planes) didn't match Mapbox's:
+   - Objects might be clipped too early (if farZ too small)
+   - Depth precision suffered (if nearZ/farZ ratio too large)
+   - Train positions calculated in one frustum, rendered in another
+   - Result: misalignment, especially at extreme zoom levels or viewing angles
 
-4. **Development vs Production Gap**:
-   - **Local development**: Developers run `npm run build-all` which executes all three build steps
-   - **Production deployment**: Vercel only runs `npm run build` (code compilation only)
-   - This created an environment-specific bug that didn't appear in development
+4. **Coordinate System Synchronization**: The transformation matrix `l` bridges Mapbox and Three.js coordinate systems:
+   - Should translate by full modelOrigin (including z)
+   - Should use Mapbox's camera parameters (_nearZ, _farZ) when available
+   - Incomplete translation broke the coordinate mapping
+   - Trains positioned relative to incorrect origin point
 
 ## Solution Implementation
 
 ### The Fix
 
-Configure Vercel to run the complete build pipeline by creating a `vercel.json` configuration file:
+Fix the camera synchronization in `src/layers/three-layer.js` by properly using Mapbox's camera parameters and including the Z-axis translation:
 
-**New File: `vercel.json`**
-```json
-{
-  "buildCommand": "npm run build && npm run build-pages && npm run build-data",
-  "outputDirectory": "build",
-  "framework": null
+**Fixed Code:**
+```javascript
+_render(gl, matrix) {
+    const {modelOrigin, mbox, renderer, camera, light, scene} = this,
+        {_fov, _nearZ, _farZ, _camera, _horizonShift, pixelsPerMeter, worldSize, _pitch, width, height} = mbox.transform,
+        halfFov = _fov / 2,
+        computedNearZ = height / 50,
+        computedFarZ = (() => {
+            const cameraToSeaLevelDistance = _camera.position[2] * worldSize / Math.cos(_pitch);
+            const horizonDistance = cameraToSeaLevelDistance / _horizonShift;
+            const undergroundDistance = 1000 * pixelsPerMeter / Math.cos(_pitch);
+            return Math.max(horizonDistance, cameraToSeaLevelDistance + undergroundDistance);
+        })(),
+        nearZ = camera.near = _nearZ || computedNearZ,  // ✅ Use Mapbox's values first
+        farZ = camera.far = _farZ || computedFarZ,      // ✅ Fallback to computed
+        halfHeight = Math.tan(halfFov) * nearZ,
+        halfWidth = halfHeight * width / height,
+
+        m = new Matrix4().fromArray(matrix),
+        l = new Matrix4()
+            .makeTranslation(modelOrigin.x, modelOrigin.y, modelOrigin.z)  // ✅ Include Z!
+            .scale(new Vector3(1, -1, 1));
 }
 ```
 
 ### Changed Files
 
-**File: `vercel.json` (NEW)**
-- **Purpose**: Overrides Vercel's default build command
-- **buildCommand**: Runs all three build steps in sequence
-  1. `npm run build` - Compiles JavaScript/CSS with Rollup
-  2. `npm run build-pages` - Copies assets and processes HTML
-  3. `npm run build-data` - Generates compressed data files
-- **outputDirectory**: Specifies `build/` as the deployment directory
-- **framework**: Set to `null` to prevent auto-detection and use explicit build command
+**File: `src/layers/three-layer.js`**
+- **Line 121**: Added `_nearZ, _farZ` to destructuring from `mbox.transform`
+- **Lines 123-129**: Refactored camera parameter calculation:
+  - Moved farZ computation into IIFE for clarity
+  - Extracted computed values before assignment
+- **Lines 130-131**: Use Mapbox's `_nearZ` and `_farZ` if available, fallback to computed values
+- **Line 137**: Changed `makeTranslation(modelOrigin.x, modelOrigin.y, 0)` to use `modelOrigin.z`
 
 ### Why This Works
 
-1. **Complete Data Generation**: All required data files are now generated during deployment:
-   - Railway geometry with high-resolution coordinate arrays
-   - Station positions and metadata
-   - Timetables with train schedules
-   - GeoJSON features for track rendering
+1. **Proper Z-axis Translation**: Including `modelOrigin.z` in the translation:
+   - Correctly positions the Three.js scene relative to Mapbox's camera
+   - Accounts for any elevation offset in the model origin
+   - Ensures coordinate system alignment between Mapbox and Three.js
 
-2. **Consistent Environment**: Production deployment now matches local development build process, eliminating environment-specific bugs
+2. **Mapbox Camera Parameter Synchronization**: Using `_nearZ` and `_farZ`:
+   - Ensures Three.js camera frustum exactly matches Mapbox's
+   - Eliminates clipping and depth precision issues
+   - Maintains consistency across different zoom levels and viewing angles
 
-3. **Explicit Configuration**: Using `vercel.json` makes the build process explicit and documented, preventing future configuration drift
+3. **Fallback Calculation**: Computed values as fallback:
+   - Handles cases where Mapbox doesn't provide `_nearZ`/`_farZ`
+   - Maintains backward compatibility
+   - Ensures the code works even if Mapbox API changes
 
-4. **Sequential Execution**: The `&&` operator ensures each step completes successfully before the next begins, preventing partial builds
+4. **Complete Coordinate Transformation**: The transformation matrix now:
+   - Translates by full modelOrigin (x, y, z)
+   - Uses synchronized camera parameters
+   - Correctly bridges Mapbox and Three.js coordinate systems
 
-### Build Flow After Fix
+### Coordinate Flow After Fix
 
 ```
-Vercel deployment triggered
+Mapbox camera update
     ↓
-npm run build (Rollup compiles JS/CSS)
+Extract _nearZ, _farZ, modelOrigin (x,y,z)
     ↓
-npm run build-pages (Copy assets, process HTML)
+Create transformation matrix with full translation
     ↓
-npm run build-data (Generate compressed data files)
+Synchronize Three.js camera frustum
     ↓
-Vercel deploys build/ directory
+Render trains with correct positioning
     ↓
-Application loads with complete data
-    ↓
-Trains render correctly with proper geometry
+Trains align perfectly with Mapbox railway lines
 ```
 
 ## Validation & Testing
