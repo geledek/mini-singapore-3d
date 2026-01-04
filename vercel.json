@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build && npm run build-pages && npm run build-data",
+  "outputDirectory": "build",
+  "framework": null
+}
