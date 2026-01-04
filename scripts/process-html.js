@@ -7,7 +7,20 @@
 
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config();
+const dotenv = require('dotenv');
+
+// Load env files in priority order so CI (.vercel) values override defaults
+const envFiles = [
+	'.env.local',
+	'.env',
+	'.vercel/.env.production.local'
+];
+for (const envFile of envFiles) {
+	const fullPath = path.join(__dirname, '..', envFile);
+	if (fs.existsSync(fullPath)) {
+		dotenv.config({path: fullPath, override: true});
+	}
+}
 
 // Read the source HTML
 const htmlPath = path.join(__dirname, '../public/index.html');
