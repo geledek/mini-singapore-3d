@@ -30,22 +30,24 @@ const OPERATORS_FOR_TRAININFORMATION = {
     ]
 };
 
-function getTimetableFileName(clock) {
-    const calendar = clock.getCalendar() === 'Weekday' ? 'weekday' : 'holiday';
+function getTimetableFileNames(clock) {
+	const calendar = clock.getCalendar();
 
-    return `timetable-${calendar}.json.gz`;
-}
-
-function getExtraTimetableFileNames(clock) {
-    const calendar = clock.getCalendar();
-
-    if (calendar === 'Saturday') {
-        return ['timetable-saturday.json.gz'];
-    }
-    if (calendar === 'Holiday') {
-        return ['timetable-holiday.json.gz'];
-    }
-    return [];
+	switch (calendar) {
+	case 'Saturday':
+		return [
+			'timetable-saturday.json.gz',
+			'timetable-weekday.json.gz'
+		];
+	case 'Holiday':
+		return [
+			'timetable-sunday-holiday.json.gz',
+			'timetable-holiday.json.gz',
+			'timetable-weekday.json.gz'
+		];
+	default:
+		return ['timetable-weekday.json.gz'];
+	}
 }
 
 // Singapore trains are simpler - no special ID adjustments needed
@@ -62,8 +64,8 @@ function adjustTrainID(id) {
  * @returns {Object} Loaded data
  */
 export function loadStaticData(dataUrl, lang, clockPromise) {
-    return Promise.all([
-        loadJSON(`assets/dictionary-${lang}.json`),
+	return Promise.all([
+		loadJSON(`assets/dictionary-${lang}.json`),
         ...[
             'railways.json.gz',
             'stations.json.gz',
@@ -76,11 +78,11 @@ export function loadStaticData(dataUrl, lang, clockPromise) {
             'flight-statuses.json.gz',
             'poi.json.gz'
         ].map(fileName => `${dataUrl}/${fileName}`).map(loadJSON),
-        clockPromise.then(clock => Promise.all([
-            getTimetableFileName(clock),
-            ...getExtraTimetableFileNames(clock)
-        ].map(fileName => `${dataUrl}/${fileName}`).map(loadJSON)))
-    ]).then(data => ({
+		clockPromise.then(clock => {
+			const fileNames = getTimetableFileNames(clock);
+			return Promise.all(fileNames.map(fileName => `${dataUrl}/${fileName}`).map(loadJSON));
+		})
+	]).then(data => ({
         dict: data[0],
         railwayData: data[1],
         stationData: data[2],
@@ -103,10 +105,8 @@ export function loadStaticData(dataUrl, lang, clockPromise) {
  * @returns {Object} Loaded timetable data
  */
 export function loadTimetableData(dataUrl, clock) {
-    return Promise.all([
-        getTimetableFileName(clock),
-        ...getExtraTimetableFileNames(clock)
-    ].map(fileName => `${dataUrl}/${fileName}`).map(loadJSON)).then(data => [].concat(...data));
+	const fileNames = getTimetableFileNames(clock);
+	return Promise.all(fileNames.map(fileName => `${dataUrl}/${fileName}`).map(loadJSON)).then(data => [].concat(...data));
 }
 
 /**
