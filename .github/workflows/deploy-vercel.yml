@@ -25,6 +25,7 @@ jobs:
         run: |
           npm run build
           npm run build-pages
+          npm run build-data
 
       - name: Pull Vercel environment
         run: npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
