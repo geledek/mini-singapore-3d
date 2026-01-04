@@ -28,6 +28,7 @@
     "@turf/polygon-to-line": "^5.1.5",
     "@turf/truncate": "^5.1.5",
     "@turf/union": "^5.1.5",
+    "@vercel/analytics": "^1.6.1",
     "comlink": "^4.4.2",
     "csscolorparser": "^1.0.3",
     "fflate": "^0.8.2",
