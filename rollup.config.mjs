@@ -89,7 +89,8 @@ export default [{
 		terser({
 			compress: {
 				pure_getters: true
-			}
+			},
+			maxWorkers: 1
 		}),
 		strip()
 	]
@@ -231,7 +232,8 @@ export default [{
 		terser({
 			compress: {
 				pure_getters: true
-			}
+			},
+			maxWorkers: 1
 		}),
 		strip({
 			sourceMap: true
