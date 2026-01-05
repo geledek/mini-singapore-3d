@@ -163,17 +163,95 @@ async function fetchTrackByName(pattern) {
 }
 
 async function fetchTrackByIds(ids) {
-  const { south, west, north, east } = BBOX;
   const idList = ids.join(',');
-  const query = `
+  // Preferred: fetch all member ways and stitch greedily
+  try {
+    const q = `
+    [out:json][timeout:120];
+    rel(id:${idList});
+    way(r);
+    out body geom;
+    `;
+    const d = await overpass(q);
+    const coords = stitchWays(d.elements || []);
+    if (coords && coords.length >= 2) return coords;
+  } catch (e) {}
+  // 1) Get relations with member list
+  const relQuery = `
   [out:json][timeout:120];
   rel(id:${idList});
-  way(r);
-  out body geom;
+  out ids tags;
+  >;
+  out body;
   `;
-  const data = await overpass(query);
-  const coords = stitchWays(data.elements);
-  return coords;
+  const relData = await overpass(relQuery);
+  const rels = (relData.elements || []).filter(e => e.type === 'relation');
+  if (!rels.length) return [];
+  // 2) Collect way IDs to fetch geometries
+  // Collect way IDs from relation members as listed in the response
+  const wayIds = Array.from(new Set([].concat(...rels.map(r => (r.members||[]).filter(m => m.type === 'way').map(m => m.ref)))));
+  if (!wayIds.length) return [];
+  const batches = [];
+  for (let i = 0; i < wayIds.length; i += 200) batches.push(wayIds.slice(i, i + 200));
+  const wayMap = new Map();
+  for (const b of batches) {
+    const wayQuery = `
+    [out:json][timeout:120];
+    way(id:${b.join(',')});
+    out body geom;
+    `;
+    const wayData = await overpass(wayQuery);
+    for (const w of (wayData.elements || [])) {
+      if (w.type === 'way' && Array.isArray(w.geometry)) {
+        wayMap.set(w.id, w);
+      }
+    }
+  }
+  // 3) Build path by concatenating ways in relation member order, fixing orientation
+  function buildPathFromRelation(r) {
+    let path = [];
+    const members = r.members || [];
+    for (const m of members) {
+      if (m.type !== 'way') continue;
+      const w = wayMap.get(m.ref);
+      if (!w || !w.geometry || !w.geometry.length) continue;
+      const pts = w.geometry.map(p => [p.lon, p.lat]);
+      if (path.length === 0) {
+        path = pts.slice();
+      } else {
+        const head = path[0], tail = path[path.length - 1];
+        const ch = pts[0], ct = pts[pts.length - 1];
+        const dTailHead = haversine(tail, ch);
+        const dTailTail = haversine(tail, ct);
+        const dHeadHead = haversine(head, ch);
+        const dHeadTail = haversine(head, ct);
+        // Prefer appending to tail when possible
+        if (dTailHead <= dTailTail && dTailHead <= dHeadHead && dTailHead <= dHeadTail) {
+          path = path.concat(pts);
+        } else if (dTailTail <= dTailHead && dTailTail <= dHeadHead && dTailTail <= dHeadTail) {
+          path = path.concat(pts.slice().reverse());
+        } else if (dHeadTail <= dHeadHead && dHeadTail <= dTailHead && dHeadTail <= dTailTail) {
+          // Prepend without reversing
+          path = pts.concat(path);
+        } else {
+          // Prepend reversed
+          path = pts.slice().reverse().concat(path);
+        }
+      }
+    }
+    // Dedupe consecutive
+    const dedup = [path[0]];
+    for (let i = 1; i < path.length; i++) {
+      const prev = dedup[dedup.length - 1];
+      if (haversine(prev, path[i]) > 0.5) dedup.push(path[i]);
+    }
+    return dedup;
+  }
+  // Build paths for each relation and pick the longest
+  const paths = rels.map(buildPathFromRelation).filter(p => p.length >= 2);
+  if (!paths.length) return [];
+  paths.sort((a,b) => b.length - a.length);
+  return paths[0];
 }
 
 function updateCoordinatesJson(railwayId, coords) {

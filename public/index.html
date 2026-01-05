@@ -25,17 +25,18 @@
 <body style="width: 100%; height: 100%; margin: 0; padding: 0; position: absolute;">
 	<div id="map" style="width: 100%; height: 100%;"></div>
 	<script>
-		const matchLang = location.search.match(/lang=(.*?)(?:&|$)/),
-			matchSelection = location.search.match(/selection=(.*?)(?:&|$)/),
-			matchGtfsUrl = location.search.match(/gtfsurl=(.*?)(?:&|$)/),
-			matchVehiclePositionUrl = location.search.match(/gtfsvpurl=(.*?)(?:&|$)/),
-			matchGtfsColor = location.search.match(/gtfscolor=(.*?)(?:&|$)/),
-			matchHash = location.hash.match(/[^\d\.\-]*([\d\.\-]*)\/?([\d\.\-]*)\/?([\d\.\-]*)\/?([\d\.\-]*)\/?([\d\.\-]*)/),
-			options = {
-				container: 'map',
-				// Mapbox access token - replaced at build time from environment
-				accessToken: '__MAPBOX_ACCESS_TOKEN__'
-			};
+        const matchLang = location.search.match(/lang=(.*?)(?:&|$)/),
+            matchSelection = location.search.match(/selection=(.*?)(?:&|$)/),
+            matchGtfsUrl = location.search.match(/gtfsurl=(.*?)(?:&|$)/),
+            matchVehiclePositionUrl = location.search.match(/gtfsvpurl=(.*?)(?:&|$)/),
+            matchGtfsColor = location.search.match(/gtfscolor=(.*?)(?:&|$)/),
+            matchDebugCounts = location.search.match(/(?:debugcounts=1|debug=counts)(?:&|$)/),
+            matchHash = location.hash.match(/[^\d\.\-]*([\d\.\-]*)\/?([\d\.\-]*)\/?([\d\.\-]*)\/?([\d\.\-]*)\/?([\d\.\-]*)/),
+            options = {
+                container: 'map',
+                // Mapbox access token - replaced at build time from environment
+                accessToken: '__MAPBOX_ACCESS_TOKEN__'
+            };
 
 		if (matchLang) {
 			options.lang = decodeURIComponent(matchLang[1]);
@@ -55,13 +56,16 @@
 		if (matchHash[5]) {
 			options.pitch = +matchHash[5];
 		}
-		if (matchGtfsUrl && matchGtfsColor) {
-			options.dataSources = [{
-				gtfsUrl: decodeURIComponent(matchGtfsUrl[1]),
-				vehiclePositionUrl: matchVehiclePositionUrl ? decodeURIComponent(matchVehiclePositionUrl[1]) : undefined,
-				color: `#${decodeURIComponent(matchGtfsColor[1])}`
-			}];
-		}
+        if (matchGtfsUrl && matchGtfsColor) {
+            options.dataSources = [{
+                gtfsUrl: decodeURIComponent(matchGtfsUrl[1]),
+                vehiclePositionUrl: matchVehiclePositionUrl ? decodeURIComponent(matchVehiclePositionUrl[1]) : undefined,
+                color: `#${decodeURIComponent(matchGtfsColor[1])}`
+            }];
+        }
+        if (matchDebugCounts) {
+            options.debugCounts = true;
+        }
 
 		const map = new mt3d.Map(options);
 

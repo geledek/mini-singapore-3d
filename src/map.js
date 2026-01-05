@@ -116,6 +116,8 @@ export default class extends Evented {
         me.isEditingTime = false;
         me.ecoMode = options.ecoMode;
         me.ecoFrameRate = options.ecoFrameRate;
+        // Debug overlay toggle from options
+        me.debugCounts = !!options.debugCounts;
 
         me.lastDynamicUpdate = {};
         me.lastRepaint = 0;
@@ -688,6 +690,16 @@ export default class extends Evented {
 
         me.trafficLayer = new TrafficLayer({id: 'traffic'});
 
+        // Create debug overlay if enabled
+        if (me.debugCounts && !me.debugCountsDiv) {
+            const dc = document.createElement('div');
+            dc.id = 'mt3d-debug-counts';
+            dc.style.cssText = 'position:fixed;z-index:9999;top:8px;left:8px;padding:6px 8px;background:rgba(0,0,0,0.6);color:#fff;font:12px/1.3 sans-serif;border-radius:4px;max-height:40vh;overflow:auto;white-space:nowrap;';
+            dc.textContent = 'Loading counts...';
+            me.container.appendChild(dc);
+            me.debugCountsDiv = dc;
+        }
+
         // To move to the style file in v4.0
         map.addLayer({
             id: 'sky',
@@ -827,17 +839,34 @@ export default class extends Evented {
                         'railways': {
                             'line-color': color,
                             'line-width': lineWidth,
-                            'line-emissive-strength': 1
+                            'line-emissive-strength': 1,
+                            'line-dasharray': [
+                                'case',
+                                ['==', ['get', 'dashed'], 1],
+                                ['literal', [2, 2]],
+                                ['literal', [1, 0]]
+                            ]
                         },
                         'stations': {
                             'fill-color': color,
-                            'fill-opacity': .7,
+                            'fill-opacity': [
+                                'case',
+                                ['==', ['get', 'dashed'], 1],
+                                0.25,
+                                0.7
+                            ],
                             'fill-emissive-strength': 1
                         },
                         'stations-outline': {
                             'line-color': ['get', 'outlineColor'],
                             'line-width': lineWidth,
-                            'line-emissive-strength': 1
+                            'line-emissive-strength': 1,
+                            'line-dasharray': [
+                                'case',
+                                ['==', ['get', 'dashed'], 1],
+                                ['literal', [2, 2]],
+                                ['literal', [1, 0]]
+                            ]
                         }
                     }[key],
                     metadata: {
@@ -1307,6 +1336,9 @@ export default class extends Evented {
         me.trainLoaded = true;
         if (initialSelection) {
             me.setSelection(initialSelection);
+        }
+        if (me.debugCountsDiv) {
+            me._updateDebugCounts();
         }
     }
 
@@ -2464,10 +2496,33 @@ export default class extends Evented {
 
             me.refreshTrains();
             me.aboutPanel.updateContent();
+            if (me.debugCountsDiv) {
+                me._updateDebugCounts();
+            }
         }).catch(error => {
             me.refreshTrains();
             console.log(error);
         });
+    }
+
+    _updateDebugCounts() {
+        const me = this;
+        if (!me.debugCountsDiv) return;
+        const activeBy = new Map();
+        const standbyBy = new Map();
+        for (const tr of me.activeTrainLookup.values()) {
+            const id = tr.r.id; activeBy.set(id, (activeBy.get(id)||0)+1);
+        }
+        for (const tr of me.standbyTrainLookup.values()) {
+            const id = tr.r.id; standbyBy.set(id, (standbyBy.get(id)||0)+1);
+        }
+        const rows = [];
+        for (const rw of me.railways.getAll()) {
+            const id = rw.id; const title = (rw.title && (rw.title[me.lang] || rw.title.en)) || id;
+            const a = activeBy.get(id)||0; const s = standbyBy.get(id)||0;
+            rows.push(`${title}: ${a} active, ${s} standby`);
+        }
+        me.debugCountsDiv.textContent = rows.join('\n');
     }
 
     refreshRealtimeFlightData() {
