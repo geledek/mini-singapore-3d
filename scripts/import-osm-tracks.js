@@ -167,7 +167,7 @@ async function fetchTrackByIds(ids) {
   const idList = ids.join(',');
   const query = `
   [out:json][timeout:120];
-  rel(${idList});
+  rel(id:${idList});
   way(r);
   out body geom;
   `;
