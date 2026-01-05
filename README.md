@@ -1,8 +1,13 @@
 # Mini Singapore 3D
 
-A real-time 3D digital map of Singapore's public transport system.
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://minisg3d.com)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Built with Three.js](https://img.shields.io/badge/three.js-WebGL-black)](https://threejs.org)
 
+A (simulated) real-time 3D digital map of Singapore's public transport system.
 Forked from [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d) by Akihiko Kusanagi, adapted for Singapore's map and data.
+
+[![Mini Singapore 3D – Demo Video](https://img.youtube.com/vi/yGYIoKBGkgw/0.jpg)](https://youtu.be/yGYIoKBGkgw)
 
 ## Features
 
