@@ -1,0 +1,8992 @@
+[
+	{
+		"id": "SMRT.EWL.CAB.001.Weekday",
+		"t": "SMRT.EWL.CAB.T001",
+		"r": "SMRT.EWL.CAB",
+		"n": "001",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "05:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "05:32",
+				"d": "05:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "05:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.002.Weekday",
+		"t": "SMRT.EWL.CAB.T002",
+		"r": "SMRT.EWL.CAB",
+		"n": "002",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "05:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "05:37",
+				"d": "05:38"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "05:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.003.Weekday",
+		"t": "SMRT.EWL.CAB.T003",
+		"r": "SMRT.EWL.CAB",
+		"n": "003",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "05:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "05:42",
+				"d": "05:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "05:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.004.Weekday",
+		"t": "SMRT.EWL.CAB.T004",
+		"r": "SMRT.EWL.CAB",
+		"n": "004",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "05:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "05:47",
+				"d": "05:48"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "05:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.005.Weekday",
+		"t": "SMRT.EWL.CAB.T005",
+		"r": "SMRT.EWL.CAB",
+		"n": "005",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "05:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "05:52",
+				"d": "05:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "05:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.006.Weekday",
+		"t": "SMRT.EWL.CAB.T006",
+		"r": "SMRT.EWL.CAB",
+		"n": "006",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "05:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "05:57",
+				"d": "05:58"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "06:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.007.Weekday",
+		"t": "SMRT.EWL.CAB.T007",
+		"r": "SMRT.EWL.CAB",
+		"n": "007",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "06:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:02",
+				"d": "06:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "06:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.008.Weekday",
+		"t": "SMRT.EWL.CAB.T008",
+		"r": "SMRT.EWL.CAB",
+		"n": "008",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "06:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:07",
+				"d": "06:08"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "06:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.009.Weekday",
+		"t": "SMRT.EWL.CAB.T009",
+		"r": "SMRT.EWL.CAB",
+		"n": "009",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "06:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:12",
+				"d": "06:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "06:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.010.Weekday",
+		"t": "SMRT.EWL.CAB.T010",
+		"r": "SMRT.EWL.CAB",
+		"n": "010",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "06:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:17",
+				"d": "06:18"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "06:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.011.Weekday",
+		"t": "SMRT.EWL.CAB.T011",
+		"r": "SMRT.EWL.CAB",
+		"n": "011",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "06:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:22",
+				"d": "06:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "06:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.012.Weekday",
+		"t": "SMRT.EWL.CAB.T012",
+		"r": "SMRT.EWL.CAB",
+		"n": "012",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "06:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:27",
+				"d": "06:28"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "06:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.013.Weekday",
+		"t": "SMRT.EWL.CAB.T013",
+		"r": "SMRT.EWL.CAB",
+		"n": "013",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "06:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:32",
+				"d": "06:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "06:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.014.Weekday",
+		"t": "SMRT.EWL.CAB.T014",
+		"r": "SMRT.EWL.CAB",
+		"n": "014",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "06:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:37",
+				"d": "06:38"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "06:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.015.Weekday",
+		"t": "SMRT.EWL.CAB.T015",
+		"r": "SMRT.EWL.CAB",
+		"n": "015",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "06:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:42",
+				"d": "06:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "06:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.016.Weekday",
+		"t": "SMRT.EWL.CAB.T016",
+		"r": "SMRT.EWL.CAB",
+		"n": "016",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "06:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:47",
+				"d": "06:48"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "06:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.017.Weekday",
+		"t": "SMRT.EWL.CAB.T017",
+		"r": "SMRT.EWL.CAB",
+		"n": "017",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "06:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:52",
+				"d": "06:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "06:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.018.Weekday",
+		"t": "SMRT.EWL.CAB.T018",
+		"r": "SMRT.EWL.CAB",
+		"n": "018",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "06:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "06:57",
+				"d": "06:58"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.019.Weekday",
+		"t": "SMRT.EWL.CAB.T019",
+		"r": "SMRT.EWL.CAB",
+		"n": "019",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:02",
+				"d": "07:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.020.Weekday",
+		"t": "SMRT.EWL.CAB.T020",
+		"r": "SMRT.EWL.CAB",
+		"n": "020",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:07",
+				"d": "07:08"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.021.Weekday",
+		"t": "SMRT.EWL.CAB.T021",
+		"r": "SMRT.EWL.CAB",
+		"n": "021",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:02",
+				"d": "07:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.022.Weekday",
+		"t": "SMRT.EWL.CAB.T022",
+		"r": "SMRT.EWL.CAB",
+		"n": "022",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:04",
+				"d": "07:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.023.Weekday",
+		"t": "SMRT.EWL.CAB.T023",
+		"r": "SMRT.EWL.CAB",
+		"n": "023",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:07",
+				"d": "07:08"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.024.Weekday",
+		"t": "SMRT.EWL.CAB.T024",
+		"r": "SMRT.EWL.CAB",
+		"n": "024",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:07"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:09",
+				"d": "07:10"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:12"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.025.Weekday",
+		"t": "SMRT.EWL.CAB.T025",
+		"r": "SMRT.EWL.CAB",
+		"n": "025",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:12",
+				"d": "07:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.026.Weekday",
+		"t": "SMRT.EWL.CAB.T026",
+		"r": "SMRT.EWL.CAB",
+		"n": "026",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:14",
+				"d": "07:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.027.Weekday",
+		"t": "SMRT.EWL.CAB.T027",
+		"r": "SMRT.EWL.CAB",
+		"n": "027",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:17",
+				"d": "07:18"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.028.Weekday",
+		"t": "SMRT.EWL.CAB.T028",
+		"r": "SMRT.EWL.CAB",
+		"n": "028",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:17"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:19",
+				"d": "07:20"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:22"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.029.Weekday",
+		"t": "SMRT.EWL.CAB.T029",
+		"r": "SMRT.EWL.CAB",
+		"n": "029",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:22",
+				"d": "07:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.030.Weekday",
+		"t": "SMRT.EWL.CAB.T030",
+		"r": "SMRT.EWL.CAB",
+		"n": "030",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:22"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:24",
+				"d": "07:25"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:27"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.031.Weekday",
+		"t": "SMRT.EWL.CAB.T031",
+		"r": "SMRT.EWL.CAB",
+		"n": "031",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:27",
+				"d": "07:28"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.032.Weekday",
+		"t": "SMRT.EWL.CAB.T032",
+		"r": "SMRT.EWL.CAB",
+		"n": "032",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:27"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:29",
+				"d": "07:30"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:32"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.033.Weekday",
+		"t": "SMRT.EWL.CAB.T033",
+		"r": "SMRT.EWL.CAB",
+		"n": "033",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:32",
+				"d": "07:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.034.Weekday",
+		"t": "SMRT.EWL.CAB.T034",
+		"r": "SMRT.EWL.CAB",
+		"n": "034",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:34",
+				"d": "07:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.035.Weekday",
+		"t": "SMRT.EWL.CAB.T035",
+		"r": "SMRT.EWL.CAB",
+		"n": "035",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:37",
+				"d": "07:38"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.036.Weekday",
+		"t": "SMRT.EWL.CAB.T036",
+		"r": "SMRT.EWL.CAB",
+		"n": "036",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:37"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:39",
+				"d": "07:40"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:42"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.037.Weekday",
+		"t": "SMRT.EWL.CAB.T037",
+		"r": "SMRT.EWL.CAB",
+		"n": "037",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:42",
+				"d": "07:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.038.Weekday",
+		"t": "SMRT.EWL.CAB.T038",
+		"r": "SMRT.EWL.CAB",
+		"n": "038",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:42"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:44",
+				"d": "07:45"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:47"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.039.Weekday",
+		"t": "SMRT.EWL.CAB.T039",
+		"r": "SMRT.EWL.CAB",
+		"n": "039",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:47",
+				"d": "07:48"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.040.Weekday",
+		"t": "SMRT.EWL.CAB.T040",
+		"r": "SMRT.EWL.CAB",
+		"n": "040",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:47"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:49",
+				"d": "07:50"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:52"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.041.Weekday",
+		"t": "SMRT.EWL.CAB.T041",
+		"r": "SMRT.EWL.CAB",
+		"n": "041",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:52",
+				"d": "07:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "07:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.042.Weekday",
+		"t": "SMRT.EWL.CAB.T042",
+		"r": "SMRT.EWL.CAB",
+		"n": "042",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:54",
+				"d": "07:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "07:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.043.Weekday",
+		"t": "SMRT.EWL.CAB.T043",
+		"r": "SMRT.EWL.CAB",
+		"n": "043",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "07:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:57",
+				"d": "07:58"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.044.Weekday",
+		"t": "SMRT.EWL.CAB.T044",
+		"r": "SMRT.EWL.CAB",
+		"n": "044",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "07:57"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "07:59",
+				"d": "08:00"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:02"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.045.Weekday",
+		"t": "SMRT.EWL.CAB.T045",
+		"r": "SMRT.EWL.CAB",
+		"n": "045",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:02",
+				"d": "08:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.046.Weekday",
+		"t": "SMRT.EWL.CAB.T046",
+		"r": "SMRT.EWL.CAB",
+		"n": "046",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:04",
+				"d": "08:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.047.Weekday",
+		"t": "SMRT.EWL.CAB.T047",
+		"r": "SMRT.EWL.CAB",
+		"n": "047",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:07",
+				"d": "08:08"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.048.Weekday",
+		"t": "SMRT.EWL.CAB.T048",
+		"r": "SMRT.EWL.CAB",
+		"n": "048",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:07"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:09",
+				"d": "08:10"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:12"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.049.Weekday",
+		"t": "SMRT.EWL.CAB.T049",
+		"r": "SMRT.EWL.CAB",
+		"n": "049",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:12",
+				"d": "08:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.050.Weekday",
+		"t": "SMRT.EWL.CAB.T050",
+		"r": "SMRT.EWL.CAB",
+		"n": "050",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:14",
+				"d": "08:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.051.Weekday",
+		"t": "SMRT.EWL.CAB.T051",
+		"r": "SMRT.EWL.CAB",
+		"n": "051",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:17",
+				"d": "08:18"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.052.Weekday",
+		"t": "SMRT.EWL.CAB.T052",
+		"r": "SMRT.EWL.CAB",
+		"n": "052",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:17"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:19",
+				"d": "08:20"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:22"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.053.Weekday",
+		"t": "SMRT.EWL.CAB.T053",
+		"r": "SMRT.EWL.CAB",
+		"n": "053",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:22",
+				"d": "08:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.054.Weekday",
+		"t": "SMRT.EWL.CAB.T054",
+		"r": "SMRT.EWL.CAB",
+		"n": "054",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:22"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:24",
+				"d": "08:25"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:27"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.055.Weekday",
+		"t": "SMRT.EWL.CAB.T055",
+		"r": "SMRT.EWL.CAB",
+		"n": "055",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:27",
+				"d": "08:28"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.056.Weekday",
+		"t": "SMRT.EWL.CAB.T056",
+		"r": "SMRT.EWL.CAB",
+		"n": "056",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:27"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:29",
+				"d": "08:30"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:32"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.057.Weekday",
+		"t": "SMRT.EWL.CAB.T057",
+		"r": "SMRT.EWL.CAB",
+		"n": "057",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:32",
+				"d": "08:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.058.Weekday",
+		"t": "SMRT.EWL.CAB.T058",
+		"r": "SMRT.EWL.CAB",
+		"n": "058",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:34",
+				"d": "08:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.059.Weekday",
+		"t": "SMRT.EWL.CAB.T059",
+		"r": "SMRT.EWL.CAB",
+		"n": "059",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:37",
+				"d": "08:38"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.060.Weekday",
+		"t": "SMRT.EWL.CAB.T060",
+		"r": "SMRT.EWL.CAB",
+		"n": "060",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:37"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:39",
+				"d": "08:40"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:42"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.061.Weekday",
+		"t": "SMRT.EWL.CAB.T061",
+		"r": "SMRT.EWL.CAB",
+		"n": "061",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:42",
+				"d": "08:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.062.Weekday",
+		"t": "SMRT.EWL.CAB.T062",
+		"r": "SMRT.EWL.CAB",
+		"n": "062",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:42"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:44",
+				"d": "08:45"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:47"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.063.Weekday",
+		"t": "SMRT.EWL.CAB.T063",
+		"r": "SMRT.EWL.CAB",
+		"n": "063",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:47",
+				"d": "08:48"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.064.Weekday",
+		"t": "SMRT.EWL.CAB.T064",
+		"r": "SMRT.EWL.CAB",
+		"n": "064",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:47"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:49",
+				"d": "08:50"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:52"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.065.Weekday",
+		"t": "SMRT.EWL.CAB.T065",
+		"r": "SMRT.EWL.CAB",
+		"n": "065",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:52",
+				"d": "08:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "08:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.066.Weekday",
+		"t": "SMRT.EWL.CAB.T066",
+		"r": "SMRT.EWL.CAB",
+		"n": "066",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:54",
+				"d": "08:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "08:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.067.Weekday",
+		"t": "SMRT.EWL.CAB.T067",
+		"r": "SMRT.EWL.CAB",
+		"n": "067",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "08:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:57",
+				"d": "08:58"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.068.Weekday",
+		"t": "SMRT.EWL.CAB.T068",
+		"r": "SMRT.EWL.CAB",
+		"n": "068",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "08:57"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "08:59",
+				"d": "09:00"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:02"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.069.Weekday",
+		"t": "SMRT.EWL.CAB.T069",
+		"r": "SMRT.EWL.CAB",
+		"n": "069",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:02",
+				"d": "09:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.070.Weekday",
+		"t": "SMRT.EWL.CAB.T070",
+		"r": "SMRT.EWL.CAB",
+		"n": "070",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:04",
+				"d": "09:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.071.Weekday",
+		"t": "SMRT.EWL.CAB.T071",
+		"r": "SMRT.EWL.CAB",
+		"n": "071",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:02",
+				"d": "09:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.072.Weekday",
+		"t": "SMRT.EWL.CAB.T072",
+		"r": "SMRT.EWL.CAB",
+		"n": "072",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:06",
+				"d": "09:07"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.073.Weekday",
+		"t": "SMRT.EWL.CAB.T073",
+		"r": "SMRT.EWL.CAB",
+		"n": "073",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:10",
+				"d": "09:11"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.074.Weekday",
+		"t": "SMRT.EWL.CAB.T074",
+		"r": "SMRT.EWL.CAB",
+		"n": "074",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:14",
+				"d": "09:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.075.Weekday",
+		"t": "SMRT.EWL.CAB.T075",
+		"r": "SMRT.EWL.CAB",
+		"n": "075",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:18",
+				"d": "09:19"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.076.Weekday",
+		"t": "SMRT.EWL.CAB.T076",
+		"r": "SMRT.EWL.CAB",
+		"n": "076",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:22",
+				"d": "09:23"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.077.Weekday",
+		"t": "SMRT.EWL.CAB.T077",
+		"r": "SMRT.EWL.CAB",
+		"n": "077",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:26",
+				"d": "09:27"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.078.Weekday",
+		"t": "SMRT.EWL.CAB.T078",
+		"r": "SMRT.EWL.CAB",
+		"n": "078",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:30",
+				"d": "09:31"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.079.Weekday",
+		"t": "SMRT.EWL.CAB.T079",
+		"r": "SMRT.EWL.CAB",
+		"n": "079",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:34",
+				"d": "09:35"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.080.Weekday",
+		"t": "SMRT.EWL.CAB.T080",
+		"r": "SMRT.EWL.CAB",
+		"n": "080",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:38",
+				"d": "09:39"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.081.Weekday",
+		"t": "SMRT.EWL.CAB.T081",
+		"r": "SMRT.EWL.CAB",
+		"n": "081",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:42",
+				"d": "09:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.082.Weekday",
+		"t": "SMRT.EWL.CAB.T082",
+		"r": "SMRT.EWL.CAB",
+		"n": "082",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:46",
+				"d": "09:47"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.083.Weekday",
+		"t": "SMRT.EWL.CAB.T083",
+		"r": "SMRT.EWL.CAB",
+		"n": "083",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:50",
+				"d": "09:51"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "09:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.084.Weekday",
+		"t": "SMRT.EWL.CAB.T084",
+		"r": "SMRT.EWL.CAB",
+		"n": "084",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "09:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:54",
+				"d": "09:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "09:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.085.Weekday",
+		"t": "SMRT.EWL.CAB.T085",
+		"r": "SMRT.EWL.CAB",
+		"n": "085",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "09:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "09:58",
+				"d": "09:59"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.086.Weekday",
+		"t": "SMRT.EWL.CAB.T086",
+		"r": "SMRT.EWL.CAB",
+		"n": "086",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:02",
+				"d": "10:03"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.087.Weekday",
+		"t": "SMRT.EWL.CAB.T087",
+		"r": "SMRT.EWL.CAB",
+		"n": "087",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:06",
+				"d": "10:07"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.088.Weekday",
+		"t": "SMRT.EWL.CAB.T088",
+		"r": "SMRT.EWL.CAB",
+		"n": "088",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:10",
+				"d": "10:11"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.089.Weekday",
+		"t": "SMRT.EWL.CAB.T089",
+		"r": "SMRT.EWL.CAB",
+		"n": "089",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:14",
+				"d": "10:15"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.090.Weekday",
+		"t": "SMRT.EWL.CAB.T090",
+		"r": "SMRT.EWL.CAB",
+		"n": "090",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:18",
+				"d": "10:19"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.091.Weekday",
+		"t": "SMRT.EWL.CAB.T091",
+		"r": "SMRT.EWL.CAB",
+		"n": "091",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:22",
+				"d": "10:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.092.Weekday",
+		"t": "SMRT.EWL.CAB.T092",
+		"r": "SMRT.EWL.CAB",
+		"n": "092",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:26",
+				"d": "10:27"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.093.Weekday",
+		"t": "SMRT.EWL.CAB.T093",
+		"r": "SMRT.EWL.CAB",
+		"n": "093",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:30",
+				"d": "10:31"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.094.Weekday",
+		"t": "SMRT.EWL.CAB.T094",
+		"r": "SMRT.EWL.CAB",
+		"n": "094",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:34",
+				"d": "10:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.095.Weekday",
+		"t": "SMRT.EWL.CAB.T095",
+		"r": "SMRT.EWL.CAB",
+		"n": "095",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:38",
+				"d": "10:39"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.096.Weekday",
+		"t": "SMRT.EWL.CAB.T096",
+		"r": "SMRT.EWL.CAB",
+		"n": "096",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:42",
+				"d": "10:43"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.097.Weekday",
+		"t": "SMRT.EWL.CAB.T097",
+		"r": "SMRT.EWL.CAB",
+		"n": "097",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:46",
+				"d": "10:47"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.098.Weekday",
+		"t": "SMRT.EWL.CAB.T098",
+		"r": "SMRT.EWL.CAB",
+		"n": "098",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:50",
+				"d": "10:51"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "10:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.099.Weekday",
+		"t": "SMRT.EWL.CAB.T099",
+		"r": "SMRT.EWL.CAB",
+		"n": "099",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "10:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:54",
+				"d": "10:55"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "10:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.100.Weekday",
+		"t": "SMRT.EWL.CAB.T100",
+		"r": "SMRT.EWL.CAB",
+		"n": "100",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "10:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "10:58",
+				"d": "10:59"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.101.Weekday",
+		"t": "SMRT.EWL.CAB.T101",
+		"r": "SMRT.EWL.CAB",
+		"n": "101",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:02",
+				"d": "11:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.102.Weekday",
+		"t": "SMRT.EWL.CAB.T102",
+		"r": "SMRT.EWL.CAB",
+		"n": "102",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:06",
+				"d": "11:07"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.103.Weekday",
+		"t": "SMRT.EWL.CAB.T103",
+		"r": "SMRT.EWL.CAB",
+		"n": "103",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:10",
+				"d": "11:11"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.104.Weekday",
+		"t": "SMRT.EWL.CAB.T104",
+		"r": "SMRT.EWL.CAB",
+		"n": "104",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:14",
+				"d": "11:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.105.Weekday",
+		"t": "SMRT.EWL.CAB.T105",
+		"r": "SMRT.EWL.CAB",
+		"n": "105",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:18",
+				"d": "11:19"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.106.Weekday",
+		"t": "SMRT.EWL.CAB.T106",
+		"r": "SMRT.EWL.CAB",
+		"n": "106",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:22",
+				"d": "11:23"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.107.Weekday",
+		"t": "SMRT.EWL.CAB.T107",
+		"r": "SMRT.EWL.CAB",
+		"n": "107",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:26",
+				"d": "11:27"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.108.Weekday",
+		"t": "SMRT.EWL.CAB.T108",
+		"r": "SMRT.EWL.CAB",
+		"n": "108",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:30",
+				"d": "11:31"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.109.Weekday",
+		"t": "SMRT.EWL.CAB.T109",
+		"r": "SMRT.EWL.CAB",
+		"n": "109",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:34",
+				"d": "11:35"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.110.Weekday",
+		"t": "SMRT.EWL.CAB.T110",
+		"r": "SMRT.EWL.CAB",
+		"n": "110",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:38",
+				"d": "11:39"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.111.Weekday",
+		"t": "SMRT.EWL.CAB.T111",
+		"r": "SMRT.EWL.CAB",
+		"n": "111",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:42",
+				"d": "11:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.112.Weekday",
+		"t": "SMRT.EWL.CAB.T112",
+		"r": "SMRT.EWL.CAB",
+		"n": "112",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:46",
+				"d": "11:47"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.113.Weekday",
+		"t": "SMRT.EWL.CAB.T113",
+		"r": "SMRT.EWL.CAB",
+		"n": "113",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:50",
+				"d": "11:51"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "11:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.114.Weekday",
+		"t": "SMRT.EWL.CAB.T114",
+		"r": "SMRT.EWL.CAB",
+		"n": "114",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "11:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:54",
+				"d": "11:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "11:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.115.Weekday",
+		"t": "SMRT.EWL.CAB.T115",
+		"r": "SMRT.EWL.CAB",
+		"n": "115",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "11:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "11:58",
+				"d": "11:59"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.116.Weekday",
+		"t": "SMRT.EWL.CAB.T116",
+		"r": "SMRT.EWL.CAB",
+		"n": "116",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:02",
+				"d": "12:03"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.117.Weekday",
+		"t": "SMRT.EWL.CAB.T117",
+		"r": "SMRT.EWL.CAB",
+		"n": "117",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:06",
+				"d": "12:07"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.118.Weekday",
+		"t": "SMRT.EWL.CAB.T118",
+		"r": "SMRT.EWL.CAB",
+		"n": "118",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:10",
+				"d": "12:11"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.119.Weekday",
+		"t": "SMRT.EWL.CAB.T119",
+		"r": "SMRT.EWL.CAB",
+		"n": "119",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:14",
+				"d": "12:15"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.120.Weekday",
+		"t": "SMRT.EWL.CAB.T120",
+		"r": "SMRT.EWL.CAB",
+		"n": "120",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:18",
+				"d": "12:19"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.121.Weekday",
+		"t": "SMRT.EWL.CAB.T121",
+		"r": "SMRT.EWL.CAB",
+		"n": "121",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:22",
+				"d": "12:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.122.Weekday",
+		"t": "SMRT.EWL.CAB.T122",
+		"r": "SMRT.EWL.CAB",
+		"n": "122",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:26",
+				"d": "12:27"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.123.Weekday",
+		"t": "SMRT.EWL.CAB.T123",
+		"r": "SMRT.EWL.CAB",
+		"n": "123",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:30",
+				"d": "12:31"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.124.Weekday",
+		"t": "SMRT.EWL.CAB.T124",
+		"r": "SMRT.EWL.CAB",
+		"n": "124",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:34",
+				"d": "12:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.125.Weekday",
+		"t": "SMRT.EWL.CAB.T125",
+		"r": "SMRT.EWL.CAB",
+		"n": "125",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:38",
+				"d": "12:39"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.126.Weekday",
+		"t": "SMRT.EWL.CAB.T126",
+		"r": "SMRT.EWL.CAB",
+		"n": "126",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:42",
+				"d": "12:43"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.127.Weekday",
+		"t": "SMRT.EWL.CAB.T127",
+		"r": "SMRT.EWL.CAB",
+		"n": "127",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:46",
+				"d": "12:47"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.128.Weekday",
+		"t": "SMRT.EWL.CAB.T128",
+		"r": "SMRT.EWL.CAB",
+		"n": "128",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:50",
+				"d": "12:51"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "12:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.129.Weekday",
+		"t": "SMRT.EWL.CAB.T129",
+		"r": "SMRT.EWL.CAB",
+		"n": "129",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "12:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:54",
+				"d": "12:55"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "12:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.130.Weekday",
+		"t": "SMRT.EWL.CAB.T130",
+		"r": "SMRT.EWL.CAB",
+		"n": "130",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "12:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "12:58",
+				"d": "12:59"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.131.Weekday",
+		"t": "SMRT.EWL.CAB.T131",
+		"r": "SMRT.EWL.CAB",
+		"n": "131",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:02",
+				"d": "13:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.132.Weekday",
+		"t": "SMRT.EWL.CAB.T132",
+		"r": "SMRT.EWL.CAB",
+		"n": "132",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:06",
+				"d": "13:07"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.133.Weekday",
+		"t": "SMRT.EWL.CAB.T133",
+		"r": "SMRT.EWL.CAB",
+		"n": "133",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:10",
+				"d": "13:11"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.134.Weekday",
+		"t": "SMRT.EWL.CAB.T134",
+		"r": "SMRT.EWL.CAB",
+		"n": "134",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:14",
+				"d": "13:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.135.Weekday",
+		"t": "SMRT.EWL.CAB.T135",
+		"r": "SMRT.EWL.CAB",
+		"n": "135",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:18",
+				"d": "13:19"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.136.Weekday",
+		"t": "SMRT.EWL.CAB.T136",
+		"r": "SMRT.EWL.CAB",
+		"n": "136",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:22",
+				"d": "13:23"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.137.Weekday",
+		"t": "SMRT.EWL.CAB.T137",
+		"r": "SMRT.EWL.CAB",
+		"n": "137",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:26",
+				"d": "13:27"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.138.Weekday",
+		"t": "SMRT.EWL.CAB.T138",
+		"r": "SMRT.EWL.CAB",
+		"n": "138",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:30",
+				"d": "13:31"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.139.Weekday",
+		"t": "SMRT.EWL.CAB.T139",
+		"r": "SMRT.EWL.CAB",
+		"n": "139",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:34",
+				"d": "13:35"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.140.Weekday",
+		"t": "SMRT.EWL.CAB.T140",
+		"r": "SMRT.EWL.CAB",
+		"n": "140",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:38",
+				"d": "13:39"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.141.Weekday",
+		"t": "SMRT.EWL.CAB.T141",
+		"r": "SMRT.EWL.CAB",
+		"n": "141",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:42",
+				"d": "13:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.142.Weekday",
+		"t": "SMRT.EWL.CAB.T142",
+		"r": "SMRT.EWL.CAB",
+		"n": "142",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:46",
+				"d": "13:47"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.143.Weekday",
+		"t": "SMRT.EWL.CAB.T143",
+		"r": "SMRT.EWL.CAB",
+		"n": "143",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:50",
+				"d": "13:51"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "13:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.144.Weekday",
+		"t": "SMRT.EWL.CAB.T144",
+		"r": "SMRT.EWL.CAB",
+		"n": "144",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "13:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:54",
+				"d": "13:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "13:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.145.Weekday",
+		"t": "SMRT.EWL.CAB.T145",
+		"r": "SMRT.EWL.CAB",
+		"n": "145",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "13:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "13:58",
+				"d": "13:59"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.146.Weekday",
+		"t": "SMRT.EWL.CAB.T146",
+		"r": "SMRT.EWL.CAB",
+		"n": "146",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:02",
+				"d": "14:03"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.147.Weekday",
+		"t": "SMRT.EWL.CAB.T147",
+		"r": "SMRT.EWL.CAB",
+		"n": "147",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:06",
+				"d": "14:07"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.148.Weekday",
+		"t": "SMRT.EWL.CAB.T148",
+		"r": "SMRT.EWL.CAB",
+		"n": "148",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:10",
+				"d": "14:11"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.149.Weekday",
+		"t": "SMRT.EWL.CAB.T149",
+		"r": "SMRT.EWL.CAB",
+		"n": "149",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:14",
+				"d": "14:15"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.150.Weekday",
+		"t": "SMRT.EWL.CAB.T150",
+		"r": "SMRT.EWL.CAB",
+		"n": "150",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:18",
+				"d": "14:19"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.151.Weekday",
+		"t": "SMRT.EWL.CAB.T151",
+		"r": "SMRT.EWL.CAB",
+		"n": "151",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:22",
+				"d": "14:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.152.Weekday",
+		"t": "SMRT.EWL.CAB.T152",
+		"r": "SMRT.EWL.CAB",
+		"n": "152",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:26",
+				"d": "14:27"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.153.Weekday",
+		"t": "SMRT.EWL.CAB.T153",
+		"r": "SMRT.EWL.CAB",
+		"n": "153",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:30",
+				"d": "14:31"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.154.Weekday",
+		"t": "SMRT.EWL.CAB.T154",
+		"r": "SMRT.EWL.CAB",
+		"n": "154",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:34",
+				"d": "14:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.155.Weekday",
+		"t": "SMRT.EWL.CAB.T155",
+		"r": "SMRT.EWL.CAB",
+		"n": "155",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:38",
+				"d": "14:39"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.156.Weekday",
+		"t": "SMRT.EWL.CAB.T156",
+		"r": "SMRT.EWL.CAB",
+		"n": "156",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:42",
+				"d": "14:43"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.157.Weekday",
+		"t": "SMRT.EWL.CAB.T157",
+		"r": "SMRT.EWL.CAB",
+		"n": "157",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:46",
+				"d": "14:47"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.158.Weekday",
+		"t": "SMRT.EWL.CAB.T158",
+		"r": "SMRT.EWL.CAB",
+		"n": "158",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:50",
+				"d": "14:51"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "14:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.159.Weekday",
+		"t": "SMRT.EWL.CAB.T159",
+		"r": "SMRT.EWL.CAB",
+		"n": "159",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "14:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:54",
+				"d": "14:55"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "14:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.160.Weekday",
+		"t": "SMRT.EWL.CAB.T160",
+		"r": "SMRT.EWL.CAB",
+		"n": "160",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "14:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "14:58",
+				"d": "14:59"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.161.Weekday",
+		"t": "SMRT.EWL.CAB.T161",
+		"r": "SMRT.EWL.CAB",
+		"n": "161",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:02",
+				"d": "15:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.162.Weekday",
+		"t": "SMRT.EWL.CAB.T162",
+		"r": "SMRT.EWL.CAB",
+		"n": "162",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:06",
+				"d": "15:07"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.163.Weekday",
+		"t": "SMRT.EWL.CAB.T163",
+		"r": "SMRT.EWL.CAB",
+		"n": "163",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:10",
+				"d": "15:11"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.164.Weekday",
+		"t": "SMRT.EWL.CAB.T164",
+		"r": "SMRT.EWL.CAB",
+		"n": "164",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:14",
+				"d": "15:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.165.Weekday",
+		"t": "SMRT.EWL.CAB.T165",
+		"r": "SMRT.EWL.CAB",
+		"n": "165",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:18",
+				"d": "15:19"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.166.Weekday",
+		"t": "SMRT.EWL.CAB.T166",
+		"r": "SMRT.EWL.CAB",
+		"n": "166",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:22",
+				"d": "15:23"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.167.Weekday",
+		"t": "SMRT.EWL.CAB.T167",
+		"r": "SMRT.EWL.CAB",
+		"n": "167",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:26",
+				"d": "15:27"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.168.Weekday",
+		"t": "SMRT.EWL.CAB.T168",
+		"r": "SMRT.EWL.CAB",
+		"n": "168",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:30",
+				"d": "15:31"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.169.Weekday",
+		"t": "SMRT.EWL.CAB.T169",
+		"r": "SMRT.EWL.CAB",
+		"n": "169",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:34",
+				"d": "15:35"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.170.Weekday",
+		"t": "SMRT.EWL.CAB.T170",
+		"r": "SMRT.EWL.CAB",
+		"n": "170",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:38",
+				"d": "15:39"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.171.Weekday",
+		"t": "SMRT.EWL.CAB.T171",
+		"r": "SMRT.EWL.CAB",
+		"n": "171",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:42",
+				"d": "15:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.172.Weekday",
+		"t": "SMRT.EWL.CAB.T172",
+		"r": "SMRT.EWL.CAB",
+		"n": "172",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:46",
+				"d": "15:47"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.173.Weekday",
+		"t": "SMRT.EWL.CAB.T173",
+		"r": "SMRT.EWL.CAB",
+		"n": "173",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:50",
+				"d": "15:51"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "15:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.174.Weekday",
+		"t": "SMRT.EWL.CAB.T174",
+		"r": "SMRT.EWL.CAB",
+		"n": "174",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "15:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:54",
+				"d": "15:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "15:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.175.Weekday",
+		"t": "SMRT.EWL.CAB.T175",
+		"r": "SMRT.EWL.CAB",
+		"n": "175",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "15:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "15:58",
+				"d": "15:59"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.176.Weekday",
+		"t": "SMRT.EWL.CAB.T176",
+		"r": "SMRT.EWL.CAB",
+		"n": "176",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:02",
+				"d": "16:03"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.177.Weekday",
+		"t": "SMRT.EWL.CAB.T177",
+		"r": "SMRT.EWL.CAB",
+		"n": "177",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:06",
+				"d": "16:07"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.178.Weekday",
+		"t": "SMRT.EWL.CAB.T178",
+		"r": "SMRT.EWL.CAB",
+		"n": "178",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:08"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:10",
+				"d": "16:11"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:13"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.179.Weekday",
+		"t": "SMRT.EWL.CAB.T179",
+		"r": "SMRT.EWL.CAB",
+		"n": "179",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:14",
+				"d": "16:15"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.180.Weekday",
+		"t": "SMRT.EWL.CAB.T180",
+		"r": "SMRT.EWL.CAB",
+		"n": "180",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:16"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:18",
+				"d": "16:19"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:21"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.181.Weekday",
+		"t": "SMRT.EWL.CAB.T181",
+		"r": "SMRT.EWL.CAB",
+		"n": "181",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:22",
+				"d": "16:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.182.Weekday",
+		"t": "SMRT.EWL.CAB.T182",
+		"r": "SMRT.EWL.CAB",
+		"n": "182",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:24"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:26",
+				"d": "16:27"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:29"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.183.Weekday",
+		"t": "SMRT.EWL.CAB.T183",
+		"r": "SMRT.EWL.CAB",
+		"n": "183",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:28"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:30",
+				"d": "16:31"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:33"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.184.Weekday",
+		"t": "SMRT.EWL.CAB.T184",
+		"r": "SMRT.EWL.CAB",
+		"n": "184",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:34",
+				"d": "16:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.185.Weekday",
+		"t": "SMRT.EWL.CAB.T185",
+		"r": "SMRT.EWL.CAB",
+		"n": "185",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:36"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:38",
+				"d": "16:39"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:41"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.186.Weekday",
+		"t": "SMRT.EWL.CAB.T186",
+		"r": "SMRT.EWL.CAB",
+		"n": "186",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:42",
+				"d": "16:43"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.187.Weekday",
+		"t": "SMRT.EWL.CAB.T187",
+		"r": "SMRT.EWL.CAB",
+		"n": "187",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:44"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:46",
+				"d": "16:47"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:49"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.188.Weekday",
+		"t": "SMRT.EWL.CAB.T188",
+		"r": "SMRT.EWL.CAB",
+		"n": "188",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:48"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:50",
+				"d": "16:51"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "16:53"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.189.Weekday",
+		"t": "SMRT.EWL.CAB.T189",
+		"r": "SMRT.EWL.CAB",
+		"n": "189",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "16:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:54",
+				"d": "16:55"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "16:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.190.Weekday",
+		"t": "SMRT.EWL.CAB.T190",
+		"r": "SMRT.EWL.CAB",
+		"n": "190",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "16:56"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "16:58",
+				"d": "16:59"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:01"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.191.Weekday",
+		"t": "SMRT.EWL.CAB.T191",
+		"r": "SMRT.EWL.CAB",
+		"n": "191",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:02",
+				"d": "17:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.192.Weekday",
+		"t": "SMRT.EWL.CAB.T192",
+		"r": "SMRT.EWL.CAB",
+		"n": "192",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:04"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:06",
+				"d": "17:07"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:09"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.193.Weekday",
+		"t": "SMRT.EWL.CAB.T193",
+		"r": "SMRT.EWL.CAB",
+		"n": "193",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:02",
+				"d": "17:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.194.Weekday",
+		"t": "SMRT.EWL.CAB.T194",
+		"r": "SMRT.EWL.CAB",
+		"n": "194",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:04",
+				"d": "17:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.195.Weekday",
+		"t": "SMRT.EWL.CAB.T195",
+		"r": "SMRT.EWL.CAB",
+		"n": "195",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:07",
+				"d": "17:08"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.196.Weekday",
+		"t": "SMRT.EWL.CAB.T196",
+		"r": "SMRT.EWL.CAB",
+		"n": "196",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:07"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:09",
+				"d": "17:10"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:12"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.197.Weekday",
+		"t": "SMRT.EWL.CAB.T197",
+		"r": "SMRT.EWL.CAB",
+		"n": "197",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:12",
+				"d": "17:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.198.Weekday",
+		"t": "SMRT.EWL.CAB.T198",
+		"r": "SMRT.EWL.CAB",
+		"n": "198",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:14",
+				"d": "17:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.199.Weekday",
+		"t": "SMRT.EWL.CAB.T199",
+		"r": "SMRT.EWL.CAB",
+		"n": "199",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:17",
+				"d": "17:18"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.200.Weekday",
+		"t": "SMRT.EWL.CAB.T200",
+		"r": "SMRT.EWL.CAB",
+		"n": "200",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:17"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:19",
+				"d": "17:20"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:22"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.201.Weekday",
+		"t": "SMRT.EWL.CAB.T201",
+		"r": "SMRT.EWL.CAB",
+		"n": "201",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:22",
+				"d": "17:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.202.Weekday",
+		"t": "SMRT.EWL.CAB.T202",
+		"r": "SMRT.EWL.CAB",
+		"n": "202",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:22"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:24",
+				"d": "17:25"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:27"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.203.Weekday",
+		"t": "SMRT.EWL.CAB.T203",
+		"r": "SMRT.EWL.CAB",
+		"n": "203",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:27",
+				"d": "17:28"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.204.Weekday",
+		"t": "SMRT.EWL.CAB.T204",
+		"r": "SMRT.EWL.CAB",
+		"n": "204",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:27"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:29",
+				"d": "17:30"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:32"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.205.Weekday",
+		"t": "SMRT.EWL.CAB.T205",
+		"r": "SMRT.EWL.CAB",
+		"n": "205",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:32",
+				"d": "17:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.206.Weekday",
+		"t": "SMRT.EWL.CAB.T206",
+		"r": "SMRT.EWL.CAB",
+		"n": "206",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:34",
+				"d": "17:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.207.Weekday",
+		"t": "SMRT.EWL.CAB.T207",
+		"r": "SMRT.EWL.CAB",
+		"n": "207",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:37",
+				"d": "17:38"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.208.Weekday",
+		"t": "SMRT.EWL.CAB.T208",
+		"r": "SMRT.EWL.CAB",
+		"n": "208",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:37"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:39",
+				"d": "17:40"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:42"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.209.Weekday",
+		"t": "SMRT.EWL.CAB.T209",
+		"r": "SMRT.EWL.CAB",
+		"n": "209",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:42",
+				"d": "17:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.210.Weekday",
+		"t": "SMRT.EWL.CAB.T210",
+		"r": "SMRT.EWL.CAB",
+		"n": "210",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:42"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:44",
+				"d": "17:45"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:47"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.211.Weekday",
+		"t": "SMRT.EWL.CAB.T211",
+		"r": "SMRT.EWL.CAB",
+		"n": "211",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:47",
+				"d": "17:48"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.212.Weekday",
+		"t": "SMRT.EWL.CAB.T212",
+		"r": "SMRT.EWL.CAB",
+		"n": "212",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:47"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:49",
+				"d": "17:50"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:52"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.213.Weekday",
+		"t": "SMRT.EWL.CAB.T213",
+		"r": "SMRT.EWL.CAB",
+		"n": "213",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:52",
+				"d": "17:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "17:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.214.Weekday",
+		"t": "SMRT.EWL.CAB.T214",
+		"r": "SMRT.EWL.CAB",
+		"n": "214",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:54",
+				"d": "17:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "17:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.215.Weekday",
+		"t": "SMRT.EWL.CAB.T215",
+		"r": "SMRT.EWL.CAB",
+		"n": "215",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "17:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:57",
+				"d": "17:58"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.216.Weekday",
+		"t": "SMRT.EWL.CAB.T216",
+		"r": "SMRT.EWL.CAB",
+		"n": "216",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "17:57"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "17:59",
+				"d": "18:00"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:02"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.217.Weekday",
+		"t": "SMRT.EWL.CAB.T217",
+		"r": "SMRT.EWL.CAB",
+		"n": "217",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:02",
+				"d": "18:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.218.Weekday",
+		"t": "SMRT.EWL.CAB.T218",
+		"r": "SMRT.EWL.CAB",
+		"n": "218",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:04",
+				"d": "18:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.219.Weekday",
+		"t": "SMRT.EWL.CAB.T219",
+		"r": "SMRT.EWL.CAB",
+		"n": "219",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:07",
+				"d": "18:08"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.220.Weekday",
+		"t": "SMRT.EWL.CAB.T220",
+		"r": "SMRT.EWL.CAB",
+		"n": "220",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:07"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:09",
+				"d": "18:10"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:12"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.221.Weekday",
+		"t": "SMRT.EWL.CAB.T221",
+		"r": "SMRT.EWL.CAB",
+		"n": "221",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:12",
+				"d": "18:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.222.Weekday",
+		"t": "SMRT.EWL.CAB.T222",
+		"r": "SMRT.EWL.CAB",
+		"n": "222",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:14",
+				"d": "18:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.223.Weekday",
+		"t": "SMRT.EWL.CAB.T223",
+		"r": "SMRT.EWL.CAB",
+		"n": "223",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:17",
+				"d": "18:18"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.224.Weekday",
+		"t": "SMRT.EWL.CAB.T224",
+		"r": "SMRT.EWL.CAB",
+		"n": "224",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:17"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:19",
+				"d": "18:20"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:22"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.225.Weekday",
+		"t": "SMRT.EWL.CAB.T225",
+		"r": "SMRT.EWL.CAB",
+		"n": "225",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:22",
+				"d": "18:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.226.Weekday",
+		"t": "SMRT.EWL.CAB.T226",
+		"r": "SMRT.EWL.CAB",
+		"n": "226",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:22"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:24",
+				"d": "18:25"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:27"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.227.Weekday",
+		"t": "SMRT.EWL.CAB.T227",
+		"r": "SMRT.EWL.CAB",
+		"n": "227",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:27",
+				"d": "18:28"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.228.Weekday",
+		"t": "SMRT.EWL.CAB.T228",
+		"r": "SMRT.EWL.CAB",
+		"n": "228",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:27"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:29",
+				"d": "18:30"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:32"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.229.Weekday",
+		"t": "SMRT.EWL.CAB.T229",
+		"r": "SMRT.EWL.CAB",
+		"n": "229",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:32",
+				"d": "18:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.230.Weekday",
+		"t": "SMRT.EWL.CAB.T230",
+		"r": "SMRT.EWL.CAB",
+		"n": "230",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:34",
+				"d": "18:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.231.Weekday",
+		"t": "SMRT.EWL.CAB.T231",
+		"r": "SMRT.EWL.CAB",
+		"n": "231",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:37",
+				"d": "18:38"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.232.Weekday",
+		"t": "SMRT.EWL.CAB.T232",
+		"r": "SMRT.EWL.CAB",
+		"n": "232",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:37"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:39",
+				"d": "18:40"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:42"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.233.Weekday",
+		"t": "SMRT.EWL.CAB.T233",
+		"r": "SMRT.EWL.CAB",
+		"n": "233",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:42",
+				"d": "18:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.234.Weekday",
+		"t": "SMRT.EWL.CAB.T234",
+		"r": "SMRT.EWL.CAB",
+		"n": "234",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:42"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:44",
+				"d": "18:45"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:47"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.235.Weekday",
+		"t": "SMRT.EWL.CAB.T235",
+		"r": "SMRT.EWL.CAB",
+		"n": "235",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:47",
+				"d": "18:48"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.236.Weekday",
+		"t": "SMRT.EWL.CAB.T236",
+		"r": "SMRT.EWL.CAB",
+		"n": "236",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:47"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:49",
+				"d": "18:50"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:52"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.237.Weekday",
+		"t": "SMRT.EWL.CAB.T237",
+		"r": "SMRT.EWL.CAB",
+		"n": "237",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:52",
+				"d": "18:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "18:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.238.Weekday",
+		"t": "SMRT.EWL.CAB.T238",
+		"r": "SMRT.EWL.CAB",
+		"n": "238",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:54",
+				"d": "18:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "18:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.239.Weekday",
+		"t": "SMRT.EWL.CAB.T239",
+		"r": "SMRT.EWL.CAB",
+		"n": "239",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "18:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:57",
+				"d": "18:58"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.240.Weekday",
+		"t": "SMRT.EWL.CAB.T240",
+		"r": "SMRT.EWL.CAB",
+		"n": "240",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "18:57"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "18:59",
+				"d": "19:00"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:02"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.241.Weekday",
+		"t": "SMRT.EWL.CAB.T241",
+		"r": "SMRT.EWL.CAB",
+		"n": "241",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:02",
+				"d": "19:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.242.Weekday",
+		"t": "SMRT.EWL.CAB.T242",
+		"r": "SMRT.EWL.CAB",
+		"n": "242",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:04",
+				"d": "19:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.243.Weekday",
+		"t": "SMRT.EWL.CAB.T243",
+		"r": "SMRT.EWL.CAB",
+		"n": "243",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:07",
+				"d": "19:08"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.244.Weekday",
+		"t": "SMRT.EWL.CAB.T244",
+		"r": "SMRT.EWL.CAB",
+		"n": "244",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:07"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:09",
+				"d": "19:10"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:12"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.245.Weekday",
+		"t": "SMRT.EWL.CAB.T245",
+		"r": "SMRT.EWL.CAB",
+		"n": "245",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:12",
+				"d": "19:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.246.Weekday",
+		"t": "SMRT.EWL.CAB.T246",
+		"r": "SMRT.EWL.CAB",
+		"n": "246",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:12"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:14",
+				"d": "19:15"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:17"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.247.Weekday",
+		"t": "SMRT.EWL.CAB.T247",
+		"r": "SMRT.EWL.CAB",
+		"n": "247",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:17",
+				"d": "19:18"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.248.Weekday",
+		"t": "SMRT.EWL.CAB.T248",
+		"r": "SMRT.EWL.CAB",
+		"n": "248",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:17"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:19",
+				"d": "19:20"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:22"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.249.Weekday",
+		"t": "SMRT.EWL.CAB.T249",
+		"r": "SMRT.EWL.CAB",
+		"n": "249",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:22",
+				"d": "19:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.250.Weekday",
+		"t": "SMRT.EWL.CAB.T250",
+		"r": "SMRT.EWL.CAB",
+		"n": "250",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:22"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:24",
+				"d": "19:25"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:27"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.251.Weekday",
+		"t": "SMRT.EWL.CAB.T251",
+		"r": "SMRT.EWL.CAB",
+		"n": "251",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:27",
+				"d": "19:28"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.252.Weekday",
+		"t": "SMRT.EWL.CAB.T252",
+		"r": "SMRT.EWL.CAB",
+		"n": "252",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:27"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:29",
+				"d": "19:30"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:32"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.253.Weekday",
+		"t": "SMRT.EWL.CAB.T253",
+		"r": "SMRT.EWL.CAB",
+		"n": "253",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:32",
+				"d": "19:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.254.Weekday",
+		"t": "SMRT.EWL.CAB.T254",
+		"r": "SMRT.EWL.CAB",
+		"n": "254",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:32"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:34",
+				"d": "19:35"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:37"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.255.Weekday",
+		"t": "SMRT.EWL.CAB.T255",
+		"r": "SMRT.EWL.CAB",
+		"n": "255",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:37",
+				"d": "19:38"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.256.Weekday",
+		"t": "SMRT.EWL.CAB.T256",
+		"r": "SMRT.EWL.CAB",
+		"n": "256",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:37"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:39",
+				"d": "19:40"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:42"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.257.Weekday",
+		"t": "SMRT.EWL.CAB.T257",
+		"r": "SMRT.EWL.CAB",
+		"n": "257",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:42",
+				"d": "19:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.258.Weekday",
+		"t": "SMRT.EWL.CAB.T258",
+		"r": "SMRT.EWL.CAB",
+		"n": "258",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:42"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:44",
+				"d": "19:45"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:47"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.259.Weekday",
+		"t": "SMRT.EWL.CAB.T259",
+		"r": "SMRT.EWL.CAB",
+		"n": "259",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:47",
+				"d": "19:48"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.260.Weekday",
+		"t": "SMRT.EWL.CAB.T260",
+		"r": "SMRT.EWL.CAB",
+		"n": "260",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:47"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:49",
+				"d": "19:50"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:52"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.261.Weekday",
+		"t": "SMRT.EWL.CAB.T261",
+		"r": "SMRT.EWL.CAB",
+		"n": "261",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:52",
+				"d": "19:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "19:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.262.Weekday",
+		"t": "SMRT.EWL.CAB.T262",
+		"r": "SMRT.EWL.CAB",
+		"n": "262",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:52"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:54",
+				"d": "19:55"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "19:57"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.263.Weekday",
+		"t": "SMRT.EWL.CAB.T263",
+		"r": "SMRT.EWL.CAB",
+		"n": "263",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "19:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:57",
+				"d": "19:58"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.264.Weekday",
+		"t": "SMRT.EWL.CAB.T264",
+		"r": "SMRT.EWL.CAB",
+		"n": "264",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "19:57"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "19:59",
+				"d": "20:00"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:02"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.265.Weekday",
+		"t": "SMRT.EWL.CAB.T265",
+		"r": "SMRT.EWL.CAB",
+		"n": "265",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:02",
+				"d": "20:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.266.Weekday",
+		"t": "SMRT.EWL.CAB.T266",
+		"r": "SMRT.EWL.CAB",
+		"n": "266",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:02"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:04",
+				"d": "20:05"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:07"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.267.Weekday",
+		"t": "SMRT.EWL.CAB.T267",
+		"r": "SMRT.EWL.CAB",
+		"n": "267",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:02",
+				"d": "20:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.268.Weekday",
+		"t": "SMRT.EWL.CAB.T268",
+		"r": "SMRT.EWL.CAB",
+		"n": "268",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:07",
+				"d": "20:08"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.269.Weekday",
+		"t": "SMRT.EWL.CAB.T269",
+		"r": "SMRT.EWL.CAB",
+		"n": "269",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:12",
+				"d": "20:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.270.Weekday",
+		"t": "SMRT.EWL.CAB.T270",
+		"r": "SMRT.EWL.CAB",
+		"n": "270",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:17",
+				"d": "20:18"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.271.Weekday",
+		"t": "SMRT.EWL.CAB.T271",
+		"r": "SMRT.EWL.CAB",
+		"n": "271",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:22",
+				"d": "20:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.272.Weekday",
+		"t": "SMRT.EWL.CAB.T272",
+		"r": "SMRT.EWL.CAB",
+		"n": "272",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:27",
+				"d": "20:28"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.273.Weekday",
+		"t": "SMRT.EWL.CAB.T273",
+		"r": "SMRT.EWL.CAB",
+		"n": "273",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:32",
+				"d": "20:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.274.Weekday",
+		"t": "SMRT.EWL.CAB.T274",
+		"r": "SMRT.EWL.CAB",
+		"n": "274",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:37",
+				"d": "20:38"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.275.Weekday",
+		"t": "SMRT.EWL.CAB.T275",
+		"r": "SMRT.EWL.CAB",
+		"n": "275",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:42",
+				"d": "20:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.276.Weekday",
+		"t": "SMRT.EWL.CAB.T276",
+		"r": "SMRT.EWL.CAB",
+		"n": "276",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:47",
+				"d": "20:48"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "20:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.277.Weekday",
+		"t": "SMRT.EWL.CAB.T277",
+		"r": "SMRT.EWL.CAB",
+		"n": "277",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "20:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:52",
+				"d": "20:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "20:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.278.Weekday",
+		"t": "SMRT.EWL.CAB.T278",
+		"r": "SMRT.EWL.CAB",
+		"n": "278",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "20:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "20:57",
+				"d": "20:58"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "21:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.279.Weekday",
+		"t": "SMRT.EWL.CAB.T279",
+		"r": "SMRT.EWL.CAB",
+		"n": "279",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "21:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:02",
+				"d": "21:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "21:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.280.Weekday",
+		"t": "SMRT.EWL.CAB.T280",
+		"r": "SMRT.EWL.CAB",
+		"n": "280",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "21:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:07",
+				"d": "21:08"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "21:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.281.Weekday",
+		"t": "SMRT.EWL.CAB.T281",
+		"r": "SMRT.EWL.CAB",
+		"n": "281",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "21:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:12",
+				"d": "21:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "21:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.282.Weekday",
+		"t": "SMRT.EWL.CAB.T282",
+		"r": "SMRT.EWL.CAB",
+		"n": "282",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "21:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:17",
+				"d": "21:18"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "21:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.283.Weekday",
+		"t": "SMRT.EWL.CAB.T283",
+		"r": "SMRT.EWL.CAB",
+		"n": "283",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "21:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:22",
+				"d": "21:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "21:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.284.Weekday",
+		"t": "SMRT.EWL.CAB.T284",
+		"r": "SMRT.EWL.CAB",
+		"n": "284",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "21:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:27",
+				"d": "21:28"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "21:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.285.Weekday",
+		"t": "SMRT.EWL.CAB.T285",
+		"r": "SMRT.EWL.CAB",
+		"n": "285",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "21:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:32",
+				"d": "21:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "21:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.286.Weekday",
+		"t": "SMRT.EWL.CAB.T286",
+		"r": "SMRT.EWL.CAB",
+		"n": "286",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "21:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:37",
+				"d": "21:38"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "21:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.287.Weekday",
+		"t": "SMRT.EWL.CAB.T287",
+		"r": "SMRT.EWL.CAB",
+		"n": "287",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "21:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:42",
+				"d": "21:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "21:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.288.Weekday",
+		"t": "SMRT.EWL.CAB.T288",
+		"r": "SMRT.EWL.CAB",
+		"n": "288",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "21:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:47",
+				"d": "21:48"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "21:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.289.Weekday",
+		"t": "SMRT.EWL.CAB.T289",
+		"r": "SMRT.EWL.CAB",
+		"n": "289",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "21:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:52",
+				"d": "21:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "21:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.290.Weekday",
+		"t": "SMRT.EWL.CAB.T290",
+		"r": "SMRT.EWL.CAB",
+		"n": "290",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "21:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "21:57",
+				"d": "21:58"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "22:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.291.Weekday",
+		"t": "SMRT.EWL.CAB.T291",
+		"r": "SMRT.EWL.CAB",
+		"n": "291",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "22:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:02",
+				"d": "22:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "22:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.292.Weekday",
+		"t": "SMRT.EWL.CAB.T292",
+		"r": "SMRT.EWL.CAB",
+		"n": "292",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "22:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:07",
+				"d": "22:08"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "22:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.293.Weekday",
+		"t": "SMRT.EWL.CAB.T293",
+		"r": "SMRT.EWL.CAB",
+		"n": "293",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "22:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:12",
+				"d": "22:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "22:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.294.Weekday",
+		"t": "SMRT.EWL.CAB.T294",
+		"r": "SMRT.EWL.CAB",
+		"n": "294",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "22:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:17",
+				"d": "22:18"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "22:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.295.Weekday",
+		"t": "SMRT.EWL.CAB.T295",
+		"r": "SMRT.EWL.CAB",
+		"n": "295",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "22:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:22",
+				"d": "22:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "22:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.296.Weekday",
+		"t": "SMRT.EWL.CAB.T296",
+		"r": "SMRT.EWL.CAB",
+		"n": "296",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "22:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:27",
+				"d": "22:28"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "22:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.297.Weekday",
+		"t": "SMRT.EWL.CAB.T297",
+		"r": "SMRT.EWL.CAB",
+		"n": "297",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "22:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:32",
+				"d": "22:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "22:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.298.Weekday",
+		"t": "SMRT.EWL.CAB.T298",
+		"r": "SMRT.EWL.CAB",
+		"n": "298",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "22:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:37",
+				"d": "22:38"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "22:40"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.299.Weekday",
+		"t": "SMRT.EWL.CAB.T299",
+		"r": "SMRT.EWL.CAB",
+		"n": "299",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "22:40"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:42",
+				"d": "22:43"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "22:45"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.300.Weekday",
+		"t": "SMRT.EWL.CAB.T300",
+		"r": "SMRT.EWL.CAB",
+		"n": "300",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "22:45"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:47",
+				"d": "22:48"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "22:50"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.301.Weekday",
+		"t": "SMRT.EWL.CAB.T301",
+		"r": "SMRT.EWL.CAB",
+		"n": "301",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "22:50"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:52",
+				"d": "22:53"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "22:55"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.302.Weekday",
+		"t": "SMRT.EWL.CAB.T302",
+		"r": "SMRT.EWL.CAB",
+		"n": "302",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "22:55"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "22:57",
+				"d": "22:58"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "23:00"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.303.Weekday",
+		"t": "SMRT.EWL.CAB.T303",
+		"r": "SMRT.EWL.CAB",
+		"n": "303",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "23:00"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:02",
+				"d": "23:03"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "23:05"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.304.Weekday",
+		"t": "SMRT.EWL.CAB.T304",
+		"r": "SMRT.EWL.CAB",
+		"n": "304",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "23:05"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:07",
+				"d": "23:08"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "23:10"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.305.Weekday",
+		"t": "SMRT.EWL.CAB.T305",
+		"r": "SMRT.EWL.CAB",
+		"n": "305",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "23:10"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:12",
+				"d": "23:13"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "23:15"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.306.Weekday",
+		"t": "SMRT.EWL.CAB.T306",
+		"r": "SMRT.EWL.CAB",
+		"n": "306",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "23:15"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:17",
+				"d": "23:18"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "23:20"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.307.Weekday",
+		"t": "SMRT.EWL.CAB.T307",
+		"r": "SMRT.EWL.CAB",
+		"n": "307",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "23:20"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:22",
+				"d": "23:23"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "23:25"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.308.Weekday",
+		"t": "SMRT.EWL.CAB.T308",
+		"r": "SMRT.EWL.CAB",
+		"n": "308",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "23:25"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:27",
+				"d": "23:28"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "23:30"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.309.Weekday",
+		"t": "SMRT.EWL.CAB.T309",
+		"r": "SMRT.EWL.CAB",
+		"n": "309",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Outbound",
+		"os": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"ds": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"d": "23:30"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:32",
+				"d": "23:33"
+			},
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"a": "23:35"
+			}
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.310.Weekday",
+		"t": "SMRT.EWL.CAB.T310",
+		"r": "SMRT.EWL.CAB",
+		"n": "310",
+		"y": "default",
+		"d": "SMRT.EWL.CAB.Inbound",
+		"os": [
+			"SMRT.EWL.TanahMerah"
+		],
+		"ds": [
+			"SMRT.EWL.ChangiAirport"
+		],
+		"tt": [
+			{
+				"s": "SMRT.EWL.TanahMerah",
+				"d": "23:35"
+			},
+			{
+				"s": "SMRT.EWL.Expo",
+				"a": "23:37",
+				"d": "23:38"
+			},
+			{
+				"s": "SMRT.EWL.ChangiAirport",
+				"a": "23:40"
+			}
+		]
+	}
+]

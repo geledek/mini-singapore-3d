@@ -371,18 +371,28 @@ export function featureWorker() {
 
         for (const stations of group) {
             const altitude = stationLookup[stations[0]].altitude || 0,
-                layer = altitude < 0 ? ug : og,
-                coords = stations.map(id => {
-                    const {railway, coord, alternate} = stationLookup[id],
-                        feature = featureLookup[railway];
+                layer = altitude < 0 ? ug : og;
+            let coords = stations.map(id => {
+                const {railway, coord, alternate} = stationLookup[id],
+                    feature = featureLookup[railway];
 
                     if (!alternate) {
                         layer.id = layer.id || id;
                         ids.push(id);
                     }
                     return getCoord(nearestPointOnLine(feature, coord));
-                }),
-                feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
+                });
+                // Collapse nearly-identical coords to avoid elongated station shapes
+                if (coords.length > 1) {
+                    const deduped = [];
+                    for (const c of coords) {
+                        if (!deduped.some(u => turfDistance(u, c) < 0.02)) { // ~20m
+                            deduped.push(c);
+                        }
+                    }
+                    coords = deduped;
+                }
+                const feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
 
             layer.features.push(buffer(feature, unit));
             layer.connectionCoords.push(...coords);

@@ -61,8 +61,6 @@
 			"SMRT.EWL.Tampines",
 			"SMRT.EWL.Simei",
 			"SMRT.EWL.TanahMerah",
-			"SMRT.EWL.Expo",
-			"SMRT.EWL.ChangiAirport",
 			"SMRT.EWL.Bedok",
 			"SMRT.EWL.Kembangan",
 			"SMRT.EWL.Eunos",
@@ -92,6 +90,26 @@
 			"SMRT.EWL.TuasCrescent",
 			"SMRT.EWL.TuasWestRoad",
 			"SMRT.EWL.TuasLink"
+		]
+	},
+{
+		"id": "SMRT.EWL.CAB",
+		"title": {
+			"en": "East West Line (Changi Branch)",
+			"zh-Hans": "东西线（樟宜支线）",
+			"zh-Hant": "東西線（樟宜支線）",
+			"ms": "Laluan Timur Barat (Cawangan Changi)",
+			"ta": "கிழக்கு மேற்கு பாதை (சாங்கி கிளை)"
+		},
+		"color": "#009645",
+		"operator": "SMRT",
+		"type": "heavy-rail",
+		"ascending": "SMRT.EWL.CAB.Outbound",
+		"descending": "SMRT.EWL.CAB.Inbound",
+		"stations": [
+			"SMRT.EWL.TanahMerah",
+			"SMRT.EWL.Expo",
+			"SMRT.EWL.ChangiAirport"
 		]
 	},
 	{
