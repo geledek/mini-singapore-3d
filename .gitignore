@@ -2,6 +2,7 @@
 /build
 /dist
 /stats.html
+test-error.png
 
 # Dependencies
 /node_modules

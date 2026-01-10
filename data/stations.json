@@ -1845,8 +1845,8 @@
 		"code": "CE2"
 	},
 	{
-		"id": "SMRT.EWL.Expo",
-		"railway": "SMRT.EWL",
+    "id": "SMRT.EWL.Expo",
+    "railway": "SMRT.EWL.CAB",
 		"coord": [
 			103.9614,
 			1.3354
@@ -1860,8 +1860,8 @@
 		"code": "CG1"
 	},
 	{
-		"id": "SMRT.EWL.ChangiAirport",
-		"railway": "SMRT.EWL",
+    "id": "SMRT.EWL.ChangiAirport",
+    "railway": "SMRT.EWL.CAB",
 		"coord": [
 			103.9886,
 			1.3573

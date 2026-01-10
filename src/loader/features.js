@@ -165,6 +165,8 @@ export function featureWorker() {
     const unit = Math.pow(2, 14 - zoom) * .1;
 
     for (const {id, sublines, color, altitude, loop} of railways) {
+        // Collect parallel offsets from 'sub' sublines; do not merge them into main path
+        const parallelOffsets = [];
         const railwayFeature = lineString([].concat(...sublines.map((subline, index) => {
             const {type, start, end, coords, opacity} = subline,
                 sublineAltitude = valueOrDefault(subline.altitude, altitude) || 0,
@@ -224,12 +226,13 @@ export function featureWorker() {
                     smoothCoords(end, true);
                 }
             } else if (type === 'sub' || type === 'hybrid') {
-                if (start.railway === end.railway && start.offset === end.offset) {
-                    const feature = lineSlice(coords[0], coords[coords.length - 1], featureLookup[start.railway]),
-                        offset = start.offset;
-
-                    coordinates = alignDirection(offset ? lineOffset(feature, offset * unit) : feature, coords);
-                } else {
+                // For 'sub' (parallel rails), record offsets and skip merging into main path
+                if (type === 'sub' && start && start.railway && start.offset !== undefined && end && end.railway === start.railway && end.offset === start.offset) {
+                    parallelOffsets.push(start.offset);
+                    return [];
+                }
+                // Hybrid handling unchanged
+                if (type === 'hybrid') {
                     const {interpolate} = subline;
                     let feature1 = lineSlice(coords[0], coords[coords.length - 1], featureLookup[start.railway]),
                         offset = start.offset;
@@ -350,15 +353,38 @@ export function featureWorker() {
 
             sections.forEach((section, i) => {
                 if (section.coords.length >= 2) {
-                    featureArray.unshift(lineString(section.coords, {
+                    // Determine if this section is planned (for dashed style)
+                    const dashed = 0;
+
+                    const mainSection = lineString(section.coords, {
                         id: `${id}.${section.altitude < 0 ? 'ug' : 'og'}.${zoom}.${index}.${i}`,
                         type: section.opacity === 1 ? 0 : 2,
                         color,
                         width: 8,
                         zoom,
                         section: `${id}.${index}`,
-                        altitude: section.altitude
-                    }));
+                        altitude: section.altitude,
+                        dashed
+                    });
+                    featureArray.unshift(mainSection);
+                    // Add parallel rails as separate features offset from this section
+                    for (const o of parallelOffsets) {
+                        try {
+                            const off = lineOffset(mainSection, o * unit);
+                            featureArray.unshift(lineString(getCoords(off), {
+                                id: `${id}.parallel.${section.altitude < 0 ? 'ug' : 'og'}.${zoom}.${index}.${i}.${o}`,
+                                type: section.opacity === 1 ? 0 : 2,
+                                color,
+                                width: 8,
+                                zoom,
+                                section: `${id}.${index}`,
+                                altitude: section.altitude,
+                                dashed: mainSection.properties.dashed
+                            }));
+                        } catch (e) {
+                            // ignore offset failure for this section
+                        }
+                    }
                 }
             });
         });
@@ -371,18 +397,33 @@ export function featureWorker() {
 
         for (const stations of group) {
             const altitude = stationLookup[stations[0]].altitude || 0,
-                layer = altitude < 0 ? ug : og,
-                coords = stations.map(id => {
-                    const {railway, coord, alternate} = stationLookup[id],
-                        feature = featureLookup[railway];
+                layer = altitude < 0 ? ug : og;
+            let coords = stations.map(id => {
+                const {railway, coord, alternate} = stationLookup[id],
+                    feature = featureLookup[railway];
 
-                    if (!alternate) {
-                        layer.id = layer.id || id;
-                        ids.push(id);
+                if (!alternate) {
+                    layer.id = layer.id || id;
+                    ids.push(id);
+                }
+                // Snap to railway, but avoid large jumps (>50m)
+                let snapped = getCoord(nearestPointOnLine(feature, coord));
+                if (turfDistance(snapped, coord) > 0.05) {
+                    snapped = coord;
+                }
+                return snapped;
+            });
+                // Collapse nearly-identical coords to avoid elongated station shapes
+            if (coords.length > 1) {
+                const deduped = [];
+                for (const c of coords) {
+                    if (!deduped.some(u => turfDistance(u, c) < 0.06)) { // ~60m
+                        deduped.push(c);
                     }
-                    return getCoord(nearestPointOnLine(feature, coord));
-                }),
-                feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
+                }
+                coords = deduped;
+            }
+            const feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
 
             layer.features.push(buffer(feature, unit));
             layer.connectionCoords.push(...coords);
@@ -398,6 +439,21 @@ export function featureWorker() {
             const feature = union(...ug.features);
 
             setAltitude(feature, ug.altitude * unit * 1000);
+            // Planned station dashed outline if any id is planned (e.g., TEL future)
+            const plannedStationSet = new Set([
+                'SMRT.TEL.MarinaSouth',
+                'SMRT.TEL.GardensbytheBay',
+                'SMRT.TEL.TanjongRhu',
+                'SMRT.TEL.KatongPark',
+                'SMRT.TEL.TanjongKatong',
+                'SMRT.TEL.MarineParade',
+                'SMRT.TEL.MarineTerrace',
+                'SMRT.TEL.Siglap',
+                'SMRT.TEL.Bayshore',
+                'SMRT.TEL.BedokSouth',
+                'SMRT.TEL.SungeiBedok'
+            ]);
+            const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
             feature.properties = {
                 id: `${ug.id}.ug.${zoom}`,
                 type: 1,
@@ -407,7 +463,8 @@ export function featureWorker() {
                 zoom,
                 group: `${ids[0]}.ug`,
                 altitude: ug.altitude * unit * 1000,
-                ids
+                ids,
+                dashed: dashedStation
             };
             featureArray.push(feature);
         }
@@ -419,6 +476,20 @@ export function featureWorker() {
 
             const feature = union(...og.features);
 
+            const plannedStationSet = new Set([
+                'SMRT.TEL.MarinaSouth',
+                'SMRT.TEL.GardensbytheBay',
+                'SMRT.TEL.TanjongRhu',
+                'SMRT.TEL.KatongPark',
+                'SMRT.TEL.TanjongKatong',
+                'SMRT.TEL.MarineParade',
+                'SMRT.TEL.MarineTerrace',
+                'SMRT.TEL.Siglap',
+                'SMRT.TEL.Bayshore',
+                'SMRT.TEL.BedokSouth',
+                'SMRT.TEL.SungeiBedok'
+            ]);
+            const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
             feature.properties = {
                 id: `${og.id}.og.${zoom}`,
                 type: 1,
@@ -428,7 +499,8 @@ export function featureWorker() {
                 zoom,
                 group: `${ids[0]}.og`,
                 altitude: 0,
-                ids
+                ids,
+                dashed: dashedStation
             };
             featureArray.push(feature);
         }

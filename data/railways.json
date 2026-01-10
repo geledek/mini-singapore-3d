@@ -54,15 +54,13 @@
 		"color": "#009645",
 		"operator": "SMRT",
 		"type": "heavy-rail",
-		"ascending": "SMRT.EWL.Eastbound",
-		"descending": "SMRT.EWL.Westbound",
+		"ascending": "SMRT.EWL.Westbound",
+		"descending": "SMRT.EWL.Eastbound",
 		"stations": [
 			"SMRT.EWL.PasirRis",
 			"SMRT.EWL.Tampines",
 			"SMRT.EWL.Simei",
 			"SMRT.EWL.TanahMerah",
-			"SMRT.EWL.Expo",
-			"SMRT.EWL.ChangiAirport",
 			"SMRT.EWL.Bedok",
 			"SMRT.EWL.Kembangan",
 			"SMRT.EWL.Eunos",
@@ -94,6 +92,26 @@
 			"SMRT.EWL.TuasLink"
 		]
 	},
+{
+		"id": "SMRT.EWL.CAB",
+		"title": {
+			"en": "East West Line (Changi Branch)",
+			"zh-Hans": "东西线（樟宜支线）",
+			"zh-Hant": "東西線（樟宜支線）",
+			"ms": "Laluan Timur Barat (Cawangan Changi)",
+			"ta": "கிழக்கு மேற்கு பாதை (சாங்கி கிளை)"
+		},
+		"color": "#009645",
+		"operator": "SMRT",
+		"type": "heavy-rail",
+		"ascending": "SMRT.EWL.CAB.Inbound",
+		"descending": "SMRT.EWL.CAB.Outbound",
+		"stations": [
+			"SMRT.EWL.TanahMerah",
+			"SMRT.EWL.Expo",
+			"SMRT.EWL.ChangiAirport"
+		]
+	},
 	{
 		"id": "SMRT.CCL",
 		"title": {
@@ -106,8 +124,8 @@
 		"color": "#FA9E0D",
 		"operator": "SMRT",
 		"type": "heavy-rail",
-		"ascending": "SMRT.CCL.Clockwise",
-		"descending": "SMRT.CCL.AntiClockwise",
+		"ascending": "SMRT.CCL.AntiClockwise",
+		"descending": "SMRT.CCL.Clockwise",
 		"stations": [
 			"SMRT.CCL.DhobyGhaut",
 			"SMRT.CCL.BrasBasah",
@@ -153,8 +171,8 @@
 		"color": "#9900AA",
 		"operator": "SBS",
 		"type": "heavy-rail",
-		"ascending": "SBS.NEL.NorthEastbound",
-		"descending": "SBS.NEL.SouthWestbound",
+		"ascending": "SBS.NEL.SouthWestbound",
+		"descending": "SBS.NEL.NorthEastbound",
 		"stations": [
 			"SBS.NEL.HarbourFront",
 			"SBS.NEL.OutramPark",
@@ -186,8 +204,8 @@
 		"color": "#005EC4",
 		"operator": "SBS",
 		"type": "heavy-rail",
-		"ascending": "SBS.DTL.Eastbound",
-		"descending": "SBS.DTL.Westbound",
+		"ascending": "SBS.DTL.Westbound",
+		"descending": "SBS.DTL.Eastbound",
 		"stations": [
 			"SBS.DTL.BukitPanjang",
 			"SBS.DTL.Cashew",
@@ -234,13 +252,13 @@
 			"zh-Hans": "汤申－东海岸线",
 			"zh-Hant": "湯申－東海岸線",
 			"ms": "Laluan Thomson-Pantai Timur",
-			"ta": "தாம்சன்-கிழக்கு கடற்கரை பாதை"
+			"ta": "தாம்சன்-கிழக்கு கடற்கு பாதை"
 		},
 		"color": "#9D5B25",
 		"operator": "SMRT",
 		"type": "heavy-rail",
-		"ascending": "SMRT.TEL.Northbound",
-		"descending": "SMRT.TEL.Southbound",
+		"ascending": "SMRT.TEL.Southbound",
+		"descending": "SMRT.TEL.Northbound",
 		"stations": [
 			"SMRT.TEL.WoodlandsNorth",
 			"SMRT.TEL.Woodlands",
@@ -287,8 +305,8 @@
 		"color": "#748477",
 		"operator": "SMRT",
 		"type": "light-rail",
-		"ascending": "SMRT.BPLRT.Clockwise",
-		"descending": "SMRT.BPLRT.AntiClockwise",
+		"ascending": "SMRT.BPLRT.AntiClockwise",
+		"descending": "SMRT.BPLRT.Clockwise",
 		"stations": [
 			"SMRT.BPLRT.ChoaChuKang",
 			"SMRT.BPLRT.SouthView",
@@ -318,8 +336,8 @@
 		"color": "#748477",
 		"operator": "SBS",
 		"type": "light-rail",
-		"ascending": "SBS.SKLRT.Clockwise",
-		"descending": "SBS.SKLRT.AntiClockwise",
+		"ascending": "SBS.SKLRT.AntiClockwise",
+		"descending": "SBS.SKLRT.Clockwise",
 		"stations": [
 			"SBS.SKLRT.Compassvale",
 			"SBS.SKLRT.Rumbia",
@@ -348,8 +366,8 @@
 		"color": "#748477",
 		"operator": "SBS",
 		"type": "light-rail",
-		"ascending": "SBS.PGLRT.Clockwise",
-		"descending": "SBS.PGLRT.AntiClockwise",
+		"ascending": "SBS.PGLRT.AntiClockwise",
+		"descending": "SBS.PGLRT.Clockwise",
 		"stations": [
 			"SBS.PGLRT.Cove",
 			"SBS.PGLRT.Meridian",

@@ -492,7 +492,7 @@ export default class extends Panel {
                     offsets = [];
                 let arrivalTime;
 
-                for (const {r, y, ds, d, tt, nm, transfer, delay} of route.trains) {
+                for (const {r, ds, d, tt, nm, transfer, delay} of route.trains) {
                     const departure = tt[0],
                         arrival = tt[tt.length - 1],
                         railway = map.railways.get(r),

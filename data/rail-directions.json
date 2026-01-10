@@ -8,7 +8,27 @@
 			"ms": "Arah Utara",
 			"ta": "வடக்கு நோக்கி"
 		}
-	},
+  },
+  {
+    "id": "SMRT.EWL.CAB.Outbound",
+    "title": {
+      "en": "To Changi Airport",
+      "zh-Hans": "往樟宜机场",
+      "zh-Hant": "往樟宜機場",
+      "ms": "Ke Lapangan Terbang Changi",
+      "ta": "சாங்கி விமானநிலையம் நோக்கி"
+    }
+  },
+  {
+    "id": "SMRT.EWL.CAB.Inbound",
+    "title": {
+      "en": "To Tanah Merah",
+      "zh-Hans": "往丹那美拉",
+      "zh-Hant": "往丹那美拉",
+      "ms": "Ke Tanah Merah",
+      "ta": "தனாஹ் மேரா நோக்கி"
+    }
+  },
 	{
 		"id": "SMRT.NSL.Southbound",
 		"title": {

@@ -70,13 +70,14 @@
     "build-pages": "rm -rf build; cp -r public build; cp .npmignore dist/mini-singapore-3d.min.* build; mkdir -p build/assets; cp assets/dictionary-*.json assets/style.json build/assets; node scripts/process-html.js",
     "build-data": "rm -rf build/data; mkdir -p build/data; cp assets/dictionary-*.json assets/osm-liberty.json build/data; node dist/loader",
     "build-all": "run-s build build-pages build-data docs",
+    "start": "npx serve -l 8080 build",
     "docs": "vuepress build docs --no-cache",
     "docs:dev": "vuepress dev docs --no-cache",
     "lint": "eslint --cache --ignore-path .gitignore src"
   },
   "files": [
     "build/",
-    "dist/mini-tokyo-3d.*",
+    "dist/mini-singapore-3d.*",
     "src/"
   ],
   "repository": {
@@ -89,6 +90,6 @@
     "url": "https://github.com/yourusername/mini-singapore-3d/issues"
   },
   "homepage": "http://localhost:8080",
-  "jsdelivr": "dist/mini-tokyo-3d.min.js",
-  "unpkg": "dist/mini-tokyo-3d.min.js"
+  "jsdelivr": "dist/mini-singapore-3d.min.js",
+  "unpkg": "dist/mini-singapore-3d.min.js"
 }
