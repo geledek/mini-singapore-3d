@@ -7,9 +7,11 @@
   "style": "dist/mini-singapore-3d.css",
   "dependencies": {
     "@deck.gl/core": "^8.9.36",
+    "@deck.gl/extensions": "^8.9.36",
     "@deck.gl/geo-layers": "^8.9.36",
     "@deck.gl/layers": "^8.9.36",
     "@deck.gl/mapbox": "^8.9.36",
+    "@deck.gl/mesh-layers": "^8.9.36",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@turf/along": "^5.1.5",
     "@turf/bearing": "^5.1.5",
@@ -73,7 +75,10 @@
     "start": "npx serve -l 8080 build",
     "docs": "vuepress build docs --no-cache",
     "docs:dev": "vuepress dev docs --no-cache",
-    "lint": "eslint --cache --ignore-path .gitignore src"
+    "lint": "eslint --cache --ignore-path .gitignore src",
+    "sgraildata:convert": "node scripts/convert-sgraildata.js",
+    "sgraildata:merge": "node scripts/merge-sgraildata.js",
+    "sgraildata:update": "run-s sgraildata:convert sgraildata:merge build-data"
   },
   "files": [
     "build/",

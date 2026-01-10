@@ -14,10 +14,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Per-line train counts overlay in debug view
 - Dashed rail styling and station outlines for planned TEL segments
 - AI-powered code reviews using OpenAI Codex for intelligent analysis and feedback
+- **SGRailData Integration** - High-quality Singapore rail data from community-maintained source
+  - `scripts/convert-sgraildata.js` - Convert SGRailData GeoJSON to internal format
+  - `scripts/merge-sgraildata.js` - Merge SGRailData with existing data
+  - Documentation: `docs/SGRAILDATA_INTEGRATION.md`
 
 ### Changed
 - Replaced train type display with operator in UI
 - Improved rail alignment using OpenStreetMap geometry data
+- **Updated 176 station coordinates** with more accurate positions from SGRailData
+- **Enhanced multilingual support** - Updated 176 Tamil station names from SGRailData
+- **Replaced all 9 railway line geometries** with accurate OSM-based curves from SGRailData
+- Updated Chinese (Simplified) station names for better accuracy
 
 ### Fixed
 - Corrected railway direction definitions to enable train spawning on all lines
@@ -30,6 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Regenerated timetables for all 8 remaining MRT/LRT lines
 - Fixed LRT timetable loading by adding rail direction definitions
 - Fixed train positioning (section feature collision in featureLookup)
+- Missing deck.gl dependencies (@deck.gl/mesh-layers, @deck.gl/extensions)
 
 ## [0.1.0-alpha.1] - 2026-01-02
 
