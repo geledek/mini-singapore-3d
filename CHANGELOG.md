@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hybrid track generation combining OSM data with planned route segments for TEL
 - Per-line train counts overlay in debug view
 - Dashed rail styling and station outlines for planned TEL segments
+- AI-powered code reviews using OpenAI Codex for intelligent analysis and feedback
 
 ### Changed
 - Replaced train type display with operator in UI
