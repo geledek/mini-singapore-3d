@@ -1,10 +1,15 @@
 # Mini Singapore 3D
 
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-0.1.0--alpha.1-orange)](https://github.com/yourusername/mini-singapore-3d)
 
 A real-time 3D digital map of Singapore's public transport system.
 
 Forked from [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d) by Akihiko Kusanagi, adapted for Singapore's map and data.
+
+## Changelog
+
+For recent changes and version history, see [CHANGELOG.md](CHANGELOG.md).
 
 
 ## Features
@@ -68,6 +73,8 @@ Note: Real-time train position data is currently simulated based on timetables, 
 
 ## How to Build
 
+### Prerequisites
+
 First, get access tokens by signing up at:
 - [Singapore LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en/request-for-api.html) - for transport data
 - [Mapbox](https://account.mapbox.com/auth/signup/) - for map tiles
@@ -75,14 +82,20 @@ First, get access tokens by signing up at:
 ### Setup
 
 1. Clone the repository
-2. Create a `.env` file in the root directory with your tokens:
+2. Copy environment template:
+
+```bash
+cp .env.example .env
+```
+
+3. Edit `.env` with your API keys:
 
 ```bash
 MAPBOX_ACCESS_TOKEN=pk.your_mapbox_token_here
 LTA_ACCOUNT_KEY=your_lta_account_key_here
 ```
 
-3. Install dependencies and build:
+4. Install dependencies and build:
 
 ```bash
 npm install
@@ -90,6 +103,8 @@ npm run build-all
 ```
 
 This will generate the application in the `build` directory.
+
+⚠️ **Important:** Never commit the `.env` file - it contains sensitive API keys and is gitignored.
 
 ### Development
 
@@ -126,3 +141,10 @@ Original Mini Tokyo 3D:
 - Author: Akihiko Kusanagi
 - License: MIT
 - Repository: https://github.com/nagix/mini-tokyo-3d
+
+## Documentation
+
+- [CHANGELOG.md](CHANGELOG.md) - Version history and release notes
+- [CLAUDE.md](CLAUDE.md) - Developer documentation for Claude Code
+- [docs/](docs/) - User guides and developer documentation
+- [docs/archive/development-notes/](docs/archive/development-notes/) - Historical development notes
