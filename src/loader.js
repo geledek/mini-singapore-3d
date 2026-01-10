@@ -11,6 +11,7 @@ const RAILWAYS_FOR_TRAINS = {
     lta: [
         'SMRT.NSL',
         'SMRT.EWL',
+        'SMRT.EWL.CAB',
         'SMRT.CCL',
         'SBS.NEL',
         'SBS.DTL',
