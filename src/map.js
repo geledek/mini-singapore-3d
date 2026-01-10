@@ -2511,15 +2511,15 @@ export default class extends Evented {
         const activeBy = new Map();
         const standbyBy = new Map();
         for (const tr of me.activeTrainLookup.values()) {
-            const id = tr.r.id; activeBy.set(id, (activeBy.get(id)||0)+1);
+            const id = tr.r.id; activeBy.set(id, (activeBy.get(id) || 0) + 1);
         }
         for (const tr of me.standbyTrainLookup.values()) {
-            const id = tr.r.id; standbyBy.set(id, (standbyBy.get(id)||0)+1);
+            const id = tr.r.id; standbyBy.set(id, (standbyBy.get(id) || 0) + 1);
         }
         const rows = [];
         for (const rw of me.railways.getAll()) {
             const id = rw.id; const title = (rw.title && (rw.title[me.lang] || rw.title.en)) || id;
-            const a = activeBy.get(id)||0; const s = standbyBy.get(id)||0;
+            const a = activeBy.get(id) || 0; const s = standbyBy.get(id) || 0;
             rows.push(`${title}: ${a} active, ${s} standby`);
         }
         me.debugCountsDiv.textContent = rows.join('\n');

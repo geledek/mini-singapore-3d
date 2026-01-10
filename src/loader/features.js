@@ -354,29 +354,7 @@ export function featureWorker() {
             sections.forEach((section, i) => {
                 if (section.coords.length >= 2) {
                     // Determine if this section is planned (for dashed style)
-                    let dashed = 0;
-                    try {
-                        const stationIds = (railwayLookup[id] || {}).stations || [];
-                        const prevStation = stationIds[index - 1];
-                        const nextStation = stationIds[index];
-                        const plannedSet = new Set([
-                            // TEL planned stations (brown line)
-                            'SMRT.TEL.MarinaSouth',
-                            'SMRT.TEL.GardensbytheBay',
-                            'SMRT.TEL.TanjongRhu',
-                            'SMRT.TEL.KatongPark',
-                            'SMRT.TEL.TanjongKatong',
-                            'SMRT.TEL.MarineParade',
-                            'SMRT.TEL.MarineTerrace',
-                            'SMRT.TEL.Siglap',
-                            'SMRT.TEL.Bayshore',
-                            'SMRT.TEL.BedokSouth',
-                            'SMRT.TEL.SungeiBedok'
-                        ]);
-                        if (plannedSet.has(prevStation) || plannedSet.has(nextStation)) {
-                            dashed = 1;
-                        }
-                    } catch (e) {}
+                    const dashed = 0;
 
                     const mainSection = lineString(section.coords, {
                         id: `${id}.${section.altitude < 0 ? 'ug' : 'og'}.${zoom}.${index}.${i}`,
@@ -436,16 +414,16 @@ export function featureWorker() {
                 return snapped;
             });
                 // Collapse nearly-identical coords to avoid elongated station shapes
-                if (coords.length > 1) {
-                    const deduped = [];
-                    for (const c of coords) {
-                        if (!deduped.some(u => turfDistance(u, c) < 0.06)) { // ~60m
-                            deduped.push(c);
-                        }
+            if (coords.length > 1) {
+                const deduped = [];
+                for (const c of coords) {
+                    if (!deduped.some(u => turfDistance(u, c) < 0.06)) { // ~60m
+                        deduped.push(c);
                     }
-                    coords = deduped;
                 }
-                const feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
+                coords = deduped;
+            }
+            const feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
 
             layer.features.push(buffer(feature, unit));
             layer.connectionCoords.push(...coords);
