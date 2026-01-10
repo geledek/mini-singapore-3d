@@ -1,4 +1,5 @@
 export {default as Airport} from './airport';
+export {default as Exit} from './exit';
 export {default as Flight} from './flight';
 export {default as FlightStatus} from './flight-status';
 export {default as Operator} from './operator';

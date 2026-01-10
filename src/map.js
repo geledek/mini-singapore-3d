@@ -6,7 +6,7 @@ import Clock from './clock';
 import configs from './configs';
 import {ClockControl, MapboxGLButtonControl, SearchControl} from './controls';
 import Dataset from './dataset';
-import {Airport, Flight, FlightStatus, Operator, POI, RailDirection, Railway, Station, Train, TrainTimetables, TrainType, TrainVehicleType} from './data-classes';
+import {Airport, Exit, Flight, FlightStatus, Operator, POI, RailDirection, Railway, Station, Train, TrainTimetables, TrainType, TrainVehicleType} from './data-classes';
 import extend from './extend';
 import * as helpers from './helpers/helpers';
 import {pickObject} from './helpers/helpers-deck';
@@ -596,11 +596,13 @@ export default class extends Evented {
             railDirections: me.railDirections
         });
         me.pois = new Dataset(POI, data.poiData);
+        me.exits = new Dataset(Exit, data.exitData);
         me.stations.load(data.stationData, {
             stations: me.stations,
             railways: me.railways,
             railDirections: me.railDirections,
-            pois: me.pois
+            pois: me.pois,
+            exits: me.exits
         });
 
         // Build feature lookup dictionary and update feature properties

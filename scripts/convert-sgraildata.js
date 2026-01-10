@@ -200,6 +200,50 @@ function extractCoordinates(sgRailData) {
   return coordinates;
 }
 
+// Extract station exits from SGRailData
+function extractExits(sgRailData) {
+  const exits = [];
+
+  sgRailData.features.forEach(feature => {
+    if (feature.geometry.type !== 'Point' || feature.properties.stop_type !== 'entrance') {
+      return;
+    }
+
+    const props = feature.properties;
+    const codes = props.station_codes.split('-');
+
+    // Get the primary station code for the exit
+    const stationCode = codes[0];
+    const railwayId = getRailwayId(stationCode);
+
+    if (!railwayId) {
+      return;
+    }
+
+    // Create exit entry
+    const exit = {
+      id: `${railwayId}.Exit.${stationCode}.${props.name}`,
+      stationCode: stationCode,
+      railway: railwayId,
+      name: props.name,
+      coord: feature.geometry.coordinates
+    };
+
+    exits.push(exit);
+  });
+
+  // Sort by station code and exit name
+  exits.sort((a, b) => {
+    if (a.stationCode !== b.stationCode) {
+      return a.stationCode.localeCompare(b.stationCode);
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  console.log(`✓ Extracted ${exits.length} station exits`);
+  return exits;
+}
+
 // Main conversion function
 async function convertSGRailData() {
   try {
@@ -223,6 +267,9 @@ async function convertSGRailData() {
     // Extract coordinates
     const coordinates = extractCoordinates(sgRailData);
 
+    // Extract exits
+    const exits = extractExits(sgRailData);
+
     // Save stations.json
     const stationsPath = path.join(__dirname, '../data/stations-sgraildata.json');
     fs.writeFileSync(stationsPath, JSON.stringify(stations, null, '\t'));
@@ -238,11 +285,17 @@ async function convertSGRailData() {
     fs.writeFileSync(mappingPath, JSON.stringify(stationsByRailway, null, '\t'));
     console.log(`✓ Saved railway mappings to ${mappingPath}`);
 
+    // Save exits.json
+    const exitsPath = path.join(__dirname, '../data/exits-sgraildata.json');
+    fs.writeFileSync(exitsPath, JSON.stringify(exits, null, '\t'));
+    console.log(`✓ Saved exits to ${exitsPath}`);
+
     console.log('\n=== Integration Complete ===');
     console.log('\nNext steps:');
     console.log('1. Review the generated files:');
     console.log('   - data/stations-sgraildata.json');
     console.log('   - data/coordinates-sgraildata.json');
+    console.log('   - data/exits-sgraildata.json');
     console.log('2. Merge with existing data or replace as needed');
     console.log('3. Run: npm run build-data');
 

@@ -1,6 +1,7 @@
 import {isMainThread} from 'worker_threads';
 import railways from './railways';
 import stations from './stations';
+import exits from './exits';
 import features, {featureWorker} from './features';
 import trainTimetables from './train-timetables';
 import railDirections from './rail-directions';
@@ -18,6 +19,7 @@ async function main() {
         stations()
     ]);
 
+    exits();
     features(railwayLookup, stationLookup);
     trainTimetables();
     railDirections();
