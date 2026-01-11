@@ -23,7 +23,7 @@ export default class extends Panel {
             titlesByRailway = {},
             mode = options.mode || 'departure',
             departures = me._departures = [],
-            exits = me._exits = [].concat(...stations.map(station => station.exit || [])),
+            exits = me._exits = [].concat(...stations.map(station => (station.exit || []).concat(station.exits || []))),
             pitch = map.getPitch(),
             {lang, dict, clock} = map,
             date = clock.getDate(),
@@ -381,24 +381,26 @@ export default class extends Panel {
 
         exitsElement.innerHTML = '';
         for (let i = 0, ilen = exits.length; i < ilen; i++) {
-            const poi = exits[i],
-                uptime = poi.uptime && poi.uptime.reduce((acc, val) => !val.calendar || includes(val.calendar, calendar) ? val : acc, {}),
+            const exit = exits[i],
+                isPOI = exit.description !== undefined,
+                uptime = exit.uptime && exit.uptime.reduce((acc, val) => !val.calendar || includes(val.calendar, calendar) ? val : acc, {}),
                 closed = uptime && (now < uptime.open || now >= uptime.close || uptime.open === uptime.close),
+                displayName = isPOI ? map.getLocalizedPOIDescription(exit) : `Exit ${exit.name}`,
                 element = createElement('div', {
                     className: `exit-row${closed ? ' closed' : ''}`,
                     innerHTML: [
                         '<div class="exit-icon-box"></div>',
                         '<div class="exit-title-box">',
-                        map.getLocalizedPOIDescription(poi),
+                        displayName,
                         uptime && uptime.open !== uptime.close ? ` (${getTimeString(uptime.open)}-${getTimeString(uptime.close)})` : '',
                         '</div>',
-                        (poi.facilities || []).map(facility => `<div class="exit-${facility}-icon"></div>`).join(''),
+                        (exit.facilities || []).map(facility => `<div class="exit-${facility}-icon"></div>`).join(''),
                         '<div class="exit-share-button"></div>'
                     ].join('')
                 }, exitsElement);
 
             element.addEventListener('click', () => {
-                map.map.flyTo({center: poi.coord, zoom: 19, pitch: 30});
+                map.map.flyTo({center: exit.coord, zoom: 19, pitch: 30});
             });
             element.addEventListener('mouseenter', () => {
                 const popup = mapContainer.querySelector(`#exit-${i}`);

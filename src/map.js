@@ -4,7 +4,7 @@ import AnimatedPopup from 'mapbox-gl-animated-popup';
 import animation from './animation';
 import Clock from './clock';
 import configs from './configs';
-import {ClockControl, MapboxGLButtonControl, SearchControl} from './controls';
+import {ClockControl, LanguageControl, MapboxGLButtonControl, SearchControl} from './controls';
 import Dataset from './dataset';
 import {Airport, Exit, Flight, FlightStatus, Operator, POI, RailDirection, Railway, Station, Train, TrainTimetables, TrainType, TrainVehicleType} from './data-classes';
 import extend from './extend';
@@ -71,6 +71,7 @@ export default class extends Evented {
             dataSources: configs.dataSources,
             clockControl: true,
             searchControl: true,
+            languageControl: true,
             navigationControl: true,
             fullscreenControl: true,
             modeControl: true,
@@ -1050,6 +1051,12 @@ export default class extends Evented {
             const control = me.clockCtrl = new ClockControl({lang, dict, clock});
 
             control.on('change', me.onClockChange.bind(me));
+            map.addControl(control);
+        }
+
+        if (me.languageControl) {
+            const control = new LanguageControl({lang, langs: configs.langs});
+
             map.addControl(control);
         }
 

@@ -62,6 +62,15 @@ export default class {
             me.exit = exit.map(id => refs.pois.get(id));
         }
 
+        // Link exits by station code
+        if (params.code && refs.exits) {
+            /**
+             * Station exits from exits Dataset.
+             * @type {Array<Exit>}
+             */
+            me.exits = refs.exits.getAll().filter(e => e.stationCode === params.code);
+        }
+
         if (altitude) {
             /**
              * Station altitude.
