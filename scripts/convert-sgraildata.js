@@ -15,8 +15,8 @@ const CODE_TO_RAILWAY = {
   'EW': 'SMRT.EWL',
   'CG': 'SMRT.EWL.CAB',  // Changi Branch
   'NE': 'SBS.NEL',
-  'CC': 'SBS.CCL',
-  'CE': 'SBS.CCL',  // Circle Extension
+  'CC': 'SMRT.CCL',      // Circle Line (operated by SMRT)
+  'CE': 'SMRT.CCL',      // Circle Extension
   'DT': 'SBS.DTL',
   'TE': 'SMRT.TEL',
   'BP': 'SMRT.BPLRT',
