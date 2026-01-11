@@ -973,7 +973,7 @@ export default class extends Evented {
         if (me.languageControl) {
             const control = new LanguageControl({lang, langs: configs.langs});
 
-            map.addControl(control, 'top-left');
+            map.addControl(control, 'top-right');
         }
 
         if (me.navigationControl) {

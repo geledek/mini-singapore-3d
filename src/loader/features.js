@@ -453,16 +453,6 @@ export function featureWorker() {
             setAltitude(feature, ug.altitude * unit * 1000);
             // Planned station dashed outline if any id is planned (e.g., TEL future)
             const plannedStationSet = new Set([
-                'SMRT.TEL.MarinaSouth',
-                'SMRT.TEL.GardensbytheBay',
-                'SMRT.TEL.TanjongRhu',
-                'SMRT.TEL.KatongPark',
-                'SMRT.TEL.TanjongKatong',
-                'SMRT.TEL.MarineParade',
-                'SMRT.TEL.MarineTerrace',
-                'SMRT.TEL.Siglap',
-                'SMRT.TEL.Bayshore',
-                'SMRT.TEL.BedokSouth',
                 'SMRT.TEL.SungeiBedok'
             ]);
             const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
@@ -489,16 +479,6 @@ export function featureWorker() {
             const feature = union(...og.features);
 
             const plannedStationSet = new Set([
-                'SMRT.TEL.MarinaSouth',
-                'SMRT.TEL.GardensbytheBay',
-                'SMRT.TEL.TanjongRhu',
-                'SMRT.TEL.KatongPark',
-                'SMRT.TEL.TanjongKatong',
-                'SMRT.TEL.MarineParade',
-                'SMRT.TEL.MarineTerrace',
-                'SMRT.TEL.Siglap',
-                'SMRT.TEL.Bayshore',
-                'SMRT.TEL.BedokSouth',
                 'SMRT.TEL.SungeiBedok'
             ]);
             const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
