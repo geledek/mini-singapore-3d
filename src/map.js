@@ -970,6 +970,12 @@ export default class extends Evented {
             map.addControl(control);
         }
 
+        if (me.languageControl) {
+            const control = new LanguageControl({lang, langs: configs.langs});
+
+            map.addControl(control, 'top-left');
+        }
+
         if (me.navigationControl) {
             const control = me.navControl = new NavigationControl();
 
@@ -1053,12 +1059,6 @@ export default class extends Evented {
 
             control.on('change', me.onClockChange.bind(me));
             map.addControl(control);
-        }
-
-        if (me.languageControl) {
-            const control = new LanguageControl({lang, langs: configs.langs});
-
-            map.addControl(control, 'top-right');
         }
 
         map.on('mousemove', e => {
