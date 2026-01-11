@@ -96,6 +96,7 @@ export default class extends Evented {
 
         me.clockControl = options.clockControl;
         me.searchControl = options.searchControl;
+        me.languageControl = options.languageControl;
         me.navigationControl = options.navigationControl;
         me.fullscreenControl = options.fullscreenControl;
         me.modeControl = options.modeControl;
@@ -1057,7 +1058,7 @@ export default class extends Evented {
         if (me.languageControl) {
             const control = new LanguageControl({lang, langs: configs.langs});
 
-            map.addControl(control);
+            map.addControl(control, 'top-right');
         }
 
         map.on('mousemove', e => {

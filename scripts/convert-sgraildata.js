@@ -189,18 +189,13 @@ function extractCoordinates(sgRailData) {
       coordinates[railwayId] = [];
     }
 
-    // Add as a subline - merge all coordinates for LRT loops
-    // Punggol has East & West loops that should be combined
-    const existingCoords = coordinates[railwayId][0];
-    if (existingCoords && (railwayId === 'SBS.PGLRT' || railwayId === 'SBS.SKLRT')) {
-      // Merge with existing loop
-      existingCoords.coords = existingCoords.coords.concat(coords);
-    } else {
-      coordinates[railwayId].push({
-        type: 'main',
-        coords: coords
-      });
-    }
+    // Add as a subline
+    // Note: LRT systems (PGLRT, SKLRT) may have multiple loops
+    // Keep them as separate features for proper rendering
+    coordinates[railwayId].push({
+      type: 'main',
+      coords: coords
+    });
   });
 
   console.log(`✓ Extracted coordinates for ${Object.keys(coordinates).length} railways`);

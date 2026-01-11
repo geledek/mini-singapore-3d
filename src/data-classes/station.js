@@ -68,7 +68,7 @@ export default class {
              * Station exits from exits Dataset.
              * @type {Array<Exit>}
              */
-            me.exits = refs.exits.getAll().filter(e => e.stationCode === params.code);
+            me.exits = Array.from(refs.exits.getAll()).filter(e => e.stationCode === params.code);
         }
 
         if (altitude) {

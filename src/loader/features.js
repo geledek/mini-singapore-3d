@@ -354,17 +354,9 @@ export function featureWorker() {
             sections.forEach((section, i) => {
                 if (section.coords.length >= 2) {
                     // Determine if this section is planned (for dashed style)
+                    // As of 2024, TEL is operational from Woodlands to Bayshore
+                    // Only Sungei Bedok station is planned
                     const plannedStationSet = new Set([
-                        'SMRT.TEL.MarinaSouth',
-                        'SMRT.TEL.GardensbytheBay',
-                        'SMRT.TEL.TanjongRhu',
-                        'SMRT.TEL.KatongPark',
-                        'SMRT.TEL.TanjongKatong',
-                        'SMRT.TEL.MarineParade',
-                        'SMRT.TEL.MarineTerrace',
-                        'SMRT.TEL.Siglap',
-                        'SMRT.TEL.Bayshore',
-                        'SMRT.TEL.BedokSouth',
                         'SMRT.TEL.SungeiBedok'
                     ]);
 

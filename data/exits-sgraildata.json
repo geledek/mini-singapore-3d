@@ -1,0 +1,5912 @@
+[
+	{
+		"id": "SMRT.BPLRT.Exit.BP10.A",
+		"stationCode": "BP10",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.770676,
+			1.384465
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP11.A",
+		"stationCode": "BP11",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.76941,
+			1.387812
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP12.A",
+		"stationCode": "BP12",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.764677,
+			1.386833
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP13.A",
+		"stationCode": "BP13",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.762326,
+			1.382875
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP2.A",
+		"stationCode": "BP2",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.745101,
+			1.380318
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP3.A",
+		"stationCode": "BP3",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.749227,
+			1.378465
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP4.A",
+		"stationCode": "BP4",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.753826,
+			1.376564
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP5.A",
+		"stationCode": "BP5",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.758252,
+			1.378614
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP7.A",
+		"stationCode": "BP7",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.766793,
+			1.377603
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP8.A",
+		"stationCode": "BP8",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.771328,
+			1.376297
+		]
+	},
+	{
+		"id": "SMRT.BPLRT.Exit.BP9.A",
+		"stationCode": "BP9",
+		"railway": "SMRT.BPLRT",
+		"name": "A",
+		"coord": [
+			103.772591,
+			1.379853
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC10.A",
+		"stationCode": "CC10",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.889793,
+			1.326679
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC10.B",
+		"stationCode": "CC10",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.890666,
+			1.325855
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC10.C",
+		"stationCode": "CC10",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.890263,
+			1.325482
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC10.D",
+		"stationCode": "CC10",
+		"railway": "SBS.CCL",
+		"name": "D",
+		"coord": [
+			103.888455,
+			1.325145
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC10.E",
+		"stationCode": "CC10",
+		"railway": "SBS.CCL",
+		"name": "E",
+		"coord": [
+			103.888615,
+			1.326193
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC11.A",
+		"stationCode": "CC11",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.887627,
+			1.335914
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC11.B",
+		"stationCode": "CC11",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.888214,
+			1.334621
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC12.A",
+		"stationCode": "CC12",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.880256,
+			1.342249
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC12.B",
+		"stationCode": "CC12",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.878909,
+			1.343501
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC14.A",
+		"stationCode": "CC14",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.864934,
+			1.351439
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC14.B",
+		"stationCode": "CC14",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.862918,
+			1.351739
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC16.A",
+		"stationCode": "CC16",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.839088,
+			1.34898
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC16.B",
+		"stationCode": "CC16",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.840059,
+			1.347866
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC17.1",
+		"stationCode": "CC17",
+		"railway": "SBS.CCL",
+		"name": "1",
+		"coord": [
+			103.839407,
+			1.337105
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC17.2",
+		"stationCode": "CC17",
+		"railway": "SBS.CCL",
+		"name": "2",
+		"coord": [
+			103.840387,
+			1.33826
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC17.3",
+		"stationCode": "CC17",
+		"railway": "SBS.CCL",
+		"name": "3",
+		"coord": [
+			103.840465,
+			1.337832
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC17.4",
+		"stationCode": "CC17",
+		"railway": "SBS.CCL",
+		"name": "4",
+		"coord": [
+			103.839882,
+			1.336751
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC19.A",
+		"stationCode": "CC19",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.814977,
+			1.322535
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC19.B",
+		"stationCode": "CC19",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.815914,
+			1.322685
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC2.A",
+		"stationCode": "CC2",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.851327,
+			1.296859
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC2.B",
+		"stationCode": "CC2",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.850474,
+			1.296046
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC2.C",
+		"stationCode": "CC2",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.85025,
+			1.297014
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC2.D",
+		"stationCode": "CC2",
+		"railway": "SBS.CCL",
+		"name": "D",
+		"coord": [
+			103.850158,
+			1.297551
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC2.E",
+		"stationCode": "CC2",
+		"railway": "SBS.CCL",
+		"name": "E",
+		"coord": [
+			103.850423,
+			1.297535
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC20.A",
+		"stationCode": "CC20",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.807965,
+			1.317494
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC20.B",
+		"stationCode": "CC20",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.807389,
+			1.317552
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC21.A",
+		"stationCode": "CC21",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.796139,
+			1.31122
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC21.B",
+		"stationCode": "CC21",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.795769,
+			1.311069
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC21.C",
+		"stationCode": "CC21",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.795754,
+			1.310711
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC23.A",
+		"stationCode": "CC23",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.786907,
+			1.299027
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC23.B",
+		"stationCode": "CC23",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.787928,
+			1.300359
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC23.C",
+		"stationCode": "CC23",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.787565,
+			1.299715
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC23.D",
+		"stationCode": "CC23",
+		"railway": "SBS.CCL",
+		"name": "D",
+		"coord": [
+			103.787785,
+			1.300075
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC24.A",
+		"stationCode": "CC24",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.784466,
+			1.294316
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC24.B",
+		"stationCode": "CC24",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.78481,
+			1.292428
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC24.C",
+		"stationCode": "CC24",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.78449,
+			1.293985
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC24.D",
+		"stationCode": "CC24",
+		"railway": "SBS.CCL",
+		"name": "D",
+		"coord": [
+			103.784535,
+			1.293219
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC25.A",
+		"stationCode": "CC25",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.782006,
+			1.283055
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC26.A",
+		"stationCode": "CC26",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.79203,
+			1.276003
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC27.A",
+		"stationCode": "CC27",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.802356,
+			1.272107
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC28.A",
+		"stationCode": "CC28",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.809884,
+			1.270721
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.A",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.856306,
+			1.293371
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.B",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.856176,
+			1.292927
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.C",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.855855,
+			1.292904
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.D",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "D",
+		"coord": [
+			103.855834,
+			1.292624
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.E",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "E",
+		"coord": [
+			103.855568,
+			1.293129
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.F",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "F",
+		"coord": [
+			103.855105,
+			1.29382
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC3.G",
+		"stationCode": "CC3",
+		"railway": "SBS.CCL",
+		"name": "G",
+		"coord": [
+			103.85492,
+			1.293586
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC4.A",
+		"stationCode": "CC4",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.860674,
+			1.291712
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC4.B",
+		"stationCode": "CC4",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.860137,
+			1.293862
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC4.C",
+		"stationCode": "CC4",
+		"railway": "SBS.CCL",
+		"name": "C",
+		"coord": [
+			103.860236,
+			1.294103
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC5.A",
+		"stationCode": "CC5",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.863506,
+			1.30017
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC5.B",
+		"stationCode": "CC5",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.864152,
+			1.299661
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC6.A",
+		"stationCode": "CC6",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.8744,
+			1.302511
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC6.B",
+		"stationCode": "CC6",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.876226,
+			1.30337
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC7.A",
+		"stationCode": "CC7",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.882598,
+			1.306753
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC7.B",
+		"stationCode": "CC7",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.883248,
+			1.306046
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC8.A",
+		"stationCode": "CC8",
+		"railway": "SBS.CCL",
+		"name": "A",
+		"coord": [
+			103.889307,
+			1.308814
+		]
+	},
+	{
+		"id": "SBS.CCL.Exit.CC8.B",
+		"stationCode": "CC8",
+		"railway": "SBS.CCL",
+		"name": "B",
+		"coord": [
+			103.887979,
+			1.308097
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.Exit.CG2.A",
+		"stationCode": "CG2",
+		"railway": "SMRT.EWL.CAB",
+		"name": "A",
+		"coord": [
+			103.989277,
+			1.356341
+		]
+	},
+	{
+		"id": "SMRT.EWL.CAB.Exit.CG2.B",
+		"stationCode": "CG2",
+		"railway": "SMRT.EWL.CAB",
+		"name": "B",
+		"coord": [
+			103.987305,
+			1.35722
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.A",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.761923,
+			1.379008
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.A",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.763064,
+			1.37802
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.A",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.759598,
+			1.380745
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.A",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.762034,
+			1.378766
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.B",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.763179,
+			1.377863
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.B",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.761371,
+			1.378619
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.C",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.762723,
+			1.377928
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT1.D",
+		"stationCode": "DT1",
+		"railway": "SBS.DTL",
+		"name": "D",
+		"coord": [
+			103.763252,
+			1.378024
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT10.1",
+		"stationCode": "DT10",
+		"railway": "SBS.DTL",
+		"name": "1",
+		"coord": [
+			103.825728,
+			1.319952
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT10.2",
+		"stationCode": "DT10",
+		"railway": "SBS.DTL",
+		"name": "2",
+		"coord": [
+			103.826014,
+			1.318829
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT10.3",
+		"stationCode": "DT10",
+		"railway": "SBS.DTL",
+		"name": "3",
+		"coord": [
+			103.824992,
+			1.31947
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT10.4",
+		"stationCode": "DT10",
+		"railway": "SBS.DTL",
+		"name": "4",
+		"coord": [
+			103.825883,
+			1.32152
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT10.5",
+		"stationCode": "DT10",
+		"railway": "SBS.DTL",
+		"name": "5",
+		"coord": [
+			103.826323,
+			1.320938
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT13.A",
+		"stationCode": "DT13",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.852375,
+			1.303404
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT13.B",
+		"stationCode": "DT13",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.853104,
+			1.304215
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT16.A",
+		"stationCode": "DT16",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.858732,
+			1.280967
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT16.B",
+		"stationCode": "DT16",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.859759,
+			1.282705
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT16.C",
+		"stationCode": "DT16",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.859597,
+			1.282835
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT16.D",
+		"stationCode": "DT16",
+		"railway": "SBS.DTL",
+		"name": "D",
+		"coord": [
+			103.859494,
+			1.282834
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT16.E",
+		"stationCode": "DT16",
+		"railway": "SBS.DTL",
+		"name": "E",
+		"coord": [
+			103.858441,
+			1.281105
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT17.A",
+		"stationCode": "DT17",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.852647,
+			1.279773
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT17.B",
+		"stationCode": "DT17",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.852908,
+			1.279601
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT17.C",
+		"stationCode": "DT17",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.853152,
+			1.279444
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT17.D",
+		"stationCode": "DT17",
+		"railway": "SBS.DTL",
+		"name": "D",
+		"coord": [
+			103.853014,
+			1.279176
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT17.E",
+		"stationCode": "DT17",
+		"railway": "SBS.DTL",
+		"name": "E",
+		"coord": [
+			103.852478,
+			1.279528
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT17.F",
+		"stationCode": "DT17",
+		"railway": "SBS.DTL",
+		"name": "F",
+		"coord": [
+			103.852428,
+			1.279796
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT18.A",
+		"stationCode": "DT18",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.848507,
+			1.281887
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT18.B",
+		"stationCode": "DT18",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.848773,
+			1.282497
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT18.C",
+		"stationCode": "DT18",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.848842,
+			1.282251
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT2.A",
+		"stationCode": "DT2",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.764234,
+			1.369833
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT20.A",
+		"stationCode": "DT20",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.84417,
+			1.292406
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT20.B",
+		"stationCode": "DT20",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.844425,
+			1.29283
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT21.A",
+		"stationCode": "DT21",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.850843,
+			1.299195
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT21.B",
+		"stationCode": "DT21",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.84956,
+			1.298199
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT21.C",
+		"stationCode": "DT21",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.849272,
+			1.297699
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT22.A",
+		"stationCode": "DT22",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.855296,
+			1.30489
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT22.B",
+		"stationCode": "DT22",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.855245,
+			1.305467
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT23.A",
+		"stationCode": "DT23",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.863074,
+			1.313853
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT23.B",
+		"stationCode": "DT23",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.863219,
+			1.313481
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT24.A",
+		"stationCode": "DT24",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.871556,
+			1.321562
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT24.B",
+		"stationCode": "DT24",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.871794,
+			1.321109
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT25.A",
+		"stationCode": "DT25",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.882732,
+			1.327251
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT25.B",
+		"stationCode": "DT25",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.883748,
+			1.326464
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT27.A",
+		"stationCode": "DT27",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.899877,
+			1.329951
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT27.B",
+		"stationCode": "DT27",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.898586,
+			1.329831
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT28.A",
+		"stationCode": "DT28",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.909405,
+			1.335311
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT28.B",
+		"stationCode": "DT28",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.909146,
+			1.334922
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT29.A",
+		"stationCode": "DT29",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.91805,
+			1.335126
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT29.B",
+		"stationCode": "DT29",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.919063,
+			1.334166
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT29.B",
+		"stationCode": "DT29",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.919134,
+			1.334372
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT29.C",
+		"stationCode": "DT29",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.917811,
+			1.334423
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT3.A",
+		"stationCode": "DT3",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.767688,
+			1.362474
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT3.B",
+		"stationCode": "DT3",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.767108,
+			1.362084
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT30.A",
+		"stationCode": "DT30",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.932887,
+			1.336348
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT30.B",
+		"stationCode": "DT30",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.933487,
+			1.336555
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT31.A",
+		"stationCode": "DT31",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.938197,
+			1.345631
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT31.B",
+		"stationCode": "DT31",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.938949,
+			1.344999
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT33.A",
+		"stationCode": "DT33",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.95454,
+			1.356461
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT33.B",
+		"stationCode": "DT33",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.95517,
+			1.355588
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT33.C",
+		"stationCode": "DT33",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.955705,
+			1.355553
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT33.D",
+		"stationCode": "DT33",
+		"railway": "SBS.DTL",
+		"name": "D",
+		"coord": [
+			103.955717,
+			1.35697
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT34.A",
+		"stationCode": "DT34",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.961328,
+			1.341861
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT34.A",
+		"stationCode": "DT34",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.960961,
+			1.342007
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT34.B",
+		"stationCode": "DT34",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.961476,
+			1.341038
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT34.C",
+		"stationCode": "DT34",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.961617,
+			1.341993
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT34.D",
+		"stationCode": "DT34",
+		"railway": "SBS.DTL",
+		"name": "D",
+		"coord": [
+			103.961043,
+			1.34084
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.A",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.961943,
+			1.335322
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.A",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.961837,
+			1.335483
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.B",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.962075,
+			1.335253
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.C",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.962161,
+			1.335951
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.D",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "D",
+		"coord": [
+			103.963101,
+			1.334835
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.E",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "E",
+		"coord": [
+			103.962123,
+			1.334863
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.F",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "F",
+		"coord": [
+			103.962866,
+			1.334712
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT35.G",
+		"stationCode": "DT35",
+		"railway": "SBS.DTL",
+		"name": "G",
+		"coord": [
+			103.963049,
+			1.335019
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT4.1",
+		"stationCode": "DT4",
+		"railway": "SBS.DTL",
+		"name": "1",
+		"coord": [
+			103.768696,
+			1.355063
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT4.2",
+		"stationCode": "DT4",
+		"railway": "SBS.DTL",
+		"name": "2",
+		"coord": [
+			103.768652,
+			1.354829
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT5.A",
+		"stationCode": "DT5",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.775984,
+			1.341696
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT5.B",
+		"stationCode": "DT5",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.775451,
+			1.341582
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT5.C",
+		"stationCode": "DT5",
+		"railway": "SBS.DTL",
+		"name": "C",
+		"coord": [
+			103.775762,
+			1.339982
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT6.A",
+		"stationCode": "DT6",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.78303,
+			1.335537
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT6.B",
+		"stationCode": "DT6",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.784562,
+			1.335976
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT7.A",
+		"stationCode": "DT7",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.796566,
+			1.33078
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT7.B",
+		"stationCode": "DT7",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.796848,
+			1.331521
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT8.A",
+		"stationCode": "DT8",
+		"railway": "SBS.DTL",
+		"name": "A",
+		"coord": [
+			103.807799,
+			1.325333
+		]
+	},
+	{
+		"id": "SBS.DTL.Exit.DT8.B",
+		"stationCode": "DT8",
+		"railway": "SBS.DTL",
+		"name": "B",
+		"coord": [
+			103.807801,
+			1.326146
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW1.A",
+		"stationCode": "EW1",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.949333,
+			1.372842
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW1.B",
+		"stationCode": "EW1",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.949137,
+			1.372886
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW10.A",
+		"stationCode": "EW10",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.871731,
+			1.31154
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW10.B",
+		"stationCode": "EW10",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.871587,
+			1.311782
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW11.A",
+		"stationCode": "EW11",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.863043,
+			1.307169
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW11.B",
+		"stationCode": "EW11",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.86265,
+			1.307619
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW12.A",
+		"stationCode": "EW12",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.855924,
+			1.301204
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW12.B",
+		"stationCode": "EW12",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.856337,
+			1.300782
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW12.C",
+		"stationCode": "EW12",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.855686,
+			1.300007
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW12.D",
+		"stationCode": "EW12",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.856891,
+			1.299079
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.A",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.844834,
+			1.276409
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.B",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.846545,
+			1.276672
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.C",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.846534,
+			1.276089
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.D",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.846909,
+			1.276065
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.E",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "E",
+		"coord": [
+			103.847096,
+			1.276259
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.F",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "F",
+		"coord": [
+			103.846928,
+			1.277379
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.G",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "G",
+		"coord": [
+			103.846953,
+			1.277785
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.H",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "H",
+		"coord": [
+			103.846445,
+			1.275451
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW15.I",
+		"stationCode": "EW15",
+		"railway": "SMRT.EWL",
+		"name": "I",
+		"coord": [
+			103.845656,
+			1.276448
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.1",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "1",
+		"coord": [
+			103.838658,
+			1.281602
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.2",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "2",
+		"coord": [
+			103.838935,
+			1.281675
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.3",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "3",
+		"coord": [
+			103.839789,
+			1.280993
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.4",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "4",
+		"coord": [
+			103.840387,
+			1.280213
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.5",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "5",
+		"coord": [
+			103.839549,
+			1.278947
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.6",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "6",
+		"coord": [
+			103.838537,
+			1.279051
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.7",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "7",
+		"coord": [
+			103.83864,
+			1.281022
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW16.8",
+		"stationCode": "EW16",
+		"railway": "SMRT.EWL",
+		"name": "8",
+		"coord": [
+			103.838117,
+			1.282322
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW17.A",
+		"stationCode": "EW17",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.826991,
+			1.285759
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW17.B",
+		"stationCode": "EW17",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.827496,
+			1.286362
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW18.A",
+		"stationCode": "EW18",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.816994,
+			1.289371
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW18.B",
+		"stationCode": "EW18",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.817249,
+			1.289486
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW19.A",
+		"stationCode": "EW19",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.806183,
+			1.294247
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW19.B",
+		"stationCode": "EW19",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.806311,
+			1.29433
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW19.C",
+		"stationCode": "EW19",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.805585,
+			1.295446
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW19.D",
+		"stationCode": "EW19",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.805492,
+			1.295383
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.A",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.944766,
+			1.353764
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.B",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.94509,
+			1.353539
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.C",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.944904,
+			1.353398
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.D",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.943678,
+			1.354871
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.E",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "E",
+		"coord": [
+			103.942659,
+			1.355853
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.F",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "F",
+		"coord": [
+			103.942654,
+			1.354194
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW2.G",
+		"stationCode": "EW2",
+		"railway": "SMRT.EWL",
+		"name": "G",
+		"coord": [
+			103.942723,
+			1.354596
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW20.A",
+		"stationCode": "EW20",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.797958,
+			1.302648
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW20.B",
+		"stationCode": "EW20",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.798058,
+			1.302753
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW20.C",
+		"stationCode": "EW20",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.798779,
+			1.302077
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW20.D",
+		"stationCode": "EW20",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.79872,
+			1.302013
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW21.A",
+		"stationCode": "EW21",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.790449,
+			1.307309
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW21.B",
+		"stationCode": "EW21",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.790657,
+			1.307197
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW21.C",
+		"stationCode": "EW21",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.790599,
+			1.306913
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW21.D",
+		"stationCode": "EW21",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.79093,
+			1.306298
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW22.A",
+		"stationCode": "EW22",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.778305,
+			1.311415
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW22.B",
+		"stationCode": "EW22",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.778465,
+			1.311693
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW23.A",
+		"stationCode": "EW23",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.764982,
+			1.315374
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW23.B",
+		"stationCode": "EW23",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.765186,
+			1.315469
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW23.C",
+		"stationCode": "EW23",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.76575,
+			1.314162
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW23.D",
+		"stationCode": "EW23",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.76557,
+			1.314078
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW25.A",
+		"stationCode": "EW25",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.73222,
+			1.342439
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW25.B",
+		"stationCode": "EW25",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.732742,
+			1.341982
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW25.C",
+		"stationCode": "EW25",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.733393,
+			1.341566
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW26.A",
+		"stationCode": "EW26",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.720449,
+			1.343983
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW26.B",
+		"stationCode": "EW26",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.721075,
+			1.344081
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW26.C",
+		"stationCode": "EW26",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.721713,
+			1.344304
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW27.A",
+		"stationCode": "EW27",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.705409,
+			1.33828
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW27.B",
+		"stationCode": "EW27",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.706146,
+			1.338421
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW27.C",
+		"stationCode": "EW27",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.705955,
+			1.338738
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW27.D",
+		"stationCode": "EW27",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.70565,
+			1.33863
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW27.E",
+		"stationCode": "EW27",
+		"railway": "SMRT.EWL",
+		"name": "E",
+		"coord": [
+			103.705353,
+			1.338514
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW27.F",
+		"stationCode": "EW27",
+		"railway": "SMRT.EWL",
+		"name": "F",
+		"coord": [
+			103.705795,
+			1.338273
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW28.A",
+		"stationCode": "EW28",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.697155,
+			1.337345
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW28.B",
+		"stationCode": "EW28",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.697129,
+			1.337832
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW29.A",
+		"stationCode": "EW29",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.678521,
+			1.327502
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW29.B",
+		"stationCode": "EW29",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.678644,
+			1.327956
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW3.A",
+		"stationCode": "EW3",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.953819,
+			1.342662
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW30.A",
+		"stationCode": "EW30",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.660444,
+			1.319032
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW30.B",
+		"stationCode": "EW30",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.659435,
+			1.318837
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW31.A",
+		"stationCode": "EW31",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.648959,
+			1.320764
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW31.B",
+		"stationCode": "EW31",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.649287,
+			1.321244
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW32.A",
+		"stationCode": "EW32",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.639284,
+			1.329872
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW32.B",
+		"stationCode": "EW32",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.639791,
+			1.330182
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW33.A",
+		"stationCode": "EW33",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.637246,
+			1.340427
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW33.B",
+		"stationCode": "EW33",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.636841,
+			1.34094
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW4.A",
+		"stationCode": "EW4",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.945795,
+			1.326858
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW4.B",
+		"stationCode": "EW4",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.945723,
+			1.327061
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW5.A",
+		"stationCode": "EW5",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.929157,
+			1.323569
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW5.B",
+		"stationCode": "EW5",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.929673,
+			1.324268
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW5.C",
+		"stationCode": "EW5",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.929404,
+			1.324075
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW6.A",
+		"stationCode": "EW6",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.912941,
+			1.320924
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW6.B",
+		"stationCode": "EW6",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.912899,
+			1.321152
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW7.A",
+		"stationCode": "EW7",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.902894,
+			1.319517
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW7.B",
+		"stationCode": "EW7",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.902582,
+			1.319563
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW7.C",
+		"stationCode": "EW7",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.903215,
+			1.31953
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW8.A",
+		"stationCode": "EW8",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.892788,
+			1.318216
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW8.B",
+		"stationCode": "EW8",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.892217,
+			1.318347
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW8.C",
+		"stationCode": "EW8",
+		"railway": "SMRT.EWL",
+		"name": "C",
+		"coord": [
+			103.891721,
+			1.318149
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW8.D",
+		"stationCode": "EW8",
+		"railway": "SMRT.EWL",
+		"name": "D",
+		"coord": [
+			103.892078,
+			1.316588
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW8.E",
+		"stationCode": "EW8",
+		"railway": "SMRT.EWL",
+		"name": "E",
+		"coord": [
+			103.893234,
+			1.318288
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW8.F",
+		"stationCode": "EW8",
+		"railway": "SMRT.EWL",
+		"name": "F",
+		"coord": [
+			103.892609,
+			1.316738
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW9.A",
+		"stationCode": "EW9",
+		"railway": "SMRT.EWL",
+		"name": "A",
+		"coord": [
+			103.882497,
+			1.316238
+		]
+	},
+	{
+		"id": "SMRT.EWL.Exit.EW9.B",
+		"stationCode": "EW9",
+		"railway": "SMRT.EWL",
+		"name": "B",
+		"coord": [
+			103.882473,
+			1.316488
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE1.A",
+		"stationCode": "NE1",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.820468,
+			1.266013
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE1.A",
+		"stationCode": "NE1",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.82251,
+			1.265085
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE1.B",
+		"stationCode": "NE1",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.820509,
+			1.265155
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE1.C",
+		"stationCode": "NE1",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.822532,
+			1.26526
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE1.D",
+		"stationCode": "NE1",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.821399,
+			1.265979
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE1.E",
+		"stationCode": "NE1",
+		"railway": "SBS.NEL",
+		"name": "E",
+		"coord": [
+			103.82158,
+			1.264972
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE10.A",
+		"stationCode": "NE10",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.868966,
+			1.332801
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE10.B",
+		"stationCode": "NE10",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.869333,
+			1.331148
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE10.C",
+		"stationCode": "NE10",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.868704,
+			1.331067
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE11.A",
+		"stationCode": "NE11",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.870941,
+			1.338511
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE11.B",
+		"stationCode": "NE11",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.870508,
+			1.338583
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE11.C",
+		"stationCode": "NE11",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.871054,
+			1.339867
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.A",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.873957,
+			1.349482
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.B",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.873641,
+			1.349834
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.C",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.873694,
+			1.350595
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.D",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.874322,
+			1.349902
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.E",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "E",
+		"coord": [
+			103.872902,
+			1.35082
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.F",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "F",
+		"coord": [
+			103.871449,
+			1.350948
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.G",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "G",
+		"coord": [
+			103.872867,
+			1.35079
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE12.H",
+		"stationCode": "NE12",
+		"railway": "SBS.NEL",
+		"name": "H",
+		"coord": [
+			103.873546,
+			1.349728
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE13.A",
+		"stationCode": "NE13",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.884307,
+			1.359708
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE13.B",
+		"stationCode": "NE13",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.884722,
+			1.360206
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE13.C",
+		"stationCode": "NE13",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.885451,
+			1.360028
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE14.A",
+		"stationCode": "NE14",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.892446,
+			1.370209
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE14.B",
+		"stationCode": "NE14",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.892972,
+			1.371946
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE14.C",
+		"stationCode": "NE14",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.891975,
+			1.372142
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE15.A",
+		"stationCode": "NE15",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.892884,
+			1.38341
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE15.B",
+		"stationCode": "NE15",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.893463,
+			1.38265
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE16.A",
+		"stationCode": "NE16",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.895406,
+			1.391829
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE16.B",
+		"stationCode": "NE16",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.895637,
+			1.391796
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE16.C",
+		"stationCode": "NE16",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.895209,
+			1.390882
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE16.D",
+		"stationCode": "NE16",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.895705,
+			1.392371
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE17.A",
+		"stationCode": "NE17",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.902306,
+			1.40534
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE17.B",
+		"stationCode": "NE17",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.902598,
+			1.405186
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE17.C",
+		"stationCode": "NE17",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.902116,
+			1.404301
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE17.D",
+		"stationCode": "NE17",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.901799,
+			1.404438
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE4.A",
+		"stationCode": "NE4",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.843798,
+			1.283713
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE4.C",
+		"stationCode": "NE4",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.842813,
+			1.284675
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE4.D",
+		"stationCode": "NE4",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.843476,
+			1.285406
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE4.E",
+		"stationCode": "NE4",
+		"railway": "SBS.NEL",
+		"name": "E",
+		"coord": [
+			103.844428,
+			1.285044
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE4.F",
+		"stationCode": "NE4",
+		"railway": "SBS.NEL",
+		"name": "F",
+		"coord": [
+			103.845463,
+			1.284275
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE4.G",
+		"stationCode": "NE4",
+		"railway": "SBS.NEL",
+		"name": "G",
+		"coord": [
+			103.844459,
+			1.284736
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE5.A",
+		"stationCode": "NE5",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.846065,
+			1.286899
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE5.B",
+		"stationCode": "NE5",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.845903,
+			1.287806
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE5.C",
+		"stationCode": "NE5",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.846666,
+			1.289384
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE5.E",
+		"stationCode": "NE5",
+		"railway": "SBS.NEL",
+		"name": "E",
+		"coord": [
+			103.847033,
+			1.289
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE5.F",
+		"stationCode": "NE5",
+		"railway": "SBS.NEL",
+		"name": "F",
+		"coord": [
+			103.84713,
+			1.289406
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE5.G",
+		"stationCode": "NE5",
+		"railway": "SBS.NEL",
+		"name": "G",
+		"coord": [
+			103.846594,
+			1.289199
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE7.A",
+		"stationCode": "NE7",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.84936,
+			1.305605
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE7.B",
+		"stationCode": "NE7",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.848985,
+			1.306564
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE7.C",
+		"stationCode": "NE7",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.849705,
+			1.306352
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE7.D",
+		"stationCode": "NE7",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.849,
+			1.306855
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE7.E",
+		"stationCode": "NE7",
+		"railway": "SBS.NEL",
+		"name": "E",
+		"coord": [
+			103.850322,
+			1.307426
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE7.F",
+		"stationCode": "NE7",
+		"railway": "SBS.NEL",
+		"name": "F",
+		"coord": [
+			103.848304,
+			1.307684
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.A",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.854773,
+			1.312327
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.B",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.854764,
+			1.313544
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.C",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.853267,
+			1.311911
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.D",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "D",
+		"coord": [
+			103.852975,
+			1.312454
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.E",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "E",
+		"coord": [
+			103.852651,
+			1.311884
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.F",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "F",
+		"coord": [
+			103.853199,
+			1.311422
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.G",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "G",
+		"coord": [
+			103.855501,
+			1.312259
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.H",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "H",
+		"coord": [
+			103.856099,
+			1.311884
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE8.I",
+		"stationCode": "NE8",
+		"railway": "SBS.NEL",
+		"name": "I",
+		"coord": [
+			103.855807,
+			1.311766
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE9.A",
+		"stationCode": "NE9",
+		"railway": "SBS.NEL",
+		"name": "A",
+		"coord": [
+			103.861502,
+			1.320107
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE9.B",
+		"stationCode": "NE9",
+		"railway": "SBS.NEL",
+		"name": "B",
+		"coord": [
+			103.861904,
+			1.319235
+		]
+	},
+	{
+		"id": "SBS.NEL.Exit.NE9.C",
+		"stationCode": "NE9",
+		"railway": "SBS.NEL",
+		"name": "C",
+		"coord": [
+			103.860707,
+			1.317915
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS1.A",
+		"stationCode": "NS1",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.74176,
+			1.33399
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS1.B",
+		"stationCode": "NS1",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.74264,
+			1.332526
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS1.C",
+		"stationCode": "NS1",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.742762,
+			1.332749
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS1.D",
+		"stationCode": "NS1",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.742298,
+			1.333581
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS10.A",
+		"stationCode": "NS10",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.80099,
+			1.440346
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS10.B",
+		"stationCode": "NS10",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.800533,
+			1.440152
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS10.C",
+		"stationCode": "NS10",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.800542,
+			1.440596
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS10.D",
+		"stationCode": "NS10",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.801365,
+			1.440533
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS11.A",
+		"stationCode": "NS11",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.82011,
+			1.448837
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS11.B",
+		"stationCode": "NS11",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.81979,
+			1.448768
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS11.C",
+		"stationCode": "NS11",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.819759,
+			1.449157
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS11.D",
+		"stationCode": "NS11",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.820402,
+			1.448927
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS12.A",
+		"stationCode": "NS12",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.829528,
+			1.44363
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS12.B",
+		"stationCode": "NS12",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.829962,
+			1.442935
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS12.C",
+		"stationCode": "NS12",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.8297,
+			1.442804
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS12.D",
+		"stationCode": "NS12",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.829255,
+			1.443511
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS12.E",
+		"stationCode": "NS12",
+		"railway": "SMRT.NSL",
+		"name": "E",
+		"coord": [
+			103.830116,
+			1.443256
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS13.A",
+		"stationCode": "NS13",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.834784,
+			1.429397
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS13.B",
+		"stationCode": "NS13",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.834866,
+			1.429636
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS13.C",
+		"stationCode": "NS13",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.835091,
+			1.429117
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS13.D",
+		"stationCode": "NS13",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.834863,
+			1.429107
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS13.E",
+		"stationCode": "NS13",
+		"railway": "SMRT.NSL",
+		"name": "E",
+		"coord": [
+			103.835644,
+			1.429666
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS14.A",
+		"stationCode": "NS14",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.832922,
+			1.417058
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS14.B",
+		"stationCode": "NS14",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.832707,
+			1.417143
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS14.C",
+		"stationCode": "NS14",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.832887,
+			1.417545
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS14.D",
+		"stationCode": "NS14",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.833231,
+			1.417869
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS15.A",
+		"stationCode": "NS15",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.844834,
+			1.381644
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS15.B",
+		"stationCode": "NS15",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.844947,
+			1.381548
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS15.C",
+		"stationCode": "NS15",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.844646,
+			1.381954
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS16.A",
+		"stationCode": "NS16",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.849939,
+			1.369465
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS16.B",
+		"stationCode": "NS16",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.849596,
+			1.369685
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS16.C",
+		"stationCode": "NS16",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.849343,
+			1.369441
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS16.D",
+		"stationCode": "NS16",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.849825,
+			1.369882
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS17.A",
+		"stationCode": "NS17",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.848305,
+			1.35058
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS17.B",
+		"stationCode": "NS17",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.848312,
+			1.351064
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS17.C",
+		"stationCode": "NS17",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.848209,
+			1.350585
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS17.D",
+		"stationCode": "NS17",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.850201,
+			1.351053
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS17.E",
+		"stationCode": "NS17",
+		"railway": "SMRT.NSL",
+		"name": "E",
+		"coord": [
+			103.848433,
+			1.351035
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS18.A",
+		"stationCode": "NS18",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.84643,
+			1.341069
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS18.B",
+		"stationCode": "NS18",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.846406,
+			1.340744
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS18.C",
+		"stationCode": "NS18",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.847441,
+			1.340672
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS19.A",
+		"stationCode": "NS19",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.847724,
+			1.332376
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS19.B",
+		"stationCode": "NS19",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.847578,
+			1.332316
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS19.C",
+		"stationCode": "NS19",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.84732,
+			1.332994
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS19.D",
+		"stationCode": "NS19",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.846517,
+			1.333279
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS2.A",
+		"stationCode": "NS2",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.749974,
+			1.349561
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS2.B",
+		"stationCode": "NS2",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.749937,
+			1.34939
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS2.C",
+		"stationCode": "NS2",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.749767,
+			1.34952
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS2.D",
+		"stationCode": "NS2",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.749118,
+			1.348405
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS20.A",
+		"stationCode": "NS20",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.844389,
+			1.321095
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS20.B",
+		"stationCode": "NS20",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.84334,
+			1.319896
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS21.A",
+		"stationCode": "NS21",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.837881,
+			1.312598
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS21.B",
+		"stationCode": "NS21",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.838219,
+			1.312075
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS21.C",
+		"stationCode": "NS21",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.838242,
+			1.313617
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.1",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "1",
+		"coord": [
+			103.832524,
+			1.304892
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.10",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "10",
+		"coord": [
+			103.831127,
+			1.304046
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.11",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "11",
+		"coord": [
+			103.830497,
+			1.304218
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.12",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "12",
+		"coord": [
+			103.830663,
+			1.302858
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.13",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "13",
+		"coord": [
+			103.832125,
+			1.302299
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.2",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "2",
+		"coord": [
+			103.83262,
+			1.304354
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.3",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "3",
+		"coord": [
+			103.832771,
+			1.304161
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.4",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "4",
+		"coord": [
+			103.83204,
+			1.30456
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.5",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "5",
+		"coord": [
+			103.832024,
+			1.303945
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.6",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "6",
+		"coord": [
+			103.832321,
+			1.303648
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.7",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "7",
+		"coord": [
+			103.832172,
+			1.303168
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.8",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "8",
+		"coord": [
+			103.831786,
+			1.303446
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS22.9",
+		"stationCode": "NS22",
+		"railway": "SMRT.NSL",
+		"name": "9",
+		"coord": [
+			103.831507,
+			1.303666
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS23.A",
+		"stationCode": "NS23",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.838399,
+			1.300028
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS23.B",
+		"stationCode": "NS23",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.838459,
+			1.300767
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS23.C",
+		"stationCode": "NS23",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.838766,
+			1.300436
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS23.D",
+		"stationCode": "NS23",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.839734,
+			1.300241
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS24.A",
+		"stationCode": "NS24",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.846788,
+			1.298445
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS24.B",
+		"stationCode": "NS24",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.84523,
+			1.299056
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS24.C",
+		"stationCode": "NS24",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.844748,
+			1.299649
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS24.D",
+		"stationCode": "NS24",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.84503,
+			1.299931
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS24.E",
+		"stationCode": "NS24",
+		"railway": "SMRT.NSL",
+		"name": "E",
+		"coord": [
+			103.845372,
+			1.299748
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS24.F",
+		"stationCode": "NS24",
+		"railway": "SMRT.NSL",
+		"name": "F",
+		"coord": [
+			103.845842,
+			1.299635
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS25.A",
+		"stationCode": "NS25",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.85302,
+			1.293227
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS25.B",
+		"stationCode": "NS25",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.85196,
+			1.2931
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS25.C",
+		"stationCode": "NS25",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.85298,
+			1.293042
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS25.D",
+		"stationCode": "NS25",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.851802,
+			1.293455
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.A",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.851438,
+			1.284125
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.B",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.85148,
+			1.284607
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.C",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.851563,
+			1.283631
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.D",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.851353,
+			1.283641
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.E",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "E",
+		"coord": [
+			103.851523,
+			1.283212
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.F",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "F",
+		"coord": [
+			103.850961,
+			1.282539
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.G",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "G",
+		"coord": [
+			103.851478,
+			1.285017
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.H",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "H",
+		"coord": [
+			103.851622,
+			1.285258
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.I",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "I",
+		"coord": [
+			103.851433,
+			1.282382
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS26.J",
+		"stationCode": "NS26",
+		"railway": "SMRT.NSL",
+		"name": "J",
+		"coord": [
+			103.851296,
+			1.282626
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS27.1",
+		"stationCode": "NS27",
+		"railway": "SMRT.NSL",
+		"name": "1",
+		"coord": [
+			103.85447,
+			1.277353
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS27.2",
+		"stationCode": "NS27",
+		"railway": "SMRT.NSL",
+		"name": "2",
+		"coord": [
+			103.855003,
+			1.276159
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS27.3",
+		"stationCode": "NS27",
+		"railway": "SMRT.NSL",
+		"name": "3",
+		"coord": [
+			103.855372,
+			1.275416
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS27.4",
+		"stationCode": "NS27",
+		"railway": "SMRT.NSL",
+		"name": "4",
+		"coord": [
+			103.856489,
+			1.273634
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS27.5",
+		"stationCode": "NS27",
+		"railway": "SMRT.NSL",
+		"name": "5",
+		"coord": [
+			103.85432,
+			1.274693
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS28.A",
+		"stationCode": "NS28",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.86233,
+			1.27053
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS28.B",
+		"stationCode": "NS28",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.86358,
+			1.271438
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS3.A",
+		"stationCode": "NS3",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.752076,
+			1.35907
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS3.B",
+		"stationCode": "NS3",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.752093,
+			1.358695
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS3.C",
+		"stationCode": "NS3",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.751727,
+			1.359065
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS3.D",
+		"stationCode": "NS3",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.751951,
+			1.359298
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.A",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.744557,
+			1.385431
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.A",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.74456,
+			1.3854
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.B",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.744595,
+			1.38498
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.B",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.74447,
+			1.3846
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.C",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.744518,
+			1.385736
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.C",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.74447,
+			1.38573
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.D",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.744224,
+			1.385705
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.D",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.74411,
+			1.38537
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS4.E",
+		"stationCode": "NS4",
+		"railway": "SMRT.NSL",
+		"name": "E",
+		"coord": [
+			103.74462,
+			1.385
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS5.A",
+		"stationCode": "NS5",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.747195,
+			1.397655
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS5.B",
+		"stationCode": "NS5",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.74733,
+			1.398068
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS5.C",
+		"stationCode": "NS5",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.747432,
+			1.397001
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS5.D",
+		"stationCode": "NS5",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.747111,
+			1.397273
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS7.A",
+		"stationCode": "NS7",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.762019,
+			1.424739
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS7.B",
+		"stationCode": "NS7",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.761941,
+			1.424853
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS7.C",
+		"stationCode": "NS7",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.761755,
+			1.425126
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS7.D",
+		"stationCode": "NS7",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.762497,
+			1.425125
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS8.A",
+		"stationCode": "NS8",
+		"railway": "SMRT.NSL",
+		"name": "A",
+		"coord": [
+			103.77421,
+			1.432802
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS8.B",
+		"stationCode": "NS8",
+		"railway": "SMRT.NSL",
+		"name": "B",
+		"coord": [
+			103.774411,
+			1.432751
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS8.C",
+		"stationCode": "NS8",
+		"railway": "SMRT.NSL",
+		"name": "C",
+		"coord": [
+			103.77382,
+			1.43247
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS8.D",
+		"stationCode": "NS8",
+		"railway": "SMRT.NSL",
+		"name": "D",
+		"coord": [
+			103.773997,
+			1.432751
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.1",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "1",
+		"coord": [
+			103.785736,
+			1.436697
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.2",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "2",
+		"coord": [
+			103.786508,
+			1.436673
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.3",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "3",
+		"coord": [
+			103.787108,
+			1.437243
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.4",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "4",
+		"coord": [
+			103.788005,
+			1.43754
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.5",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "5",
+		"coord": [
+			103.788964,
+			1.435844
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.6",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "6",
+		"coord": [
+			103.789089,
+			1.434815
+		]
+	},
+	{
+		"id": "SMRT.NSL.Exit.NS9.7",
+		"stationCode": "NS9",
+		"railway": "SMRT.NSL",
+		"name": "7",
+		"coord": [
+			103.787977,
+			1.434496
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE1.A",
+		"stationCode": "PE1",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.905929,
+			1.399124
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE1.B",
+		"stationCode": "PE1",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.906176,
+			1.399303
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE2.A",
+		"stationCode": "PE2",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.908966,
+			1.396681
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE2.B",
+		"stationCode": "PE2",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.908869,
+			1.397122
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE3.A",
+		"stationCode": "PE3",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.912652,
+			1.393685
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE3.B",
+		"stationCode": "PE3",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.912709,
+			1.393971
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE4.A",
+		"stationCode": "PE4",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.916263,
+			1.394326
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE4.B",
+		"stationCode": "PE4",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.915935,
+			1.394559
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE5.A",
+		"stationCode": "PE5",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.916387,
+			1.399809
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE5.B",
+		"stationCode": "PE5",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.916517,
+			1.399411
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE6.A",
+		"stationCode": "PE6",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.912646,
+			1.402507
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE6.B",
+		"stationCode": "PE6",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.912755,
+			1.402104
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE7.A",
+		"stationCode": "PE7",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.908792,
+			1.405285
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PE7.B",
+		"stationCode": "PE7",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.908614,
+			1.405046
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW1.A",
+		"stationCode": "PW1",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.905039,
+			1.409703
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW1.B",
+		"stationCode": "PW1",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.904792,
+			1.409828
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW2.A",
+		"stationCode": "PW2",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.906782,
+			1.412876
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW2.B",
+		"stationCode": "PW2",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.906511,
+			1.412929
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW3.A",
+		"stationCode": "PW3",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.906818,
+			1.416915
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW3.B",
+		"stationCode": "PW3",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.906693,
+			1.416664
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW4.A",
+		"stationCode": "PW4",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.901912,
+			1.415865
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW4.B",
+		"stationCode": "PW4",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.902362,
+			1.415906
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW5.A",
+		"stationCode": "PW5",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.900074,
+			1.411773
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW5.B",
+		"stationCode": "PW5",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.900532,
+			1.41191
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW6.A",
+		"stationCode": "PW6",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.898336,
+			1.408368
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW6.B",
+		"stationCode": "PW6",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.898757,
+			1.408488
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW7.A",
+		"stationCode": "PW7",
+		"railway": "SBS.PGLRT",
+		"name": "A",
+		"coord": [
+			103.89703,
+			1.405015
+		]
+	},
+	{
+		"id": "SBS.PGLRT.Exit.PW7.B",
+		"stationCode": "PW7",
+		"railway": "SBS.PGLRT",
+		"name": "B",
+		"coord": [
+			103.897409,
+			1.405245
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE1.A",
+		"stationCode": "SE1",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.900616,
+			1.394328
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE1.B",
+		"stationCode": "SE1",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.900707,
+			1.394534
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE2.A",
+		"stationCode": "SE2",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.906019,
+			1.39134
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE2.B",
+		"stationCode": "SE2",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.906106,
+			1.391414
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE3.A",
+		"stationCode": "SE3",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.905446,
+			1.388185
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE3.B",
+		"stationCode": "SE3",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.905482,
+			1.387841
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE4.A",
+		"stationCode": "SE4",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.902148,
+			1.384075
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE4.B",
+		"stationCode": "SE4",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.902276,
+			1.383765
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE5.A",
+		"stationCode": "SE5",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.897322,
+			1.384176
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SE5.B",
+		"stationCode": "SE5",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.897224,
+			1.384105
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW1.A",
+		"stationCode": "SW1",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.893685,
+			1.396373
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW1.B",
+		"stationCode": "SW1",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.89392,
+			1.396187
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW2.A",
+		"stationCode": "SW2",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.889407,
+			1.3972
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW2.B",
+		"stationCode": "SW2",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.889115,
+			1.397133
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW3.A",
+		"stationCode": "SW3",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.881139,
+			1.398284
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW3.B",
+		"stationCode": "SW3",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.881138,
+			1.398159
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW4.A",
+		"stationCode": "SW4",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.875566,
+			1.397198
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW4.B",
+		"stationCode": "SW4",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.875687,
+			1.397192
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW5.A",
+		"stationCode": "SW5",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.876262,
+			1.392158
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW6.A",
+		"stationCode": "SW6",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.88016,
+			1.392026
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW6.B",
+		"stationCode": "SW6",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.880143,
+			1.392145
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW7.A",
+		"stationCode": "SW7",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.885962,
+			1.38918
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW7.B",
+		"stationCode": "SW7",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.886084,
+			1.389379
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW8.A",
+		"stationCode": "SW8",
+		"railway": "SBS.SKLRT",
+		"name": "A",
+		"coord": [
+			103.890409,
+			1.386698
+		]
+	},
+	{
+		"id": "SBS.SKLRT.Exit.SW8.B",
+		"stationCode": "SW8",
+		"railway": "SBS.SKLRT",
+		"name": "B",
+		"coord": [
+			103.890438,
+			1.386814
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE1.1",
+		"stationCode": "TE1",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.785429,
+			1.447937
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE1.2",
+		"stationCode": "TE1",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.785102,
+			1.449047
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE12.1",
+		"stationCode": "TE12",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.819484,
+			1.306936
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE12.2",
+		"stationCode": "TE12",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.819507,
+			1.306345
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE13.1",
+		"stationCode": "TE13",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.823638,
+			1.303624
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE13.2",
+		"stationCode": "TE13",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.823896,
+			1.302463
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE15.1",
+		"stationCode": "TE15",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.833905,
+			1.293321
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE15.2",
+		"stationCode": "TE15",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.832627,
+			1.29287
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE15.3",
+		"stationCode": "TE15",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.832734,
+			1.29382
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE15.4",
+		"stationCode": "TE15",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.833037,
+			1.29603
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE15.5",
+		"stationCode": "TE15",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.833406,
+			1.296553
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE15.6",
+		"stationCode": "TE15",
+		"railway": "SMRT.TEL",
+		"name": "6",
+		"coord": [
+			103.832841,
+			1.293184
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE16.1",
+		"stationCode": "TE16",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.83384,
+			1.286677
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE16.2",
+		"stationCode": "TE16",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.833495,
+			1.286944
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE16.3",
+		"stationCode": "TE16",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.83337,
+			1.288844
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE16.4",
+		"stationCode": "TE16",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.834003,
+			1.290167
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE16.5",
+		"stationCode": "TE16",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.833962,
+			1.289561
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE18.1",
+		"stationCode": "TE18",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.844164,
+			1.281034
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE18.2",
+		"stationCode": "TE18",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.844895,
+			1.280919
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE18.3",
+		"stationCode": "TE18",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.842916,
+			1.280192
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE19.1",
+		"stationCode": "TE19",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.851836,
+			1.277462
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE19.2",
+		"stationCode": "TE19",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.850915,
+			1.277003
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE19.3",
+		"stationCode": "TE19",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.850129,
+			1.27763
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE19.4",
+		"stationCode": "TE19",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.851034,
+			1.277656
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE19.5",
+		"stationCode": "TE19",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.851808,
+			1.277144
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE19.6",
+		"stationCode": "TE19",
+		"railway": "SMRT.TEL",
+		"name": "6",
+		"coord": [
+			103.849893,
+			1.277929
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE22.1",
+		"stationCode": "TE22",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.868587,
+			1.280371
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE22.2",
+		"stationCode": "TE22",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.867969,
+			1.278826
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE22.3",
+		"stationCode": "TE22",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.867154,
+			1.278303
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE23.1",
+		"stationCode": "TE23",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.873478,
+			1.296459
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE23.2",
+		"stationCode": "TE23",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.873603,
+			1.2982
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE24.1",
+		"stationCode": "TE24",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.887092,
+			1.297539
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE24.2",
+		"stationCode": "TE24",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.885069,
+			1.29838
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE25.1",
+		"stationCode": "TE25",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.897045,
+			1.299039
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE25.2",
+		"stationCode": "TE25",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.897693,
+			1.299016
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE25.3",
+		"stationCode": "TE25",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.897715,
+			1.300229
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE26.1",
+		"stationCode": "TE26",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.90591,
+			1.302093
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE26.2",
+		"stationCode": "TE26",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.904591,
+			1.302532
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE26.3",
+		"stationCode": "TE26",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.906053,
+			1.303594
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE26.4",
+		"stationCode": "TE26",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.907627,
+			1.304566
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE26.5",
+		"stationCode": "TE26",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.909094,
+			1.30558
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE26.6",
+		"stationCode": "TE26",
+		"railway": "SMRT.TEL",
+		"name": "6",
+		"coord": [
+			103.907788,
+			1.304299
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE27.1",
+		"stationCode": "TE27",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.915052,
+			1.306399
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE27.2",
+		"stationCode": "TE27",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.913253,
+			1.305789
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE27.3",
+		"stationCode": "TE27",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.913087,
+			1.306579
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE27.4",
+		"stationCode": "TE27",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.91502,
+			1.306895
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE27.5",
+		"stationCode": "TE27",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.917089,
+			1.307438
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE27.6",
+		"stationCode": "TE27",
+		"railway": "SMRT.TEL",
+		"name": "6",
+		"coord": [
+			103.916945,
+			1.307063
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE28.1",
+		"stationCode": "TE28",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.928793,
+			1.30885
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE28.2",
+		"stationCode": "TE28",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.928586,
+			1.309777
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE28.3",
+		"stationCode": "TE28",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.931246,
+			1.310589
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE28.4",
+		"stationCode": "TE28",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.931291,
+			1.310202
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE29.1",
+		"stationCode": "TE29",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.941262,
+			1.311899
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE29.2",
+		"stationCode": "TE29",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.940673,
+			1.312184
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE29.3",
+		"stationCode": "TE29",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.940721,
+			1.313568
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE29.4",
+		"stationCode": "TE29",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.942676,
+			1.313526
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE29.5",
+		"stationCode": "TE29",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.942584,
+			1.312897
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE3.1",
+		"stationCode": "TE3",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.793027,
+			1.427302
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE3.2",
+		"stationCode": "TE3",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.793414,
+			1.427605
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE3.3",
+		"stationCode": "TE3",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.79456,
+			1.427427
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE3.4",
+		"stationCode": "TE3",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.794424,
+			1.426684
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE3.5",
+		"stationCode": "TE3",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.794365,
+			1.425843
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE4.1",
+		"stationCode": "TE4",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.818003,
+			1.398787
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE4.2",
+		"stationCode": "TE4",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.818391,
+			1.397821
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE4.3",
+		"stationCode": "TE4",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.818082,
+			1.397684
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE5.1",
+		"stationCode": "TE5",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.83536,
+			1.38541
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE5.2",
+		"stationCode": "TE5",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.835823,
+			1.385891
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE5.3",
+		"stationCode": "TE5",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.837398,
+			1.384602
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE5.4",
+		"stationCode": "TE5",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.837339,
+			1.383628
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE5.5",
+		"stationCode": "TE5",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.83684,
+			1.384162
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.1",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.836717,
+			1.372704
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.2",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.837032,
+			1.37372
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.3",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.837461,
+			1.373532
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.4",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.836796,
+			1.371276
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.5",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.83676,
+			1.370777
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.6",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "6",
+		"coord": [
+			103.836309,
+			1.370896
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE6.7",
+		"stationCode": "TE6",
+		"railway": "SMRT.TEL",
+		"name": "7",
+		"coord": [
+			103.836285,
+			1.371377
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE7.1",
+		"stationCode": "TE7",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.833635,
+			1.364037
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE7.2",
+		"stationCode": "TE7",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.833511,
+			1.363283
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE7.3",
+		"stationCode": "TE7",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.832376,
+			1.362184
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE7.4",
+		"stationCode": "TE7",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.831954,
+			1.363164
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE8.1",
+		"stationCode": "TE8",
+		"railway": "SMRT.TEL",
+		"name": "1",
+		"coord": [
+			103.831916,
+			1.354834
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE8.2",
+		"stationCode": "TE8",
+		"railway": "SMRT.TEL",
+		"name": "2",
+		"coord": [
+			103.831833,
+			1.355737
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE8.3",
+		"stationCode": "TE8",
+		"railway": "SMRT.TEL",
+		"name": "3",
+		"coord": [
+			103.833925,
+			1.354145
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE8.4",
+		"stationCode": "TE8",
+		"railway": "SMRT.TEL",
+		"name": "4",
+		"coord": [
+			103.833794,
+			1.353503
+		]
+	},
+	{
+		"id": "SMRT.TEL.Exit.TE8.5",
+		"stationCode": "TE8",
+		"railway": "SMRT.TEL",
+		"name": "5",
+		"coord": [
+			103.832635,
+			1.354418
+		]
+	}
+]
