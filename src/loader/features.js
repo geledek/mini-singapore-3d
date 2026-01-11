@@ -354,7 +354,19 @@ export function featureWorker() {
             sections.forEach((section, i) => {
                 if (section.coords.length >= 2) {
                     // Determine if this section is planned (for dashed style)
-                    const dashed = 0;
+                    // As of 2024, TEL is operational from Woodlands to Bayshore
+                    // Only Sungei Bedok station is planned
+                    const plannedStationSet = new Set([
+                        'SMRT.TEL.SungeiBedok'
+                    ]);
+
+                    // Check if section connects planned stations
+                    const stations = railwayLookup[id].stations;
+                    const fromStation = stations[index];
+                    const toStation = stations[index + 1];
+                    const isPlanned = (fromStation && plannedStationSet.has(fromStation)) ||
+                                    (toStation && plannedStationSet.has(toStation));
+                    const dashed = isPlanned ? 1 : 0;
 
                     const mainSection = lineString(section.coords, {
                         id: `${id}.${section.altitude < 0 ? 'ug' : 'og'}.${zoom}.${index}.${i}`,
@@ -441,16 +453,6 @@ export function featureWorker() {
             setAltitude(feature, ug.altitude * unit * 1000);
             // Planned station dashed outline if any id is planned (e.g., TEL future)
             const plannedStationSet = new Set([
-                'SMRT.TEL.MarinaSouth',
-                'SMRT.TEL.GardensbytheBay',
-                'SMRT.TEL.TanjongRhu',
-                'SMRT.TEL.KatongPark',
-                'SMRT.TEL.TanjongKatong',
-                'SMRT.TEL.MarineParade',
-                'SMRT.TEL.MarineTerrace',
-                'SMRT.TEL.Siglap',
-                'SMRT.TEL.Bayshore',
-                'SMRT.TEL.BedokSouth',
                 'SMRT.TEL.SungeiBedok'
             ]);
             const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
@@ -477,16 +479,6 @@ export function featureWorker() {
             const feature = union(...og.features);
 
             const plannedStationSet = new Set([
-                'SMRT.TEL.MarinaSouth',
-                'SMRT.TEL.GardensbytheBay',
-                'SMRT.TEL.TanjongRhu',
-                'SMRT.TEL.KatongPark',
-                'SMRT.TEL.TanjongKatong',
-                'SMRT.TEL.MarineParade',
-                'SMRT.TEL.MarineTerrace',
-                'SMRT.TEL.Siglap',
-                'SMRT.TEL.Bayshore',
-                'SMRT.TEL.BedokSouth',
                 'SMRT.TEL.SungeiBedok'
             ]);
             const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;

@@ -710,7 +710,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-dasharray": [
                     0.5,
                     0.25
@@ -879,7 +879,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -1052,7 +1052,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -1129,7 +1129,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-width": [
                     "interpolate",
                     [
@@ -1205,7 +1205,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-dasharray": [
                     0.5,
                     0.25
@@ -2191,7 +2191,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -2366,7 +2366,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -2575,7 +2575,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -2659,7 +2659,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -2751,7 +2751,7 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-width": [
                     "interpolate",
                     [
@@ -3599,7 +3599,7 @@
                         true,
                         false
                     ],
-                    "rgba(233, 172, 119, 1)",
+                    "rgba(233, 172, 119, 0.4)",
                     [
                         "==",
                         [
@@ -3874,7 +3874,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -4035,7 +4035,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -4296,7 +4296,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-opacity": 1,
                 "line-width": [
                     "interpolate",
@@ -4373,7 +4373,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-width": [
                     "interpolate",
                     [
@@ -4448,7 +4448,7 @@
                 "line-join": "round"
             },
             "paint": {
-                "line-color": "rgba(233, 172, 119, 1)",
+                "line-color": "rgba(233, 172, 119, 0.4)",
                 "line-width": [
                     "interpolate",
                     [

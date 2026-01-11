@@ -70,6 +70,8 @@ export function loadStaticData(dataUrl, lang, clockPromise) {
         ...[
             'railways.json.gz',
             'stations.json.gz',
+            'exits.json.gz',
+            'station-buildings.json.gz',
             'features.json.gz',
             'rail-directions.json.gz',
             'train-types.json.gz',
@@ -87,15 +89,17 @@ export function loadStaticData(dataUrl, lang, clockPromise) {
         dict: data[0],
         railwayData: data[1],
         stationData: data[2],
-        featureCollection: data[3],
-        railDirectionData: data[4],
-        trainTypeData: data[5],
-        trainVehicleData: data[6],
-        operatorData: data[7],
-        airportData: data[8],
-        flightStatusData: data[9],
-        poiData: data[10],
-        timetableData: [].concat(...data[11])
+        exitData: data[3],
+        stationBuildingsData: data[4],
+        featureCollection: data[5],
+        railDirectionData: data[6],
+        trainTypeData: data[7],
+        trainVehicleData: data[8],
+        operatorData: data[9],
+        airportData: data[10],
+        flightStatusData: data[11],
+        poiData: data[12],
+        timetableData: [].concat(...data[13])
     }));
 }
 

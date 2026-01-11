@@ -1,5 +1,485 @@
 [
 	{
+		"id": "SBS.CCL.Bayfront",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.85973,
+			1.282535
+		],
+		"title": {
+			"en": "Bayfront",
+			"zh-Hans": "海湾舫",
+			"zh-Hant": "海湾舫",
+			"ms": "Bayfront",
+			"ta": "பேஃபிரண்ட்"
+		},
+		"code": "CE1"
+	},
+	{
+		"id": "SBS.CCL.DhobyGhaut",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.84502,
+			1.298786
+		],
+		"title": {
+			"en": "Dhoby Ghaut",
+			"zh-Hans": "多美歌",
+			"zh-Hant": "多美歌",
+			"ms": "Dhoby Ghaut",
+			"ta": "டோபி காட்"
+		},
+		"code": "CC1"
+	},
+	{
+		"id": "SBS.CCL.BrasBasah",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.85055,
+			1.296896
+		],
+		"title": {
+			"en": "Bras Basah",
+			"zh-Hans": "百胜",
+			"zh-Hant": "百胜",
+			"ms": "Bras Basah",
+			"ta": "பிராஸ் பாசா"
+		},
+		"code": "CC2"
+	},
+	{
+		"id": "SBS.CCL.MarinaBay",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.854751,
+			1.275171
+		],
+		"title": {
+			"en": "Marina Bay",
+			"zh-Hans": "滨海湾",
+			"zh-Hant": "滨海湾",
+			"ms": "Marina Bay",
+			"ta": "மரீனா பே"
+		},
+		"code": "CE2"
+	},
+	{
+		"id": "SBS.CCL.Esplanade",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.855974,
+			1.293258
+		],
+		"title": {
+			"en": "Esplanade",
+			"zh-Hans": "滨海中心",
+			"zh-Hant": "滨海中心",
+			"ms": "Esplanade",
+			"ta": "எஸ்பிளனேட்"
+		},
+		"code": "CC3"
+	},
+	{
+		"id": "SBS.CCL.Promenade",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.860151,
+			1.293854
+		],
+		"title": {
+			"en": "Promenade",
+			"zh-Hans": "宝门廊",
+			"zh-Hant": "宝门廊",
+			"ms": "Promenade",
+			"ta": "புரொமனாட்"
+		},
+		"code": "CC4"
+	},
+	{
+		"id": "SBS.CCL.NicollHighway",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.8635,
+			1.299671
+		],
+		"title": {
+			"en": "Nicoll Highway",
+			"zh-Hans": "尼诰大道",
+			"zh-Hant": "尼诰大道",
+			"ms": "Nicoll Highway",
+			"ta": "நிக்கல் நெடுஞ்சாலை"
+		},
+		"code": "CC5"
+	},
+	{
+		"id": "SBS.CCL.Stadium",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.87539,
+			1.302946
+		],
+		"title": {
+			"en": "Stadium",
+			"zh-Hans": "体育场",
+			"zh-Hant": "体育场",
+			"ms": "Stadium",
+			"ta": "ஸ்டேடியம்"
+		},
+		"code": "CC6"
+	},
+	{
+		"id": "SBS.CCL.Mountbatten",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.882496,
+			1.306249
+		],
+		"title": {
+			"en": "Mountbatten",
+			"zh-Hans": "蒙巴登",
+			"zh-Hant": "蒙巴登",
+			"ms": "Mountbatten",
+			"ta": "மவுண்ட்பேட்டன்"
+		},
+		"code": "CC7"
+	},
+	{
+		"id": "SBS.CCL.Dakota",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.88832,
+			1.308438
+		],
+		"title": {
+			"en": "Dakota",
+			"zh-Hans": "达科达",
+			"zh-Hant": "达科达",
+			"ms": "Dakota",
+			"ta": "டகோட்டா"
+		},
+		"code": "CC8"
+	},
+	{
+		"id": "SBS.CCL.PayaLebar",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.892318,
+			1.31805
+		],
+		"title": {
+			"en": "Paya Lebar",
+			"zh-Hans": "巴耶利峇",
+			"zh-Hant": "巴耶利峇",
+			"ms": "Paya Lebar",
+			"ta": "பாய லேபார்"
+		},
+		"code": "CC9"
+	},
+	{
+		"id": "SBS.CCL.MacPherson",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.890102,
+			1.326728
+		],
+		"title": {
+			"en": "MacPherson",
+			"zh-Hans": "麦波申",
+			"zh-Hant": "麦波申",
+			"ms": "MacPherson",
+			"ta": "மெக்பர்சன்"
+		},
+		"code": "CC10"
+	},
+	{
+		"id": "SBS.CCL.TaiSeng",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.88815,
+			1.334866
+		],
+		"title": {
+			"en": "Tai Seng",
+			"zh-Hans": "大成",
+			"zh-Hant": "大成",
+			"ms": "Tai Seng",
+			"ta": "தை செங்"
+		},
+		"code": "CC11"
+	},
+	{
+		"id": "SBS.CCL.Bartley",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.880449,
+			1.342438
+		],
+		"title": {
+			"en": "Bartley",
+			"zh-Hans": "巴特礼",
+			"zh-Hant": "巴特礼",
+			"ms": "Bartley",
+			"ta": "பார்ட்லி"
+		},
+		"code": "CC12"
+	},
+	{
+		"id": "SBS.CCL.Serangoon",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.873771,
+			1.349807
+		],
+		"title": {
+			"en": "Serangoon",
+			"zh-Hans": "实龙岗",
+			"zh-Hant": "实龙岗",
+			"ms": "Serangoon",
+			"ta": "சிராங்கூன்"
+		},
+		"code": "CC13"
+	},
+	{
+		"id": "SBS.CCL.LorongChuan",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.863395,
+			1.351488
+		],
+		"title": {
+			"en": "Lorong Chuan",
+			"zh-Hans": "罗弄泉",
+			"zh-Hant": "罗弄泉",
+			"ms": "Lorong Chuan",
+			"ta": "லோரோங் சுவான்"
+		},
+		"code": "CC14"
+	},
+	{
+		"id": "SBS.CCL.Bishan",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.848263,
+			1.351455
+		],
+		"title": {
+			"en": "Bishan",
+			"zh-Hans": "碧山",
+			"zh-Hant": "碧山",
+			"ms": "Bishan",
+			"ta": "பீஷான்"
+		},
+		"code": "CC15"
+	},
+	{
+		"id": "SBS.CCL.Marymount",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.839238,
+			1.348614
+		],
+		"title": {
+			"en": "Marymount",
+			"zh-Hans": "玛丽蒙",
+			"zh-Hant": "玛丽蒙",
+			"ms": "Marymount",
+			"ta": "மேரிமவுண்ட்"
+		},
+		"code": "CC16"
+	},
+	{
+		"id": "SBS.CCL.Caldecott",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.839991,
+			1.33768
+		],
+		"title": {
+			"en": "Caldecott",
+			"zh-Hans": "加利谷",
+			"zh-Hant": "加利谷",
+			"ms": "Caldecott",
+			"ta": "கால்டிகாட்"
+		},
+		"code": "CC17"
+	},
+	{
+		"id": "SBS.CCL.BotanicGardens",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.815747,
+			1.322559
+		],
+		"title": {
+			"en": "Botanic Gardens",
+			"zh-Hans": "植物园",
+			"zh-Hant": "植物园",
+			"ms": "Botanic Gardens",
+			"ta": "பூ மலை"
+		},
+		"code": "CC19"
+	},
+	{
+		"id": "SBS.CCL.FarrerRoad",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.807785,
+			1.317628
+		],
+		"title": {
+			"en": "Farrer Road",
+			"zh-Hans": "花拉路",
+			"zh-Hant": "花拉路",
+			"ms": "Farrer Road",
+			"ta": "ஃபேரர் சாலை"
+		},
+		"code": "CC20"
+	},
+	{
+		"id": "SBS.CCL.HollandVillage",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.795744,
+			1.312117
+		],
+		"title": {
+			"en": "Holland Village",
+			"zh-Hans": "荷兰村",
+			"zh-Hant": "荷兰村",
+			"ms": "Holland Village",
+			"ta": "ஹாலந்து வில்லேஜ்"
+		},
+		"code": "CC21"
+	},
+	{
+		"id": "SBS.CCL.BuonaVista",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.790705,
+			1.307263
+		],
+		"title": {
+			"en": "Buona Vista",
+			"zh-Hans": "波那维斯达",
+			"zh-Hant": "波那维斯达",
+			"ms": "Buona Vista",
+			"ta": "புவன விஸ்தா"
+		},
+		"code": "CC22"
+	},
+	{
+		"id": "SBS.CCL.onenorth",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.787241,
+			1.299607
+		],
+		"title": {
+			"en": "one-north",
+			"zh-Hans": "纬壹",
+			"zh-Hant": "纬壹",
+			"ms": "one-north",
+			"ta": "ஒன்-நார்த்"
+		},
+		"code": "CC23"
+	},
+	{
+		"id": "SBS.CCL.KentRidge",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.784413,
+			1.293301
+		],
+		"title": {
+			"en": "Kent Ridge",
+			"zh-Hans": "肯特岗",
+			"zh-Hant": "肯特岗",
+			"ms": "Kent Ridge",
+			"ta": "கெண்ட் ரிஜ்"
+		},
+		"code": "CC24"
+	},
+	{
+		"id": "SBS.CCL.HawParVilla",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.781772,
+			1.282654
+		],
+		"title": {
+			"en": "Haw Par Villa",
+			"zh-Hans": "虎豹别墅",
+			"zh-Hant": "虎豹别墅",
+			"ms": "Haw Par Villa",
+			"ta": "ஹா பர் வில்லா"
+		},
+		"code": "CC25"
+	},
+	{
+		"id": "SBS.CCL.PasirPanjang",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.791614,
+			1.276177
+		],
+		"title": {
+			"en": "Pasir Panjang",
+			"zh-Hans": "巴西班让",
+			"zh-Hant": "巴西班让",
+			"ms": "Pasir Panjang",
+			"ta": "பாசிர் பாஞ்சாங்"
+		},
+		"code": "CC26"
+	},
+	{
+		"id": "SBS.CCL.LabradorPark",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.802782,
+			1.272328
+		],
+		"title": {
+			"en": "Labrador Park",
+			"zh-Hans": "拉柏多公园",
+			"zh-Hant": "拉柏多公园",
+			"ms": "Labrador Park",
+			"ta": "லாப்ரடார் பூங்கா"
+		},
+		"code": "CC27"
+	},
+	{
+		"id": "SBS.CCL.TelokBlangah",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.809863,
+			1.270586
+		],
+		"title": {
+			"en": "Telok Blangah",
+			"zh-Hans": "直落布兰雅",
+			"zh-Hant": "直落布兰雅",
+			"ms": "Telok Blangah",
+			"ta": "தெலுக் பிளாங்கா"
+		},
+		"code": "CC28"
+	},
+	{
+		"id": "SBS.CCL.HarbourFront",
+		"railway": "SBS.CCL",
+		"coord": [
+			103.822403,
+			1.265391
+		],
+		"title": {
+			"en": "HarbourFront",
+			"zh-Hans": "港湾",
+			"zh-Hant": "港湾",
+			"ms": "HarbourFront",
+			"ta": "துறைமுகம்"
+		},
+		"code": "CC29"
+	},
+	{
 		"id": "SBS.DTL.BukitPanjang",
 		"railway": "SBS.DTL",
 		"coord": [

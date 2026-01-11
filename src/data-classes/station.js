@@ -8,13 +8,21 @@ export default class {
 
     update(params, refs) {
         const me = this,
-            {railway, coord, utitle, thumbnail, exit, altitude, alternate, ascending, descending, group} = params;
+            {railway, coord, utitle, thumbnail, exit, altitude, alternate, ascending, descending, group, code} = params;
 
         /**
          * Station ID.
          * @type {string}
          */
         me.id = params.id;
+
+        /**
+         * Station code (e.g., "NE4", "DT19").
+         * @type {string}
+         */
+        if (code) {
+            me.code = code;
+        }
 
         if (railway) {
             /**
@@ -60,6 +68,15 @@ export default class {
              * @type {Array<POI>}
              */
             me.exit = exit.map(id => refs.pois.get(id));
+        }
+
+        // Link exits by station code
+        if (params.code && refs.exits) {
+            /**
+             * Station exits from exits Dataset.
+             * @type {Array<Exit>}
+             */
+            me.exits = Array.from(refs.exits.getAll()).filter(e => e.stationCode === params.code);
         }
 
         if (altitude) {
