@@ -14,10 +14,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Per-line train counts overlay in debug view
 - Dashed rail styling and station outlines for planned TEL segments
 - AI-powered code reviews using OpenAI Codex for intelligent analysis and feedback
-- **SGRailData Integration** - High-quality Singapore rail data from community-maintained source
+- **SGRailData Integration** - High-quality Singapore rail data from community-maintained [SGRailData](https://github.com/cheeaun/sgraildata)
   - `scripts/convert-sgraildata.js` - Convert SGRailData GeoJSON to internal format
   - `scripts/merge-sgraildata.js` - Merge SGRailData with existing data
   - Documentation: `docs/SGRAILDATA_INTEGRATION.md`
+- **Station Code Badges** - Display station codes (e.g., NE4, DT19) with colored backgrounds
+  - Map labels with text-halo effect at zoom level 14+
+  - Colored badges in station popups before station names
+  - Colored badges in station panel headers
+  - Visual design inspired by [railrouter-sg](https://github.com/cheeaun/railrouter-sg)
+- **Station Exits** - 591 station exit locations with coordinates from SGRailData
+  - Exit markers displayed on map at zoom 16+
+  - Exit list in station panel with operating hours and facilities
 
 ### Changed
 - Replaced train type display with operator in UI
@@ -26,6 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Enhanced multilingual support** - Updated 176 Tamil station names from SGRailData
 - **Replaced all 9 railway line geometries** with accurate OSM-based curves from SGRailData
 - Updated Chinese (Simplified) station names for better accuracy
+- Language selector now shows "Bahasa Melayu" instead of "BM"
+- Reduced road line opacity for better rail visibility
 
 ### Fixed
 - Corrected railway direction definitions to enable train spawning on all lines
@@ -39,6 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed LRT timetable loading by adding rail direction definitions
 - Fixed train positioning (section feature collision in featureLookup)
 - Missing deck.gl dependencies (@deck.gl/mesh-layers, @deck.gl/extensions)
+- Bukit Panjang LRT now displays with curved rail geometry
+- Language selector positioning corrected to top-right corner
 
 ## [0.1.0-alpha.1] - 2026-01-02
 
