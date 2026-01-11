@@ -32,6 +32,7 @@ export default class extends Panel {
             currHours = date.getHours(),
             currMinutes = date.getMinutes();
 
+        const stationCodesByTitle = {};
         for (const station of stations) {
             const title = map.getLocalizedStationTitle(station),
                 railwayId = station.railway.id;
@@ -44,6 +45,17 @@ export default class extends Panel {
             }
             if (!includes(titlesByRailway[railwayId], title)) {
                 titlesByRailway[railwayId].push(title);
+            }
+
+            // Collect station codes by title
+            if (!stationCodesByTitle[title]) {
+                stationCodesByTitle[title] = [];
+            }
+            if (station.code) {
+                stationCodesByTitle[title].push({
+                    code: station.code,
+                    color: station.railway.color
+                });
             }
         }
         for (const station of stations) {
@@ -95,7 +107,15 @@ export default class extends Panel {
         super.addTo(map)
             .setTitle([
                 '<div id="station-title-name">',
-                `<div>${titles.join(dict['and'])}</div>`,
+                `<div>${titles.map((title, index) => {
+                    const codes = stationCodesByTitle[title] || [];
+                    const codeBadges = codes.length > 0 ?
+                        `<span class="station-code-badges">${codes.map(({code, color}) =>
+                            `<span class="station-code-badge" style="background-color: ${color};">${code}</span>`
+                        ).join('')}</span>` : '';
+                    const separator = index > 0 ? ` ${dict['and']} ` : '';
+                    return `${separator}${codeBadges}${title}`;
+                }).join('')}</div>`,
                 '<div class="station-content-selector">',
                 '<span>',
                 '<input id="station-departure-button" type="radio" name="station">',

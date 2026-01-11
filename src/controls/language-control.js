@@ -4,7 +4,7 @@ const LANGUAGE_NAMES = {
     'en': 'EN',
     'zh-Hans': '简体',
     'zh-Hant': '繁體',
-    'ms': 'BM',
+    'ms': 'Bahasa Melayu',
     'ta': 'தமிழ்'
 };
 
@@ -44,11 +44,11 @@ export default class {
         // For Firefox
         me._button.setAttribute('aria-label', 'Change Language');
 
-        // Create dropdown menu
+        // Create dropdown menu (inside button for proper positioning)
         me._dropdown = createElement('div', {
             className: 'language-ctrl-dropdown',
             style: 'display: none;'
-        }, me._container);
+        }, me._button);
 
         // Add language options
         me._langs.forEach(lang => {
@@ -97,7 +97,7 @@ export default class {
     _showDropdown() {
         const me = this;
 
-        me._dropdown.style.display = 'block';
+        me._dropdown.style.display = 'flex';
         me._button.classList.add('active');
     }
 

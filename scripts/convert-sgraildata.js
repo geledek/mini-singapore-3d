@@ -202,6 +202,46 @@ function extractCoordinates(sgRailData) {
   return coordinates;
 }
 
+// Extract station building polygons from SGRailData
+function extractStationBuildings(sgRailData) {
+  const buildings = {
+    type: 'FeatureCollection',
+    features: []
+  };
+
+  sgRailData.features.forEach(feature => {
+    if (feature.geometry.type !== 'Polygon' && feature.geometry.type !== 'MultiPolygon') {
+      return;
+    }
+
+    const props = feature.properties;
+    if (props.type !== 'subway') {
+      return;
+    }
+
+    // Get station code and railway
+    const stationCode = props.station_codes;
+    const railwayId = stationCode ? getRailwayId(stationCode.split('-')[0]) : null;
+
+    // Create GeoJSON feature for the building
+    const buildingFeature = {
+      type: 'Feature',
+      properties: {
+        id: `building-${stationCode || feature.id}`,
+        stationCode: stationCode,
+        railway: railwayId,
+        underground: props.underground || false
+      },
+      geometry: feature.geometry
+    };
+
+    buildings.features.push(buildingFeature);
+  });
+
+  console.log(`✓ Extracted ${buildings.features.length} station building polygons`);
+  return buildings;
+}
+
 // Extract station exits from SGRailData
 function extractExits(sgRailData) {
   const exits = [];
@@ -272,6 +312,9 @@ async function convertSGRailData() {
     // Extract exits
     const exits = extractExits(sgRailData);
 
+    // Extract station building polygons
+    const buildings = extractStationBuildings(sgRailData);
+
     // Save stations.json
     const stationsPath = path.join(__dirname, '../data/stations-sgraildata.json');
     fs.writeFileSync(stationsPath, JSON.stringify(stations, null, '\t'));
@@ -292,12 +335,18 @@ async function convertSGRailData() {
     fs.writeFileSync(exitsPath, JSON.stringify(exits, null, '\t'));
     console.log(`✓ Saved exits to ${exitsPath}`);
 
+    // Save station-buildings.json (GeoJSON)
+    const buildingsPath = path.join(__dirname, '../data/station-buildings.json');
+    fs.writeFileSync(buildingsPath, JSON.stringify(buildings, null, '\t'));
+    console.log(`✓ Saved station buildings to ${buildingsPath}`);
+
     console.log('\n=== Integration Complete ===');
     console.log('\nNext steps:');
     console.log('1. Review the generated files:');
     console.log('   - data/stations-sgraildata.json');
     console.log('   - data/coordinates-sgraildata.json');
     console.log('   - data/exits-sgraildata.json');
+    console.log('   - data/station-buildings.json');
     console.log('2. Merge with existing data or replace as needed');
     console.log('3. Run: npm run build-data');
 

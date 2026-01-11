@@ -667,6 +667,9 @@ export default class extends Evented {
         me.airports = new Dataset(Airport, data.airportData);
         me.flightStatuses = new Dataset(FlightStatus, data.flightStatusData);
 
+        // Store station buildings GeoJSON for visualization
+        me.stationBuildingsData = data.stationBuildingsData;
+
         me.activeTrainLookup = new Map();
         me.standbyTrainLookup = new Map();
         me.realtimeTrains = new Set();
@@ -912,6 +915,162 @@ export default class extends Evented {
 
         me.trafficLayer.addRouteGroup(routeData);
         me.trafficLayer.addColorGroup(colorData);
+
+        // Add station building polygons layer
+        if (me.stationBuildingsData && me.stationBuildingsData.features) {
+            map.addSource('station-buildings', {
+                type: 'geojson',
+                data: me.stationBuildingsData
+            });
+
+            map.addLayer({
+                id: 'station-buildings-fill',
+                type: 'fill-extrusion',
+                source: 'station-buildings',
+                paint: {
+                    'fill-extrusion-color': [
+                        'case',
+                        ['get', 'underground'],
+                        '#4a90d9',  // Blue for underground
+                        '#6bc06b'   // Green for aboveground
+                    ],
+                    'fill-extrusion-height': 8,
+                    'fill-extrusion-base': 0,
+                    'fill-extrusion-opacity': 0.6
+                },
+                minzoom: 14
+            }, 'trees');
+        }
+
+        // Add station exits layer as points
+        const exitsFeatures = [];
+        for (const exit of me.exits.getAll()) {
+            exitsFeatures.push({
+                type: 'Feature',
+                properties: {
+                    id: exit.id,
+                    name: exit.name,
+                    stationCode: exit.stationCode,
+                    railway: exit.railway
+                },
+                geometry: {
+                    type: 'Point',
+                    coordinates: exit.coord
+                }
+            });
+        }
+        // Add source with empty data first, then set data to ensure proper array handling
+        map.addSource('station-exits', {
+            type: 'geojson',
+            data: { type: 'FeatureCollection', features: [] }
+        });
+
+        // Set the actual data after source creation
+        const exitsSource = map.getSource('station-exits');
+        if (exitsSource && exitsFeatures.length > 0) {
+            exitsSource.setData({
+                type: 'FeatureCollection',
+                features: exitsFeatures
+            });
+        }
+
+        // Create exit marker icon using Font Awesome right-to-bracket icon (no leading whitespace)
+        const exitIconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><rect x="1" y="1" width="26" height="26" rx="4" fill="#333" stroke="#fff" stroke-width="1.5"/><g transform="translate(4, 5) scale(0.035)"><path fill="#fff" d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></g></svg>';
+
+        const addExitLayer = () => {
+            map.addLayer({
+                id: 'station-exits-icon',
+                type: 'symbol',
+                source: 'station-exits',
+                layout: {
+                    'icon-image': 'exit-marker',
+                    'icon-size': [
+                        'interpolate', ['linear'], ['zoom'],
+                        15, 0.6,
+                        18, 1.0
+                    ],
+                    'icon-allow-overlap': true,
+                    'text-field': ['concat', 'Exit ', ['get', 'name']],
+                    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                    'text-size': [
+                        'interpolate', ['linear'], ['zoom'],
+                        16, 10,
+                        18, 12
+                    ],
+                    'text-offset': [1.8, 0],
+                    'text-anchor': 'left',
+                    'text-optional': true
+                },
+                paint: {
+                    'text-color': '#333333',
+                    'text-halo-color': '#ffffff',
+                    'text-halo-width': 1.5
+                },
+                minzoom: 15
+            });
+        };
+
+        const exitIconImg = new Image(32, 32);
+        exitIconImg.onload = () => {
+            if (!map.hasImage('exit-marker')) {
+                map.addImage('exit-marker', exitIconImg);
+            }
+            addExitLayer();
+        };
+        exitIconImg.onerror = () => {
+            console.error('Failed to load exit marker icon');
+        };
+        exitIconImg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(exitIconSvg);
+
+        // Add station codes layer
+        const stationCodesFeatures = [];
+        for (const station of me.stations.getAll()) {
+            if (station.code && station.coord && !station.alternate) {
+                stationCodesFeatures.push({
+                    type: 'Feature',
+                    properties: {
+                        id: station.id,
+                        code: station.code,
+                        color: station.railway ? station.railway.color : '#748477',
+                        name: station.title.en
+                    },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: station.coord
+                    }
+                });
+            }
+        }
+
+        map.addSource('station-codes', {
+            type: 'geojson',
+            data: {
+                type: 'FeatureCollection',
+                features: stationCodesFeatures
+            }
+        });
+
+        map.addLayer({
+            id: 'station-codes-label',
+            type: 'symbol',
+            source: 'station-codes',
+            minzoom: 14,
+            layout: {
+                'text-field': ['get', 'code'],
+                'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                'text-size': ['interpolate', ['linear'], ['zoom'], 14, 10, 16, 12, 18, 14],
+                'text-offset': [0, -1.5],
+                'text-anchor': 'bottom',
+                'text-allow-overlap': false,
+                'text-ignore-placement': false
+            },
+            paint: {
+                'text-color': '#ffffff',
+                'text-halo-color': ['get', 'color'],
+                'text-halo-width': 4,
+                'text-halo-blur': 0
+            }
+        });
 
         /* For development
         me.addLayer({
@@ -3391,7 +3550,8 @@ export default class extends Evented {
             popup.setLngLat(me.adjustCoord(coord, altitude));
             if (setHTML) {
                 const stations = markedObject.stations,
-                    railwayColors = {};
+                    railwayColors = {},
+                    stationCodesByTitle = {};
 
                 for (const station of stations) {
                     const title = me.getLocalizedStationTitle(station),
@@ -3399,6 +3559,17 @@ export default class extends Evented {
                         colors = railwayColors[title] = railwayColors[title] || {};
 
                     colors[me.getLocalizedRailwayTitle(railway)] = railway.color;
+
+                    // Collect station codes
+                    if (!stationCodesByTitle[title]) {
+                        stationCodesByTitle[title] = [];
+                    }
+                    if (station.code) {
+                        stationCodesByTitle[title].push({
+                            code: station.code,
+                            color: railway.color
+                        });
+                    }
                 }
                 popup.setHTML([
                     stations[0].thumbnail ? [
@@ -3409,11 +3580,18 @@ export default class extends Evented {
                     ].join('') : '',
                     '<div class="railway-list">',
                     Object.keys(railwayColors).map(stationTitle => {
+                        // Build code badges
+                        const codes = stationCodesByTitle[stationTitle] || [];
+                        const codeBadges = codes.length > 0 ?
+                            `<span class="station-code-badges">${codes.map(({code, color}) =>
+                                `<span class="station-code-badge" style="background-color: ${color};">${code}</span>`
+                            ).join('')}</span>` : '';
+
                         const railwayTitles = Object.keys(railwayColors[stationTitle])
                             .map(railwayTitle => `<div class="line-strip" style="background-color: ${railwayColors[stationTitle][railwayTitle]};"></div><span>${railwayTitle}</span>`)
                             .join('<br>');
 
-                        return `<strong>${stationTitle}</strong><br>${railwayTitles}`;
+                        return `${codeBadges}<strong>${stationTitle}</strong><br>${railwayTitles}`;
                     }).join('<br>'),
                     '</div>'
                 ].join(''));

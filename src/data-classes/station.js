@@ -8,13 +8,21 @@ export default class {
 
     update(params, refs) {
         const me = this,
-            {railway, coord, utitle, thumbnail, exit, altitude, alternate, ascending, descending, group} = params;
+            {railway, coord, utitle, thumbnail, exit, altitude, alternate, ascending, descending, group, code} = params;
 
         /**
          * Station ID.
          * @type {string}
          */
         me.id = params.id;
+
+        /**
+         * Station code (e.g., "NE4", "DT19").
+         * @type {string}
+         */
+        if (code) {
+            me.code = code;
+        }
 
         if (railway) {
             /**
