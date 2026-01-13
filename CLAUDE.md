@@ -4,285 +4,244 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Mini Singapore 3D is a real-time 3D digital map of Singapore's public transport system, forked from Mini Tokyo 3D. It visualizes trains, buses, and stations using Mapbox GL JS, deck.gl, and Three.js.
+Mini Singapore 3D is a real-time 3D visualization of Singapore's MRT and LRT network. Trains move across an interactive 3D map following accurate timetables. Forked from [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d).
 
 **Tech Stack:**
-- **Rendering**: Mapbox GL JS (3D map), deck.gl (data layers), Three.js (3D meshes)
+- **Rendering**: Mapbox GL JS (3D map), deck.gl (data layers), Three.js (3D train meshes)
 - **Build**: Rollup (bundler), PostCSS (CSS processing)
-- **Data**: LTA DataMall API (Singapore transport data), GTFS (bus timetables), Geobuf (compressed GeoJSON)
-- **Worker**: Web Worker with Comlink for data processing
+- **Data**: SGRailData (stations/tracks), LTA DataMall API, Geobuf (compressed GeoJSON)
+- **Deployment**: Vercel
+
+**Coverage:** 9 rail lines, 215 stations, 591 exits
 
 ## Common Commands
 
-### Development
 ```bash
-# Install dependencies
+# Install and build everything
 npm install
+npm run build-all
 
-# Build the application (development)
-npm run build
+# Start local server
+npm start              # Serves on http://localhost:8080
 
-# Lint code
-npm run lint
+# Individual build steps
+npm run build          # Build JS/CSS bundles → dist/
+npm run build-pages    # Copy static files → build/
+npm run build-data     # Generate compressed data → build/data/
 
-# Build everything (production)
-npm run build-all  # Builds code, pages, data, and docs
+# Development
+npm run lint           # ESLint
+npm run docs:dev       # VuePress dev server for docs
+
+# SGRailData integration
+npm run sgraildata:convert  # Convert SGRailData GeoJSON
+npm run sgraildata:merge    # Merge with existing data
+npm run sgraildata:update   # Convert + merge + rebuild
 ```
 
-### Build Process
+## Environment Setup
+
 ```bash
-# 1. Build JS/CSS bundles
-npm run build
-# Generates: dist/mini-singapore-3d.js, dist/mini-singapore-3d.min.js,
-#            dist/mini-singapore-3d.esm.js, dist/mini-singapore-3d-worker.js,
-#            dist/mini-singapore-3d.css, dist/loader.js
-
-# 2. Build static pages
-npm run build-pages
-# Copies public/ to build/, copies dist files, creates build/assets/
-
-# 3. Build data files (requires dist/loader.js from step 1)
-npm run build-data
-# Generates: build/data/*.json.gz (railways, stations, timetables, etc.)
-# Runs: node dist/loader (compiled from src/loader/index.js)
-
-# 4. Build documentation
-npm run docs
-```
-
-### Environment Setup
-```bash
-# Copy environment template
 cp .env.example .env
-
-# Edit .env with your API keys:
-# - MAPBOX_ACCESS_TOKEN (required for maps)
-# - LTA_ACCOUNT_KEY (required for Singapore transport data)
+# Edit .env with:
+# - MAPBOX_ACCESS_TOKEN (required)
+# - LTA_ACCOUNT_KEY (required)
 ```
 
 ## Architecture
 
 ### Core Application Flow
 
-1. **Entry Point** (`src/index.js`): Exports `Map`, `Marker`, `Popup`, `Panel` classes
-2. **Map Class** (`src/map.js`): Main application controller
-   - Initializes Mapbox map, controls, layers, data loaders
+1. **Entry** (`src/index.js`): Exports `Map`, `Marker`, `Popup`, `Panel` classes
+2. **Map** (`src/map.js`): Main controller (~3800 lines)
+   - Initializes Mapbox, controls, layers, data loaders
    - Manages animation loop, clock, tracking modes
-   - Coordinates between static data and real-time updates
-3. **Data Loading** (`src/loader.js`): Loads static and dynamic data
-   - Static: railways, stations, timetables (from `build/data/`)
-   - Dynamic: real-time train positions, bus arrivals (from LTA DataMall)
-4. **Animation** (`src/animation.js`): Frame-by-frame object movement
-5. **Rendering**: Three layers work together:
+3. **Loader** (`src/loader.js`): Loads static data from `build/data/*.json.gz`
+4. **Animation** (`src/animation.js`): Frame-by-frame train movement
+5. **Rendering**: Three layers
    - Mapbox base map (buildings, roads)
-   - deck.gl layers (traffic, routes)
-   - Three.js meshes (trains, buses, aircraft)
+   - deck.gl layers (traffic visualization)
+   - Three.js meshes (3D trains)
 
-### Key Architectural Patterns
+### Data Pipeline
 
-**Data Pipeline:**
 ```
-Scripts (scripts/*.js)
-  → Generate data files (data/*.json)
-  → Loader compresses (node dist/loader)
-  → Output (build/data/*.json.gz)
-  → Runtime loads (src/loader.js)
+Source Data (data/*.json)
+  ↓ node dist/loader (build-time)
+Compressed (build/data/*.json.gz)
+  ↓ src/loader.js (runtime)
+Application State
 ```
-
-**Build-Time Data Processing:**
-- `src/loader/index.js`: Main script that runs `node dist/loader`
-- Individual loaders in `src/loader/*.js`: Process raw JSON into optimized formats
-- Each loader reads from `data/*.json`, processes, and writes to `build/data/*.json.gz`
-- Uses Geobuf for GeoJSON compression, custom encoding for timetables
-
-**Runtime Data Loading:**
-- `src/loader.js`: Client-side data fetcher
-- `loadStaticData()`: Loads compressed data files on app init
-- `loadDynamicTrainData()`, `loadDynamicBusData()`: Poll APIs for real-time updates
-- Web Worker (`src/worker.js`) processes bus data asynchronously
-
-**Environment Variables:**
-- Build time: `rollup.config.mjs` replaces `BUILD_*` placeholders with `process.env.*`
-- Runtime config: `src/env-config.js` exports values embedded during build
-- HTML processing: `scripts/process-html.js` replaces `__*__` placeholders in `public/index.html`
-
-**Coordinate Systems:**
-- Origin point: Singapore City Hall MRT (103.8519, 1.2929)
-- Uses Mapbox MercatorCoordinate for conversions
-- Three.js meshes positioned relative to `map.modelOrigin`
-
-**3D Rendering Pipeline:**
-- `ThreeLayer` (`src/layers/three-layer.js`): Custom Mapbox layer integrating Three.js
-- Mesh sets (`src/mesh-sets/*.js`): Instanced rendering for trains/buses (one geometry, many instances)
-- GPGPU textures (`src/gpgpu/*.js`): Store position/color data in textures for shader-based animation
-- Shaders (`src/mesh-sets/shaders.js`): GLSL for efficient rendering
 
 ### Directory Structure
 
 ```
 src/
-├── index.js                 # Main entry (UMD build)
-├── index.esm.js            # ESM entry
-├── map.js                  # Main Map class (3600+ lines)
-├── loader.js               # Runtime data loading
-├── configs.js              # Configuration constants
-├── env-config.js           # Build-time environment variables
-├── animation.js            # Animation frame logic
-├── clock.js                # Time management (real-time/playback)
-├── worker.js               # Web Worker for bus data processing
-├── data-classes/           # Domain models (Train, Station, Railway, etc.)
-├── loader/                 # Build-time data processors
-│   ├── index.js           # Main loader script (generates build/data/)
-│   ├── railways.js        # Process railway data
-│   ├── stations.js        # Process station data
-│   └── train-timetables.js # Process timetable data
-├── layers/                 # Custom Mapbox layers
-│   ├── three-layer.js     # Three.js integration
-│   └── traffic-layer.js   # deck.gl traffic visualization
-├── mesh-sets/              # 3D geometry and instanced rendering
-├── gpgpu/                  # GPU-accelerated data textures
-├── controls/               # UI controls (search, clock, navigation)
-├── panels/                 # Side panels (train info, station info)
-└── helpers/                # Utility functions
+├── index.js              # Main entry
+├── map.js                # Map controller
+├── loader.js             # Runtime data loading
+├── configs.js            # Configuration constants
+├── animation.js          # Animation loop
+├── clock.js              # Time management
+├── worker.js             # Web Worker for async processing
+├── data-classes/         # Domain models
+│   ├── railway.js        # Railway lines
+│   ├── station.js        # Stations
+│   ├── exit.js           # Station exits
+│   ├── train.js          # Train instances
+│   └── train-timetable.js
+├── loader/               # Build-time data processors
+│   ├── index.js          # Main build script
+│   ├── railways.js
+│   ├── stations.js
+│   ├── exits.js          # Process exit data
+│   ├── station-buildings.js
+│   ├── features.js       # Track geometry
+│   └── train-timetables.js
+├── layers/               # Custom Mapbox layers
+│   ├── three-layer.js    # Three.js integration
+│   └── traffic-layer.js  # deck.gl visualization
+├── controls/             # UI controls
+│   ├── search-control.js
+│   ├── clock-control.js
+│   └── language-control.js  # Language selector
+├── panels/               # Side panels
+│   └── station-panel.js  # Station info with exits
+├── mesh-sets/            # 3D geometry
+├── gpgpu/                # GPU-accelerated rendering
+└── helpers/              # Utilities
 
-scripts/                    # Data generation scripts
-├── generate-timetable.js   # Generate timetables from GTFS
-├── generate-coordinates.js # Generate station coordinates
-└── process-html.js         # Replace env vars in HTML
+scripts/                  # Data generation & utilities
+├── generate-all-timetables.js  # Generate train schedules
+├── generate-coordinates.js     # Generate track geometry
+├── convert-sgraildata.js       # Import from SGRailData
+├── merge-sgraildata.js         # Merge SGRailData
+├── import-osm-tracks.js        # Import OSM rail geometry
+├── process-html.js             # Env var injection
+└── debug-app.js                # Browser debugging
 
-data/                       # Source data (JSON)
-├── railways.json          # Railway line definitions
-├── stations.json          # Station definitions
-└── coordinates.json       # Station coordinates
+data/                     # Source data
+├── railways.json         # 9 railway lines
+├── stations.json         # 215 stations
+├── exits.json            # 591 station exits
+├── coordinates.json      # Track coordinates
+├── station-buildings.json
+├── train-timetables/     # Per-line timetables
+│   ├── smrt-nsl.json
+│   ├── smrt-ewl.json
+│   └── ...
+└── *-sgraildata.json     # SGRailData imports
 
-build/data/                 # Generated compressed data
+build/data/               # Generated (gitignored)
 ├── railways.json.gz
 ├── stations.json.gz
+├── exits.json.gz
+├── features.json.gz
 └── timetable-*.json.gz
 ```
 
-## Important Conventions
+## Key Features
 
-### Adding New Transport Data
+### Station Exits
+- 591 exits with coordinates from SGRailData
+- Displayed on map at zoom 16+
+- Listed in station panel with details
 
-**Railways:**
-1. Add to `data/railways.json` with LTA line codes (e.g., 'SMRT.NSL')
-2. Update `src/loader.js` RAILWAYS_FOR_TRAINS if real-time data exists
-3. Run `npm run build-data` to regenerate
+### Station Codes
+- Colored badges (e.g., NS1, EW14, DT19) on map labels
+- Matches official MRT color scheme
+- Shows at zoom 14+
 
-**Stations:**
-1. Add to `data/stations.json` with coordinates
-2. Ensure station IDs match railway references
-3. Update `data/station-groups.json` for interchange stations
+### Track Geometry
+- Accurate curved rails from OpenStreetMap
+- Imported via `scripts/import-osm-tracks.js`
+- SGRailData provides refined alignments
 
-**Timetables:**
-1. Place GTFS data in appropriate location
-2. Run `node scripts/generate-timetable.js` to convert to internal format
-3. Output goes to `data/train-timetables/*.json`
+### Multi-Language
+- English, 中文 (Simplified/Traditional), Bahasa Melayu, தமிழ்
+- Dictionaries in `assets/dictionary-{lang}.json`
+- Language selector in top-right corner
 
-### Environment Variable Usage
+## Adding/Modifying Data
 
-**During build** (rollup.config.mjs):
-- `BUILD_MAPBOX_ACCESS_TOKEN` → replaced in code
-- `BUILD_LTA_ACCOUNT_KEY` → replaced in code
-- Values come from `.env` file via `dotenv`
+### Railways
+1. Edit `data/railways.json`
+2. Run `npm run build-data`
 
-**In source code:**
-- Import from `src/env-config.js`, NOT directly from `process.env`
-- `configs.js` uses getters to access `envConfig` properties
+### Stations
+1. Edit `data/stations.json` (or import via SGRailData)
+2. Update `data/station-groups.json` for interchanges
+3. Run `npm run build-data`
 
-### Real-Time Data Integration
+### Timetables
+1. Edit files in `data/train-timetables/`
+2. Or regenerate: `node scripts/generate-all-timetables.js`
+3. Run `npm run build-data`
 
-Currently, Singapore's LTA DataMall does NOT provide:
-- Real-time train positions (unlike Tokyo's ODPT)
-- Train delay information
+### Exits
+1. Edit `data/exits.json`
+2. Run `npm run build-data`
 
-Available from LTA:
-- Bus arrivals (`configs.busArrivalUrl`)
-- Train service alerts (`configs.trainAlertUrl`)
-- Passenger volume (`configs.passengerVolumeUrl`)
+## SGRailData Integration
 
-See `src/loader.js` lines 136-156 for TODOs on implementing these.
+[SGRailData](https://github.com/cheeaun/sgraildata) provides high-quality station coordinates, exits, and rail geometry.
 
-### Multi-Language Support
-
-Dictionaries: `assets/dictionary-{lang}.json`
-- English (en), Chinese Simplified/Traditional (zh-Hans/zh-Hant)
-- Malay (ms), Tamil (ta) - partially implemented
-
-Add translations:
-1. Create `assets/dictionary-{lang}.json`
-2. Add lang code to `configs.langs` array
-3. Translate UI strings, station names, railway names
-
-## Migration from Mini Tokyo 3D
-
-This codebase was forked from Mini Tokyo 3D. Key differences:
-
-**Geographic Changes:**
-- Center: Tokyo → Singapore City Hall (103.8519, 1.2929)
-- Default zoom: 11 → 12 (Singapore is smaller)
-- Removed: Tokyo-specific operators (JR East, Tokyo Metro, etc.)
-- Added: Singapore operators (SMRT, SBS Transit, LTA)
-
-**Data Source Changes:**
-- API: ODPT (Tokyo) → LTA DataMall (Singapore)
-- Real-time trains: Available in Tokyo, NOT in Singapore
-- Bus data: Both use GTFS, different sources
-
-**Known Issues:**
-- Many Tokyo-specific features remain (flight tracking, complex train types)
-- Some TODOs in code for Singapore-specific implementations
-- Build process still references some Tokyo artifacts
-
-## Testing & Debugging
-
-**Browser console:**
-```javascript
-// Map instance is exposed globally
-window.map
-
-// Access clock
-window.map._clock
-
-// Access datasets
-window.map._railwayData
-window.map._stationData
-window.map._trains
+```bash
+# Update from SGRailData
+npm run sgraildata:update
 ```
 
-**Common issues:**
-- "Failed to load data": Check `build/data/` exists and contains `.json.gz` files
-- Blank map: Check MAPBOX_ACCESS_TOKEN in .env
-- No real-time data: LTA_ACCOUNT_KEY may be invalid or real-time feature not implemented
+See `docs/SGRAILDATA_INTEGRATION.md` for details.
+
+## Debugging
+
+### Browser Console
+```javascript
+window.map                    // Map instance
+window.map._clock             // Current time
+window.map.railways.getAll()  // All railways
+window.map.stations.getAll()  // All stations
+window.map.activeTrainLookup  // Active trains
+```
+
+### Common Issues
+| Problem | Solution |
+|---------|----------|
+| Blank map | Check MAPBOX_ACCESS_TOKEN in .env |
+| No trains | Check time of day, rebuild timetables |
+| Data load error | Run `npm run build-data` |
+| Build fails | Check Node version, run `npm install` |
+
+### Debug Scripts
+```bash
+node scripts/debug-app.js      # Opens Chrome with DevTools
+node scripts/test-browser.js   # Automated testing
+```
+
+## Known Limitations
+
+- **No real-time train positions** - LTA doesn't provide GPS data; uses timetable simulation
+- **Bus routes not implemented** - Infrastructure exists but visualization not built
+- **Some Tokyo artifacts remain** - Flight tracking code still present (unused)
 
 ## Build Output
 
 ```
 dist/
-├── mini-singapore-3d.js         # UMD bundle (development)
-├── mini-singapore-3d.min.js     # UMD bundle (production)
-├── mini-singapore-3d.esm.js     # ES module
-├── mini-singapore-3d.css        # Styles (development)
-├── mini-singapore-3d.min.css    # Styles (production)
-├── mini-singapore-3d-worker.js  # Web Worker
-└── loader.js                    # Data build script
+├── mini-singapore-3d.js       # UMD (dev)
+├── mini-singapore-3d.min.js   # UMD (prod)
+├── mini-singapore-3d.esm.js   # ES module
+├── mini-singapore-3d.css
+└── mini-singapore-3d-worker.js
 
 build/
-├── index.html                   # Processed with env vars
-├── mini-singapore-3d.min.*     # Copied from dist/
-├── assets/                      # Dictionary files, style.json
-└── data/                        # Generated compressed data
-    ├── railways.json.gz
-    ├── stations.json.gz
-    ├── features.json.gz
-    ├── timetable-weekday.json.gz
-    └── ...
+├── index.html
+├── assets/
+└── data/*.json.gz
 ```
 
-## Security Notes
+## Security
 
-- **NEVER commit `.env` file** - contains API keys
-- Exposed keys in CLEANUP_SUMMARY.md should be rotated
-- HTML placeholders (`__MAPBOX_ACCESS_TOKEN__`) are replaced by `scripts/process-html.js`
-- Build-time replacements in code use rollup `@rollup/plugin-replace`
+- **Never commit `.env`** - contains API keys
+- Keys injected at build time via Rollup
+- HTML placeholders replaced by `scripts/process-html.js`
