@@ -87,14 +87,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/mini-singapore-3d.git"
+    "url": "git+https://github.com/geledek/mini-singapore-3d.git"
   },
-  "author": "Your Name (based on Mini Tokyo 3D by Akihiko Kusanagi)",
+  "author": "geledek (based on Mini Tokyo 3D by Akihiko Kusanagi)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/mini-singapore-3d/issues"
+    "url": "https://github.com/geledek/mini-singapore-3d/issues"
   },
-  "homepage": "http://localhost:8080",
+  "homepage": "https://github.com/geledek/mini-singapore-3d",
   "jsdelivr": "dist/mini-singapore-3d.min.js",
   "unpkg": "dist/mini-singapore-3d.min.js"
 }

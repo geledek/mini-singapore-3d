@@ -1,150 +1,98 @@
 # Mini Singapore 3D
 
+<!-- TODO: Add hero image or animated GIF showing trains moving on the 3D map -->
+<!-- ![Mini Singapore 3D](docs/images/hero.gif) -->
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-0.1.0--alpha.1-orange)](https://github.com/yourusername/mini-singapore-3d)
+[![Version](https://img.shields.io/badge/version-0.1.0--alpha-orange)](https://github.com/geledek/mini-singapore-3d/releases)
+<!-- [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://mini-singapore-3d.vercel.app) -->
+[![Mapbox](https://img.shields.io/badge/Mapbox-000?logo=mapbox&logoColor=fff)](https://www.mapbox.com/)
+[![Three.js](https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff)](https://threejs.org/)
+[![deck.gl](https://img.shields.io/badge/deck.gl-FC4C02)](https://deck.gl/)
 
-A real-time 3D digital map of Singapore's public transport system.
+A real-time 3D visualization of Singapore's MRT and LRT network. Watch trains move across all 9 lines on an interactive 3D map.
 
-Forked from [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d) by Akihiko Kusanagi, adapted for Singapore's map and data.
+<!-- **[View Live Demo](https://mini-singapore-3d.vercel.app)** -->
 
-## Changelog
-
-For recent changes and version history, see [CHANGELOG.md](CHANGELOG.md).
-
+> Forked from [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d) by Akihiko Kusanagi
 
 ## Features
 
-- Real-time visualization of MRT and LRT trains across all 9 lines:
-  - SMRT: North-South Line (NSL), East-West Line (EWL), Circle Line (CCL), Thomson-East Coast Line (TEL), Bukit Panjang LRT (BPLRT)
-  - SBS Transit: North East Line (NEL), Downtown Line (DTL), Sengkang LRT (SKLRT), Punggol LRT (PGLRT)
-- Interactive 3D map with train animations
-- Station information and interchange connections
-- Support for underground and above-ground view modes
+- **9 rail lines, 215 stations** - Complete MRT and LRT network coverage
+- **Real-time train simulation** - Trains follow accurate timetables throughout the day
+- **3D interactive map** - Tilt, rotate, and zoom with smooth animations
+- **Accurate track geometry** - Curved rails from OpenStreetMap data
+- **Station details** - Exit locations, interchange connections, and station codes
+- **Multi-language** - English, 中文, Bahasa Melayu, தமிழ்
 
-## Cheat Sheet
-
-Operation | Description
---- | ---
-Mouse or finger drag | Pan
-Mouse wheel rotation | Zoom in/out
-Right click or Ctrl key + mouse drag | Tilt up/down and rotate
-Shift key + mouse drag | Box zoom
-Pinch in/out | Zoom in/out
-Two-finger drag | Tilt up/down and rotate
-Double-click or triple-tap | Zoom in
-Shift key + Double-click or two-finger tap | Zoom out
-Click or tap +/- buttons | Zoom in/out
-Click or tap the compass button | Reset bearing to north
-Click or tap the compass button + mouse or finder drag | Rotate
-Click or tap the fullscreen button | Toggle the fullscreen mode
-Click or tap the eye button | Toggle the underground mode
-Click or tap the playback button | Toggle the playback mode
-Click or tap the battery button | Toggle the eco mode
-Click or tap the layer button | Show/hide the layer display settings panel
-Click or tap the camera button | Show/hide the tracking mode settings panel
-Click or tap the info button | Show/hide the app info panel
-Click or tap a train/station | Enable tracking or select station
-Click or tap the map | Disable tracking or deselect station
-Hover a train/station | Show the train/station information
-
-## Language Support
-
-Currently, the following languages are supported for Singapore's multilingual context:
-
-Language | User Interface | Map Labels | Stations, Railways, etc.
---- | --- | --- | ---
-English | Yes | Yes | Yes
-Chinese (Simplified) | Yes | Yes | Yes
-Chinese (Traditional) | Yes | Yes | Yes
-Malay | Partial | Partial | Partial
-Tamil | Partial | Partial | Partial
-
-If you want to contribute translations, please update the `dictionary-<ISO 639-1 code>.json` files in the [`assets`](./assets) directory and add translations to the data files in the [`data`](./data) directory.
-
-## About Data
-
-The visualization uses:
-- **Singapore LTA DataMall API** for real-time train arrival data and service alerts
-- **Station and railway data** from Singapore's MRT/LRT network
-- **GTFS data** for bus routes and timetables
-- **Mapbox** for base map tiles and 3D terrain
-
-Note: Real-time train position data is currently simulated based on timetables, as Singapore's LTA DataMall does not provide live train GPS coordinates (unlike Tokyo's ODPT system).
-
-## How to Build
+## Quick Start
 
 ### Prerequisites
 
-First, get access tokens by signing up at:
-- [Singapore LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en/request-for-api.html) - for transport data
-- [Mapbox](https://account.mapbox.com/auth/signup/) - for map tiles
+Get API keys from:
+- [Mapbox](https://account.mapbox.com/) - for map tiles
+- [LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en/request-for-api.html) - for Singapore transport data
 
 ### Setup
 
-1. Clone the repository
-2. Copy environment template:
-
 ```bash
+# Clone the repository
+git clone https://github.com/geledek/mini-singapore-3d.git
+cd mini-singapore-3d
+
+# Configure environment
 cp .env.example .env
-```
+# Edit .env with your API keys
 
-3. Edit `.env` with your API keys:
-
-```bash
-MAPBOX_ACCESS_TOKEN=pk.your_mapbox_token_here
-LTA_ACCOUNT_KEY=your_lta_account_key_here
-```
-
-4. Install dependencies and build:
-
-```bash
+# Install and build
 npm install
 npm run build-all
+
+# Start local server
+npm start
 ```
 
-This will generate the application in the `build` directory.
+Open http://localhost:8080 in your browser.
 
-⚠️ **Important:** Never commit the `.env` file - it contains sensitive API keys and is gitignored.
+## Tech Stack
 
-### Development
-
-For development with live reload:
-
-```bash
-npm run build        # Build JavaScript/CSS bundles
-npm run build-pages  # Copy static files
-npm run build-data   # Generate compressed data files
-npx serve build -p 8080  # Start local server
-```
-
-## Project Structure
-
-- `src/` - Source code
-  - `map.js` - Main map controller
-  - `loader.js` - Data loading and processing
-  - `layers/` - Custom Mapbox layers (Three.js integration, traffic)
-  - `data-classes/` - Domain models (Train, Station, Railway, etc.)
-  - `mesh-sets/` - 3D geometry and rendering
-- `data/` - Source data files (railways, stations, timetables)
-- `scripts/` - Build scripts and data generators
-- `build/` - Generated output (created by build process)
-
-## License
-
-Mini Singapore 3D is available under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Credits
-
-This project is a fork of [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d) by Akihiko Kusanagi.
-
-Original Mini Tokyo 3D:
-- Author: Akihiko Kusanagi
-- License: MIT
-- Repository: https://github.com/nagix/mini-tokyo-3d
+| Layer | Technology |
+|-------|------------|
+| 3D Map | [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs) |
+| Data Visualization | [deck.gl](https://deck.gl/) |
+| 3D Meshes | [Three.js](https://threejs.org/) |
+| Build | [Rollup](https://rollupjs.org/) |
+| Deployment | [Vercel](https://vercel.com/) |
 
 ## Documentation
 
-- [CHANGELOG.md](CHANGELOG.md) - Version history and release notes
-- [CLAUDE.md](CLAUDE.md) - Developer documentation for Claude Code
-- [docs/](docs/) - User guides and developer documentation
-- [docs/archive/development-notes/](docs/archive/development-notes/) - Historical development notes
+- [User Guide](docs/user-guide/) - How to use the map
+- [Developer Guide](docs/developer-guide/) - API and customization
+- [CHANGELOG](CHANGELOG.md) - Version history and recent updates
+
+## Data Sources
+
+- **[SGRailData](https://github.com/cheeaun/sgraildata)** - Station coordinates, exits, and rail geometry
+- **[LTA DataMall](https://datamall.lta.gov.sg/)** - Official Singapore transport data
+- **[OpenStreetMap](https://www.openstreetmap.org/)** - Track geometry
+
+## Contributing
+
+Contributions are welcome! Areas that need help:
+
+- [ ] Real-time train arrival integration (when LTA provides it)
+- [ ] Bus route visualization
+- [ ] Malay and Tamil translations
+- [ ] Performance optimizations
+
+## License
+
+[MIT License](LICENSE) - see the LICENSE file for details.
+
+## Credits
+
+This project is a fork of [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d) by [Akihiko Kusanagi](https://github.com/nagix).
+
+Special thanks to:
+- [Chee Aun](https://github.com/cheeaun) for [SGRailData](https://github.com/cheeaun/sgraildata) and [RailRouter SG](https://github.com/cheeaun/railrouter-sg)
+- [Land Transport Authority](https://www.lta.gov.sg/) for open transport data
