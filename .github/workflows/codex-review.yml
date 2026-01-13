@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    if: github.event.sender.type == 'User' && !github.event.sender.login.endsWith('[bot]')
+    if: github.event.sender.type == 'User' && !endsWith(github.event.sender.login, '[bot]')
 
     steps:
     - name: Checkout code
