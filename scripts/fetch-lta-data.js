@@ -11,7 +11,12 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const LTA_API_KEY = '+Z3IvSNwTlmKVY92BS4/nQ==';
+const LTA_API_KEY = process.env.LTA_ACCOUNT_KEY;
+if (!LTA_API_KEY) {
+    console.error('ERROR: LTA_ACCOUNT_KEY environment variable is not set.');
+    console.error('Add LTA_ACCOUNT_KEY=your_key to your .env file and run: source .env');
+    process.exit(1);
+}
 const LTA_BASE_URL = 'http://datamall2.mytransport.sg/ltaodataservice';
 
 const OUTPUT_DIR = path.join(__dirname, '../gtfs-data/lta-api');
