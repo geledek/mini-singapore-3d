@@ -293,7 +293,8 @@ export function featureWorker() {
             type: 0,
             color,
             width: 8,
-            zoom
+            zoom,
+            railway: id
         });
 
         featureLookup[id] = railwayFeature;
@@ -374,6 +375,7 @@ export function featureWorker() {
                         color,
                         width: 8,
                         zoom,
+                        railway: id,
                         section: `${id}.${index}`,
                         altitude: section.altitude,
                         dashed
@@ -389,6 +391,7 @@ export function featureWorker() {
                                 color,
                                 width: 8,
                                 zoom,
+                                railway: id,
                                 section: `${id}.${index}`,
                                 altitude: section.altitude,
                                 dashed: mainSection.properties.dashed
@@ -456,6 +459,7 @@ export function featureWorker() {
                 'SMRT.TEL.SungeiBedok'
             ]);
             const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
+            const stationRailways = [...new Set(ids.map(id => id.split('.').slice(0, 2).join('.')))];
             feature.properties = {
                 id: `${ug.id}.ug.${zoom}`,
                 type: 1,
@@ -466,6 +470,7 @@ export function featureWorker() {
                 group: `${ids[0]}.ug`,
                 altitude: ug.altitude * unit * 1000,
                 ids,
+                railways: stationRailways,
                 dashed: dashedStation
             };
             featureArray.push(feature);
@@ -482,6 +487,7 @@ export function featureWorker() {
                 'SMRT.TEL.SungeiBedok'
             ]);
             const dashedStation = (ids || []).some(id => plannedStationSet.has(id)) ? 1 : 0;
+            const stationRailways = [...new Set(ids.map(id => id.split('.').slice(0, 2).join('.')))];
             feature.properties = {
                 id: `${og.id}.og.${zoom}`,
                 type: 1,
@@ -491,6 +497,7 @@ export function featureWorker() {
                 zoom,
                 group: `${ids[0]}.og`,
                 altitude: 0,
+                railways: stationRailways,
                 ids,
                 dashed: dashedStation
             };

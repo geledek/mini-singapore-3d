@@ -1099,6 +1099,35 @@
     border-width: 2px;
     border-color: #33B5E5;
 }
+.mini-singapore-3d .layer-section-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 10px 4px 4px;
+}
+.mini-singapore-3d .railway-toggle-row {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    cursor: pointer;
+    opacity: 0.35;
+    transition: opacity 0.15s;
+}
+.mini-singapore-3d .railway-toggle-row.railway-toggle-enabled {
+    opacity: 1;
+}
+.mini-singapore-3d .railway-color-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin: 0 12px 0 4px;
+}
+.mini-singapore-3d .railway-toggle-name {
+    font-size: 14px;
+}
 .mini-singapore-3d .tracking-mode-row {
     height: 60px;
 }

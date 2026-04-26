@@ -104,6 +104,8 @@ export default class extends Evented {
         me.clock = new Clock();
         me.plugins = (options.plugins || []).map(plugin => new Plugin(plugin));
 
+        me.hiddenRailways = new Set();
+        me.busLinesEnabled = false;
         me.searchMode = 'none';
         me.viewMode = configs.defaultViewMode;
         me.trackingMode = options.trackingMode;
@@ -523,6 +525,116 @@ export default class extends Evented {
 
         me.map.setLayoutProperty(layerId, 'visibility', visibility);
         return me;
+    }
+
+    /**
+     * Toggles visibility of a specific MRT/LRT railway line.
+     * @param {string} railwayId - Railway ID (e.g. 'SMRT.NSL')
+     * @param {boolean} visible - Whether the line should be visible
+     */
+    toggleRailway(railwayId, visible) {
+        const me = this;
+
+        if (visible) {
+            me.hiddenRailways.delete(railwayId);
+        } else {
+            me.hiddenRailways.add(railwayId);
+        }
+        me._updateRailwayFilters();
+    }
+
+    _updateRailwayFilters() {
+        const me = this,
+            hidden = [...me.hiddenRailways],
+            hiddenExpr = hidden.length > 0 ? ['literal', hidden] : null;
+
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            // Filter railway track lines (type 0, have 'railway' property)
+            const railFilter = [
+                'all',
+                ['==', ['get', 'zoom'], zoom],
+                ['==', ['get', 'type'], 0]
+            ];
+            if (hiddenExpr) {
+                railFilter.push(['!', ['in', ['get', 'railway'], hiddenExpr]]);
+            }
+            if (me.map.getLayer(`railways-og-${zoom}`)) {
+                me.map.setFilter(`railways-og-${zoom}`, railFilter);
+            }
+
+            // Filter station fills (type 1, have 'railways' array property)
+            // Hide a station only if ALL its railways are hidden
+            for (const key of [`stations-og-${zoom}`, `stations-outline-og-${zoom}`]) {
+                if (!me.map.getLayer(key)) {
+                    continue;
+                }
+                const stationFilter = [
+                    'all',
+                    ['==', ['get', 'zoom'], zoom],
+                    ['==', ['get', 'type'], 1]
+                ];
+                if (hiddenExpr) {
+                    // Keep station visible if any of its railways is NOT hidden
+                    // i.e., hide only if every railway in the station's list is hidden
+                    stationFilter.push(['!', ['all',
+                        ...hidden.map(r => ['in', r, ['get', 'railways']])
+                    ]]);
+                }
+                me.map.setFilter(key, stationFilter);
+            }
+        }
+
+        // Filter station code labels
+        if (me.map.getLayer('station-codes-label')) {
+            if (hiddenExpr) {
+                me.map.setFilter('station-codes-label', ['!', ['in', ['get', 'railway'], hiddenExpr]]);
+            } else {
+                me.map.setFilter('station-codes-label', null);
+            }
+        }
+
+        // Hide/show 3D trains on hidden railways
+        if (me.activeTrainLookup) {
+            for (const train of me.activeTrainLookup.values()) {
+                if (train.r && me.hiddenRailways.has(train.r.id)) {
+                    me.stopTrain(train);
+                }
+            }
+        }
+    }
+
+    /**
+     * Enables bus line/stop visualization.
+     */
+    enableBusLines() {
+        const me = this;
+
+        me.busLinesEnabled = true;
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            if (me.map.getLayer(`busstops-og-${zoom}`)) {
+                me.setLayerVisibility(`busstops-og-${zoom}`, 'visible');
+            }
+            if (me.map.getLayer(`busstops-og-${zoom}-outline`)) {
+                me.setLayerVisibility(`busstops-og-${zoom}-outline`, 'visible');
+            }
+        }
+    }
+
+    /**
+     * Disables bus line/stop visualization.
+     */
+    disableBusLines() {
+        const me = this;
+
+        me.busLinesEnabled = false;
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            if (me.map.getLayer(`busstops-og-${zoom}`)) {
+                me.setLayerVisibility(`busstops-og-${zoom}`, 'none');
+            }
+            if (me.map.getLayer(`busstops-og-${zoom}-outline`)) {
+                me.setLayerVisibility(`busstops-og-${zoom}-outline`, 'none');
+            }
+        }
     }
 
     /**
@@ -1032,6 +1144,7 @@ export default class extends Evented {
                         id: station.id,
                         code: station.code,
                         color: station.railway ? station.railway.color : '#748477',
+                        railway: station.railway ? station.railway.id : '',
                         name: station.title.en
                     },
                     geometry: {
@@ -1187,7 +1300,7 @@ export default class extends Evented {
             map.addControl(control);
         }
 
-        me.layerPanel = new LayerPanel({layers: me.plugins});
+        me.layerPanel = new LayerPanel({layers: me.plugins, railways: [...me.railways.getAll()]});
         me.trackingModePanel = new TrackingModePanel();
         me.aboutPanel = new AboutPanel();
 
@@ -1515,7 +1628,7 @@ export default class extends Evented {
         const me = this,
             railway = train.r;
 
-        if (me.checkActiveTrains(train) || (railway.status && railway.dynamic && !me.realtimeTrains.has(train.id)) || railway.suspended) {
+        if (me.checkActiveTrains(train) || (railway.status && railway.dynamic && !me.realtimeTrains.has(train.id)) || railway.suspended || me.hiddenRailways.has(railway.id)) {
             return;
         }
         if (!me.setSectionData(train, options.index)) {
