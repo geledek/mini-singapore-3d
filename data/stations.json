@@ -13,7 +13,8 @@
 			"ms": "Bukit Panjang",
 			"ta": "புக்கிட் பாஞ்சாங்"
 		},
-		"code": "DT1"
+		"code": "DT1",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Cashew",
@@ -29,7 +30,8 @@
 			"ms": "Cashew",
 			"ta": "கேஷ்யூ"
 		},
-		"code": "DT2"
+		"code": "DT2",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Hillview",
@@ -45,7 +47,8 @@
 			"ms": "Hillview",
 			"ta": "ஹில்வியூ"
 		},
-		"code": "DT3"
+		"code": "DT3",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Hume",
@@ -61,7 +64,8 @@
 			"ms": "Hume",
 			"ta": "ஹியூம்"
 		},
-		"code": "DT4"
+		"code": "DT4",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.BeautyWorld",
@@ -77,7 +81,8 @@
 			"ms": "Beauty World",
 			"ta": "பியூட்டி வோர்ல்ட்"
 		},
-		"code": "DT5"
+		"code": "DT5",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.KingAlbertPark",
@@ -93,7 +98,8 @@
 			"ms": "King Albert Park",
 			"ta": "கிங் ஆல்பர்ட் பார்க்"
 		},
-		"code": "DT6"
+		"code": "DT6",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.SixthAvenue",
@@ -109,7 +115,8 @@
 			"ms": "Sixth Avenue",
 			"ta": "சிக்ஸ்த் அவென்யூ"
 		},
-		"code": "DT7"
+		"code": "DT7",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.TanKahKee",
@@ -125,7 +132,8 @@
 			"ms": "Tan Kah Kee",
 			"ta": "டான் கா கீ"
 		},
-		"code": "DT8"
+		"code": "DT8",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.BotanicGardens",
@@ -141,7 +149,8 @@
 			"ms": "Botanic Gardens",
 			"ta": "பூ மலை"
 		},
-		"code": "DT9"
+		"code": "DT9",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Stevens",
@@ -157,7 +166,8 @@
 			"ms": "Stevens",
 			"ta": "ஸ்டீவன்ஸ்"
 		},
-		"code": "DT10"
+		"code": "DT10",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Newton",
@@ -173,7 +183,8 @@
 			"ms": "Newton",
 			"ta": "நியூட்டன்"
 		},
-		"code": "DT11"
+		"code": "DT11",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.LittleIndia",
@@ -189,7 +200,8 @@
 			"ms": "Little India",
 			"ta": "லிட்டில் இந்தியா"
 		},
-		"code": "DT12"
+		"code": "DT12",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Rochor",
@@ -205,7 +217,8 @@
 			"ms": "Rochor",
 			"ta": "ரோச்சோர்"
 		},
-		"code": "DT13"
+		"code": "DT13",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Bugis",
@@ -221,7 +234,8 @@
 			"ms": "Bugis",
 			"ta": "பூகிஸ்"
 		},
-		"code": "DT14"
+		"code": "DT14",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Promenade",
@@ -237,7 +251,8 @@
 			"ms": "Promenade",
 			"ta": "புரொமனாட்"
 		},
-		"code": "DT15"
+		"code": "DT15",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Bayfront",
@@ -253,7 +268,8 @@
 			"ms": "Bayfront",
 			"ta": "பேஃபிரண்ட்"
 		},
-		"code": "DT16"
+		"code": "DT16",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Downtown",
@@ -269,7 +285,8 @@
 			"ms": "Downtown",
 			"ta": "டௌன்டவுன்"
 		},
-		"code": "DT17"
+		"code": "DT17",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.TelokAyer",
@@ -285,7 +302,8 @@
 			"ms": "Telok Ayer",
 			"ta": "தெலுக் ஆயர்"
 		},
-		"code": "DT18"
+		"code": "DT18",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Chinatown",
@@ -301,7 +319,8 @@
 			"ms": "Chinatown",
 			"ta": "சைனாடவுன்"
 		},
-		"code": "DT19"
+		"code": "DT19",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.FortCanning",
@@ -317,7 +336,8 @@
 			"ms": "Fort Canning",
 			"ta": "ஃபோர்ட் கெனிங்"
 		},
-		"code": "DT20"
+		"code": "DT20",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Bencoolen",
@@ -333,7 +353,8 @@
 			"ms": "Bencoolen",
 			"ta": "பென்கூலன்"
 		},
-		"code": "DT21"
+		"code": "DT21",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.JalanBesar",
@@ -349,7 +370,8 @@
 			"ms": "Jalan Besar",
 			"ta": "ஜாலான் புசார்"
 		},
-		"code": "DT22"
+		"code": "DT22",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Bendemeer",
@@ -365,7 +387,8 @@
 			"ms": "Bendemeer",
 			"ta": "பெண்டிமியர்"
 		},
-		"code": "DT23"
+		"code": "DT23",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.GeylangBahru",
@@ -381,7 +404,8 @@
 			"ms": "Geylang Bahru",
 			"ta": "கேலாங் பாரு"
 		},
-		"code": "DT24"
+		"code": "DT24",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Mattar",
@@ -397,7 +421,8 @@
 			"ms": "Mattar",
 			"ta": "மாத்தார்"
 		},
-		"code": "DT25"
+		"code": "DT25",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.MacPherson",
@@ -413,7 +438,8 @@
 			"ms": "MacPherson",
 			"ta": "மெக்பர்சன்"
 		},
-		"code": "DT26"
+		"code": "DT26",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Ubi",
@@ -429,7 +455,8 @@
 			"ms": "Ubi",
 			"ta": "உபி"
 		},
-		"code": "DT27"
+		"code": "DT27",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.KakiBukit",
@@ -445,7 +472,8 @@
 			"ms": "Kaki Bukit",
 			"ta": "காக்கி புக்கிட்"
 		},
-		"code": "DT28"
+		"code": "DT28",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.BedokNorth",
@@ -461,7 +489,8 @@
 			"ms": "Bedok North",
 			"ta": "பிடோக் நார்த்"
 		},
-		"code": "DT29"
+		"code": "DT29",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.BedokReservoir",
@@ -477,7 +506,8 @@
 			"ms": "Bedok Reservoir",
 			"ta": "பிடோக் ரெசவோர்"
 		},
-		"code": "DT30"
+		"code": "DT30",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.TampinesWest",
@@ -493,7 +523,8 @@
 			"ms": "Tampines West",
 			"ta": "தெம்பினிஸ் வெஸ்ட்"
 		},
-		"code": "DT31"
+		"code": "DT31",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Tampines",
@@ -509,7 +540,8 @@
 			"ms": "Tampines",
 			"ta": "தெம்பினிஸ்"
 		},
-		"code": "DT32"
+		"code": "DT32",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.TampinesEast",
@@ -525,7 +557,8 @@
 			"ms": "Tampines East",
 			"ta": "தெம்பினிஸ் ஈஸ்ட்"
 		},
-		"code": "DT33"
+		"code": "DT33",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.UpperChangi",
@@ -541,7 +574,8 @@
 			"ms": "Upper Changi",
 			"ta": "அப்பர் சாங்கி"
 		},
-		"code": "DT34"
+		"code": "DT34",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Expo",
@@ -557,7 +591,8 @@
 			"ms": "Expo",
 			"ta": "எக்ஸ்போ"
 		},
-		"code": "DT35"
+		"code": "DT35",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.Xilin",
@@ -572,7 +607,8 @@
 			"zh-Hant": "锡林",
 			"ms": "Xilin"
 		},
-		"code": "DT36"
+		"code": "DT36",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.DTL.SungeiBedok",
@@ -587,7 +623,8 @@
 			"zh-Hant": "双溪勿洛",
 			"ms": "Sungei Bedok"
 		},
-		"code": "DT37"
+		"code": "DT37",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.HarbourFront",
@@ -603,7 +640,8 @@
 			"ms": "HarbourFront",
 			"ta": "துறைமுகம்"
 		},
-		"code": "NE1"
+		"code": "NE1",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.OutramPark",
@@ -619,7 +657,8 @@
 			"ms": "Outram Park",
 			"ta": "ஊட்ரம் பார்க்"
 		},
-		"code": "NE3"
+		"code": "NE3",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Chinatown",
@@ -635,7 +674,8 @@
 			"ms": "Chinatown",
 			"ta": "சைனாடவுன்"
 		},
-		"code": "NE4"
+		"code": "NE4",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.ClarkeQuay",
@@ -651,7 +691,8 @@
 			"ms": "Clarke Quay",
 			"ta": "கிளார்க் கீ"
 		},
-		"code": "NE5"
+		"code": "NE5",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.DhobyGhaut",
@@ -667,7 +708,8 @@
 			"ms": "Dhoby Ghaut",
 			"ta": "டோபி காட்"
 		},
-		"code": "NE6"
+		"code": "NE6",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.LittleIndia",
@@ -683,7 +725,8 @@
 			"ms": "Little India",
 			"ta": "லிட்டில் இந்தியா"
 		},
-		"code": "NE7"
+		"code": "NE7",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.FarrerPark",
@@ -699,7 +742,8 @@
 			"ms": "Farrer Park",
 			"ta": "ஃபேரர் பார்க்"
 		},
-		"code": "NE8"
+		"code": "NE8",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.BoonKeng",
@@ -715,7 +759,8 @@
 			"ms": "Boon Keng",
 			"ta": "பூன் கெங்"
 		},
-		"code": "NE9"
+		"code": "NE9",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.PotongPasir",
@@ -731,7 +776,8 @@
 			"ms": "Potong Pasir",
 			"ta": "போத்தோங் பாசிர்"
 		},
-		"code": "NE10"
+		"code": "NE10",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Woodleigh",
@@ -747,7 +793,8 @@
 			"ms": "Woodleigh",
 			"ta": "உட்லீ"
 		},
-		"code": "NE11"
+		"code": "NE11",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Serangoon",
@@ -763,7 +810,8 @@
 			"ms": "Serangoon",
 			"ta": "சிராங்கூன்"
 		},
-		"code": "NE12"
+		"code": "NE12",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Kovan",
@@ -779,7 +827,8 @@
 			"ms": "Kovan",
 			"ta": "கோவன்"
 		},
-		"code": "NE13"
+		"code": "NE13",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Hougang",
@@ -795,7 +844,8 @@
 			"ms": "Hougang",
 			"ta": "ஹவ்காங்"
 		},
-		"code": "NE14"
+		"code": "NE14",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Buangkok",
@@ -811,7 +861,8 @@
 			"ms": "Buangkok",
 			"ta": "புவாங்கோக்"
 		},
-		"code": "NE15"
+		"code": "NE15",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Sengkang",
@@ -827,7 +878,8 @@
 			"ms": "Sengkang",
 			"ta": "செங்காங்"
 		},
-		"code": "NE16"
+		"code": "NE16",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.Punggol",
@@ -843,7 +895,8 @@
 			"ms": "Punggol",
 			"ta": "பொங்கோல்"
 		},
-		"code": "NE17"
+		"code": "NE17",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.NEL.PunggolCoast",
@@ -859,7 +912,8 @@
 			"ms": "Punggol Coast",
 			"ta": "பொங்கோல் கோஸ்ட்"
 		},
-		"code": "NE18"
+		"code": "NE18",
+		"altitude": -1
 	},
 	{
 		"id": "SBS.PGLRT.Punggol",
@@ -1561,7 +1615,8 @@
 			"zh-Hant": "多美歌",
 			"ms": "Dhoby Ghaut"
 		},
-		"code": "CC1"
+		"code": "CC1",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Bayfront",
@@ -1576,7 +1631,8 @@
 			"zh-Hant": "海湾舫",
 			"ms": "Bayfront"
 		},
-		"code": "CE1"
+		"code": "CE1",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.BrasBasah",
@@ -1591,7 +1647,8 @@
 			"zh-Hant": "百胜",
 			"ms": "Bras Basah"
 		},
-		"code": "CC2"
+		"code": "CC2",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.MarinaBay",
@@ -1606,7 +1663,8 @@
 			"zh-Hant": "滨海湾",
 			"ms": "Marina Bay"
 		},
-		"code": "CE2"
+		"code": "CE2",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Esplanade",
@@ -1621,7 +1679,8 @@
 			"zh-Hant": "宝门廊",
 			"ms": "Esplanade"
 		},
-		"code": "CC3"
+		"code": "CC3",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Promenade",
@@ -1636,7 +1695,8 @@
 			"zh-Hant": "宝龙坊",
 			"ms": "Promenade"
 		},
-		"code": "CC4"
+		"code": "CC4",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.NicollHighway",
@@ -1651,7 +1711,8 @@
 			"zh-Hant": "尼诰大道",
 			"ms": "Nicoll Highway"
 		},
-		"code": "CC5"
+		"code": "CC5",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Stadium",
@@ -1666,7 +1727,8 @@
 			"zh-Hant": "体育场",
 			"ms": "Stadium"
 		},
-		"code": "CC6"
+		"code": "CC6",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Mountbatten",
@@ -1681,7 +1743,8 @@
 			"zh-Hant": "蒙巴登",
 			"ms": "Mountbatten"
 		},
-		"code": "CC7"
+		"code": "CC7",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Dakota",
@@ -1696,7 +1759,8 @@
 			"zh-Hant": "达哥打",
 			"ms": "Dakota"
 		},
-		"code": "CC8"
+		"code": "CC8",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.PayaLebar",
@@ -1711,7 +1775,8 @@
 			"zh-Hant": "巴耶利峇",
 			"ms": "Paya Lebar"
 		},
-		"code": "CC9"
+		"code": "CC9",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.MacPherson",
@@ -1726,7 +1791,8 @@
 			"zh-Hant": "麦波申",
 			"ms": "MacPherson"
 		},
-		"code": "CC10"
+		"code": "CC10",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.TaiSeng",
@@ -1741,7 +1807,8 @@
 			"zh-Hant": "大成",
 			"ms": "Tai Seng"
 		},
-		"code": "CC11"
+		"code": "CC11",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Bartley",
@@ -1756,7 +1823,8 @@
 			"zh-Hant": "巴特礼",
 			"ms": "Bartley"
 		},
-		"code": "CC12"
+		"code": "CC12",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Serangoon",
@@ -1771,7 +1839,8 @@
 			"zh-Hant": "实龙岗",
 			"ms": "Serangoon"
 		},
-		"code": "CC13"
+		"code": "CC13",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.LorongChuan",
@@ -1786,7 +1855,8 @@
 			"zh-Hant": "罗弄泉",
 			"ms": "Lorong Chuan"
 		},
-		"code": "CC14"
+		"code": "CC14",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Bishan",
@@ -1801,7 +1871,8 @@
 			"zh-Hant": "碧山",
 			"ms": "Bishan"
 		},
-		"code": "CC15"
+		"code": "CC15",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Marymount",
@@ -1816,7 +1887,8 @@
 			"zh-Hant": "玛丽蒙",
 			"ms": "Marymount"
 		},
-		"code": "CC16"
+		"code": "CC16",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.Caldecott",
@@ -1831,7 +1903,8 @@
 			"zh-Hant": "加利谷",
 			"ms": "Caldecott"
 		},
-		"code": "CC17"
+		"code": "CC17",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.BotanicGardens",
@@ -1846,7 +1919,8 @@
 			"zh-Hant": "植物园",
 			"ms": "Botanic Gardens"
 		},
-		"code": "CC19"
+		"code": "CC19",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.FarrerRoad",
@@ -1861,7 +1935,8 @@
 			"zh-Hant": "花拉路",
 			"ms": "Farrer Road"
 		},
-		"code": "CC20"
+		"code": "CC20",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.HollandVillage",
@@ -1876,7 +1951,8 @@
 			"zh-Hant": "荷兰村",
 			"ms": "Holland Village"
 		},
-		"code": "CC21"
+		"code": "CC21",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.BuonaVista",
@@ -1891,7 +1967,8 @@
 			"zh-Hant": "波那维斯达",
 			"ms": "Buona Vista"
 		},
-		"code": "CC22"
+		"code": "CC22",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.onenorth",
@@ -1906,7 +1983,8 @@
 			"zh-Hant": "纬壹",
 			"ms": "one-north"
 		},
-		"code": "CC23"
+		"code": "CC23",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.KentRidge",
@@ -1921,7 +1999,8 @@
 			"zh-Hant": "肯特岗",
 			"ms": "Kent Ridge"
 		},
-		"code": "CC24"
+		"code": "CC24",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.HawParVilla",
@@ -1936,7 +2015,8 @@
 			"zh-Hant": "虎豹别墅",
 			"ms": "Haw Par Villa"
 		},
-		"code": "CC25"
+		"code": "CC25",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.PasirPanjang",
@@ -1951,7 +2031,8 @@
 			"zh-Hant": "巴西班让",
 			"ms": "Pasir Panjang"
 		},
-		"code": "CC26"
+		"code": "CC26",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.LabradorPark",
@@ -1966,7 +2047,8 @@
 			"zh-Hant": "拉柏多公园",
 			"ms": "Labrador Park"
 		},
-		"code": "CC27"
+		"code": "CC27",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.TelokBlangah",
@@ -1981,7 +2063,8 @@
 			"zh-Hant": "直落布兰雅",
 			"ms": "Telok Blangah"
 		},
-		"code": "CC28"
+		"code": "CC28",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.CCL.HarbourFront",
@@ -1996,7 +2079,8 @@
 			"zh-Hant": "港湾",
 			"ms": "HarbourFront"
 		},
-		"code": "CC29"
+		"code": "CC29",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.PasirRis",
@@ -2172,7 +2256,8 @@
 			"ms": "Lavender",
 			"ta": "லவண்டர்"
 		},
-		"code": "EW11"
+		"code": "EW11",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.Bugis",
@@ -2188,7 +2273,8 @@
 			"ms": "Bugis",
 			"ta": "பூகிஸ்"
 		},
-		"code": "EW12"
+		"code": "EW12",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.CityHall",
@@ -2204,7 +2290,8 @@
 			"ms": "City Hall",
 			"ta": "நகர மண்டபம்"
 		},
-		"code": "EW13"
+		"code": "EW13",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.RafflesPlace",
@@ -2220,7 +2307,8 @@
 			"ms": "Raffles Place",
 			"ta": "ராஃபிள்ஸ் பிளேஸ்"
 		},
-		"code": "EW14"
+		"code": "EW14",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.TanjongPagar",
@@ -2236,7 +2324,8 @@
 			"ms": "Tanjong Pagar",
 			"ta": "தஞ்சோங் பகார்"
 		},
-		"code": "EW15"
+		"code": "EW15",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.OutramPark",
@@ -2252,7 +2341,8 @@
 			"ms": "Outram Park",
 			"ta": "ஊட்ரம் பார்க்"
 		},
-		"code": "EW16"
+		"code": "EW16",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.TiongBahru",
@@ -2540,7 +2630,8 @@
 			"ms": "Tanah Merah",
 			"ta": "தானா மேரா"
 		},
-		"code": "CG"
+		"code": "CG",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.CAB.Expo",
@@ -2556,7 +2647,8 @@
 			"ms": "Expo",
 			"ta": "எக்ஸ்போ"
 		},
-		"code": "CG1"
+		"code": "CG1",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.Expo",
@@ -2571,7 +2663,8 @@
 			"zh-Hant": "博览",
 			"ms": "Expo"
 		},
-		"code": "CG1"
+		"code": "CG1",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.CAB.ChangiAirport",
@@ -2587,7 +2680,8 @@
 			"ms": "Changi Airport",
 			"ta": "சாங்கி விமானநிலையம்"
 		},
-		"code": "CG2"
+		"code": "CG2",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.EWL.ChangiAirport",
@@ -2602,7 +2696,8 @@
 			"zh-Hant": "樟宜机场",
 			"ms": "Changi Airport"
 		},
-		"code": "CG2"
+		"code": "CG2",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.JurongEast",
@@ -2906,7 +3001,8 @@
 			"ms": "Novena",
 			"ta": "நொவீனா"
 		},
-		"code": "NS20"
+		"code": "NS20",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.Newton",
@@ -2922,7 +3018,8 @@
 			"ms": "Newton",
 			"ta": "நியூட்டன்"
 		},
-		"code": "NS21"
+		"code": "NS21",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.Orchard",
@@ -2938,7 +3035,8 @@
 			"ms": "Orchard",
 			"ta": "ஆர்ச்சர்ட்"
 		},
-		"code": "NS22"
+		"code": "NS22",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.Somerset",
@@ -2954,7 +3052,8 @@
 			"ms": "Somerset",
 			"ta": "சாமர்செட்"
 		},
-		"code": "NS23"
+		"code": "NS23",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.DhobyGhaut",
@@ -2970,7 +3069,8 @@
 			"ms": "Dhoby Ghaut",
 			"ta": "டோபி காட்"
 		},
-		"code": "NS24"
+		"code": "NS24",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.CityHall",
@@ -2986,7 +3086,8 @@
 			"ms": "City Hall",
 			"ta": "நகர மண்டபம்"
 		},
-		"code": "NS25"
+		"code": "NS25",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.RafflesPlace",
@@ -3002,7 +3103,8 @@
 			"ms": "Raffles Place",
 			"ta": "ராஃபிள்ஸ் பிளேஸ்"
 		},
-		"code": "NS26"
+		"code": "NS26",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.MarinaBay",
@@ -3018,7 +3120,8 @@
 			"ms": "Marina Bay",
 			"ta": "மரீனா பே"
 		},
-		"code": "NS27"
+		"code": "NS27",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.NSL.MarinaSouthPier",
@@ -3034,7 +3137,8 @@
 			"ms": "Marina South Pier",
 			"ta": "மரினா சவுத் படகுத்துறை"
 		},
-		"code": "NS28"
+		"code": "NS28",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.WoodlandsNorth",
@@ -3050,7 +3154,8 @@
 			"ms": "Woodlands North",
 			"ta": "உட்லண்ட்ஸ் நார்த்"
 		},
-		"code": "TE1"
+		"code": "TE1",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Woodlands",
@@ -3066,7 +3171,8 @@
 			"ms": "Woodlands",
 			"ta": "ஊட்லண்ட்ஸ்"
 		},
-		"code": "TE2"
+		"code": "TE2",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.WoodlandsSouth",
@@ -3082,7 +3188,8 @@
 			"ms": "Woodlands South",
 			"ta": "உட்லண்ட்ஸ் சவுத்"
 		},
-		"code": "TE3"
+		"code": "TE3",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Springleaf",
@@ -3098,7 +3205,8 @@
 			"ms": "Springleaf",
 			"ta": "ஸ்பிரிங்லீஃவ்"
 		},
-		"code": "TE4"
+		"code": "TE4",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Lentor",
@@ -3114,7 +3222,8 @@
 			"ms": "Lentor",
 			"ta": "லென்ட்டோர்"
 		},
-		"code": "TE5"
+		"code": "TE5",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Mayflower",
@@ -3130,7 +3239,8 @@
 			"ms": "Mayflower",
 			"ta": "மேஃபிளவர்"
 		},
-		"code": "TE6"
+		"code": "TE6",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.BrightHill",
@@ -3146,7 +3256,8 @@
 			"ms": "Bright Hill",
 			"ta": "பிரைட் ஹில்"
 		},
-		"code": "TE7"
+		"code": "TE7",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.UpperThomson",
@@ -3162,7 +3273,8 @@
 			"ms": "Upper Thomson",
 			"ta": "அப்பர் தாம்சன்"
 		},
-		"code": "TE8"
+		"code": "TE8",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Caldecott",
@@ -3178,7 +3290,8 @@
 			"ms": "Caldecott",
 			"ta": "கால்டிகாட்"
 		},
-		"code": "TE9"
+		"code": "TE9",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.MountPleasant",
@@ -3193,7 +3306,8 @@
 			"zh-Hant": "花柏山",
 			"ms": "Mount Pleasant"
 		},
-		"code": "TE11"
+		"code": "TE11",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Stevens",
@@ -3209,7 +3323,8 @@
 			"ms": "Stevens",
 			"ta": "ஸ்டீவன்ஸ்"
 		},
-		"code": "TE12"
+		"code": "TE12",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Napier",
@@ -3225,7 +3340,8 @@
 			"ms": "Napier",
 			"ta": "நேப்பியர்"
 		},
-		"code": "TE13"
+		"code": "TE13",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.OrchardBoulevard",
@@ -3241,7 +3357,8 @@
 			"ms": "Orchard Boulevard",
 			"ta": "ஆர்ச்சர்ட் பொலிவார்ட்"
 		},
-		"code": "TE14"
+		"code": "TE14",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Orchard",
@@ -3257,7 +3374,8 @@
 			"ms": "Orchard",
 			"ta": "ஆர்ச்சர்ட்"
 		},
-		"code": "TE15"
+		"code": "TE15",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.GreatWorld",
@@ -3273,7 +3391,8 @@
 			"ms": "Great World",
 			"ta": "கிரேட் வோர்ல்ட்"
 		},
-		"code": "TE16"
+		"code": "TE16",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Havelock",
@@ -3289,7 +3408,8 @@
 			"ms": "Havelock",
 			"ta": "ஹவ்லாக்"
 		},
-		"code": "TE17"
+		"code": "TE17",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.OutramPark",
@@ -3305,7 +3425,8 @@
 			"ms": "Outram Park",
 			"ta": "ஊட்ரம் பார்க்"
 		},
-		"code": "TE18"
+		"code": "TE18",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Maxwell",
@@ -3321,7 +3442,8 @@
 			"ms": "Maxwell",
 			"ta": "மெச்ஸ்வெல்"
 		},
-		"code": "TE19"
+		"code": "TE19",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.ShentonWay",
@@ -3337,7 +3459,8 @@
 			"ms": "Shenton Way",
 			"ta": "ஷென்ட்டன் வே"
 		},
-		"code": "TE20"
+		"code": "TE20",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.MarinaBay",
@@ -3353,7 +3476,8 @@
 			"ms": "Marina Bay",
 			"ta": "மரீனா பே"
 		},
-		"code": "TE21"
+		"code": "TE21",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.GardensbytheBay",
@@ -3369,7 +3493,8 @@
 			"ms": "Gardens by the Bay",
 			"ta": "கரையோரப் பூந்தோட்டங்கள்"
 		},
-		"code": "TE22A"
+		"code": "TE22A",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.MarinaSouth",
@@ -3384,7 +3509,8 @@
 			"zh-Hant": "滨海南",
 			"ms": "Marina South"
 		},
-		"code": "TE22"
+		"code": "TE22",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.TanjongRhu",
@@ -3400,7 +3526,8 @@
 			"ms": "Tanjong Rhu",
 			"ta": "தஞ்சோங் ரூ"
 		},
-		"code": "TE23"
+		"code": "TE23",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.KatongPark",
@@ -3416,7 +3543,8 @@
 			"ms": "Katong Park",
 			"ta": "காத்தோங் பார்க்"
 		},
-		"code": "TE24"
+		"code": "TE24",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.TanjongKatong",
@@ -3432,7 +3560,8 @@
 			"ms": "Tanjong Katong",
 			"ta": "தஞ்சோங் காத்தோங்"
 		},
-		"code": "TE25"
+		"code": "TE25",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.MarineParade",
@@ -3448,7 +3577,8 @@
 			"ms": "Marine Parade",
 			"ta": "மரீன் பரேட்"
 		},
-		"code": "TE26"
+		"code": "TE26",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.MarineTerrace",
@@ -3464,7 +3594,8 @@
 			"ms": "Marine Terrace",
 			"ta": "மரீன் டெரஸ்"
 		},
-		"code": "TE27"
+		"code": "TE27",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Siglap",
@@ -3480,7 +3611,8 @@
 			"ms": "Siglap",
 			"ta": "சிக்லாப்"
 		},
-		"code": "TE28"
+		"code": "TE28",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.Bayshore",
@@ -3496,7 +3628,8 @@
 			"ms": "Bayshore",
 			"ta": "பேஷோர்"
 		},
-		"code": "TE29"
+		"code": "TE29",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.BedokSouth",
@@ -3511,7 +3644,8 @@
 			"zh-Hant": "勿洛南",
 			"ms": "Bedok South"
 		},
-		"code": "TE30"
+		"code": "TE30",
+		"altitude": -1
 	},
 	{
 		"id": "SMRT.TEL.SungeiBedok",
@@ -3526,6 +3660,7 @@
 			"zh-Hant": "双溪勿洛",
 			"ms": "Sungei Bedok"
 		},
-		"code": "TE31"
+		"code": "TE31",
+		"altitude": -1
 	}
 ]

@@ -86,7 +86,12 @@ export function getSunlightColor(map, time) {
  * @param {number} time - The number of milliseconds elapsed since January 1,
  *     1970 00:00:00 UTC
  */
-export function setSunlight(map, time) {
+export function setSunlight(map, time, skipIfThemeLocked) {
+    // Skip if theme has locked lighting
+    if (skipIfThemeLocked) {
+        return;
+    }
+
     const center = map.getCenter(),
         {sunrise, sunset} = SunCalc.getTimes(time, center.lat, center.lng),
         sunriseTime = sunrise.getTime(),

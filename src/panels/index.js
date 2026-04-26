@@ -4,5 +4,6 @@ export {default as LayerPanel} from './layer-panel';
 export {default as Panel} from './panel';
 export {default as SharePanel} from './share-panel';
 export {default as StationPanel} from './station-panel';
+export {default as ThemePanel} from './theme-panel';
 export {default as TrackingModePanel} from './tracking-mode-panel';
 export {default as TrainPanel} from './train-panel';

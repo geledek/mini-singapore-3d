@@ -14,8 +14,9 @@ import * as helpersGeojson from './helpers/helpers-geojson';
 import * as helpersMapbox from './helpers/helpers-mapbox';
 import {GeoJsonLayer, ThreeLayer, Tile3DLayer, TrafficLayer} from './layers';
 import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicTrainData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
-import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, TrackingModePanel, TrainPanel} from './panels';
+import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, ThemePanel, TrackingModePanel, TrainPanel} from './panels';
 import Plugin from './plugin';
+import themes from './themes';
 import nearestCloserPointOnLine from './turf/nearest-closer-point-on-line';
 
 const AIRLINES_FOR_ANA_CODE_SHARE = ['ADO', 'SFJ', 'SNJ'];
@@ -69,12 +70,12 @@ export default class extends Evented {
             pitch: configs.defaultPitch,
             dataUrl: configs.dataUrl,
             dataSources: configs.dataSources,
-            clockControl: true,
-            searchControl: true,
+            clockControl: false,
+            searchControl: false,
             languageControl: true,
             navigationControl: true,
             fullscreenControl: true,
-            modeControl: true,
+            modeControl: false,
             configControl: true,
             trackingMode: configs.defaultTrackingMode,
             ecoMode: configs.defaultEcoMode,
@@ -139,6 +140,10 @@ export default class extends Evented {
         }
 
         me.map = new Mapbox(options);
+
+        // Restrict map to Singapore and surrounding area
+        me.map.setMaxBounds([[103.55, 1.1], [104.15, 1.5]]);
+        me.map.setMinZoom(10);
 
         for (const event of configs.events) {
             me.map.on(event, me.fire.bind(me));
@@ -604,6 +609,66 @@ export default class extends Evented {
     }
 
     /**
+     * Sets the map visual theme.
+     * @param {string} themeName - Theme key from themes.js
+     */
+    setTheme(themeName) {
+        const me = this,
+            theme = themes[themeName];
+
+        if (!theme) {
+            return;
+        }
+
+        me.currentTheme = themeName;
+        me.themeUseDynamicLighting = theme.useDynamicLighting;
+
+        const map = me.map;
+
+        // Apply fog
+        map.setFog(theme.fog);
+
+        // Apply terrain exaggeration
+        if (map.getSource('mapbox-dem')) {
+            map.setTerrain({source: 'mapbox-dem', exaggeration: theme.terrainExaggeration});
+        }
+
+        // Apply lighting
+        if (!theme.useDynamicLighting) {
+            const {ambient, directional, sky} = theme;
+
+            map.setLights([{
+                id: 'ambient',
+                type: 'ambient',
+                properties: {
+                    color: `rgb(${ambient.r}, ${ambient.g}, ${ambient.b})`,
+                    intensity: ambient.intensity
+                }
+            }, {
+                id: 'directional',
+                type: 'directional',
+                properties: {
+                    direction: ['literal', [210, 60]],
+                    color: `rgb(${directional.r}, ${directional.g}, ${directional.b})`,
+                    intensity: directional.intensity,
+                    'cast-shadows': true,
+                    'shadow-intensity': directional.shadowIntensity
+                }
+            }]);
+
+            // Apply sky
+            map.setPaintProperty('sky', 'sky-opacity', sky.opacity);
+            map.setPaintProperty('sky', 'sky-atmosphere-color', sky.color);
+            map.setPaintProperty('sky', 'sky-atmosphere-sun-intensity', sky.sunIntensity);
+        } else {
+            // Restore dynamic lighting from current time
+            helpersMapbox.setSunlight(map, me.clock.getTime());
+        }
+
+        me.fire({type: 'theme'});
+    }
+
+    /**
      * Enables bus line/stop visualization.
      */
     enableBusLines() {
@@ -842,6 +907,19 @@ export default class extends Evented {
         }, 'background');
         helpersMapbox.setSunlight(map, clock.getTime());
 
+        // Enable 3D terrain
+        map.addSource('mapbox-dem', {
+            type: 'raster-dem',
+            url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            tileSize: 512,
+            maxzoom: 14
+        });
+        map.setTerrain({source: 'mapbox-dem', exaggeration: 1.5});
+
+        // Apply default theme
+        me.themeUseDynamicLighting = true;
+        me.setTheme(configs.defaultTheme);
+
         map.setLayoutProperty('poi', 'text-field', [
             'coalesce',
             ['get', `name_${lang}`],
@@ -886,11 +964,14 @@ export default class extends Evented {
                         'railways': {
                             filled: false,
                             getLineWidth: d => d.properties.width,
-                            getLineColor: d => helpers.colorToRGBArray(d.properties.color)
+                            getLineColor: d => {
+                                const rgba = helpers.colorToRGBArray(d.properties.color);
+                                return [rgba[0], rgba[1], rgba[2], 180];
+                            }
                         },
                         'stations': {
                             getLineWidth: 4,
-                            getFillColor: [255, 255, 255, 179]
+                            getFillColor: [255, 255, 255, 140]
                         }
                     }[key1], {
                         'ug': {
@@ -936,10 +1017,16 @@ export default class extends Evented {
             const interpolate = ['interpolate', ['exponential', 2], ['zoom']],
                 width = ['get', 'width'],
                 color = ['get', 'color'],
+                railWidth = ['*', width, 0.5],
                 lineWidth =
-                    zoom === 13 ? [...interpolate, 9, ['/', width, 8], 12, width] :
-                    zoom === 18 ? [...interpolate, 19, width, 22, ['*', width, 8]] :
-                    width;
+                    zoom === 13 ? [...interpolate, 9, ['/', railWidth, 8], 12, railWidth] :
+                    zoom === 18 ? [...interpolate, 19, railWidth, 22, ['*', railWidth, 8]] :
+                    railWidth,
+                stationOutlineWidth = ['*', width, 0.2],
+                stationLineWidth =
+                    zoom === 13 ? [...interpolate, 9, ['/', stationOutlineWidth, 8], 12, stationOutlineWidth] :
+                    zoom === 18 ? [...interpolate, 19, stationOutlineWidth, 22, ['*', stationOutlineWidth, 8]] :
+                    stationOutlineWidth;
 
             for (const key of ['railways', 'stations', 'stations-outline']) {
                 map.addLayer({
@@ -958,6 +1045,7 @@ export default class extends Evented {
                         'railways': {
                             'line-color': color,
                             'line-width': lineWidth,
+                            'line-opacity': 0.7,
                             'line-emissive-strength': 1,
                             'line-dasharray': [
                                 'case',
@@ -971,14 +1059,15 @@ export default class extends Evented {
                             'fill-opacity': [
                                 'case',
                                 ['==', ['get', 'dashed'], 1],
-                                0.25,
-                                0.7
+                                0.15,
+                                0.4
                             ],
                             'fill-emissive-strength': 1
                         },
                         'stations-outline': {
                             'line-color': ['get', 'outlineColor'],
-                            'line-width': lineWidth,
+                            'line-width': stationLineWidth,
+                            'line-opacity': 0.5,
                             'line-emissive-strength': 1,
                             'line-dasharray': [
                                 'case',
@@ -1302,6 +1391,7 @@ export default class extends Evented {
 
         me.layerPanel = new LayerPanel({layers: me.plugins, railways: [...me.railways.getAll()]});
         me.trackingModePanel = new TrackingModePanel();
+        me.themePanel = new ThemePanel();
         me.aboutPanel = new AboutPanel();
 
         if (me.configControl) {
@@ -1312,10 +1402,23 @@ export default class extends Evented {
                     me.layerPanel.addTo(me);
                 }
             }, {
+                className: 'mapboxgl-ctrl-theme',
+                title: dict['select-theme'] || 'Theme',
+                eventHandler() {
+                    me.themePanel.addTo(me);
+                }
+            }, {
                 className: 'mapboxgl-ctrl-tracking-mode',
                 title: dict['select-tracking-mode'],
                 eventHandler() {
                     me.trackingModePanel.addTo(me);
+                }
+            }, {
+                className: 'mapboxgl-ctrl-rotate',
+                title: 'Auto-rotate (R)',
+                eventHandler(e) {
+                    me.autoRotate = !me.autoRotate;
+                    e.currentTarget.querySelector('.mapboxgl-ctrl-icon').classList.toggle('mapboxgl-ctrl-rotate-active', me.autoRotate);
                 }
             }, {
                 className: 'mapboxgl-ctrl-about',
@@ -1349,6 +1452,67 @@ export default class extends Evented {
 
             // For development
             console.log(e.lngLat);
+        });
+
+        // WASD keyboard controls for camera panning
+        const panSpeed = 0.002;
+        const keysDown = new Set();
+
+        document.addEventListener('keydown', e => {
+            const key = e.key.toLowerCase();
+
+            if (['w', 'a', 's', 'd', 'q', 'e'].includes(key)) {
+                keysDown.add(key);
+                e.preventDefault();
+            }
+            // Toggle auto-rotation with R key
+            if (key === 'r') {
+                me.autoRotate = !me.autoRotate;
+            }
+        });
+
+        document.addEventListener('keyup', e => {
+            keysDown.delete(e.key.toLowerCase());
+        });
+
+        const processKeys = () => {
+            if (keysDown.size > 0 && !me.trackedObject) {
+                const bearing = map.getBearing() * Math.PI / 180;
+                let dx = 0, dy = 0;
+                const zoom = map.getZoom();
+                const speed = panSpeed * Math.pow(2, 15 - zoom);
+
+                if (keysDown.has('w')) { dy = speed; }
+                if (keysDown.has('s')) { dy = -speed; }
+                if (keysDown.has('a')) { dx = -speed; }
+                if (keysDown.has('d')) { dx = speed; }
+
+                if (dx !== 0 || dy !== 0) {
+                    // Rotate movement by current bearing
+                    const cos = Math.cos(-bearing), sin = Math.sin(-bearing);
+                    const lng = dx * cos - dy * sin;
+                    const lat = dx * sin + dy * cos;
+                    const center = map.getCenter();
+
+                    map.setCenter([center.lng + lng, center.lat + lat]);
+                }
+
+                // Q/E for bearing rotation
+                if (keysDown.has('q')) { map.setBearing(map.getBearing() - 1); }
+                if (keysDown.has('e')) { map.setBearing(map.getBearing() + 1); }
+            }
+            requestAnimationFrame(processKeys);
+        };
+        requestAnimationFrame(processKeys);
+
+        // Auto-rotation
+        me.autoRotate = false;
+        me.autoRotateSpeed = 0.05; // degrees per frame
+
+        map.on('render', () => {
+            if (me.autoRotate && !me.trackedObject) {
+                map.setBearing(map.getBearing() + me.autoRotateSpeed);
+            }
         });
 
         map.on('zoom', e => {
@@ -1439,7 +1603,7 @@ export default class extends Evented {
                     // Hide building models when the clock speed is high as changing lights impacts performance
                     map.setLayoutProperty('building-models', 'visibility', clock.speed <= 30 ? 'visible' : 'none');
 
-                    helpersMapbox.setSunlight(map, now);
+                    helpersMapbox.setSunlight(map, now, !me.themeUseDynamicLighting);
                     if (me.searchMode === 'none' && me.clockMode === 'playback' && !me.removing) {
                         me.refreshTrains();
                         me.refreshFlights();

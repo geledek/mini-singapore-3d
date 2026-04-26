@@ -854,6 +854,15 @@
 .mini-singapore-3d .mapboxgl-ctrl button.mapboxgl-ctrl-layers .mapboxgl-ctrl-icon {
     background: no-repeat center/21px svg-load('../../node_modules/@fortawesome/fontawesome-free/svgs/solid/layer-group.svg', fill: #333);
 }
+.mini-singapore-3d .mapboxgl-ctrl button.mapboxgl-ctrl-theme .mapboxgl-ctrl-icon {
+    background: no-repeat center/21px svg-load('../../node_modules/@fortawesome/fontawesome-free/svgs/solid/palette.svg', fill: #333);
+}
+.mini-singapore-3d .mapboxgl-ctrl button.mapboxgl-ctrl-rotate .mapboxgl-ctrl-icon {
+    background: no-repeat center/21px svg-load('../../node_modules/@fortawesome/fontawesome-free/svgs/solid/rotate.svg', fill: #333);
+}
+.mini-singapore-3d .mapboxgl-ctrl button.mapboxgl-ctrl-rotate .mapboxgl-ctrl-icon.mapboxgl-ctrl-rotate-active {
+    background-image: svg-load('../../node_modules/@fortawesome/fontawesome-free/svgs/solid/rotate.svg', fill: #33B5E5);
+}
 .mini-singapore-3d .mapboxgl-ctrl button.mapboxgl-ctrl-tracking-mode .mapboxgl-ctrl-icon {
     background: no-repeat center/19px svg-load('../../node_modules/@fortawesome/fontawesome-free/svgs/solid/video.svg', fill: #333);
 }
@@ -1127,6 +1136,49 @@
 }
 .mini-singapore-3d .railway-toggle-name {
     font-size: 14px;
+}
+.mini-singapore-3d .theme-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 4px 0;
+    opacity: 0.6;
+    transition: opacity 0.2s, background-color 0.2s;
+}
+.mini-singapore-3d .theme-row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.85;
+}
+.mini-singapore-3d .theme-row.theme-row-active {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.mini-singapore-3d .theme-color-preview {
+    display: flex;
+    gap: 3px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.mini-singapore-3d .theme-color-swatch {
+    width: 16px;
+    height: 32px;
+    border-radius: 4px;
+}
+.mini-singapore-3d .theme-info {
+    display: flex;
+    flex-direction: column;
+}
+.mini-singapore-3d .theme-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.mini-singapore-3d .theme-description {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 2px;
 }
 .mini-singapore-3d .tracking-mode-row {
     height: 60px;

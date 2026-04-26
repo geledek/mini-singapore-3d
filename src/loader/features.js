@@ -316,6 +316,7 @@ export function featureWorker() {
 
         // Create railway sections
         const sectionFeatures = [];
+        const railwayStations = railwayLookup[id].stations;
         [0, ...stationOffsets, turfLength(railwayFeature)].reduce((start, stop) => {
             if (start < stop) {
                 sectionFeatures.push(lineSliceAlong(railwayFeature, start, stop));
@@ -330,6 +331,15 @@ export function featureWorker() {
             if (!sectionFeature) {
                 return;
             }
+
+            // Infer underground status from station altitudes
+            const fromStationId = railwayStations[index];
+            const toStationId = railwayStations[index + 1];
+            const fromAltitude = fromStationId && stationLookup[fromStationId] ? (stationLookup[fromStationId].altitude || 0) : 0;
+            const toAltitude = toStationId && stationLookup[toStationId] ? (stationLookup[toStationId].altitude || 0) : 0;
+            // Section is underground if either endpoint station is underground
+            const inferredUnderground = fromAltitude < 0 || toAltitude < 0;
+
             const sections = [{coords: []}];
 
             getCoords(sectionFeature).forEach((coord, i, coords) => {
@@ -351,6 +361,15 @@ export function featureWorker() {
             });
 
             clearOpacity(sectionFeature);
+
+            // Override section altitude from station data if coordinates lack altitude info
+            if (inferredUnderground) {
+                for (const section of sections) {
+                    if (section.altitude === undefined || section.altitude === 0) {
+                        section.altitude = -unit * 1000;
+                    }
+                }
+            }
 
             sections.forEach((section, i) => {
                 if (section.coords.length >= 2) {
@@ -421,11 +440,8 @@ export function featureWorker() {
                     layer.id = layer.id || id;
                     ids.push(id);
                 }
-                // Snap to railway, but avoid large jumps (>50m)
-                let snapped = getCoord(nearestPointOnLine(feature, coord));
-                if (turfDistance(snapped, coord) > 0.05) {
-                    snapped = coord;
-                }
+                // Always snap station position to nearest point on the railway line
+                const snapped = getCoord(nearestPointOnLine(feature, coord));
                 return snapped;
             });
                 // Collapse nearly-identical coords to avoid elongated station shapes
@@ -440,7 +456,7 @@ export function featureWorker() {
             }
             const feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
 
-            layer.features.push(buffer(feature, unit));
+            layer.features.push(buffer(feature, unit * 0.6));
             layer.connectionCoords.push(...coords);
             layer.altitude = altitude;
         }

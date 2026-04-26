@@ -118,6 +118,9 @@ const configs = {
     // Default view mode
     defaultViewMode: 'ground',
 
+    // Default visual theme
+    defaultTheme: 'dark-cinematic',
+
     // Default tracking mode
     defaultTrackingMode: 'position',
 
