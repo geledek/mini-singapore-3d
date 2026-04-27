@@ -142,7 +142,7 @@ export default class {
         let ugOpacity, ogOpacity;
 
         if (searchMode !== 'none' && searchMode !== 'edit') {
-            ugOpacity = ogOpacity = .1;
+            ugOpacity = ogOpacity = .3;
         } else if (viewMode === 'underground') {
             ugOpacity = .9;
             ogOpacity = .225;

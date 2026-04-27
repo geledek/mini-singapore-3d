@@ -64,6 +64,7 @@
     "rollup": "^4.32.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-visualizer": "^5.14.0",
+    "vitest": "^4.1.5",
     "vuepress": "^1.9.10",
     "vuepress-plugin-flexsearch": "^0.3.0"
   },
@@ -76,6 +77,8 @@
     "docs": "vuepress build docs --no-cache",
     "docs:dev": "vuepress dev docs --no-cache",
     "lint": "eslint --cache --ignore-path .gitignore src",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "sgraildata:convert": "node scripts/convert-sgraildata.js",
     "sgraildata:merge": "node scripts/merge-sgraildata.js",
     "sgraildata:update": "run-s sgraildata:convert sgraildata:merge build-data"

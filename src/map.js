@@ -70,7 +70,7 @@ export default class extends Evented {
             pitch: configs.defaultPitch,
             dataUrl: configs.dataUrl,
             dataSources: configs.dataSources,
-            clockControl: false,
+            clockControl: true,
             searchControl: false,
             languageControl: true,
             navigationControl: true,
@@ -548,6 +548,23 @@ export default class extends Evented {
         me._updateRailwayFilters();
     }
 
+    /**
+     * Batch toggles multiple railways at once.
+     * @param {Array<{id: string, visible: boolean}>} changes - Railway visibility changes
+     */
+    toggleRailways(changes) {
+        const me = this;
+
+        for (const {id, visible} of changes) {
+            if (visible) {
+                me.hiddenRailways.delete(id);
+            } else {
+                me.hiddenRailways.add(id);
+            }
+        }
+        me._updateRailwayFilters();
+    }
+
     _updateRailwayFilters() {
         const me = this,
             hidden = [...me.hiddenRailways],
@@ -567,26 +584,6 @@ export default class extends Evented {
                 me.map.setFilter(`railways-og-${zoom}`, railFilter);
             }
 
-            // Filter station fills (type 1, have 'railways' array property)
-            // Hide a station only if ALL its railways are hidden
-            for (const key of [`stations-og-${zoom}`, `stations-outline-og-${zoom}`]) {
-                if (!me.map.getLayer(key)) {
-                    continue;
-                }
-                const stationFilter = [
-                    'all',
-                    ['==', ['get', 'zoom'], zoom],
-                    ['==', ['get', 'type'], 1]
-                ];
-                if (hiddenExpr) {
-                    // Keep station visible if any of its railways is NOT hidden
-                    // i.e., hide only if every railway in the station's list is hidden
-                    stationFilter.push(['!', ['all',
-                        ...hidden.map(r => ['in', r, ['get', 'railways']])
-                    ]]);
-                }
-                me.map.setFilter(key, stationFilter);
-            }
         }
 
         // Filter station code labels
@@ -596,6 +593,68 @@ export default class extends Evented {
             } else {
                 me.map.setFilter('station-codes-label', null);
             }
+        }
+
+        // Filter station circle/interchange layers
+        // Compute visible railways (all railways minus hidden ones)
+        const allRailwayIds = [...me.railways.getAll()].map(r => r.id);
+        const visibleRailways = allRailwayIds.filter(id => !me.hiddenRailways.has(id));
+
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            for (const prefix of ['station-circles', 'station-interchange']) {
+                for (const suffix of ['og', 'ug']) {
+                    const layerId = `${prefix}-${suffix}-${zoom}`;
+
+                    if (!me.map.getLayer(layerId)) {
+                        continue;
+                    }
+                    const isInterchange = prefix === 'station-interchange' ? 1 : 0;
+                    const baseFilter = [
+                        'all',
+                        ['==', ['get', 'zoom'], zoom],
+                        ['==', ['get', 'interchange'], isInterchange]
+                    ];
+
+                    if (visibleRailways.length === allRailwayIds.length) {
+                        // All visible
+                        me.map.setFilter(layerId, baseFilter);
+                    } else if (visibleRailways.length === 0) {
+                        // None visible — hide all stations
+                        me.map.setFilter(layerId, ['==', 1, 0]);
+                    } else {
+                        // Show station if ANY visible railway is in its railways list
+                        baseFilter.push(['any',
+                            ...visibleRailways.map(r => ['in', r, ['get', 'railways']])
+                        ]);
+                        me.map.setFilter(layerId, baseFilter);
+                    }
+                }
+            }
+        }
+
+        // Hide/show deck.gl underground/route layers
+        const allHidden = hidden.length > 0;
+
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            for (const layerId of [
+                `railways-ug-${zoom}`, `stations-ug-${zoom}`,
+                `railways-routeug-${zoom}`, `stations-routeug-${zoom}`,
+                `railways-routeog-${zoom}`, `stations-routeog-${zoom}`
+            ]) {
+                const layer = me.map.getLayer(layerId);
+
+                if (layer) {
+                    // For deck.gl layers, use opacity via setLayerProps
+                    helpersMapbox.setLayerProps(me.map, layerId, {
+                        opacity: allHidden ? 0 : undefined
+                    });
+                }
+            }
+        }
+
+        // Also hide station-buildings when all railways hidden
+        if (me.map.getLayer('station-buildings-fill')) {
+            me.map.setLayoutProperty('station-buildings-fill', 'visibility', allHidden ? 'none' : 'visible');
         }
 
         // Hide/show 3D trains on hidden railways
@@ -789,6 +848,11 @@ export default class extends Evented {
             const properties = feature.properties,
                 {group, altitude} = properties;
 
+            // Skip station point markers (type 3) - they're only for circle rendering
+            if (properties.type === 3) {
+                return;
+            }
+
             if (properties.type === 1) {
                 // stations
                 featureLookup.set(`${group}.${properties.zoom}`, feature);
@@ -975,18 +1039,18 @@ export default class extends Evented {
                         }
                     }[key1], {
                         'ug': {
-                            opacity: .0625,
+                            opacity: 0,
                             pickable: key1 === 'stations',
                             metadata: {
                                 'mt3d:opacity-effect': true,
-                                'mt3d:opacity': 0.0625,
-                                'mt3d:opacity-route': 0.005,
+                                'mt3d:opacity': 0,
+                                'mt3d:opacity-route': 0,
                                 'mt3d:opacity-underground': 1,
                                 'mt3d:opacity-underground-route': 0.005
                             }
                         },
                         'routeug': {
-                            opacity: .0625,
+                            opacity: 0,
                             metadata: {
                                 'mt3d:opacity-effect': true,
                                 'mt3d:opacity': 0.125,
@@ -1010,14 +1074,26 @@ export default class extends Evented {
 
         map.addSource('odpt', {
             type: 'geojson',
-            data: helpersGeojson.featureFilter(featureCollection, p => p.altitude === 0)
+            data: helpersGeojson.featureFilter(featureCollection, p => p.type !== 3 && (p.type === 0 || p.altitude === 0))
+        });
+
+        // Station center points source (type 3, above-ground only)
+        map.addSource('station-points', {
+            type: 'geojson',
+            data: helpersGeojson.featureFilter(featureCollection, p => p.type === 3 && p.altitude === 0)
+        });
+
+        // Station center points source (type 3, underground only)
+        map.addSource('station-points-ug', {
+            type: 'geojson',
+            data: helpersGeojson.featureFilter(featureCollection, p => p.type === 3 && p.altitude < 0)
         });
 
         for (const zoom of [13, 14, 15, 16, 17, 18]) {
             const interpolate = ['interpolate', ['exponential', 2], ['zoom']],
                 width = ['get', 'width'],
                 color = ['get', 'color'],
-                railWidth = ['*', width, 0.5],
+                railWidth = ['*', width, 0.467],
                 lineWidth =
                     zoom === 13 ? [...interpolate, 9, ['/', railWidth, 8], 12, railWidth] :
                     zoom === 18 ? [...interpolate, 19, railWidth, 22, ['*', railWidth, 8]] :
@@ -1028,64 +1104,168 @@ export default class extends Evented {
                     zoom === 18 ? [...interpolate, 19, stationOutlineWidth, 22, ['*', stationOutlineWidth, 8]] :
                     stationOutlineWidth;
 
-            for (const key of ['railways', 'stations', 'stations-outline']) {
+            for (const key of ['railways']) {
                 map.addLayer({
                     id: `${key}-og-${zoom}`,
-                    type: key === 'stations' ? 'fill' : 'line',
+                    type: 'line',
                     source: 'odpt',
                     filter: [
                         'all',
                         ['==', ['get', 'zoom'], zoom],
-                        ['==', ['get', 'type'], key === 'railways' ? 0 : 1]
+                        ['==', ['get', 'type'], 0]
                     ],
                     layout: {
                         visibility: zoom === layerZoom ? 'visible' : 'none'
                     },
                     paint: {
-                        'railways': {
-                            'line-color': color,
-                            'line-width': lineWidth,
-                            'line-opacity': 0.7,
-                            'line-emissive-strength': 1,
-                            'line-dasharray': [
-                                'case',
-                                ['==', ['get', 'dashed'], 1],
-                                ['literal', [2, 2]],
-                                ['literal', [1, 0]]
-                            ]
-                        },
-                        'stations': {
-                            'fill-color': color,
-                            'fill-opacity': [
-                                'case',
-                                ['==', ['get', 'dashed'], 1],
-                                0.15,
-                                0.4
-                            ],
-                            'fill-emissive-strength': 1
-                        },
-                        'stations-outline': {
-                            'line-color': ['get', 'outlineColor'],
-                            'line-width': stationLineWidth,
-                            'line-opacity': 0.5,
-                            'line-emissive-strength': 1,
-                            'line-dasharray': [
-                                'case',
-                                ['==', ['get', 'dashed'], 1],
-                                ['literal', [2, 2]],
-                                ['literal', [1, 0]]
-                            ]
-                        }
-                    }[key],
+                        'line-color': color,
+                        'line-width': lineWidth,
+                        'line-opacity': 0.7,
+                        'line-emissive-strength': 1,
+                        'line-dasharray': [
+                            'case',
+                            ['==', ['get', 'dashed'], 1],
+                            ['literal', [2, 2]],
+                            ['literal', [1, 0]]
+                        ]
+                    },
                     metadata: {
                         'mt3d:opacity-effect': true,
                         'mt3d:opacity': 1,
-                        'mt3d:opacity-route': 0.1,
+                        'mt3d:opacity-route': 0.3,
                         'mt3d:opacity-underground': 0.25,
-                        'mt3d:opacity-underground-route': 0.1
+                        'mt3d:opacity-underground-route': 0.3
                     }
                 }, 'trees');
             }
+        }
+
+        // Station circle markers (point-based, renders at correct terrain position)
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            const circleRadius =
+                zoom === 13 ? ['interpolate', ['linear'], ['zoom'], 9, 2, 12, 5] :
+                zoom === 18 ? ['interpolate', ['linear'], ['zoom'], 18, 5, 22, 20] :
+                5;
+
+            // Regular station circles
+            map.addLayer({
+                id: `station-circles-og-${zoom}`,
+                type: 'circle',
+                source: 'station-points',
+                filter: [
+                    'all',
+                    ['==', ['get', 'zoom'], zoom],
+                    ['==', ['get', 'interchange'], 0]
+                ],
+                layout: {
+                    visibility: zoom === layerZoom ? 'visible' : 'none'
+                },
+                paint: {
+                    'circle-radius': circleRadius,
+                    'circle-color': '#ffffff',
+                    'circle-opacity': 0.6,
+                    'circle-stroke-width': 1.5,
+                    'circle-stroke-color': '#000000',
+                    'circle-stroke-opacity': 0.5,
+                    'circle-pitch-alignment': 'map',
+                    'circle-translate': [0, -2],
+                    'circle-emissive-strength': 1
+                }
+            }, 'trees');
+
+            // Interchange station markers (larger)
+            map.addLayer({
+                id: `station-interchange-og-${zoom}`,
+                type: 'circle',
+                source: 'station-points',
+                filter: [
+                    'all',
+                    ['==', ['get', 'zoom'], zoom],
+                    ['==', ['get', 'interchange'], 1]
+                ],
+                layout: {
+                    visibility: zoom === layerZoom ? 'visible' : 'none'
+                },
+                paint: {
+                    'circle-radius': ['*', circleRadius, 1.4],
+                    'circle-color': '#ffffff',
+                    'circle-opacity': 0.7,
+                    'circle-stroke-width': 2,
+                    'circle-stroke-color': '#333333',
+                    'circle-stroke-opacity': 0.6,
+                    'circle-pitch-alignment': 'map',
+                    'circle-translate': [0, -2],
+                    'circle-emissive-strength': 1
+                }
+            }, 'trees');
+        }
+
+        // Underground station circle markers
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            const circleRadius =
+                zoom === 13 ? ['interpolate', ['linear'], ['zoom'], 9, 2, 12, 5] :
+                zoom === 18 ? ['interpolate', ['linear'], ['zoom'], 18, 5, 22, 20] :
+                5;
+
+            map.addLayer({
+                id: `station-circles-ug-${zoom}`,
+                type: 'circle',
+                source: 'station-points-ug',
+                filter: [
+                    'all',
+                    ['==', ['get', 'zoom'], zoom],
+                    ['==', ['get', 'interchange'], 0]
+                ],
+                layout: {
+                    visibility: zoom === layerZoom ? 'visible' : 'none'
+                },
+                paint: {
+                    'circle-radius': circleRadius,
+                    'circle-color': '#ffffff',
+                    'circle-opacity': 0.6,
+                    'circle-stroke-width': 1.5,
+                    'circle-stroke-color': '#000000',
+                    'circle-stroke-opacity': 0.5,
+                    'circle-pitch-alignment': 'map',
+                    'circle-translate': [0, -2],
+                    'circle-emissive-strength': 1
+                },
+                metadata: {
+                    'mt3d:opacity-effect': true,
+                    'mt3d:opacity': 0,
+                    'mt3d:opacity-underground': 1
+                }
+            }, 'trees');
+
+            map.addLayer({
+                id: `station-interchange-ug-${zoom}`,
+                type: 'circle',
+                source: 'station-points-ug',
+                filter: [
+                    'all',
+                    ['==', ['get', 'zoom'], zoom],
+                    ['==', ['get', 'interchange'], 1]
+                ],
+                layout: {
+                    visibility: zoom === layerZoom ? 'visible' : 'none'
+                },
+                paint: {
+                    'circle-radius': ['*', circleRadius, 1.4],
+                    'circle-color': '#ffffff',
+                    'circle-opacity': 0.7,
+                    'circle-stroke-width': 2,
+                    'circle-stroke-color': '#333333',
+                    'circle-stroke-opacity': 0.6,
+                    'circle-pitch-alignment': 'map',
+                    'circle-translate': [0, -2],
+                    'circle-emissive-strength': 1
+                },
+                metadata: {
+                    'mt3d:opacity-effect': true,
+                    'mt3d:opacity': 0,
+                    'mt3d:opacity-underground': 1
+                }
+            }, 'trees');
         }
 
         me.addLayer(me.trafficLayer, 'trees');
@@ -1408,12 +1588,6 @@ export default class extends Evented {
                     me.themePanel.addTo(me);
                 }
             }, {
-                className: 'mapboxgl-ctrl-tracking-mode',
-                title: dict['select-tracking-mode'],
-                eventHandler() {
-                    me.trackingModePanel.addTo(me);
-                }
-            }, {
                 className: 'mapboxgl-ctrl-rotate',
                 title: 'Auto-rotate (R)',
                 eventHandler(e) {
@@ -1454,9 +1628,14 @@ export default class extends Evented {
             console.log(e.lngLat);
         });
 
-        // WASD keyboard controls for camera panning
-        const panSpeed = 0.002;
+        // WASD keyboard controls for smooth camera panning
         const keysDown = new Set();
+        const velocity = {x: 0, y: 0, r: 0};
+        const maxSpeed = 0.0004;
+        const acceleration = 0.00004;
+        const friction = 0.92;
+        const rotAccel = 0.15;
+        const rotFriction = 0.9;
 
         document.addEventListener('keydown', e => {
             const key = e.key.toLowerCase();
@@ -1468,6 +1647,10 @@ export default class extends Evented {
             // Toggle auto-rotation with R key
             if (key === 'r') {
                 me.autoRotate = !me.autoRotate;
+                const icon = container.querySelector('.mapboxgl-ctrl-rotate .mapboxgl-ctrl-icon');
+                if (icon) {
+                    icon.classList.toggle('mapboxgl-ctrl-rotate-active', me.autoRotate);
+                }
             }
         });
 
@@ -1476,31 +1659,45 @@ export default class extends Evented {
         });
 
         const processKeys = () => {
-            if (keysDown.size > 0 && !me.trackedObject) {
-                const bearing = map.getBearing() * Math.PI / 180;
-                let dx = 0, dy = 0;
-                const zoom = map.getZoom();
-                const speed = panSpeed * Math.pow(2, 15 - zoom);
+            const zoom = map.getZoom();
+            const zoomFactor = Math.pow(2, 15 - zoom);
 
-                if (keysDown.has('w')) { dy = speed; }
-                if (keysDown.has('s')) { dy = -speed; }
-                if (keysDown.has('a')) { dx = -speed; }
-                if (keysDown.has('d')) { dx = speed; }
-
-                if (dx !== 0 || dy !== 0) {
-                    // Rotate movement by current bearing
-                    const cos = Math.cos(-bearing), sin = Math.sin(-bearing);
-                    const lng = dx * cos - dy * sin;
-                    const lat = dx * sin + dy * cos;
-                    const center = map.getCenter();
-
-                    map.setCenter([center.lng + lng, center.lat + lat]);
-                }
-
-                // Q/E for bearing rotation
-                if (keysDown.has('q')) { map.setBearing(map.getBearing() - 1); }
-                if (keysDown.has('e')) { map.setBearing(map.getBearing() + 1); }
+            // Accelerate based on keys
+            if (!me.trackedObject) {
+                if (keysDown.has('w')) { velocity.y += acceleration * zoomFactor; }
+                if (keysDown.has('s')) { velocity.y -= acceleration * zoomFactor; }
+                if (keysDown.has('a')) { velocity.x -= acceleration * zoomFactor; }
+                if (keysDown.has('d')) { velocity.x += acceleration * zoomFactor; }
+                if (keysDown.has('q')) { velocity.r -= rotAccel; }
+                if (keysDown.has('e')) { velocity.r += rotAccel; }
             }
+
+            // Clamp speed
+            const maxSpd = maxSpeed * zoomFactor;
+
+            velocity.x = Math.max(-maxSpd, Math.min(maxSpd, velocity.x));
+            velocity.y = Math.max(-maxSpd, Math.min(maxSpd, velocity.y));
+            velocity.r = Math.max(-3, Math.min(3, velocity.r));
+
+            // Apply friction
+            velocity.x *= friction;
+            velocity.y *= friction;
+            velocity.r *= rotFriction;
+
+            // Apply movement
+            if (Math.abs(velocity.x) > 0.000001 || Math.abs(velocity.y) > 0.000001) {
+                const bearing = map.getBearing() * Math.PI / 180;
+                const cos = Math.cos(-bearing), sin = Math.sin(-bearing);
+                const lng = velocity.x * cos - velocity.y * sin;
+                const lat = velocity.x * sin + velocity.y * cos;
+                const center = map.getCenter();
+
+                map.setCenter([center.lng + lng, center.lat + lat]);
+            }
+            if (Math.abs(velocity.r) > 0.01) {
+                map.setBearing(map.getBearing() + velocity.r);
+            }
+
             requestAnimationFrame(processKeys);
         };
         requestAnimationFrame(processKeys);
@@ -1542,9 +1739,20 @@ export default class extends Evented {
             // me.objectUnit = Math.max(getObjectScale(zoom) * .19, .02);
 
             if (prevLayerZoom !== layerZoom) {
-                for (const key of ['railways', 'stations', 'stations-outline']) {
+                for (const key of ['railways']) {
                     me.setLayerVisibility(`${key}-og-${prevLayerZoom}`, 'none');
                     me.setLayerVisibility(`${key}-og-${layerZoom}`, 'visible');
+                }
+                for (const key of ['station-circles', 'station-interchange']) {
+                    me.setLayerVisibility(`${key}-og-${prevLayerZoom}`, 'none');
+                    me.setLayerVisibility(`${key}-og-${layerZoom}`, 'visible');
+                    me.setLayerVisibility(`${key}-ug-${prevLayerZoom}`, 'none');
+                    me.setLayerVisibility(`${key}-ug-${layerZoom}`, 'visible');
+                }
+
+                // Re-apply railway filters to newly visible layers
+                if (me.hiddenRailways.size > 0) {
+                    me._updateRailwayFilters();
                 }
 
                 for (const {id} of me.gtfs.values()) {
@@ -2738,16 +2946,16 @@ export default class extends Evented {
                             'busroute': {
                                 'mt3d:opacity-effect': true,
                                 'mt3d:opacity': 1,
-                                'mt3d:opacity-route': 0.1,
+                                'mt3d:opacity-route': 0.3,
                                 'mt3d:opacity-underground': 0,
                                 'mt3d:opacity-underground-route': 0
                             },
                             'busroute-highlighted': {
                                 'mt3d:opacity-effect': true,
                                 'mt3d:opacity': 1,
-                                'mt3d:opacity-route': 0.1,
+                                'mt3d:opacity-route': 0.3,
                                 'mt3d:opacity-underground': 0.25,
-                                'mt3d:opacity-underground-route': 0.1
+                                'mt3d:opacity-underground-route': 0.3
                             }
                         }[key]
                     }, 'railways-og-13');
@@ -2783,9 +2991,9 @@ export default class extends Evented {
                             metadata: {
                                 'mt3d:opacity-effect': true,
                                 'mt3d:opacity': 1,
-                                'mt3d:opacity-route': 0.1,
+                                'mt3d:opacity-route': 0.3,
                                 'mt3d:opacity-underground': 0.25,
-                                'mt3d:opacity-underground-route': 0.1
+                                'mt3d:opacity-underground-route': 0.3
                             }
                         }, 'railways-og-13');
                         layerIds.add(`${key}-${id}-og-${zoom}`);
