@@ -1,1 +1,112 @@
-[]
+[
+	{
+		"id": "OnTime",
+		"title": {
+			"en": "On Time",
+			"zh-Hans": "准时",
+			"zh-Hant": "準時",
+			"ms": "Tepat Masa",
+			"ta": "நேரத்தில்"
+		}
+	},
+	{
+		"id": "Delayed",
+		"title": {
+			"en": "Delayed",
+			"zh-Hans": "延误",
+			"zh-Hant": "延誤",
+			"ms": "Ditangguhkan",
+			"ta": "தாமதம்"
+		}
+	},
+	{
+		"id": "Departed",
+		"title": {
+			"en": "Departed",
+			"zh-Hans": "已起飞",
+			"zh-Hant": "已起飛",
+			"ms": "Berlepas",
+			"ta": "புறப்பட்டது"
+		}
+	},
+	{
+		"id": "Arrived",
+		"title": {
+			"en": "Arrived",
+			"zh-Hans": "已到达",
+			"zh-Hant": "已到達",
+			"ms": "Tiba",
+			"ta": "வந்தது"
+		}
+	},
+	{
+		"id": "InFlight",
+		"title": {
+			"en": "In Flight",
+			"zh-Hans": "飞行中",
+			"zh-Hant": "飛行中",
+			"ms": "Dalam Penerbangan",
+			"ta": "விமானத்தில்"
+		}
+	},
+	{
+		"id": "Cancelled",
+		"title": {
+			"en": "Cancelled",
+			"zh-Hans": "已取消",
+			"zh-Hant": "已取消",
+			"ms": "Dibatalkan",
+			"ta": "ரத்து"
+		}
+	},
+	{
+		"id": "NewTime",
+		"title": {
+			"en": "New Time",
+			"zh-Hans": "新时间",
+			"zh-Hant": "新時間",
+			"ms": "Masa Baharu",
+			"ta": "புதிய நேரம்"
+		}
+	},
+	{
+		"id": "CheckIn",
+		"title": {
+			"en": "Check In",
+			"zh-Hans": "办理登机",
+			"zh-Hant": "辦理登機",
+			"ms": "Daftar Masuk",
+			"ta": "செக் இன்"
+		}
+	},
+	{
+		"id": "NowBoarding",
+		"title": {
+			"en": "Now Boarding",
+			"zh-Hans": "正在登机",
+			"zh-Hant": "正在登機",
+			"ms": "Menaiki Sekarang",
+			"ta": "இப்போது ஏறுகிறது"
+		}
+	},
+	{
+		"id": "FinalCall",
+		"title": {
+			"en": "Final Call",
+			"zh-Hans": "最后登机",
+			"zh-Hant": "最後登機",
+			"ms": "Panggilan Terakhir",
+			"ta": "இறுதி அழைப்பு"
+		}
+	},
+	{
+		"id": "BoardingComplete",
+		"title": {
+			"en": "Boarding Complete",
+			"zh-Hans": "登机完毕",
+			"zh-Hant": "登機完畢",
+			"ms": "Penumpang Lengkap",
+			"ta": "ஏற்றம் முடிந்தது"
+		}
+	}
+]

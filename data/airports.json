@@ -1,1 +1,184 @@
-[]
+[
+	{
+		"id": "WSSS",
+		"title": {
+			"en": "Singapore Changi Airport",
+			"zh-Hans": "新加坡樟宜机场",
+			"zh-Hant": "新加坡樟宜機場",
+			"ms": "Lapangan Terbang Changi Singapura",
+			"ta": "சிங்கப்பூர் சாங்கி விமான நிலையம்"
+		},
+		"direction": "S"
+	},
+	{
+		"id": "RJTT",
+		"title": {
+			"en": "Tokyo Haneda",
+			"zh-Hans": "东京羽田",
+			"zh-Hant": "東京羽田"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "RJAA",
+		"title": {
+			"en": "Tokyo Narita",
+			"zh-Hans": "东京成田",
+			"zh-Hant": "東京成田"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "VHHH",
+		"title": {
+			"en": "Hong Kong",
+			"zh-Hans": "香港",
+			"zh-Hant": "香港"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "VTBS",
+		"title": {
+			"en": "Bangkok Suvarnabhumi",
+			"zh-Hans": "曼谷素万那普",
+			"zh-Hant": "曼谷素萬那普"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "WMKK",
+		"title": {
+			"en": "Kuala Lumpur",
+			"zh-Hans": "吉隆坡",
+			"zh-Hant": "吉隆坡"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "WIII",
+		"title": {
+			"en": "Jakarta",
+			"zh-Hans": "雅加达",
+			"zh-Hant": "雅加達"
+		},
+		"direction": "S"
+	},
+	{
+		"id": "RPLL",
+		"title": {
+			"en": "Manila",
+			"zh-Hans": "马尼拉",
+			"zh-Hant": "馬尼拉"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "RKSI",
+		"title": {
+			"en": "Seoul Incheon",
+			"zh-Hans": "首尔仁川",
+			"zh-Hant": "首爾仁川"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "ZSSS",
+		"title": {
+			"en": "Shanghai Pudong",
+			"zh-Hans": "上海浦东",
+			"zh-Hant": "上海浦東"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "YSSY",
+		"title": {
+			"en": "Sydney",
+			"zh-Hans": "悉尼",
+			"zh-Hant": "悉尼"
+		},
+		"direction": "S"
+	},
+	{
+		"id": "YMML",
+		"title": {
+			"en": "Melbourne",
+			"zh-Hans": "墨尔本",
+			"zh-Hant": "墨爾本"
+		},
+		"direction": "S"
+	},
+	{
+		"id": "EGLL",
+		"title": {
+			"en": "London Heathrow",
+			"zh-Hans": "伦敦希思罗",
+			"zh-Hant": "倫敦希思羅"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "VIDP",
+		"title": {
+			"en": "Delhi",
+			"zh-Hans": "新德里",
+			"zh-Hant": "新德里"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "VABB",
+		"title": {
+			"en": "Mumbai",
+			"zh-Hans": "孟买",
+			"zh-Hant": "孟買"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "OMDB",
+		"title": {
+			"en": "Dubai",
+			"zh-Hans": "迪拜",
+			"zh-Hant": "迪拜"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "KLAX",
+		"title": {
+			"en": "Los Angeles",
+			"zh-Hans": "洛杉矶",
+			"zh-Hant": "洛杉磯"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "KJFK",
+		"title": {
+			"en": "New York JFK",
+			"zh-Hans": "纽约肯尼迪",
+			"zh-Hant": "紐約甘迺迪"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "EDDF",
+		"title": {
+			"en": "Frankfurt",
+			"zh-Hans": "法兰克福",
+			"zh-Hant": "法蘭克福"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "LFPG",
+		"title": {
+			"en": "Paris CDG",
+			"zh-Hans": "巴黎戴高乐",
+			"zh-Hant": "巴黎戴高樂"
+		},
+		"direction": "N"
+	}
+]

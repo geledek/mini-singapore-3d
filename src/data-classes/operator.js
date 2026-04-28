@@ -26,6 +26,12 @@ export default class {
          * @type {string}
          */
         me.tailcolor = params.tailcolor;
+
+        /**
+         * Aircraft body stripe color.
+         * @type {string}
+         */
+        me.stripecolor = params.stripecolor;
     }
 
 }

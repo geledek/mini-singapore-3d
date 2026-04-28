@@ -19,8 +19,6 @@ import Plugin from './plugin';
 import themes from './themes';
 import nearestCloserPointOnLine from './turf/nearest-closer-point-on-line';
 
-const AIRLINES_FOR_ANA_CODE_SHARE = ['ADO', 'SFJ', 'SNJ'];
-
 const DEGREE_TO_RADIAN = Math.PI / 180;
 
 // Replace NavigationControl._updateZoomButtons to support disabling the control
@@ -1290,8 +1288,8 @@ export default class extends Evented {
         for (const {id, color} of me.trainVehicleTypes.getAll()) {
             colorData.push({id, color});
         }
-        for (const {id, color, tailcolor} of me.operators.getAll()) {
-            colorData.push({id, color: [color, tailcolor]});
+        for (const {id, color, tailcolor, stripecolor} of me.operators.getAll()) {
+            colorData.push({id, color: [color, tailcolor, stripecolor || color]});
         }
 
         me.trafficLayer.addRouteGroup(routeData);
@@ -1793,7 +1791,7 @@ export default class extends Evented {
             callback: () => {
                 const clock = me.clock,
                     now = clock.getTime(),
-                    {minDelay, refreshInterval, realtimeCheckInterval} = configs;
+                    {minDelay, refreshInterval, realtimeCheckInterval, flightCheckInterval} = configs;
 
                 if (now - me.lastTimetableRefresh >= 86400000) {
                     me.refreshTrainTimetableData();
@@ -1826,13 +1824,20 @@ export default class extends Evented {
                 if (Math.floor((now - minDelay) / realtimeCheckInterval) !== Math.floor(me.lastRealtimeCheck / realtimeCheckInterval)) {
                     if (me.searchMode === 'none' && me.clockMode === 'realtime' && !me.removing) {
                         me.refreshRealtimeTrainData();
-                        me.refreshRealtimeFlightData();
                         me.refreshRealtimeBusData();
                         if (isStation(me.trackedObject)) {
                             me.detailPanel.updateContent();
                         }
                     }
                     me.lastRealtimeCheck = now - minDelay;
+                }
+
+                // Flight data refreshes on a slower cadence (5 min) to stay within API limits
+                if (Math.floor((now - minDelay) / flightCheckInterval) !== Math.floor((me.lastFlightCheck || 0) / flightCheckInterval)) {
+                    if (me.searchMode === 'none' && me.clockMode === 'realtime' && !me.removing) {
+                        me.refreshRealtimeFlightData();
+                    }
+                    me.lastFlightCheck = now - minDelay;
                 }
 
                 if ((me.ecoMode === 'normal' && map._loaded) || Date.now() - me.lastRepaint >= 1000 / me.ecoFrameRate) {
@@ -3183,121 +3188,33 @@ export default class extends Evented {
         const me = this;
 
         loadDynamicFlightData(me.secrets).then(({atisData, flightData}) => {
-            // Skip if no flight data available (Singapore doesn't have flight data yet)
-            if (!atisData || atisData.length === 0 || !flightData || flightData.length === 0) {
+            // Skip if no flight data available
+            if (!atisData || !atisData.landing || !flightData || flightData.length === 0) {
                 return;
             }
 
             const flightLookup = me.flightLookup,
-                {landing, departure} = atisData,
-                pattern = [landing.join('/'), departure.join('/')].join(' '),
-                codeShareFlights = {},
                 flightQueue = {};
-            let arrRoutes = {},
-                depRoutes = {},
-                north = true;
 
-            if (me.flightPattern !== pattern) {
-                me.flightPattern = pattern;
-                me.lastFlightPatternChanged = Date.now();
-                for (const flight of me.activeFlightLookup.values()) {
-                    me.stopFlight(flight);
-                }
-            }
-
-            if (helpers.includes(landing, ['R16L', 'R16R'])) { // South wind, good weather, rush hour
-                arrRoutes = {S: 'R16L', N: 'R16R'};
-                depRoutes = {S: '22', N: '16R'};
-                north = false;
-            } else if (helpers.includes(landing, ['L22', 'L23'])) { // South wind, good weather
-                arrRoutes = {S: 'L23', N: 'L22'};
-                depRoutes = {S: 'O16R', N: '16L'};
-                north = false;
-            } else if (helpers.includes(landing, ['I16L', 'I16R'])) { // South wind, bad weather, rush hour
-                arrRoutes = {S: 'I16L', N: 'I16R'};
-                depRoutes = {S: '22', N: '16R'};
-                north = false;
-            } else if (helpers.includes(landing, ['I22', 'I23'])) { // South wind, bad weather
-                arrRoutes = {S: 'I23', N: 'I22'};
-                depRoutes = {S: '16R', N: '16L'};
-                north = false;
-            } else if (helpers.includes(landing, ['I34L', 'H34R'])) { // North wind, good weather
-                arrRoutes = {S: 'IX34L', N: 'H34R'};
-                depRoutes = {S: '05', N: '34R'};
-                north = true;
-            } else if (helpers.includes(landing, ['I34L', 'I34R'])) { // North wind, bad weather
-                arrRoutes = {S: 'IZ34L', N: 'H34R'};
-                depRoutes = {S: '05', N: '34R'};
-                north = true;
-            } else if (landing.length !== 1) {
-                console.log(`Unexpected RWY: ${landing}`);
-            } else { // Midnight
-                if (helpers.includes(landing, 'I23')) {
-                    arrRoutes = {S: 'IY23', N: 'IY23'};
-                    north = false;
-                } else if (helpers.includes(landing, 'L23')) {
-                    arrRoutes = {S: 'LY23', N: 'LY23'};
-                    north = false;
-                } else if (helpers.includes(landing, 'I34L')) {
-                    arrRoutes = {S: 'IX34L', N: 'IX34L'};
-                    north = true;
-                } else if (helpers.includes(landing, 'I34R')) {
-                    arrRoutes = {S: 'IY34R', N: 'IY34R'};
-                    north = true;
-                } else if (helpers.includes(landing, 'L22')) { // Special
-                    arrRoutes = {S: 'L22', N: 'L22'};
-                    north = false;
-                } else {
-                    console.log(`Unexpected LDG RWY: ${landing[0]}`);
-                }
-                if (helpers.includes(departure, '16L')) {
-                    depRoutes = {S: 'N16L', N: 'N16L'};
-                } else if (helpers.includes(departure, '05')) {
-                    depRoutes = {S: 'N05', N: 'N05'};
-                } else if (helpers.includes(departure, '16R')) { // Special
-                    depRoutes = {S: '16R', N: '16R'};
-                } else {
-                    console.log(`Unexpected DEP RWY: ${departure[0]}`);
-                }
-            }
-
-            // Create code share flight lookup
-            for (const flightRef of flightData) {
-                if (helpers.includes(AIRLINES_FOR_ANA_CODE_SHARE, flightRef.a)) {
-                    const {dp, ds, sdt, or, ar, sat} = flightRef,
-                        key = `${dp || or}.${ds || ar}.${sdt || sat}`;
-
-                    codeShareFlights[key] = flightRef;
-                }
-            }
+            // Changi Airport runway configuration
+            // Arrivals: 20R/20C (from NNE), Departures: 02L/02C (to NNE)
+            const arrRoutes = {S: '20C', N: '20R'},
+                depRoutes = {S: '02C', N: '02L'};
 
             for (const flightRef of flightData) {
-                const {id, n, dp, ds, sdt, or, ar, sat} = flightRef;
+                const {id, n, dp, ds, ar, or, sat, sdt} = flightRef;
                 let flight = flightLookup.get(id),
                     status = flightRef.s,
                     {maxFlightSpeed: maxSpeed, flightAcceleration: acceleration} = configs;
 
-                // Check code share flight
-                if (id.match(/NH\d{4}$/)) {
-                    const key = `${dp || or}.${ds || ar}.${sdt || sat}`,
-                        codeShareFlight = codeShareFlights[key];
-
-                    if (codeShareFlight) {
-                        codeShareFlight.n.push(...n);
-                        continue;
-                    }
-                }
-
                 if (!flight) {
-                    if (helpers.includes(['Cancelled', 'PostponedTomorrow'], status)) {
+                    if (helpers.includes(['Cancelled'], status)) {
                         continue;
                     }
                     const airport = me.airports.get(ds || or),
-                        direction = airport ? airport.direction : 'S',
-                        route = dp === 'NRT' ? `NRT.${north ? '34L' : '16R'}.Dep` :
-                        ar === 'NRT' ? `NRT.${north ? '34R' : '16L'}.Arr` :
-                        dp === 'HND' ? `HND.${depRoutes[direction]}.Dep` :
-                        ar === 'HND' ? `HND.${arrRoutes[direction]}.Arr` : undefined,
+                        direction = airport ? airport.direction : 'N',
+                        route = dp === 'WSSS' ? `WSSS.${depRoutes[direction]}.Dep` :
+                        ar === 'WSSS' ? `WSSS.${arrRoutes[direction]}.Arr` : undefined,
                         feature = me.featureLookup.get(route);
 
                     if (feature) {
@@ -3333,21 +3250,9 @@ export default class extends Evented {
                     arrivalTime = helpers.valueOrDefault(flight.eat, helpers.valueOrDefault(flight.aat, flight.sat));
 
                 if (arrivalTime !== undefined && !status) {
-                    if (arrivalTime < flight.sat) {
-                        status = 'NewTime';
-                    } else if (arrivalTime > flight.sat) {
-                        status = 'Delayed';
-                    } else if (arrivalTime === flight.sat) {
-                        status = 'OnTime';
-                    }
-                } else if (departureTime !== undefined && (!status || status === 'CheckIn' || status === 'NowBoarding' || status === 'FinalCall' || status === 'BoardingComplete' || status === 'Departed')) {
-                    if (departureTime < flight.sdt) {
-                        status = 'NewTime';
-                    } else if (departureTime > flight.sdt) {
-                        status = 'Delayed';
-                    } else if (departureTime === flight.sdt) {
-                        status = 'OnTime';
-                    }
+                    status = 'InFlight';
+                } else if (departureTime !== undefined && !status) {
+                    status = 'Departed';
                 }
                 flight.update({s: status}, {flightStatuses: me.flightStatuses});
 

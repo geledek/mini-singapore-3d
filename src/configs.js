@@ -20,6 +20,9 @@ const configs = {
     // Interval of checking train and bus positions based on real-time data in milliseconds
     realtimeCheckInterval: 15000,
 
+    // Interval of checking flight positions (5 min — fits OpenSky 400 credits/day limit)
+    flightCheckInterval: 300000,
+
     // Maximum train speed in km/h
     maxSpeedKMPH: 80,
 
@@ -46,11 +49,11 @@ const configs = {
         return configs.maxAccelerationTime * configs.maxSpeed / 2;
     },
 
-    // Maximum flight speed in km/h
-    maxFlightSpeedKMPH: 500,
+    // Maximum flight speed in km/h (reduced for visual PoC — 25km path visible ~18 min)
+    maxFlightSpeedKMPH: 80,
 
     // Flight acceleration in km/h/s
-    flightAccelerationKMPHPS: 12,
+    flightAccelerationKMPHPS: 3,
 
     // Maximum flight speed in km/ms
     get maxFlightSpeed() {

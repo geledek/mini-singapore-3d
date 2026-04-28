@@ -74,7 +74,17 @@ vInstanceColor = groupIndex >= 3.0 && color3 != null ? color3 : mod3 == 0.0 ? co
 #endif
 
 #ifdef AIRCRAFT
-vInstanceColor = groupIndex < 2.0 ? color0 : color1;
+// Aircraft livery: color0 = body/wings, color1 = tail, color2 = body stripe
+// Apply stripe on fuselage (groupIndex 0) at mid-height using position.z
+if ( groupIndex == 0.0 ) {
+    float stripePos = abs( position.z );
+    float stripe = smoothstep( 0.25, 0.30, stripePos ) - smoothstep( 0.40, 0.45, stripePos );
+    vInstanceColor = mix( color0, color2, stripe );
+} else if ( groupIndex == 1.0 ) {
+    vInstanceColor = color0;
+} else {
+    vInstanceColor = color1;
+}
 #endif
 
 #ifdef BUS

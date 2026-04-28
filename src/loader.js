@@ -232,17 +232,225 @@ export function loadDynamicTrainData(secrets = {}) {
 
 /**
  * Load the dynamic data for flights.
- * @returns {Object} Loaded data
+ * Attempts OpenSky Network API first (requires CORS proxy or server-side proxy).
+ * Falls back to schedule-based simulation using typical SQ flight patterns.
+ * @returns {Object} Loaded data with atisData and flightData
  */
 export function loadDynamicFlightData() {
-    // eslint-disable-next-line no-warning-comments
-    // TODO: Implement Singapore flight data
-    // Singapore's Changi Airport flight data would need to come from a different source
-    // For now, return empty data to prevent undefined URL errors
-    return Promise.resolve({
-        atisData: [],
-        flightData: []
-    });
+    const proxyUrl = configs.proxyUrl;
+
+    // Try OpenSky Network if a proxy is configured
+    if (proxyUrl && proxyUrl !== 'BUILD_PROXY_URL') {
+        const bbox = 'lamin=1.1&lomin=103.5&lamax=1.6&lomax=104.2';
+        const url = `${proxyUrl}https://opensky-network.org/api/states/all?${bbox}`;
+
+        return fetch(url).then(response => {
+            if (!response.ok) {
+                throw new Error(`OpenSky API error: ${response.status}`);
+            }
+            return response.json();
+        }).then(data => {
+            const states = data.states || [];
+            const sqStates = states.filter(s => s[1] && s[1].trim().startsWith('SIA'));
+            return {
+                atisData: {landing: ['20R', '20C'], departure: ['02L', '02C']},
+                flightData: sqStates.map(transformOpenSkyState)
+            };
+        }).catch(() => generateSimulatedFlights());
+    }
+
+    // Fallback: generate schedule-based simulated SQ flights
+    return Promise.resolve(generateSimulatedFlights());
+}
+
+/**
+ * Transform an OpenSky state vector to internal flight data format.
+ */
+function transformOpenSkyState(s) {
+    const callsign = s[1].trim(),
+        onGround = s[8],
+        verticalRate = s[11],
+        longitude = s[5];
+
+    const flightNum = callsign.replace('SIA', 'SQ');
+    const now = new Date();
+    const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+    const flightRef = {
+        id: callsign,
+        n: [flightNum],
+        a: 'SIA',
+        o: 'opensky',
+        date: Date.now()
+    };
+
+    if ((verticalRate !== null && verticalRate > 1) || (onGround && longitude > 103.98)) {
+        flightRef.dp = 'WSSS';
+        flightRef.sdt = timeStr;
+    } else {
+        flightRef.ar = 'WSSS';
+        flightRef.sat = timeStr;
+    }
+    return flightRef;
+}
+
+/**
+ * Generate simulated flights based on typical Changi Airport schedule.
+ * Creates departures and arrivals for SQ and Scoot spread across the operating day.
+ */
+function generateSimulatedFlights() {
+    const now = new Date(),
+        hours = now.getHours(),
+        minutes = now.getMinutes();
+
+    // Typical SQ departures from Changi (rough hourly schedule)
+    const sqDepartures = [
+        {id: 'SIA321', n: ['SQ321'], dest: 'RJTT', hour: 0, min: 30},
+        {id: 'SIA118', n: ['SQ118'], dest: 'RKSI', hour: 1, min: 0},
+        {id: 'SIA502', n: ['SQ502'], dest: 'VTBS', hour: 2, min: 15},
+        {id: 'SIA108', n: ['SQ108'], dest: 'WMKK', hour: 3, min: 30},
+        {id: 'SIA956', n: ['SQ956'], dest: 'WIII', hour: 5, min: 0},
+        {id: 'SIA910', n: ['SQ910'], dest: 'VHHH', hour: 6, min: 30},
+        {id: 'SIA602', n: ['SQ602'], dest: 'VIDP', hour: 7, min: 0},
+        {id: 'SIA368', n: ['SQ368'], dest: 'EDDF', hour: 7, min: 45},
+        {id: 'SIA322', n: ['SQ322'], dest: 'EGLL', hour: 8, min: 30},
+        {id: 'SIA308', n: ['SQ308'], dest: 'LFPG', hour: 9, min: 0},
+        {id: 'SIA218', n: ['SQ218'], dest: 'YSSY', hour: 9, min: 30},
+        {id: 'SIA226', n: ['SQ226'], dest: 'YMML', hour: 10, min: 0},
+        {id: 'SIA12',  n: ['SQ12'],  dest: 'KLAX', hour: 10, min: 45},
+        {id: 'SIA24',  n: ['SQ24'],  dest: 'KJFK', hour: 11, min: 30},
+        {id: 'SIA836', n: ['SQ836'], dest: 'ZSSS', hour: 12, min: 0},
+        {id: 'SIA406', n: ['SQ406'], dest: 'OMDB', hour: 13, min: 15},
+        {id: 'SIA860', n: ['SQ860'], dest: 'RPLL', hour: 14, min: 30},
+        {id: 'SIA712', n: ['SQ712'], dest: 'VABB', hour: 15, min: 0},
+        {id: 'SIA638', n: ['SQ638'], dest: 'RJAA', hour: 16, min: 30},
+        {id: 'SIA916', n: ['SQ916'], dest: 'VHHH', hour: 17, min: 30},
+        {id: 'SIA504', n: ['SQ504'], dest: 'VTBS', hour: 18, min: 45},
+        {id: 'SIA110', n: ['SQ110'], dest: 'WMKK', hour: 19, min: 30},
+        {id: 'SIA326', n: ['SQ326'], dest: 'EGLL', hour: 21, min: 0},
+        {id: 'SIA346', n: ['SQ346'], dest: 'RJTT', hour: 22, min: 30},
+        {id: 'SIA958', n: ['SQ958'], dest: 'WIII', hour: 23, min: 0}
+    ];
+
+    // SQ arrivals
+    const sqArrivals = [
+        {id: 'SIA345', n: ['SQ345'], orig: 'RJTT', hour: 5, min: 30},
+        {id: 'SIA117', n: ['SQ117'], orig: 'RKSI', hour: 6, min: 45},
+        {id: 'SIA501', n: ['SQ501'], orig: 'VTBS', hour: 7, min: 30},
+        {id: 'SIA107', n: ['SQ107'], orig: 'WMKK', hour: 8, min: 0},
+        {id: 'SIA955', n: ['SQ955'], orig: 'WIII', hour: 9, min: 15},
+        {id: 'SIA909', n: ['SQ909'], orig: 'VHHH', hour: 10, min: 0},
+        {id: 'SIA321R', n: ['SQ322'], orig: 'RJTT', hour: 10, min: 30},
+        {id: 'SIA217', n: ['SQ217'], orig: 'YSSY', hour: 11, min: 45},
+        {id: 'SIA225', n: ['SQ225'], orig: 'YMML', hour: 12, min: 30},
+        {id: 'SIA601', n: ['SQ601'], orig: 'VIDP', hour: 13, min: 0},
+        {id: 'SIA323', n: ['SQ323'], orig: 'EGLL', hour: 14, min: 0},
+        {id: 'SIA367', n: ['SQ367'], orig: 'EDDF', hour: 14, min: 45},
+        {id: 'SIA307', n: ['SQ307'], orig: 'LFPG', hour: 15, min: 30},
+        {id: 'SIA11',  n: ['SQ11'],  orig: 'KLAX', hour: 16, min: 0},
+        {id: 'SIA23',  n: ['SQ23'],  orig: 'KJFK', hour: 17, min: 0},
+        {id: 'SIA835', n: ['SQ835'], orig: 'ZSSS', hour: 18, min: 15},
+        {id: 'SIA405', n: ['SQ405'], orig: 'OMDB', hour: 19, min: 30},
+        {id: 'SIA859', n: ['SQ859'], orig: 'RPLL', hour: 20, min: 0},
+        {id: 'SIA711', n: ['SQ711'], orig: 'VABB', hour: 21, min: 0},
+        {id: 'SIA637', n: ['SQ637'], orig: 'RJAA', hour: 22, min: 0},
+        {id: 'SIA915', n: ['SQ915'], orig: 'VHHH', hour: 23, min: 0},
+        {id: 'SIA503', n: ['SQ503'], orig: 'VTBS', hour: 23, min: 45}
+    ];
+
+    // Scoot (TGW) departures
+    const trDepartures = [
+        {id: 'TGW101', n: ['TR101'], dest: 'VTBS', hour: 0, min: 45},
+        {id: 'TGW502', n: ['TR502'], dest: 'RKSI', hour: 1, min: 30},
+        {id: 'TGW606', n: ['TR606'], dest: 'RJTT', hour: 2, min: 45},
+        {id: 'TGW868', n: ['TR868'], dest: 'ZSSS', hour: 4, min: 0},
+        {id: 'TGW12',  n: ['TR12'],  dest: 'YSSY', hour: 5, min: 30},
+        {id: 'TGW634', n: ['TR634'], dest: 'RPLL', hour: 6, min: 15},
+        {id: 'TGW468', n: ['TR468'], dest: 'VHHH', hour: 7, min: 15},
+        {id: 'TGW564', n: ['TR564'], dest: 'WIII', hour: 8, min: 0},
+        {id: 'TGW992', n: ['TR992'], dest: 'WMKK', hour: 8, min: 45},
+        {id: 'TGW102', n: ['TR102'], dest: 'VTBS', hour: 9, min: 20},
+        {id: 'TGW710', n: ['TR710'], dest: 'VIDP', hour: 10, min: 15},
+        {id: 'TGW150', n: ['TR150'], dest: 'RJAA', hour: 11, min: 0},
+        {id: 'TGW504', n: ['TR504'], dest: 'RKSI', hour: 11, min: 45},
+        {id: 'TGW870', n: ['TR870'], dest: 'ZSSS', hour: 12, min: 30},
+        {id: 'TGW636', n: ['TR636'], dest: 'RPLL', hour: 13, min: 45},
+        {id: 'TGW470', n: ['TR470'], dest: 'VHHH', hour: 14, min: 15},
+        {id: 'TGW566', n: ['TR566'], dest: 'WIII', hour: 15, min: 30},
+        {id: 'TGW994', n: ['TR994'], dest: 'WMKK', hour: 16, min: 0},
+        {id: 'TGW104', n: ['TR104'], dest: 'VTBS', hour: 17, min: 0},
+        {id: 'TGW608', n: ['TR608'], dest: 'RJTT', hour: 18, min: 0},
+        {id: 'TGW14',  n: ['TR14'],  dest: 'YSSY', hour: 19, min: 15},
+        {id: 'TGW506', n: ['TR506'], dest: 'RKSI', hour: 20, min: 30},
+        {id: 'TGW106', n: ['TR106'], dest: 'VTBS', hour: 21, min: 30},
+        {id: 'TGW872', n: ['TR872'], dest: 'ZSSS', hour: 22, min: 45},
+        {id: 'TGW568', n: ['TR568'], dest: 'WIII', hour: 23, min: 30}
+    ];
+
+    // Scoot (TGW) arrivals
+    const trArrivals = [
+        {id: 'TGW100', n: ['TR100'], orig: 'VTBS', hour: 4, min: 30},
+        {id: 'TGW501', n: ['TR501'], orig: 'RKSI', hour: 5, min: 45},
+        {id: 'TGW605', n: ['TR605'], orig: 'RJTT', hour: 6, min: 30},
+        {id: 'TGW867', n: ['TR867'], orig: 'ZSSS', hour: 7, min: 45},
+        {id: 'TGW633', n: ['TR633'], orig: 'RPLL', hour: 8, min: 15},
+        {id: 'TGW467', n: ['TR467'], orig: 'VHHH', hour: 9, min: 0},
+        {id: 'TGW563', n: ['TR563'], orig: 'WIII', hour: 9, min: 45},
+        {id: 'TGW991', n: ['TR991'], orig: 'WMKK', hour: 10, min: 30},
+        {id: 'TGW11',  n: ['TR11'],  orig: 'YSSY', hour: 11, min: 15},
+        {id: 'TGW103', n: ['TR103'], orig: 'VTBS', hour: 12, min: 0},
+        {id: 'TGW709', n: ['TR709'], orig: 'VIDP', hour: 12, min: 45},
+        {id: 'TGW149', n: ['TR149'], orig: 'RJAA', hour: 13, min: 30},
+        {id: 'TGW503', n: ['TR503'], orig: 'RKSI', hour: 14, min: 30},
+        {id: 'TGW869', n: ['TR869'], orig: 'ZSSS', hour: 15, min: 15},
+        {id: 'TGW635', n: ['TR635'], orig: 'RPLL', hour: 16, min: 30},
+        {id: 'TGW469', n: ['TR469'], orig: 'VHHH', hour: 17, min: 15},
+        {id: 'TGW565', n: ['TR565'], orig: 'WIII', hour: 18, min: 30},
+        {id: 'TGW993', n: ['TR993'], orig: 'WMKK', hour: 19, min: 0},
+        {id: 'TGW105', n: ['TR105'], orig: 'VTBS', hour: 20, min: 15},
+        {id: 'TGW607', n: ['TR607'], orig: 'RJTT', hour: 21, min: 30},
+        {id: 'TGW505', n: ['TR505'], orig: 'RKSI', hour: 22, min: 15},
+        {id: 'TGW871', n: ['TR871'], orig: 'ZSSS', hour: 23, min: 15}
+    ];
+
+    const flightData = [];
+
+    // Helper to add flights within window
+    const addFlights = (flights, airline, isDeparture) => {
+        for (const f of flights) {
+            const diff = (f.hour * 60 + f.min) - (hours * 60 + minutes);
+            if (diff >= -30 && diff <= 90) {
+                const timeStr = `${String(f.hour).padStart(2, '0')}:${String(f.min).padStart(2, '0')}`;
+                const entry = {
+                    id: f.id,
+                    n: f.n,
+                    a: airline,
+                    o: 'schedule',
+                    date: Date.now()
+                };
+                if (isDeparture) {
+                    entry.dp = 'WSSS';
+                    entry.ds = f.dest;
+                    entry.sdt = timeStr;
+                } else {
+                    entry.ar = 'WSSS';
+                    entry.or = f.orig;
+                    entry.sat = timeStr;
+                }
+                flightData.push(entry);
+            }
+        }
+    };
+
+    addFlights(sqDepartures, 'SIA', true);
+    addFlights(sqArrivals, 'SIA', false);
+    addFlights(trDepartures, 'TGW', true);
+    addFlights(trArrivals, 'TGW', false);
+
+    return {
+        atisData: {landing: ['20R', '20C'], departure: ['02L', '02C']},
+        flightData
+    };
 }
 
 export function loadBusData(source, clock, lang) {

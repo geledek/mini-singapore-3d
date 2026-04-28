@@ -47,5 +47,33 @@
 		},
 		"color": "#0055A5",
 		"type": "authority"
+	},
+	{
+		"id": "SIA",
+		"title": {
+			"en": "Singapore Airlines",
+			"zh-Hans": "新加坡航空",
+			"zh-Hant": "新加坡航空",
+			"ms": "Penerbangan Singapura",
+			"ta": "சிங்கப்பூர் ஏர்லைன்ஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#00205B",
+		"stripecolor": "#00205B",
+		"type": "airline"
+	},
+	{
+		"id": "TGW",
+		"title": {
+			"en": "Scoot",
+			"zh-Hans": "酷航",
+			"zh-Hant": "酷航",
+			"ms": "Scoot",
+			"ta": "ஸ்கூட்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#FFD100",
+		"stripecolor": "#FFD100",
+		"type": "airline"
 	}
 ]
