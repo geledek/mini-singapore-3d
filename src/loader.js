@@ -4,6 +4,7 @@ import GtfsRealtimeBindings from 'gtfs-realtime-bindings';
 import Pbf from 'pbf';
 import configs from './configs';
 import {isString, loadJSON, removePrefix} from './helpers/helpers';
+import {updateDistances} from './helpers/helpers-geojson';
 import {decode} from './helpers/helpers-gtfs';
 
 // Singapore MRT/LRT railways for real-time data
@@ -623,6 +624,103 @@ export function loadDynamicBusData(url) {
     return fetch(url)
         .then(response => response.arrayBuffer())
         .then(data => GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(new Uint8Array(data)));
+}
+
+/**
+ * Load LTA bus data from pre-built bus-data.json.gz.
+ * Transforms into the format expected by the GTFS bus pipeline.
+ * @param {string} dataUrl - Base data URL
+ * @param {Object} clock - Clock instance for time calculations
+ * @returns {Promise} Loaded and transformed bus data
+ */
+export function loadLtaBusData(dataUrl, clock) {
+    return loadJSON(`${dataUrl}/bus-data.json.gz`).then(data => {
+        const {features: rawFeatures, trips: rawTrips, services, stops: rawStops} = data;
+
+        // Build GeoJSON FeatureCollection (route lines + stops)
+        // Add distance properties to route features for animation
+        for (const f of rawFeatures) {
+            if (f.properties.type === 0 && f.geometry.type === 'LineString') {
+                updateDistances(f);
+            }
+        }
+
+        const featureCollection = {
+            type: 'FeatureCollection',
+            features: rawFeatures
+        };
+
+        // Transform stops to expected format: {id, coord, name}
+        const stops = rawStops.map(s => ({
+            id: s.code,
+            coord: s.coord,
+            name: s.name
+        }));
+
+        // Transform routes to expected format: {id, shortName, color, shapes}
+        const routes = services.map(svc => ({
+            id: svc.id,
+            shortName: svc.service,
+            longName: `Bus ${svc.service}`,
+            color: getRouteColor(svc.service),
+            textColor: '#FFFFFF',
+            shapes: [svc.id]  // Shape ID same as route ID
+        }));
+
+        // Transform trips: generate departure times from schedule
+        const date = clock.getDate(),
+            hours = date.getHours();
+
+        // Get current day type (before 3am counts as previous day)
+        if (hours < 3) {
+            date.setHours(hours - 24);
+        }
+
+        const trips = rawTrips.map(trip => {
+            // Generate departure times for each stop
+            // Use distance between stops to estimate travel time
+            const distances = trip.distances;
+            const totalDist = distances[distances.length - 1] || 1;
+            const departureMinutes = trip.departureTime; // minutes since midnight
+            // Convert to ms since 3am
+            const startOffset = ((departureMinutes - 180 + 1440) % 1440) * 60000;
+
+            // Estimate ~2 min per km average bus speed in Singapore
+            const totalTravelTime = totalDist * 120000; // 2 min per km in ms
+
+            const departureTimes = distances.map(d => {
+                const fraction = totalDist > 0 ? d / totalDist : 0;
+                return startOffset + Math.round(fraction * totalTravelTime);
+            });
+
+            return {
+                id: trip.id,
+                route: trip.route,
+                shape: trip.route,  // Feature ID = route ID
+                departureTimes,
+                stops: trip.stops,
+                stopSequences: trip.stops.map((_, i) => i)
+            };
+        });
+
+        return {
+            agency: 'LTA Singapore',
+            version: '2026-04-28',
+            featureCollection,
+            stops,
+            routes,
+            trips
+        };
+    });
+}
+
+function getRouteColor(service) {
+    const colors = {
+        '7': '#E91E63', '14': '#9C27B0', '36': '#3F51B5',
+        '77': '#009688', '106': '#FF5722', '111': '#795548',
+        '124': '#607D8B', '143': '#4CAF50', '167': '#FF9800', '174': '#2196F3'
+    };
+    return colors[service] || '#888888';
 }
 
 export function updateOdptUrl(url, secrets) {

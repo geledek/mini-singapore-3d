@@ -13,7 +13,7 @@ import {pickObject} from './helpers/helpers-deck';
 import * as helpersGeojson from './helpers/helpers-geojson';
 import * as helpersMapbox from './helpers/helpers-mapbox';
 import {GeoJsonLayer, ThreeLayer, Tile3DLayer, TrafficLayer} from './layers';
-import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicTrainData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
+import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicTrainData, loadLtaBusData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
 import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, ThemePanel, TrackingModePanel, TrainPanel} from './panels';
 import Plugin from './plugin';
 import themes from './themes';
@@ -82,10 +82,11 @@ export default class extends Evented {
 
         me.lang = helpers.getLang(options.lang);
         me.dataUrl = options.dataUrl;
-        me.dataSources = options.dataSources.map(({gtfsUrl, vehiclePositionUrl, color}) => ({
+        me.dataSources = options.dataSources.map(({gtfsUrl, vehiclePositionUrl, color, type}) => ({
             gtfsUrl: updateOdptUrl(gtfsUrl, options.secrets),
             vehiclePositionUrl: updateOdptUrl(vehiclePositionUrl, options.secrets),
-            color
+            color,
+            type
         }));
         me.container = typeof options.container === 'string' ?
             document.getElementById(options.container) : options.container;
@@ -851,10 +852,11 @@ export default class extends Evented {
     setDataSources(dataSources) {
         const me = this;
 
-        me.dataSources = dataSources.map(({gtfsUrl, vehiclePositionUrl, color}) => ({
+        me.dataSources = dataSources.map(({gtfsUrl, vehiclePositionUrl, color, type}) => ({
             gtfsUrl: updateOdptUrl(gtfsUrl, me.secrets),
             vehiclePositionUrl: updateOdptUrl(vehiclePositionUrl, me.secrets),
-            color
+            color,
+            type
         }));
         me.refreshBusData();
     }
@@ -2860,7 +2862,7 @@ export default class extends Evented {
     refreshBusData(replace) {
         const me = this,
             map = me.map,
-            sourceIds = new Set(me.dataSources.map(({gtfsUrl}) => gtfsUrl)),
+            sourceIds = new Set(me.dataSources.map(s => s.gtfsUrl || s.type)),
             deleteGtfs = ({id, activeBusLookup, layerIds, routeGroupIndex, colorGroupIndex}) => {
                 const styleOpacities = me.styleOpacities,
                     promises = [];
@@ -2892,13 +2894,17 @@ export default class extends Evented {
         }
 
         for (const source of me.dataSources) {
-            const id = source.gtfsUrl;
+            const id = source.gtfsUrl || source.type;
 
             if (me.gtfs.has(id) && !replace) {
                 continue;
             }
 
-            loadBusData(source, me.clock, me.lang).then(data =>
+            const loadPromise = source.type === 'lta'
+                ? loadLtaBusData(configs.dataUrl, me.clock)
+                : loadBusData(source, me.clock, me.lang);
+
+            loadPromise.then(data =>
                 me.initialized ? data : new Promise(resolve => me.once('initialized', () => resolve(data)))
             ).then(data =>
                 me.gtfs.has(id) ? deleteGtfs(me.gtfs.get(id)).then(() => data) : data

@@ -12,6 +12,7 @@ import operators from './operators';
 import airports from './airports';
 import flightStatuses from './flight-statuses';
 import poi from './poi';
+import busData from './bus-data';
 
 async function main() {
 
@@ -31,6 +32,7 @@ async function main() {
     airports();
     flightStatuses();
     poi();
+    busData();
 
 }
 

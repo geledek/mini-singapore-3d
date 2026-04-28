@@ -164,7 +164,12 @@ const configs = {
     dataUrl: './data',
 
     // Default data sources
-    dataSources: [],
+    dataSources: [
+        {
+            type: 'lta',
+            color: '#4CAF50'
+        }
+    ],
 
     // Route search URL (TODO: Implement Singapore route search)
     searchUrl: null,
