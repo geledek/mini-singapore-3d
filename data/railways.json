@@ -237,13 +237,15 @@
 			"SBS.DTL.Rochor",
 			"SBS.DTL.SixthAvenue",
 			"SBS.DTL.Stevens",
+			"SBS.DTL.SungeiBedok",
 			"SBS.DTL.Tampines",
 			"SBS.DTL.TampinesEast",
 			"SBS.DTL.TampinesWest",
 			"SBS.DTL.TanKahKee",
 			"SBS.DTL.TelokAyer",
 			"SBS.DTL.Ubi",
-			"SBS.DTL.UpperChangi"
+			"SBS.DTL.UpperChangi",
+			"SBS.DTL.Xilin"
 		]
 	},
 	{
@@ -262,6 +264,7 @@
 		"descending": "SMRT.TEL.Northbound",
 		"stations": [
 			"SMRT.TEL.Bayshore",
+			"SMRT.TEL.BedokSouth",
 			"SMRT.TEL.BrightHill",
 			"SMRT.TEL.Caldecott",
 			"SMRT.TEL.GardensbytheBay",
@@ -282,6 +285,7 @@
 			"SMRT.TEL.Siglap",
 			"SMRT.TEL.Springleaf",
 			"SMRT.TEL.Stevens",
+			"SMRT.TEL.SungeiBedok",
 			"SMRT.TEL.TanjongKatong",
 			"SMRT.TEL.TanjongRhu",
 			"SMRT.TEL.UpperThomson",

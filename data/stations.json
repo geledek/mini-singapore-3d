@@ -598,14 +598,15 @@
 		"id": "SBS.DTL.Xilin",
 		"railway": "SBS.DTL",
 		"coord": [
-			103.97,
-			1.332
+			103.9621,
+			1.334
 		],
 		"title": {
 			"en": "Xilin",
-			"zh-Hans": "锡林",
-			"zh-Hant": "锡林",
-			"ms": "Xilin"
+			"zh-Hans": "西林",
+			"zh-Hant": "西林",
+			"ms": "Xilin",
+			"ta": "சிலின்"
 		},
 		"code": "DT36",
 		"altitude": -1
@@ -614,14 +615,15 @@
 		"id": "SBS.DTL.SungeiBedok",
 		"railway": "SBS.DTL",
 		"coord": [
-			103.947,
-			1.3122
+			103.9519,
+			1.3199
 		],
 		"title": {
 			"en": "Sungei Bedok",
-			"zh-Hans": "双溪勿洛",
-			"zh-Hant": "双溪勿洛",
-			"ms": "Sungei Bedok"
+			"zh-Hans": "盛港勿洛",
+			"zh-Hant": "盛港勿洛",
+			"ms": "Sungei Bedok",
+			"ta": "சுங்கை பெடோக்"
 		},
 		"code": "DT37",
 		"altitude": -1
@@ -3635,14 +3637,15 @@
 		"id": "SMRT.TEL.BedokSouth",
 		"railway": "SMRT.TEL",
 		"coord": [
-			103.9441,
-			1.3211
+			103.9443,
+			1.3115
 		],
 		"title": {
 			"en": "Bedok South",
 			"zh-Hans": "勿洛南",
 			"zh-Hant": "勿洛南",
-			"ms": "Bedok South"
+			"ms": "Bedok South",
+			"ta": "பெடோக் சவுத்"
 		},
 		"code": "TE30",
 		"altitude": -1
@@ -3651,14 +3654,15 @@
 		"id": "SMRT.TEL.SungeiBedok",
 		"railway": "SMRT.TEL",
 		"coord": [
-			103.947,
-			1.3122
+			103.9519,
+			1.3199
 		],
 		"title": {
 			"en": "Sungei Bedok",
-			"zh-Hans": "双溪勿洛",
-			"zh-Hant": "双溪勿洛",
-			"ms": "Sungei Bedok"
+			"zh-Hans": "盛港勿洛",
+			"zh-Hant": "盛港勿洛",
+			"ms": "Sungei Bedok",
+			"ta": "சுங்கை பெடோக்"
 		},
 		"code": "TE31",
 		"altitude": -1
