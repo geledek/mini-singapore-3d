@@ -1202,11 +1202,11 @@ export default class extends Evented {
                 },
                 paint: {
                     'circle-radius': circleRadius,
-                    'circle-color': '#ffffff',
-                    'circle-opacity': 0.6,
-                    'circle-stroke-width': 1.5,
-                    'circle-stroke-color': '#000000',
-                    'circle-stroke-opacity': 0.5,
+                    'circle-color': ['case', ['==', ['get', 'dashed'], 1], '#e0e0e0', '#ffffff'],
+                    'circle-opacity': ['case', ['==', ['get', 'dashed'], 1], 0.4, 0.6],
+                    'circle-stroke-width': ['case', ['==', ['get', 'dashed'], 1], 1, 1.5],
+                    'circle-stroke-color': ['case', ['==', ['get', 'dashed'], 1], '#999999', '#000000'],
+                    'circle-stroke-opacity': ['case', ['==', ['get', 'dashed'], 1], 0.3, 0.5],
                     'circle-pitch-alignment': 'map',
                     'circle-translate': [0, -2],
                     'circle-emissive-strength': 1

@@ -393,7 +393,10 @@ export function featureWorker() {
                     // As of 2024, TEL is operational from Woodlands to Bayshore
                     // Only Sungei Bedok station is planned
                     const plannedStationSet = new Set([
-                        'SMRT.TEL.SungeiBedok'
+                        'SMRT.TEL.BedokSouth',
+                        'SMRT.TEL.SungeiBedok',
+                        'SBS.DTL.Xilin',
+                        'SBS.DTL.SungeiBedok'
                     ]);
 
                     // Check if section connects planned stations
