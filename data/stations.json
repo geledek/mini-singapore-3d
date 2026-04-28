@@ -598,8 +598,8 @@
 		"id": "SBS.DTL.Xilin",
 		"railway": "SBS.DTL",
 		"coord": [
-			103.9621,
-			1.334
+			103.9649,
+			1.3289
 		],
 		"title": {
 			"en": "Xilin",
@@ -615,8 +615,8 @@
 		"id": "SBS.DTL.SungeiBedok",
 		"railway": "SBS.DTL",
 		"coord": [
-			103.9519,
-			1.3199
+			103.95709,
+			1.32031
 		],
 		"title": {
 			"en": "Sungei Bedok",
@@ -3637,8 +3637,8 @@
 		"id": "SMRT.TEL.BedokSouth",
 		"railway": "SMRT.TEL",
 		"coord": [
-			103.9494,
-			1.3113
+			103.948276,
+			1.316613
 		],
 		"title": {
 			"en": "Bedok South",
@@ -3654,8 +3654,8 @@
 		"id": "SMRT.TEL.SungeiBedok",
 		"railway": "SMRT.TEL",
 		"coord": [
-			103.9519,
-			1.3199
+			103.95709,
+			1.32031
 		],
 		"title": {
 			"en": "Sungei Bedok",
