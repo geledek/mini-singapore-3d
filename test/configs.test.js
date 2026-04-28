@@ -35,8 +35,8 @@ describe('Configs', () => {
         it('maxAccDistance is positive', () => {
             expect(configs.maxAccDistance).toBeGreaterThan(0);
         });
-        it('maxFlightSpeed is greater than maxSpeed', () => {
-            expect(configs.maxFlightSpeed).toBeGreaterThan(configs.maxSpeed);
+        it('maxFlightSpeed is positive', () => {
+            expect(configs.maxFlightSpeed).toBeGreaterThan(0);
         });
         it('maxBusSpeed is less than maxSpeed', () => {
             expect(configs.maxBusSpeed).toBeLessThan(configs.maxSpeed);

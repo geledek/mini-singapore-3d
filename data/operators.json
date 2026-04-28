@@ -75,5 +75,159 @@
 		"tailcolor": "#FFD100",
 		"stripecolor": "#FFD100",
 		"type": "airline"
+	},
+	{
+		"id": "THA",
+		"title": {
+			"en": "Thai Airways",
+			"zh-Hans": "泰国航空",
+			"zh-Hant": "泰國航空",
+			"ms": "Thai Airways",
+			"ta": "தாய் ஏர்வேஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#4B0082",
+		"stripecolor": "#4B0082",
+		"type": "airline"
+	},
+	{
+		"id": "ANA",
+		"title": {
+			"en": "All Nippon Airways",
+			"zh-Hans": "全日空",
+			"zh-Hant": "全日空",
+			"ms": "All Nippon Airways",
+			"ta": "ஆல் நிப்பன் ஏர்வேஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#00288C",
+		"stripecolor": "#00288C",
+		"type": "airline"
+	},
+	{
+		"id": "DLH",
+		"title": {
+			"en": "Lufthansa",
+			"zh-Hans": "汉莎航空",
+			"zh-Hant": "漢莎航空",
+			"ms": "Lufthansa",
+			"ta": "லுஃப்தான்சா"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#05164D",
+		"stripecolor": "#FFD700",
+		"type": "airline"
+	},
+	{
+		"id": "UAL",
+		"title": {
+			"en": "United Airlines",
+			"zh-Hans": "美联航",
+			"zh-Hant": "美聯航",
+			"ms": "United Airlines",
+			"ta": "யுனைடெட் ஏர்லைன்ஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#002244",
+		"stripecolor": "#0033A0",
+		"type": "airline"
+	},
+	{
+		"id": "AIC",
+		"title": {
+			"en": "Air India",
+			"zh-Hans": "印度航空",
+			"zh-Hant": "印度航空",
+			"ms": "Air India",
+			"ta": "ஏர் இந்தியா"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#DC143C",
+		"stripecolor": "#FF8C00",
+		"type": "airline"
+	},
+	{
+		"id": "EVA",
+		"title": {
+			"en": "EVA Air",
+			"zh-Hans": "长荣航空",
+			"zh-Hant": "長榮航空",
+			"ms": "EVA Air",
+			"ta": "ஈவா ஏர்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#006747",
+		"stripecolor": "#F77F00",
+		"type": "airline"
+	},
+	{
+		"id": "CCA",
+		"title": {
+			"en": "Air China",
+			"zh-Hans": "中国国航",
+			"zh-Hant": "中國國航",
+			"ms": "Air China",
+			"ta": "ஏர் சைனா"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#CC0000",
+		"stripecolor": "#CC0000",
+		"type": "airline"
+	},
+	{
+		"id": "AAR",
+		"title": {
+			"en": "Asiana Airlines",
+			"zh-Hans": "韩亚航空",
+			"zh-Hant": "韓亞航空",
+			"ms": "Asiana Airlines",
+			"ta": "ஆசியானா ஏர்லைன்ஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#C8102E",
+		"stripecolor": "#C8102E",
+		"type": "airline"
+	},
+	{
+		"id": "THY",
+		"title": {
+			"en": "Turkish Airlines",
+			"zh-Hans": "土耳其航空",
+			"zh-Hant": "土耳其航空",
+			"ms": "Turkish Airlines",
+			"ta": "டர்கிஷ் ஏர்லைன்ஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#C8102E",
+		"stripecolor": "#063B6C",
+		"type": "airline"
+	},
+	{
+		"id": "SWR",
+		"title": {
+			"en": "Swiss",
+			"zh-Hans": "瑞士航空",
+			"zh-Hant": "瑞士航空",
+			"ms": "Swiss",
+			"ta": "ஸ்விஸ்"
+		},
+		"color": "#FFFFFF",
+		"tailcolor": "#CC0000",
+		"stripecolor": "#CC0000",
+		"type": "airline"
+	},
+	{
+		"id": "ANZ",
+		"title": {
+			"en": "Air New Zealand",
+			"zh-Hans": "新西兰航空",
+			"zh-Hant": "紐西蘭航空",
+			"ms": "Air New Zealand",
+			"ta": "ஏர் நியூஸிலாந்து"
+		},
+		"color": "#000000",
+		"tailcolor": "#000000",
+		"stripecolor": "#000000",
+		"type": "airline"
 	}
 ]

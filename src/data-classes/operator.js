@@ -32,6 +32,12 @@ export default class {
          * @type {string}
          */
         me.stripecolor = params.stripecolor;
+
+        /**
+         * Operator type ('railway', 'airline', 'authority').
+         * @type {string}
+         */
+        me.type = params.type;
     }
 
 }

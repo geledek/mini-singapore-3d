@@ -36,8 +36,8 @@ export default class extends Panel {
                 ` (${dict['sbs']})<br>`,
                 lastDynamicUpdate['LTA'] || 'N/A',
                 ` (${dict['lta']})<br>`,
-                lastDynamicUpdate['Changi'] || 'N/A',
-                ` (${dict['changi']})<br>`,
+                lastDynamicUpdate['opensky'] || lastDynamicUpdate['schedule'] || 'N/A',
+                ` (${dict['opensky']})<br>`,
                 gtfsArray.filter(({date}) => date).map(({date, agency}) => `${date} (${agency})`).join('<br>'),
                 '</div>',
                 gtfsArray.length > 0 ? [

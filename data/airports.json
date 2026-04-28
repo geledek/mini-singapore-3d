@@ -180,5 +180,77 @@
 			"zh-Hant": "巴黎戴高樂"
 		},
 		"direction": "N"
+	},
+	{
+		"id": "EDDM",
+		"title": {
+			"en": "Munich",
+			"zh-Hans": "慕尼黑",
+			"zh-Hant": "慕尼黑"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "KSFO",
+		"title": {
+			"en": "San Francisco",
+			"zh-Hans": "旧金山",
+			"zh-Hant": "舊金山"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "VOBL",
+		"title": {
+			"en": "Bangalore",
+			"zh-Hans": "班加罗尔",
+			"zh-Hant": "班加羅爾"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "RCTP",
+		"title": {
+			"en": "Taipei Taoyuan",
+			"zh-Hans": "台北桃园",
+			"zh-Hant": "台北桃園"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "ZBAA",
+		"title": {
+			"en": "Beijing Capital",
+			"zh-Hans": "北京首都",
+			"zh-Hant": "北京首都"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "LTFM",
+		"title": {
+			"en": "Istanbul",
+			"zh-Hans": "伊斯坦布尔",
+			"zh-Hant": "伊斯坦堡"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "LSZH",
+		"title": {
+			"en": "Zurich",
+			"zh-Hans": "苏黎世",
+			"zh-Hant": "蘇黎世"
+		},
+		"direction": "N"
+	},
+	{
+		"id": "NZAA",
+		"title": {
+			"en": "Auckland",
+			"zh-Hans": "奥克兰",
+			"zh-Hant": "奧克蘭"
+		},
+		"direction": "S"
 	}
 ]

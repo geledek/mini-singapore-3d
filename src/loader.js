@@ -413,6 +413,122 @@ function generateSimulatedFlights() {
         {id: 'TGW871', n: ['TR871'], orig: 'ZSSS', hour: 23, min: 15}
     ];
 
+    // Thai Airways (THA) - ~8 flights/day
+    const thaDepartures = [
+        {id: 'THA851', n: ['TG851'], dest: 'VTBS', hour: 0, min: 15},
+        {id: 'THA403', n: ['TG403'], dest: 'VTBS', hour: 7, min: 50},
+        {id: 'THA405', n: ['TG405'], dest: 'VTBS', hour: 13, min: 20},
+        {id: 'THA407', n: ['TG407'], dest: 'VTBS', hour: 19, min: 10}
+    ];
+    const thaArrivals = [
+        {id: 'THA402', n: ['TG402'], orig: 'VTBS', hour: 6, min: 45},
+        {id: 'THA404', n: ['TG404'], orig: 'VTBS', hour: 12, min: 15},
+        {id: 'THA406', n: ['TG406'], orig: 'VTBS', hour: 18, min: 5},
+        {id: 'THA852', n: ['TG852'], orig: 'VTBS', hour: 23, min: 30}
+    ];
+
+    // ANA - All Nippon Airways (~6 flights/day)
+    const anaDepartures = [
+        {id: 'ANA842', n: ['NH842'], dest: 'RJTT', hour: 1, min: 10},
+        {id: 'ANA804', n: ['NH804'], dest: 'RJAA', hour: 9, min: 40},
+        {id: 'ANA844', n: ['NH844'], dest: 'RJTT', hour: 17, min: 20}
+    ];
+    const anaArrivals = [
+        {id: 'ANA841', n: ['NH841'], orig: 'RJTT', hour: 7, min: 20},
+        {id: 'ANA803', n: ['NH803'], orig: 'RJAA', hour: 15, min: 50},
+        {id: 'ANA843', n: ['NH843'], orig: 'RJTT', hour: 23, min: 10}
+    ];
+
+    // Lufthansa (DLH) - ~4 flights/day
+    const dlhDepartures = [
+        {id: 'DLH779', n: ['LH779'], dest: 'EDDF', hour: 23, min: 20},
+        {id: 'DLH783', n: ['LH783'], dest: 'EDDM', hour: 11, min: 30}
+    ];
+    const dlhArrivals = [
+        {id: 'DLH778', n: ['LH778'], orig: 'EDDF', hour: 18, min: 40},
+        {id: 'DLH782', n: ['LH782'], orig: 'EDDM', hour: 6, min: 50}
+    ];
+
+    // United Airlines (UAL) - ~4 flights/day
+    const ualDepartures = [
+        {id: 'UAL1', n: ['UA1'], dest: 'KLAX', hour: 9, min: 50},
+        {id: 'UAL22', n: ['UA22'], dest: 'KSFO', hour: 1, min: 40}
+    ];
+    const ualArrivals = [
+        {id: 'UAL2', n: ['UA2'], orig: 'KLAX', hour: 6, min: 10},
+        {id: 'UAL21', n: ['UA21'], orig: 'KSFO', hour: 17, min: 40}
+    ];
+
+    // Air India (AIC) - ~6 flights/day
+    const aicDepartures = [
+        {id: 'AIC381', n: ['AI381'], dest: 'VIDP', hour: 8, min: 20},
+        {id: 'AIC383', n: ['AI383'], dest: 'VABB', hour: 14, min: 40},
+        {id: 'AIC385', n: ['AI385'], dest: 'VOBL', hour: 21, min: 10}
+    ];
+    const aicArrivals = [
+        {id: 'AIC380', n: ['AI380'], orig: 'VIDP', hour: 5, min: 50},
+        {id: 'AIC382', n: ['AI382'], orig: 'VABB', hour: 11, min: 30},
+        {id: 'AIC384', n: ['AI384'], orig: 'VOBL', hour: 19, min: 50}
+    ];
+
+    // EVA Air (EVA) - ~6 flights/day
+    const evaDepartures = [
+        {id: 'EVA225', n: ['BR225'], dest: 'RCTP', hour: 8, min: 10},
+        {id: 'EVA227', n: ['BR227'], dest: 'RCTP', hour: 14, min: 50},
+        {id: 'EVA229', n: ['BR229'], dest: 'RCTP', hour: 21, min: 40}
+    ];
+    const evaArrivals = [
+        {id: 'EVA226', n: ['BR226'], orig: 'RCTP', hour: 6, min: 0},
+        {id: 'EVA228', n: ['BR228'], orig: 'RCTP', hour: 12, min: 30},
+        {id: 'EVA230', n: ['BR230'], orig: 'RCTP', hour: 19, min: 20}
+    ];
+
+    // Air China (CCA) - ~6 flights/day
+    const ccaDepartures = [
+        {id: 'CCA769', n: ['CA769'], dest: 'ZBAA', hour: 8, min: 55},
+        {id: 'CCA975', n: ['CA975'], dest: 'ZSSS', hour: 14, min: 10},
+        {id: 'CCA771', n: ['CA771'], dest: 'ZBAA', hour: 20, min: 45}
+    ];
+    const ccaArrivals = [
+        {id: 'CCA770', n: ['CA770'], orig: 'ZBAA', hour: 7, min: 10},
+        {id: 'CCA976', n: ['CA976'], orig: 'ZSSS', hour: 12, min: 50},
+        {id: 'CCA768', n: ['CA768'], orig: 'ZBAA', hour: 18, min: 30}
+    ];
+
+    // Asiana Airlines (AAR) - ~4 flights/day
+    const aarDepartures = [
+        {id: 'AAR741', n: ['OZ741'], dest: 'RKSI', hour: 1, min: 25},
+        {id: 'AAR743', n: ['OZ743'], dest: 'RKSI', hour: 15, min: 55}
+    ];
+    const aarArrivals = [
+        {id: 'AAR742', n: ['OZ742'], orig: 'RKSI', hour: 8, min: 40},
+        {id: 'AAR744', n: ['OZ744'], orig: 'RKSI', hour: 22, min: 30}
+    ];
+
+    // Turkish Airlines (THY) - ~2 flights/day
+    const thyDepartures = [
+        {id: 'THY55', n: ['TK55'], dest: 'LTFM', hour: 23, min: 45}
+    ];
+    const thyArrivals = [
+        {id: 'THY54', n: ['TK54'], orig: 'LTFM', hour: 17, min: 25}
+    ];
+
+    // Swiss (SWR) - ~2 flights/day
+    const swrDepartures = [
+        {id: 'SWR167', n: ['LX167'], dest: 'LSZH', hour: 23, min: 55}
+    ];
+    const swrArrivals = [
+        {id: 'SWR166', n: ['LX166'], orig: 'LSZH', hour: 18, min: 50}
+    ];
+
+    // Air New Zealand (ANZ) - ~2 flights/day
+    const anzDepartures = [
+        {id: 'ANZ282', n: ['NZ282'], dest: 'NZAA', hour: 10, min: 30}
+    ];
+    const anzArrivals = [
+        {id: 'ANZ281', n: ['NZ281'], orig: 'NZAA', hour: 5, min: 15}
+    ];
+
     const flightData = [];
 
     // Helper to add flights within window
@@ -446,6 +562,28 @@ function generateSimulatedFlights() {
     addFlights(sqArrivals, 'SIA', false);
     addFlights(trDepartures, 'TGW', true);
     addFlights(trArrivals, 'TGW', false);
+    addFlights(thaDepartures, 'THA', true);
+    addFlights(thaArrivals, 'THA', false);
+    addFlights(anaDepartures, 'ANA', true);
+    addFlights(anaArrivals, 'ANA', false);
+    addFlights(dlhDepartures, 'DLH', true);
+    addFlights(dlhArrivals, 'DLH', false);
+    addFlights(ualDepartures, 'UAL', true);
+    addFlights(ualArrivals, 'UAL', false);
+    addFlights(aicDepartures, 'AIC', true);
+    addFlights(aicArrivals, 'AIC', false);
+    addFlights(evaDepartures, 'EVA', true);
+    addFlights(evaArrivals, 'EVA', false);
+    addFlights(ccaDepartures, 'CCA', true);
+    addFlights(ccaArrivals, 'CCA', false);
+    addFlights(aarDepartures, 'AAR', true);
+    addFlights(aarArrivals, 'AAR', false);
+    addFlights(thyDepartures, 'THY', true);
+    addFlights(thyArrivals, 'THY', false);
+    addFlights(swrDepartures, 'SWR', true);
+    addFlights(swrArrivals, 'SWR', false);
+    addFlights(anzDepartures, 'ANZ', true);
+    addFlights(anzArrivals, 'ANZ', false);
 
     return {
         atisData: {landing: ['20R', '20C'], departure: ['02L', '02C']},

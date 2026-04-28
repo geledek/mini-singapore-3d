@@ -105,6 +105,8 @@ export default class extends Evented {
 
         me.hiddenRailways = new Set();
         me.busLinesEnabled = false;
+        me.flightsEnabled = true;
+        me.hiddenAirlines = new Set();
         me.searchMode = 'none';
         me.viewMode = configs.defaultViewMode;
         me.trackingMode = options.trackingMode;
@@ -760,9 +762,49 @@ export default class extends Evented {
     }
 
     /**
-     * Returns a MercatorCoordinate object that represents the initial centerpoint
-     * of the map as the origin of the mercator coordinates.
-     * @returns {MercatorCoordinate} The origin of the mercator coordinates
+     * Enables air traffic visualization.
+     */
+    enableFlights() {
+        const me = this;
+
+        me.flightsEnabled = true;
+        me.refreshRealtimeFlightData();
+    }
+
+    /**
+     * Disables air traffic visualization and stops all active flights.
+     */
+    disableFlights() {
+        const me = this;
+
+        me.flightsEnabled = false;
+        for (const flight of me.activeFlightLookup.values()) {
+            me.stopFlight(flight);
+        }
+    }
+
+    /**
+     * Toggles visibility of a specific airline's flights.
+     * @param {string} airlineId - Operator ID (e.g., 'SIA', 'TGW')
+     * @param {boolean} visible - Whether to show flights
+     */
+    toggleAirline(airlineId, visible) {
+        const me = this;
+
+        if (visible) {
+            me.hiddenAirlines.delete(airlineId);
+        } else {
+            me.hiddenAirlines.add(airlineId);
+            // Stop active flights for this airline
+            for (const flight of me.activeFlightLookup.values()) {
+                if (flight.a && flight.a.id === airlineId) {
+                    me.stopFlight(flight);
+                }
+            }
+        }
+    }
+
+    /**
      */
     getModelOrigin() {
         return this.modelOrigin;
@@ -1567,7 +1609,11 @@ export default class extends Evented {
             map.addControl(control);
         }
 
-        me.layerPanel = new LayerPanel({layers: me.plugins, railways: [...me.railways.getAll()]});
+        me.layerPanel = new LayerPanel({
+            layers: me.plugins,
+            railways: [...me.railways.getAll()],
+            airlines: [...me.operators.getAll()].filter(op => op.type === 'airline')
+        });
         me.trackingModePanel = new TrackingModePanel();
         me.themePanel = new ThemePanel();
         me.aboutPanel = new AboutPanel();
@@ -2178,6 +2224,14 @@ export default class extends Evented {
             id = flight.id;
 
         if (activeFlightLookup.has(id)) {
+            return;
+        }
+
+        // Skip if flights disabled or airline hidden
+        if (!me.flightsEnabled) {
+            return;
+        }
+        if (flight.a && me.hiddenAirlines.has(flight.a.id)) {
             return;
         }
 
