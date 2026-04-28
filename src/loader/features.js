@@ -8,6 +8,7 @@ import turfLength from '@turf/length';
 import {coordEach} from '@turf/meta';
 import nearestPointOnLine from '@turf/nearest-point-on-line';
 import truncate from '@turf/truncate';
+import turfBearing from '@turf/bearing';
 import union from '@turf/union';
 import {destination, lineOffset, lineSlice, lineSliceAlong, nearestPointProps} from '../turf';
 import {includes, valueOrDefault} from '../helpers/helpers';
@@ -102,6 +103,21 @@ function easeInOutQuad(t) {
         return .5 * t * t;
     }
     return -.5 * ((--t) * (t - 2) - 1);
+}
+
+function createCrossShape(center, unit, bearing) {
+    // Create a cross from two perpendicular elongated ovals
+    const armLength = unit * 0.7;
+    const armWidth = unit * 0.35;
+
+    function makeArm(b) {
+        const p1 = getCoord(destination(center, armLength, b));
+        const p2 = getCoord(destination(center, armLength, b + 180));
+
+        return buffer(lineString([p1, p2]), armWidth);
+    }
+
+    return union(makeArm(bearing), makeArm(bearing + 90));
 }
 
 export default async function(railwayLookup, stationLookup) {
@@ -454,6 +470,8 @@ export function featureWorker() {
                 }
                 coords = deduped;
             }
+
+            layer.coords = coords;
             const feature = coords.length === 1 ? point(coords[0]) : lineString(coords);
 
             layer.features.push(buffer(feature, unit * 0.6));
@@ -461,16 +479,32 @@ export function featureWorker() {
             layer.altitude = altitude;
         }
 
+        // Determine if this is an interchange (multiple railways)
+        const uniqueRailways = [...new Set(ids.map(id => id.split('.').slice(0, 2).join('.')))];
+        const isInterchange = uniqueRailways.length > 1;
+
         if (ug.features.length) {
-            // If there are connections, add extra features
-            if (ug.connectionCoords.length > 1) {
-                ug.features.push(buffer(lineString(ug.connectionCoords), unit / 4));
+            let feature;
+
+            if (isInterchange && ug.coords && ug.coords.length >= 1) {
+                const center = ug.coords[0];
+                const firstId = ids[0];
+                const railwayFeature = featureLookup[stationLookup[firstId].railway];
+                const nearest = nearestPointOnLine(railwayFeature, center);
+                const nearIdx = nearest.properties.index || 0;
+                const railCoords = getCoords(railwayFeature);
+                const nextIdx = Math.min(nearIdx + 1, railCoords.length - 1);
+                const bearing = turfBearing(railCoords[nearIdx], railCoords[nextIdx]);
+
+                feature = createCrossShape(center, unit, bearing);
+            } else {
+                if (ug.connectionCoords.length > 1) {
+                    ug.features.push(buffer(lineString(ug.connectionCoords), unit / 4));
+                }
+                feature = union(...ug.features);
             }
 
-            const feature = union(...ug.features);
-
             setAltitude(feature, ug.altitude * unit * 1000);
-            // Planned station dashed outline if any id is planned (e.g., TEL future)
             const plannedStationSet = new Set([
                 'SMRT.TEL.SungeiBedok'
             ]);
@@ -492,12 +526,25 @@ export function featureWorker() {
             featureArray.push(feature);
         }
         if (og.features.length) {
-            // If there are connections, add extra features
-            if (og.connectionCoords.length > 1) {
-                og.features.push(buffer(lineString(og.connectionCoords), unit / 4));
-            }
+            let feature;
 
-            const feature = union(...og.features);
+            if (isInterchange && og.coords && og.coords.length >= 1) {
+                const center = og.coords[0];
+                const firstId = ids[0];
+                const railwayFeature = featureLookup[stationLookup[firstId].railway];
+                const nearest = nearestPointOnLine(railwayFeature, center);
+                const nearIdx = nearest.properties.index || 0;
+                const railCoords = getCoords(railwayFeature);
+                const nextIdx = Math.min(nearIdx + 1, railCoords.length - 1);
+                const bearing = turfBearing(railCoords[nearIdx], railCoords[nextIdx]);
+
+                feature = createCrossShape(center, unit, bearing);
+            } else {
+                if (og.connectionCoords.length > 1) {
+                    og.features.push(buffer(lineString(og.connectionCoords), unit / 4));
+                }
+                feature = union(...og.features);
+            }
 
             const plannedStationSet = new Set([
                 'SMRT.TEL.SungeiBedok'
@@ -518,6 +565,24 @@ export function featureWorker() {
                 dashed: dashedStation
             };
             featureArray.push(feature);
+        }
+
+        // Emit station center point features (type 3) for circle rendering
+        const centerCoord = (og.coords && og.coords.length > 0) ? og.coords[0] :
+            (ug.coords && ug.coords.length > 0) ? ug.coords[0] : null;
+
+        if (centerCoord) {
+            const stationRailways = [...new Set(ids.map(id => id.split('.').slice(0, 2).join('.')))];
+
+            featureArray.push(point(centerCoord, {
+                id: `${ids[0]}.point.${zoom}`,
+                type: 3,
+                zoom,
+                interchange: isInterchange ? 1 : 0,
+                railways: stationRailways,
+                ids,
+                altitude: (og.coords && og.coords.length > 0) ? 0 : (ug.altitude || 0)
+            }));
         }
     }
 

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- 3D isometric train car in red tones -->
+  <!-- Top face (elongated) -->
+  <polygon points="6,6 26,3 28,8 8,11" fill="#ff4444"/>
+  <!-- Front face -->
+  <polygon points="6,6 8,11 8,22 6,17" fill="#dd2222"/>
+  <!-- Side face (long body) -->
+  <polygon points="8,11 28,8 28,19 8,22" fill="#bb1111"/>
+  <!-- Windows on side -->
+  <rect x="10" y="12" width="4" height="3" rx="0.5" fill="#ff6666" opacity="0.5" transform="skewY(-1.5)"/>
+  <rect x="16" y="11" width="4" height="3" rx="0.5" fill="#ff6666" opacity="0.5" transform="skewY(-1.5)"/>
+  <rect x="22" y="10" width="4" height="3" rx="0.5" fill="#ff6666" opacity="0.5" transform="skewY(-1.5)"/>
+  <!-- Red stripe -->
+  <line x1="8" y1="18" x2="28" y2="15" stroke="#ff3333" stroke-width="1.5"/>
+  <!-- Bottom edge -->
+  <line x1="8" y1="22" x2="28" y2="19" stroke="#880000" stroke-width="1"/>
+  <!-- Wheels -->
+  <circle cx="12" cy="24" r="1.5" fill="#666"/>
+  <circle cx="24" cy="21" r="1.5" fill="#666"/>
+</svg>

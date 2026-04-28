@@ -1116,6 +1116,14 @@
     letter-spacing: 0.08em;
     padding: 10px 4px 4px;
 }
+.mini-singapore-3d .section-arrow {
+    transition: transform 0.2s;
+    transform: rotate(-90deg);
+    font-size: 12px;
+}
+.mini-singapore-3d .section-arrow.section-arrow-open {
+    transform: rotate(0deg);
+}
 .mini-singapore-3d .railway-toggle-row {
     display: flex;
     align-items: center;
