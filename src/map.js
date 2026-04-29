@@ -3037,7 +3037,15 @@ export default class extends Evented {
                             0
                         ],
                         'circle-stroke-width': 2,
-                        'circle-stroke-color': source.color || '#4CAF50',
+                        'circle-stroke-color': [
+                            'match',
+                            ['to-number', ['feature-state', 'operator-idx']],
+                            1, '#7B2D8B',
+                            2, '#006B3F',
+                            3, '#003D7C',
+                            4, '#EE2E24',
+                            '#4CAF50'
+                        ],
                         'circle-stroke-opacity': [
                             'case',
                             ['to-boolean', ['feature-state', 'stop-highlight']],
@@ -4101,7 +4109,10 @@ export default class extends Evented {
         if ((markedObject && markedObject.type === 'bus' && markedObject.gtfsId === gtfsId && markedObject.trip.shape === id) ||
             (trackedObject && trackedObject.type === 'bus' && trackedObject.gtfsId === gtfsId && trackedObject.trip.shape === id)) {
             const gtfs = me.gtfs.get(gtfsId),
-                color = gtfs.routeLookup.get(trip.route).color,
+                routeInfo = gtfs.routeLookup.get(trip.route),
+                color = routeInfo.color,
+                operator = routeInfo.operator || '',
+                operatorIdx = {'SBST': 1, 'TTS': 2, 'GAS': 3, 'SMRT': 4}[operator] || 0,
                 bus = markedObject && markedObject.type === 'bus' ? markedObject : trackedObject,
                 nextStopIdx = bus ? bus.sectionIndex + bus.sectionLength : -1;
 
@@ -4112,7 +4123,8 @@ export default class extends Evented {
                 const stopId = trip.stops[i];
                 map.setFeatureState({source, id: stopId}, {
                     'stop-highlight': true,
-                    'next-stop': i === nextStopIdx
+                    'next-stop': i === nextStopIdx,
+                    'operator-idx': operatorIdx
                 });
             }
         } else {
