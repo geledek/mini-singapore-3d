@@ -2967,7 +2967,7 @@ export default class extends Evented {
                 });
 
                 for (const key of ['busroute', 'busroute-highlighted']) {
-                    const width = key === 'busroute' ? ['get', 'width'] : ['*', ['get', 'width'], 3];
+                    const width = key === 'busroute' ? ['get', 'width'] : 2;
 
                     me.addLayer({
                         id: `${key}-${id}-og-`,
@@ -2992,7 +2992,7 @@ export default class extends Evented {
                                         ],
                                         ['!', ['to-boolean', ['feature-state', 'hidden']]]
                                     ],
-                                    0.8,
+                                    0.6,
                                     0
                                 ]
                             }[key],
@@ -3011,7 +3011,11 @@ export default class extends Evented {
                             ],
                             'line-dasharray': {
                                 'busroute': ['literal', [1, 0]],
-                                'busroute-highlighted': ['literal', [2, 2]]
+                                'busroute-highlighted': ['literal', [4, 3]]
+                            }[key],
+                            'line-blur': {
+                                'busroute': 0,
+                                'busroute-highlighted': 1
                             }[key],
                             'line-emissive-strength': 1
                         },
@@ -3036,8 +3040,8 @@ export default class extends Evented {
                 }
 
                 for (const zoom of [14, 15, 16, 17, 18]) {
-                    // Bus stops as glowing circles (light-stick style)
-                    // Only visible when route is highlighted
+                    // Bus stops as pin markers
+                    // Only visible when route is highlighted (stop-highlight state)
                     me.addLayer({
                         id: `busstops-${id}-og-${zoom}`,
                         type: 'circle',
@@ -3049,26 +3053,30 @@ export default class extends Evented {
                         paint: {
                             'circle-radius': [
                                 'interpolate', ['linear'], ['zoom'],
-                                14, 2,
-                                18, 5,
-                                22, 12
+                                14, 3,
+                                16, 5,
+                                18, 7,
+                                22, 14
                             ],
                             'circle-color': '#FFFFFF',
                             'circle-opacity': [
                                 'case',
                                 ['to-boolean', ['feature-state', 'stop-highlight']],
-                                0.9,
+                                0.95,
                                 0
                             ],
-                            'circle-stroke-width': 1,
-                            'circle-stroke-color': '#FFFFFF',
+                            'circle-stroke-width': [
+                                'interpolate', ['linear'], ['zoom'],
+                                14, 1.5,
+                                18, 3
+                            ],
+                            'circle-stroke-color': '#7B2D8B',
                             'circle-stroke-opacity': [
                                 'case',
                                 ['to-boolean', ['feature-state', 'stop-highlight']],
-                                0.5,
+                                0.9,
                                 0
                             ],
-                            'circle-blur': 0.3,
                             'circle-pitch-alignment': 'map',
                             'circle-emissive-strength': 1
                         },
@@ -4137,8 +4145,18 @@ export default class extends Evented {
                 color = gtfs.routeLookup.get(trip.route).color;
 
             map.setFeatureState({source, id}, {'trip-highlight': color || gtfs.color});
+
+            // Highlight bus stops along this trip
+            for (const stopId of trip.stops) {
+                map.setFeatureState({source, id: stopId}, {'stop-highlight': true});
+            }
         } else {
             map.removeFeatureState({source, id}, 'trip-highlight');
+
+            // Remove stop highlights
+            for (const stopId of trip.stops) {
+                map.removeFeatureState({source, id: stopId}, 'stop-highlight');
+            }
         }
     }
 

@@ -151,9 +151,9 @@ vec3 position0 = ( position + vec3( 0.0, offsetY, offsetZ ) ) * vec3( scaleX, sc
 #endif
 
 #ifdef BUS
-// Ensure buses stay visible at high zoom (min scale = zoom 16 equivalent)
-float busMinScale = getScale( min( zoom0, 16.0 ), modelScale );
-float busScale = max( scale0, busMinScale * 0.4 );
+// Ensure buses stay visible at all zoom levels
+// Use a fixed minimum scale so buses never shrink below visible size
+float busScale = max( scale0, modelScale * 25.0 );
 vec3 position0 = position * busScale;
 #endif
 
