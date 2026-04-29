@@ -3021,41 +3021,23 @@ export default class extends Evented {
                 }
 
                 // Bus stops as pin markers — single layer, always visible
-                // Color matches operator, next stop is larger
+                // Only shown when route is highlighted (stop-highlight state)
                 map.addLayer({
                     id: `busstops-${id}-og`,
                     type: 'circle',
                     source: id,
                     filter: ['==', ['get', 'type'], 1],
                     paint: {
-                        'circle-radius': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            ['interpolate', ['linear'], ['zoom'], 14, 7, 16, 9, 18, 12, 22, 20],
-                            ['interpolate', ['linear'], ['zoom'], 14, 3, 16, 4, 18, 6, 22, 12]
-                        ],
-                        'circle-color': [
-                            'match',
-                            ['to-number', ['feature-state', 'operator-idx']],
-                            1, '#7B2D8B',
-                            2, '#006B3F',
-                            3, '#003D7C',
-                            4, '#EE2E24',
-                            '#FFFFFF'
-                        ],
+                        'circle-radius': ['interpolate', ['linear'], ['zoom'], 14, 4, 16, 5, 18, 7, 22, 14],
+                        'circle-color': '#FFFFFF',
                         'circle-opacity': [
                             'case',
                             ['to-boolean', ['feature-state', 'stop-highlight']],
                             0.9,
                             0
                         ],
-                        'circle-stroke-width': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            3,
-                            1.5
-                        ],
-                        'circle-stroke-color': '#FFFFFF',
+                        'circle-stroke-width': 2,
+                        'circle-stroke-color': source.color || '#4CAF50',
                         'circle-stroke-opacity': [
                             'case',
                             ['to-boolean', ['feature-state', 'stop-highlight']],
@@ -3067,36 +3049,6 @@ export default class extends Evented {
                     }
                 }, 'railways-og-13');
                 layerIds.add(`busstops-${id}-og`);
-
-                // Next stop pulse ring (larger, semi-transparent)
-                map.addLayer({
-                    id: `busstops-next-${id}-og`,
-                    type: 'circle',
-                    source: id,
-                    filter: ['==', ['get', 'type'], 1],
-                    paint: {
-                        'circle-radius': ['interpolate', ['linear'], ['zoom'], 14, 10, 16, 13, 18, 16, 22, 25],
-                        'circle-color': [
-                            'match',
-                            ['to-number', ['feature-state', 'operator-idx']],
-                            1, '#7B2D8B',
-                            2, '#006B3F',
-                            3, '#003D7C',
-                            4, '#EE2E24',
-                            '#FFFFFF'
-                        ],
-                        'circle-opacity': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            0.3,
-                            0
-                        ],
-                        'circle-blur': 1,
-                        'circle-pitch-alignment': 'map',
-                        'circle-emissive-strength': 1
-                    }
-                }, 'railways-og-13');
-                layerIds.add(`busstops-next-${id}-og`);
 
                 me.addLayer({
                     id: `busstops-poi-${id}`,
@@ -4149,10 +4101,7 @@ export default class extends Evented {
         if ((markedObject && markedObject.type === 'bus' && markedObject.gtfsId === gtfsId && markedObject.trip.shape === id) ||
             (trackedObject && trackedObject.type === 'bus' && trackedObject.gtfsId === gtfsId && trackedObject.trip.shape === id)) {
             const gtfs = me.gtfs.get(gtfsId),
-                routeInfo = gtfs.routeLookup.get(trip.route),
-                color = routeInfo.color,
-                operator = routeInfo.operator || '',
-                operatorIdx = {'SBST': 1, 'TTS': 2, 'GAS': 3, 'SMRT': 4}[operator] || 0,
+                color = gtfs.routeLookup.get(trip.route).color,
                 bus = markedObject && markedObject.type === 'bus' ? markedObject : trackedObject,
                 nextStopIdx = bus ? bus.sectionIndex + bus.sectionLength : -1;
 
@@ -4163,8 +4112,7 @@ export default class extends Evented {
                 const stopId = trip.stops[i];
                 map.setFeatureState({source, id: stopId}, {
                     'stop-highlight': true,
-                    'next-stop': i === nextStopIdx,
-                    'operator-idx': operatorIdx
+                    'next-stop': i === nextStopIdx
                 });
             }
         } else {
