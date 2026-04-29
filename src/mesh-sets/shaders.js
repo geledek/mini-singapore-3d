@@ -176,7 +176,6 @@ vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + tra
 vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * scale0 );
 #endif
 #endif
-#endif
 `;
 
 export function updateVertexShader(shader) {
