@@ -2957,7 +2957,7 @@ export default class extends Evented {
                     vehiclePositionUrl: source.vehiclePositionUrl,
                     color: source.color,
                     routeGroupIndex: me.trafficLayer.addRouteGroup(routeData),
-                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: '#FFFFFF'}])
+                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: ['#7B2D8B', '#FFFFFF', '#E8352D', '#1A1A1A']}])
                 });
 
                 map.addSource(id, {

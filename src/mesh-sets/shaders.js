@@ -88,7 +88,42 @@ if ( groupIndex == 0.0 ) {
 #endif
 
 #ifdef BUS
-vInstanceColor = color0;
+// Singapore bus livery using 4 color slots:
+// color0 = purple/primary body, color1 = white, color2 = accent (red roof), color3 = window (black)
+float absX = abs( position.x );
+float absY = abs( position.y );
+float absZ = abs( position.z );
+float heightNorm = ( position.z + 0.3 ) / 0.6; // 0=bottom, 1=top
+float lengthNorm = ( position.y + 0.6 ) / 1.2; // 0=back, 1=front
+
+bool isTop = absZ > 0.29 && position.z > 0.0;
+bool isBottom = absZ > 0.29 && position.z < 0.0;
+bool isFront = absY > 0.59 && position.y > 0.0;
+bool isBack = absY > 0.59 && position.y < 0.0;
+bool isSide = absX > 0.29;
+
+if ( isTop ) {
+    // Roof: accent color (red)
+    vInstanceColor = color2;
+} else if ( isBottom ) {
+    vInstanceColor = color0;
+} else if ( isFront ) {
+    // Front: lower white, upper half black windshield (direction indicator)
+    float frontWindow = smoothstep( 0.35, 0.5, heightNorm );
+    vInstanceColor = mix( color1, color3, frontWindow );
+} else if ( isBack ) {
+    // Back: lower half purple, upper half red
+    float backSplit = smoothstep( 0.45, 0.55, heightNorm );
+    vInstanceColor = mix( color0, color2, backSplit );
+} else if ( isSide ) {
+    // Side: lower purple fading to white toward front, upper black windows
+    float purpleFade = ( 1.0 - lengthNorm ) * ( 1.0 - heightNorm * 0.5 );
+    vec3 sideBody = mix( color1, color0, purpleFade );
+    float windowMask = smoothstep( 0.45, 0.55, heightNorm ) * ( 1.0 - smoothstep( 0.85, 0.92, heightNorm ) );
+    vInstanceColor = mix( sideBody, color3, windowMask * 0.9 );
+} else {
+    vInstanceColor = color0;
+}
 #endif
 
 vInstanceOpacity = opacity0;
@@ -113,14 +148,23 @@ float offsetZ = groupIndex == 2.0 ? 0.88 : 0.0;
 float scaleX = groupIndex == 1.0 ? max( scale0, scale ) : scale0;
 float scaleY = groupIndex == 0.0 ? max( scale0, scale ) : scale0;
 vec3 position0 = ( position + vec3( 0.0, offsetY, offsetZ ) ) * vec3( scaleX, scaleY, scale0 );
-#else
+#endif
+
+#ifdef BUS
+// Ensure buses stay visible at high zoom (min scale = zoom 16 equivalent)
+float busMinScale = getScale( min( zoom0, 16.0 ), modelScale );
+float busScale = max( scale0, busMinScale * 0.4 );
+vec3 position0 = position * busScale;
+#endif
+
+#ifdef CAR
 vec3 position0 = position * scale0;
 #endif
 
 position0 = position0 * ( 1.0 + float( instanceID % 256 ) / 256.0 * 0.03 );
 
 #ifdef BUS
-vec3 transformed = rotateZ( rotationZ ) * position0 + translation + vec3( 0.0, 0.0, 0.3 * scale0 );
+vec3 transformed = rotateZ( rotationZ ) * position0 + translation + vec3( 0.0, 0.0, 0.3 * busScale );
 #else
 vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * scale0 );
 #endif
