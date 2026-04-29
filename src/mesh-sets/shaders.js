@@ -158,9 +158,9 @@ vec3 position0 = position * busScale;
 #endif
 
 #ifdef CAR
-// Trains: clamp at zoom 14 — larger minimum than buses, stretched longer
-float carZoom = min( zoom0, 14.0 );
-float carScale = getScale( carZoom, modelScale );
+// Trains: 1.5x bigger than buses, stretched longer
+float carZoom = min( zoom0, 16.0 );
+float carScale = getScale( carZoom, modelScale ) * 1.5;
 vec3 position0 = position * vec3( carScale, carScale * 1.8, carScale );
 #endif
 
