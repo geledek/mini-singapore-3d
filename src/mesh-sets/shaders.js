@@ -152,13 +152,17 @@ vec3 position0 = ( position + vec3( 0.0, offsetY, offsetZ ) ) * vec3( scaleX, sc
 
 #ifdef BUS
 // Ensure buses stay visible at all zoom levels
-// Use a fixed minimum scale so buses never shrink below visible size
-float busScale = max( scale0, modelScale * 25.0 );
+// Clamp zoom used for scale calculation so buses don't shrink past zoom 15
+float busZoom = min( zoom0, 15.0 );
+float busScale = getScale( busZoom, modelScale );
 vec3 position0 = position * busScale;
 #endif
 
 #ifdef CAR
-vec3 position0 = position * scale0;
+// Same fix for trains — clamp zoom so they stay visible at street level
+float carZoom = min( zoom0, 17.0 );
+float carScale = max( scale0, getScale( carZoom, modelScale ) );
+vec3 position0 = position * carScale;
 #endif
 
 position0 = position0 * ( 1.0 + float( instanceID % 256 ) / 256.0 * 0.03 );
@@ -166,7 +170,12 @@ position0 = position0 * ( 1.0 + float( instanceID % 256 ) / 256.0 * 0.03 );
 #ifdef BUS
 vec3 transformed = rotateZ( rotationZ ) * position0 + translation + vec3( 0.0, 0.0, 0.3 * busScale );
 #else
+#ifdef CAR
+vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * carScale );
+#else
 vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * scale0 );
+#endif
+#endif
 #endif
 `;
 

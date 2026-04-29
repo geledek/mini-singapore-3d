@@ -735,14 +735,6 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = true;
-        for (const gtfs of me.gtfs.values()) {
-            for (const zoom of [14, 15, 16, 17, 18]) {
-                const layerId = `busstops-${gtfs.id}-og-${zoom}`;
-                if (me.map.getLayer(layerId)) {
-                    me.setLayerVisibility(layerId, 'visible');
-                }
-            }
-        }
         // Restart bus animations
         me.refreshBuses();
     }
@@ -755,12 +747,6 @@ export default class extends Evented {
 
         me.busLinesEnabled = false;
         for (const gtfs of me.gtfs.values()) {
-            for (const zoom of [14, 15, 16, 17, 18]) {
-                const layerId = `busstops-${gtfs.id}-og-${zoom}`;
-                if (me.map.getLayer(layerId)) {
-                    me.setLayerVisibility(layerId, 'none');
-                }
-            }
             // Stop all active buses
             for (const bus of gtfs.activeBusLookup.values()) {
                 me.stopBus(bus);
@@ -2736,7 +2722,7 @@ export default class extends Evented {
             bus.stop !== undefined ? '<span class="realtime-small-icon"></span>' : '',
             '<br>',
             shortName || longName ? ` <span class="bus-route-label" style="${labelStyle}">${shortName || longName}</span> ` : '',
-            headsigns.length === 0 ? longName : headsigns[headsigns.length === 1 ? 0 : prevStopIndex],
+            !headsigns || headsigns.length === 0 ? longName : headsigns[headsigns.length === 1 ? 0 : prevStopIndex],
             '</div></div>',
             bus.id ? `<strong>${dict['vehicle-number']}:</strong> ${bus.id}<br>` : '',
             `<strong>${dict['previous-busstop']}:</strong> ${prevStopName}<br>`,
@@ -2957,7 +2943,7 @@ export default class extends Evented {
                     vehiclePositionUrl: source.vehiclePositionUrl,
                     color: source.color,
                     routeGroupIndex: me.trafficLayer.addRouteGroup(routeData),
-                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: ['#7B2D8B', '#FFFFFF', '#E8352D', '#1A1A1A']}])
+                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: ['#E8E8E8', '#FFFFFF', '#CC0000', '#222222']}])
                 });
 
                 map.addSource(id, {
@@ -3024,68 +3010,62 @@ export default class extends Evented {
                     layerIds.add(`${key}-${id}-og-`);
                 }
 
-                for (const zoom of [14, 15, 16, 17, 18]) {
-                    // Bus stops as pin markers
-                    // Only visible when route is highlighted (stop-highlight state)
-                    // Next stop is larger and highlighted
-                    me.addLayer({
-                        id: `busstops-${id}-og-${zoom}`,
-                        type: 'circle',
-                        source: id,
-                        filter: ['all', ['==', ['get', 'type'], 1]],
-                        layout: {
-                            visibility: zoom === me.layerZoom ? 'visible' : 'none'
-                        },
-                        paint: {
-                            'circle-radius': [
-                                'case',
-                                ['to-boolean', ['feature-state', 'next-stop']],
-                                ['interpolate', ['linear'], ['zoom'], 14, 6, 16, 8, 18, 11, 22, 18],
-                                ['interpolate', ['linear'], ['zoom'], 14, 3, 16, 4, 18, 6, 22, 12]
-                            ],
-                            'circle-color': [
-                                'case',
-                                ['to-boolean', ['feature-state', 'next-stop']],
-                                '#FFD700',
-                                '#FFFFFF'
-                            ],
-                            'circle-opacity': [
-                                'case',
-                                ['to-boolean', ['feature-state', 'stop-highlight']],
-                                0.95,
-                                0
-                            ],
-                            'circle-stroke-width': [
-                                'case',
-                                ['to-boolean', ['feature-state', 'next-stop']],
-                                3,
-                                ['interpolate', ['linear'], ['zoom'], 14, 1.5, 18, 2.5]
-                            ],
-                            'circle-stroke-color': [
-                                'case',
-                                ['to-boolean', ['feature-state', 'next-stop']],
-                                '#FFFFFF',
-                                '#7B2D8B'
-                            ],
-                            'circle-stroke-opacity': [
-                                'case',
-                                ['to-boolean', ['feature-state', 'stop-highlight']],
-                                0.9,
-                                0
-                            ],
-                            'circle-pitch-alignment': 'map',
-                            'circle-emissive-strength': 1
-                        },
-                        metadata: {
-                            'mt3d:opacity-effect': true,
-                            'mt3d:opacity': 1,
-                            'mt3d:opacity-route': 0.3,
-                            'mt3d:opacity-underground': 0.25,
-                            'mt3d:opacity-underground-route': 0.3
-                        }
-                    }, 'railways-og-13');
-                    layerIds.add(`busstops-${id}-og-${zoom}`);
-                }
+                // Bus stops as pin markers — single layer, always visible
+                // Only shown when route is highlighted (stop-highlight state)
+                me.addLayer({
+                    id: `busstops-${id}-og`,
+                    type: 'circle',
+                    source: id,
+                    filter: ['==', ['get', 'type'], 1],
+                    paint: {
+                        'circle-radius': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'next-stop']],
+                            ['interpolate', ['linear'], ['zoom'], 14, 6, 16, 8, 18, 11, 22, 18],
+                            ['interpolate', ['linear'], ['zoom'], 14, 3, 16, 4, 18, 6, 22, 12]
+                        ],
+                        'circle-color': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'next-stop']],
+                            '#FFD700',
+                            '#FFFFFF'
+                        ],
+                        'circle-opacity': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'stop-highlight']],
+                            0.95,
+                            0
+                        ],
+                        'circle-stroke-width': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'next-stop']],
+                            3,
+                            ['interpolate', ['linear'], ['zoom'], 14, 1.5, 18, 2.5]
+                        ],
+                        'circle-stroke-color': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'next-stop']],
+                            '#FFFFFF',
+                            source.color || '#4CAF50'
+                        ],
+                        'circle-stroke-opacity': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'stop-highlight']],
+                            0.9,
+                            0
+                        ],
+                        'circle-pitch-alignment': 'map',
+                        'circle-emissive-strength': 1
+                    },
+                    metadata: {
+                        'mt3d:opacity-effect': true,
+                        'mt3d:opacity': 1,
+                        'mt3d:opacity-route': 0.3,
+                        'mt3d:opacity-underground': 0.25,
+                        'mt3d:opacity-underground-route': 0.3
+                    }
+                }, 'railways-og-13');
+                layerIds.add(`busstops-${id}-og`);
 
                 me.addLayer({
                     id: `busstops-poi-${id}`,
