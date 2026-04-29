@@ -735,7 +735,6 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = true;
-        // Show bus meshes via traffic layer opacity
         for (const gtfs of me.gtfs.values()) {
             for (const zoom of [14, 15, 16, 17, 18]) {
                 const layerId = `busstops-${gtfs.id}-og-${zoom}`;
@@ -744,6 +743,8 @@ export default class extends Evented {
                 }
             }
         }
+        // Restart bus animations
+        me.refreshBuses();
     }
 
     /**
