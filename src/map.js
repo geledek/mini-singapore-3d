@@ -3007,42 +3007,22 @@ export default class extends Evented {
 
                 // Bus stops as pin markers — single layer, always visible
                 // Only shown when route is highlighted (stop-highlight state)
-                me.addLayer({
+                map.addLayer({
                     id: `busstops-${id}-og`,
                     type: 'circle',
                     source: id,
                     filter: ['==', ['get', 'type'], 1],
                     paint: {
-                        'circle-radius': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            ['interpolate', ['linear'], ['zoom'], 14, 6, 16, 8, 18, 11, 22, 18],
-                            ['interpolate', ['linear'], ['zoom'], 14, 3, 16, 4, 18, 6, 22, 12]
-                        ],
-                        'circle-color': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            '#FFD700',
-                            '#FFFFFF'
-                        ],
+                        'circle-radius': ['interpolate', ['linear'], ['zoom'], 14, 4, 16, 5, 18, 7, 22, 14],
+                        'circle-color': '#FFFFFF',
                         'circle-opacity': [
                             'case',
                             ['to-boolean', ['feature-state', 'stop-highlight']],
-                            0.95,
+                            0.9,
                             0
                         ],
-                        'circle-stroke-width': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            3,
-                            ['interpolate', ['linear'], ['zoom'], 14, 1.5, 18, 2.5]
-                        ],
-                        'circle-stroke-color': [
-                            'case',
-                            ['to-boolean', ['feature-state', 'next-stop']],
-                            '#FFFFFF',
-                            source.color || '#4CAF50'
-                        ],
+                        'circle-stroke-width': 2,
+                        'circle-stroke-color': source.color || '#4CAF50',
                         'circle-stroke-opacity': [
                             'case',
                             ['to-boolean', ['feature-state', 'stop-highlight']],
@@ -3051,13 +3031,6 @@ export default class extends Evented {
                         ],
                         'circle-pitch-alignment': 'map',
                         'circle-emissive-strength': 1
-                    },
-                    metadata: {
-                        'mt3d:opacity-effect': true,
-                        'mt3d:opacity': 1,
-                        'mt3d:opacity-route': 0.3,
-                        'mt3d:opacity-underground': 0.25,
-                        'mt3d:opacity-underground-route': 0.3
                     }
                 }, 'railways-og-13');
                 layerIds.add(`busstops-${id}-og`);
