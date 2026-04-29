@@ -442,6 +442,19 @@
     color: #ffffff;
     font-weight: bold;
 }
+.mini-singapore-3d .bus-load {
+    font-size: 14px;
+    margin-left: 4px;
+}
+.mini-singapore-3d .bus-load-sea {
+    opacity: 0.6;
+}
+.mini-singapore-3d .bus-load-sda {
+    opacity: 0.8;
+}
+.mini-singapore-3d .bus-load-lsd {
+    opacity: 1.0;
+}
 .mini-singapore-3d .station-panel.station-to,
 .mini-singapore-3d .station-panel.station-from {
     height: 230px;

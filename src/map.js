@@ -2276,7 +2276,8 @@ export default class extends Evented {
                         feature,
                         offsets,
                         offset: 0,
-                        operatorColorId: route ? `${gtfs.id}.${route.operator || ''}` : gtfs.id
+                        operatorColorId: route ? `${gtfs.id}.${route.operator || ''}` : gtfs.id,
+                        load: simulateBusLoad(now, trip)
                     });
                 }
             }
@@ -2715,13 +2716,18 @@ export default class extends Evented {
             prevStopIndex = Math.max(0, nextStopIndex - 1),
             prevStopName = stopLookup.get(stops[prevStopIndex]).name;
 
+        const loadIndicator = bus.load === 'LSD' ? '<span class="bus-load bus-load-lsd">&#x1F9CD;&#x1F9CD;&#x1F9CD;</span>' :
+            bus.load === 'SDA' ? '<span class="bus-load bus-load-sda">&#x1F9CD;&#x1F9CD;</span>' :
+            '<span class="bus-load bus-load-sea">&#x1F9CD;</span>';
+
         return [
             '<div class="desc-header">',
             `<div style="background-color: ${operatorColor};"></div>`,
             `<div><strong>${operatorName}</strong>`,
             bus.stop !== undefined ? '<span class="realtime-small-icon"></span>' : '',
             '<br>',
-            shortName ? `<span class="bus-route-label" style="${labelStyle}">Bus ${shortName}</span>` : '',
+            shortName ? `<span class="bus-route-label" style="${labelStyle}">Bus ${shortName}</span> ` : '',
+            loadIndicator,
             '</div></div>',
             `<strong>${dict['previous-busstop']}:</strong> ${prevStopName}<br>`,
             `<strong>${dict['next-busstop']}:</strong> ${nextStopName}`
@@ -4319,6 +4325,22 @@ function showErrorMessage(container) {
     loaderElement.style.display = 'none';
     errorElement.innerHTML = 'Loading failed. Please reload the page.';
     errorElement.style.display = 'block';
+}
+
+/**
+ * Simulate bus load based on time and route.
+ * In production, this would come from LTA Bus Arrival API 'Load' field.
+ * @returns {string} 'SEA' (Seats Available), 'SDA' (Standing), or 'LSD' (Limited Standing)
+ */
+function simulateBusLoad(now, trip) {
+    // Peak hours: 7-9am (25200000-32400000ms) and 5-7pm (50400000-57600000ms) from 3am base
+    const isPeak = (now >= 14400000 && now <= 21600000) || (now >= 50400000 && now <= 57600000);
+    const hash = (trip.id.charCodeAt(0) + trip.id.charCodeAt(trip.id.length - 1)) % 10;
+
+    if (isPeak) {
+        return hash < 3 ? 'LSD' : hash < 7 ? 'SDA' : 'SEA';
+    }
+    return hash < 1 ? 'LSD' : hash < 3 ? 'SDA' : 'SEA';
 }
 
 function easeInQuad(t) {

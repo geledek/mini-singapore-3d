@@ -44,10 +44,16 @@ export default class extends Panel {
         const originStop = stopLookup.get(stops[0]);
         const destStop = stopLookup.get(stops[stops.length - 1]);
 
+        // Load indicator
+        const loadText = {'SEA': 'Seats Available', 'SDA': 'Standing Available', 'LSD': 'Limited Standing'}[bus.load] || 'Unknown';
+        const loadFigures = bus.load === 'LSD' ? '🧍🧍🧍' : bus.load === 'SDA' ? '🧍🧍' : '🧍';
+        const loadColor = bus.load === 'LSD' ? '#FF4444' : bus.load === 'SDA' ? '#FFAA00' : '#44CC44';
+
         // Info section
         const infoHTML = [
             '<div class="bus-info-section">',
             `<div class="bus-info-row"><span class="bus-info-label">Operator</span><span style="color:${operatorColor};font-weight:bold;">${operatorName}</span></div>`,
+            `<div class="bus-info-row"><span class="bus-info-label">Crowdedness</span><span style="color:${loadColor};">${loadFigures} ${loadText}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Origin</span><span>${originStop ? originStop.name : '-'}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Destination</span><span>${destStop ? destStop.name : '-'}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Next Stop</span><span class="bus-info-highlight">${nextStop ? nextStop.name : '-'}</span></div>`,
