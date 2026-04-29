@@ -212,7 +212,7 @@ export default class {
 
             objectType = 2;
             routeIndex = me.computeRenderer.getRouteIndex(`${gtfsId}.${feature.properties.id}`);
-            colorIndex = me.computeRenderer.getColorIndex(gtfsId);
+            colorIndex = me.computeRenderer.getColorIndex(object.operatorColorId || gtfsId);
             sectionIndex = stopOffsets[object.sectionIndex];
             nextSectionIndex = stopOffsets[object.sectionIndex + object.sectionLength];
         }

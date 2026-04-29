@@ -2275,7 +2275,8 @@ export default class extends Evented {
                         trip,
                         feature,
                         offsets,
-                        offset: 0
+                        offset: 0,
+                        operatorColorId: route ? `${gtfs.id}.${route.operator || ''}` : gtfs.id
                     });
                 }
             }
@@ -2706,8 +2707,8 @@ export default class extends Evented {
             operatorName = {'SBST': 'SBS Transit', 'TTS': 'Tower Transit', 'GAS': 'Go-Ahead Singapore'}[operator] || operator,
             operatorColor = {'SBST': '#7B2D8B', 'TTS': '#006B3F', 'GAS': '#003D7C'}[operator] || gtfs.color,
             labelStyle = [
-                textColor ? `color: ${textColor};` : 'color: #FFFFFF;',
-                color ? `background-color: ${color};` : ''
+                'color: #FFFFFF;',
+                'background-color: #555555;'
             ].join(' '),
             nextStopIndex = bus.sectionIndex + (bus.standing ? 0 : bus.sectionLength),
             nextStopName = stopLookup.get(stops[nextStopIndex]).name,
@@ -2940,7 +2941,12 @@ export default class extends Evented {
                     vehiclePositionUrl: source.vehiclePositionUrl,
                     color: source.color,
                     routeGroupIndex: me.trafficLayer.addRouteGroup(routeData),
-                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: ['#E8E8E8', '#FFFFFF', '#CC0000', '#222222']}])
+                    colorGroupIndex: me.trafficLayer.addColorGroup([
+                        {id, color: ['#E8E8E8', '#FFFFFF', '#CC0000', '#222222']},
+                        {id: `${id}.SBST`, color: ['#7B2D8B', '#FFFFFF', '#CC0000', '#222222']},
+                        {id: `${id}.TTS`, color: ['#006B3F', '#FFFFFF', '#006B3F', '#222222']},
+                        {id: `${id}.GAS`, color: ['#003D7C', '#FFFFFF', '#003D7C', '#222222']}
+                    ])
                 });
 
                 map.addSource(id, {

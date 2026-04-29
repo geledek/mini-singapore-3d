@@ -19,8 +19,17 @@ if (!API_KEY) {
     process.exit(1);
 }
 
-// PoC bus services along Orchard Road corridor
-const POC_SERVICES = ['7', '14', '36', '77', '106', '111', '124', '143', '167', '174'];
+// Expanded bus services covering major corridors
+// Orchard: 7, 14, 36, 77, 106, 111, 124, 143, 167, 174
+// Bukit Timah: 67, 75, 170, 171, 173, 961
+// East Coast/Tampines: 12, 15, 16, 31, 32, 38
+// Cross-island: 51, 61, 65, 80, 145, 196
+const POC_SERVICES = [
+    '7', '12', '14', '15', '16', '31', '32', '36', '38',
+    '51', '61', '65', '67', '75', '77', '80',
+    '106', '111', '124', '143', '145', '167', '170', '171', '173', '174',
+    '196', '961'
+];
 
 async function fetchPaginated(endpoint) {
     const results = [];
