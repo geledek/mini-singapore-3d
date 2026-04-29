@@ -2700,9 +2700,13 @@ export default class extends Evented {
             gtfs = me.gtfs.get(bus.gtfsId),
             stopLookup = gtfs.stopLookup,
             {route, headsigns, stops} = bus.trip,
-            {shortName, longName, color, textColor} = gtfs.routeLookup.get(route),
+            routeInfo = gtfs.routeLookup.get(route),
+            {shortName, color, textColor} = routeInfo,
+            operator = routeInfo.operator || gtfs.agency,
+            operatorName = {'SBST': 'SBS Transit', 'TTS': 'Tower Transit', 'GAS': 'Go-Ahead Singapore'}[operator] || operator,
+            operatorColor = {'SBST': '#7B2D8B', 'TTS': '#006B3F', 'GAS': '#003D7C'}[operator] || gtfs.color,
             labelStyle = [
-                textColor ? `color: ${textColor};` : '',
+                textColor ? `color: ${textColor};` : 'color: #FFFFFF;',
                 color ? `background-color: ${color};` : ''
             ].join(' '),
             nextStopIndex = bus.sectionIndex + (bus.standing ? 0 : bus.sectionLength),
@@ -2712,14 +2716,12 @@ export default class extends Evented {
 
         return [
             '<div class="desc-header">',
-            `<div style="background-color: ${gtfs.color};"></div>`,
-            `<div><strong>${gtfs.agency}</strong>`,
+            `<div style="background-color: ${operatorColor};"></div>`,
+            `<div><strong>${operatorName}</strong>`,
             bus.stop !== undefined ? '<span class="realtime-small-icon"></span>' : '',
             '<br>',
-            shortName || longName ? ` <span class="bus-route-label" style="${labelStyle}">${shortName || longName}</span> ` : '',
-            !headsigns || headsigns.length === 0 ? longName : headsigns[headsigns.length === 1 ? 0 : prevStopIndex],
+            shortName ? `<span class="bus-route-label" style="${labelStyle}">Bus ${shortName}</span>` : '',
             '</div></div>',
-            bus.id ? `<strong>${dict['vehicle-number']}:</strong> ${bus.id}<br>` : '',
             `<strong>${dict['previous-busstop']}:</strong> ${prevStopName}<br>`,
             `<strong>${dict['next-busstop']}:</strong> ${nextStopName}`
         ].join('');
