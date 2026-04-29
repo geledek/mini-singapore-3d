@@ -3038,12 +3038,11 @@ export default class extends Evented {
                         ],
                         'circle-stroke-width': 2,
                         'circle-stroke-color': [
-                            'match',
-                            ['to-number', ['feature-state', 'operator-idx']],
-                            1, '#7B2D8B',
-                            2, '#006B3F',
-                            3, '#003D7C',
-                            4, '#EE2E24',
+                            'case',
+                            ['==', ['feature-state', 'operator-idx'], 1], '#7B2D8B',
+                            ['==', ['feature-state', 'operator-idx'], 2], '#006B3F',
+                            ['==', ['feature-state', 'operator-idx'], 3], '#003D7C',
+                            ['==', ['feature-state', 'operator-idx'], 4], '#EE2E24',
                             '#4CAF50'
                         ],
                         'circle-stroke-opacity': [
