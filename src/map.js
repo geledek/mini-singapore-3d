@@ -2705,8 +2705,8 @@ export default class extends Evented {
             routeInfo = gtfs.routeLookup.get(route),
             {shortName, color, textColor} = routeInfo,
             operator = routeInfo.operator || gtfs.agency,
-            operatorName = {'SBST': 'SBS Transit', 'TTS': 'Tower Transit', 'GAS': 'Go-Ahead Singapore'}[operator] || operator,
-            operatorColor = {'SBST': '#7B2D8B', 'TTS': '#006B3F', 'GAS': '#003D7C'}[operator] || gtfs.color,
+            operatorName = {'SBST': 'SBS Transit', 'TTS': 'Tower Transit', 'GAS': 'Go-Ahead Singapore', 'SMRT': 'SMRT Buses'}[operator] || operator,
+            operatorColor = {'SBST': '#7B2D8B', 'TTS': '#006B3F', 'GAS': '#003D7C', 'SMRT': '#EE2E24'}[operator] || gtfs.color,
             labelStyle = [
                 'color: #FFFFFF;',
                 'background-color: #555555;'
@@ -2951,7 +2951,8 @@ export default class extends Evented {
                         {id, color: ['#E8E8E8', '#FFFFFF', '#CC0000', '#222222']},
                         {id: `${id}.SBST`, color: ['#7B2D8B', '#FFFFFF', '#CC0000', '#222222']},
                         {id: `${id}.TTS`, color: ['#006B3F', '#FFFFFF', '#006B3F', '#222222']},
-                        {id: `${id}.GAS`, color: ['#003D7C', '#FFFFFF', '#003D7C', '#222222']}
+                        {id: `${id}.GAS`, color: ['#003D7C', '#FFFFFF', '#003D7C', '#222222']},
+                        {id: `${id}.SMRT`, color: ['#EE2E24', '#FFFFFF', '#EE2E24', '#222222']}
                     ])
                 });
 
