@@ -1915,6 +1915,23 @@ export default class extends Evented {
                         }
                     }
 
+                    // Animate bus stop next-stop pulse
+                    if (me.gtfs.size > 0) {
+                        const p = performance.now() % 1500 / 1500;
+                        const pulseOpacity = (1 - p) * 0.5;
+                        for (const gtfs of me.gtfs.values()) {
+                            const layerId = `busstops-pulse-${gtfs.id}-og`;
+                            if (map.getLayer(layerId)) {
+                                map.setPaintProperty(layerId, 'circle-opacity', [
+                                    'case',
+                                    ['to-boolean', ['feature-state', 'next-stop']],
+                                    pulseOpacity,
+                                    0
+                                ]);
+                            }
+                        }
+                    }
+
                     map.triggerRepaint();
                     me.lastRepaint = Date.now();
                 }
@@ -3056,6 +3073,35 @@ export default class extends Evented {
                     }
                 }, 'railways-og-13');
                 layerIds.add(`busstops-${id}-og`);
+
+                // Next stop pulse glow layer (animated via render loop)
+                map.addLayer({
+                    id: `busstops-pulse-${id}-og`,
+                    type: 'circle',
+                    source: id,
+                    filter: ['==', ['get', 'type'], 1],
+                    paint: {
+                        'circle-radius': ['interpolate', ['linear'], ['zoom'], 14, 8, 16, 12, 18, 16, 22, 24],
+                        'circle-color': [
+                            'case',
+                            ['==', ['feature-state', 'operator-idx'], 1], '#7B2D8B',
+                            ['==', ['feature-state', 'operator-idx'], 2], '#006B3F',
+                            ['==', ['feature-state', 'operator-idx'], 3], '#003D7C',
+                            ['==', ['feature-state', 'operator-idx'], 4], '#EE2E24',
+                            '#4CAF50'
+                        ],
+                        'circle-opacity': [
+                            'case',
+                            ['to-boolean', ['feature-state', 'next-stop']],
+                            0.4,
+                            0
+                        ],
+                        'circle-blur': 1,
+                        'circle-pitch-alignment': 'map',
+                        'circle-emissive-strength': 1
+                    }
+                }, `busstops-${id}-og`);
+                layerIds.add(`busstops-pulse-${id}-og`);
 
                 me.addLayer({
                     id: `busstops-poi-${id}`,
