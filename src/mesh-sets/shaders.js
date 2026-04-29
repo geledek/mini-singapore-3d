@@ -158,10 +158,8 @@ vec3 position0 = position * busScale;
 #endif
 
 #ifdef CAR
-// Trains: 1.5x bigger than buses, stretched longer
-float carZoom = min( zoom0, 16.0 );
-float carScale = getScale( carZoom, modelScale ) * 1.5;
-vec3 position0 = position * vec3( carScale, carScale * 1.8, carScale );
+// Trains: normal scaling, slightly bigger minimum than buses
+vec3 position0 = position * scale0;
 #endif
 
 position0 = position0 * ( 1.0 + float( instanceID % 256 ) / 256.0 * 0.03 );
@@ -170,7 +168,7 @@ position0 = position0 * ( 1.0 + float( instanceID % 256 ) / 256.0 * 0.03 );
 vec3 transformed = rotateZ( rotationZ ) * position0 + translation + vec3( 0.0, 0.0, 0.3 * busScale );
 #else
 #ifdef CAR
-vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * carScale );
+vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * scale0 );
 #else
 vec3 transformed = rotateZ( rotationZ ) * rotateX( rotationX ) * position0 + translation + vec3( 0.0, 0.0, 0.44 * scale0 );
 #endif
