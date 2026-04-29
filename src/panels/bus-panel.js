@@ -15,16 +15,38 @@ export default class extends Panel {
             gtfs = map.gtfs.get(bus.gtfsId),
             trip = bus.trip,
             {route, stops, departureTimes} = trip,
-            color = gtfs.routeLookup.get(route).color,
-            stopLookup = gtfs.stopLookup;
+            routeInfo = gtfs.routeLookup.get(route),
+            color = routeInfo.color,
+            stopLookup = gtfs.stopLookup,
+            now = map.clock.getTimeOffset();
+
+        // Find current position and next stop
+        const currentIdx = bus.sectionIndex + bus.sectionLength;
+        const nextStop = stopLookup.get(stops[currentIdx]);
+        const remainingStops = stops.length - currentIdx - 1;
+        const originStop = stopLookup.get(stops[0]);
+        const destStop = stopLookup.get(stops[stops.length - 1]);
+
+        // Info section
+        const infoHTML = [
+            '<div class="bus-info-section">',
+            `<div class="bus-info-row"><span class="bus-info-label">Origin</span><span>${originStop ? originStop.name : '-'}</span></div>`,
+            `<div class="bus-info-row"><span class="bus-info-label">Destination</span><span>${destStop ? destStop.name : '-'}</span></div>`,
+            `<div class="bus-info-row"><span class="bus-info-label">Next Stop</span><span class="bus-info-highlight">${nextStop ? nextStop.name : '-'}</span></div>`,
+            `<div class="bus-info-row"><span class="bus-info-label">Stops Remaining</span><span>${remainingStops}</span></div>`,
+            `<div class="bus-info-row"><span class="bus-info-label">Operator</span><span>${routeInfo.operator || gtfs.agency}</span></div>`,
+            '</div>'
+        ].join('');
 
         for (let i = 0, ilen = stops.length; i < ilen; i++) {
             const stop = stopLookup.get(stops[i]),
-                departureTime = getTimeString(departureTimes[i]);
+                departureTime = getTimeString(departureTimes[i]),
+                isCurrent = i === currentIdx,
+                isPast = i < currentIdx;
 
             busstopHTML.push([
-                '<div class="busstop-row">',
-                `<div class="busstop-title-box">${stop.name}</div>`,
+                `<div class="busstop-row${isCurrent ? ' busstop-current' : ''}${isPast ? ' busstop-past' : ''}">`,
+                `<div class="busstop-title-box">${stop ? stop.name : stops[i]}</div>`,
                 `<div class="busstop-time-box">${departureTime}</div>`,
                 '</div>'
             ].join(''));
@@ -33,6 +55,7 @@ export default class extends Panel {
         super.addTo(map);
         me.updateHeader();
         me.setHTML([
+            infoHTML,
             '<div id="timetable-content">',
             ...busstopHTML,
             '</div>',
@@ -80,21 +103,21 @@ export default class extends Panel {
             bus = me._options.object,
             gtfs = map.gtfs.get(bus.gtfsId),
             {route, headsigns} = bus.trip,
-            {shortName, longName, color, textColor} = gtfs.routeLookup.get(route),
+            routeInfo = gtfs.routeLookup.get(route),
+            {shortName, longName, color, textColor} = routeInfo,
             labelStyle = [
-                textColor ? `color: ${textColor};` : '',
+                textColor ? `color: ${textColor};` : 'color: #FFFFFF;',
                 color ? `background-color: ${color};` : ''
             ].join(' ');
 
         this.setTitle([
             '<div class="desc-header">',
-            `<div style="background-color: ${gtfs.color};"></div>`,
+            `<div style="background-color: ${color || gtfs.color};"></div>`,
             '<div><div class="desc-first-row">',
-            gtfs.agency,
+            shortName ? `<span class="bus-route-label" style="${labelStyle}">Bus ${shortName}</span> ` : '',
             bus.stop !== undefined ? '<span class="realtime-icon"></span>' : '',
             '</div><div class="desc-second-row">',
-            shortName || longName ? ` <span class="bus-route-label" style="${labelStyle}">${shortName || longName}</span> ` : '',
-            headsigns.length === 0 ? longName : headsigns[headsigns.length === 1 ? 0 : bus.sectionIndex],
+            headsigns && headsigns.length > 0 ? headsigns[headsigns.length === 1 ? 0 : bus.sectionIndex] : (longName || ''),
             '</div></div></div>'
         ].join(''));
     }

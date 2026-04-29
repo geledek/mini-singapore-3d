@@ -78,9 +78,9 @@ export default class extends Panel {
 
         const busHTML = [
             '<div class="layer-section-title">Bus</div>',
-            '<div id="bus-lines-toggle" class="railway-toggle-row">',
-            '<div class="railway-color-swatch" style="background:#888888"></div>',
-            '<div class="railway-toggle-name">Bus Lines</div>',
+            '<div id="bus-lines-toggle" class="railway-toggle-row railway-toggle-enabled">',
+            '<div class="railway-color-swatch" style="background:linear-gradient(135deg,#FFFFFF,#AAAAAA);border-radius:3px;"></div>',
+            '<div class="railway-toggle-name">Bus Lines (Orchard Rd)</div>',
             '</div>'
         ].join('');
 

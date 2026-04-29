@@ -664,7 +664,8 @@ export function loadLtaBusData(dataUrl, clock) {
             longName: `Bus ${svc.service}`,
             color: getRouteColor(svc.service),
             textColor: '#FFFFFF',
-            shapes: [svc.id]  // Shape ID same as route ID
+            operator: svc.operator,
+            shapes: [svc.id]
         }));
 
         // Transform trips: generate departure times from schedule

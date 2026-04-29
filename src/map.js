@@ -105,7 +105,7 @@ export default class extends Evented {
         me.plugins = (options.plugins || []).map(plugin => new Plugin(plugin));
 
         me.hiddenRailways = new Set();
-        me.busLinesEnabled = false;
+        me.busLinesEnabled = true;
         me.flightsEnabled = true;
         me.hiddenAirlines = new Set();
         me.searchMode = 'none';
@@ -735,12 +735,13 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = true;
-        for (const zoom of [13, 14, 15, 16, 17, 18]) {
-            if (me.map.getLayer(`busstops-og-${zoom}`)) {
-                me.setLayerVisibility(`busstops-og-${zoom}`, 'visible');
-            }
-            if (me.map.getLayer(`busstops-og-${zoom}-outline`)) {
-                me.setLayerVisibility(`busstops-og-${zoom}-outline`, 'visible');
+        // Show bus meshes via traffic layer opacity
+        for (const gtfs of me.gtfs.values()) {
+            for (const zoom of [14, 15, 16, 17, 18]) {
+                const layerId = `busstops-${gtfs.id}-og-${zoom}`;
+                if (me.map.getLayer(layerId)) {
+                    me.setLayerVisibility(layerId, 'visible');
+                }
             }
         }
     }
@@ -752,12 +753,16 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = false;
-        for (const zoom of [13, 14, 15, 16, 17, 18]) {
-            if (me.map.getLayer(`busstops-og-${zoom}`)) {
-                me.setLayerVisibility(`busstops-og-${zoom}`, 'none');
+        for (const gtfs of me.gtfs.values()) {
+            for (const zoom of [14, 15, 16, 17, 18]) {
+                const layerId = `busstops-${gtfs.id}-og-${zoom}`;
+                if (me.map.getLayer(layerId)) {
+                    me.setLayerVisibility(layerId, 'none');
+                }
             }
-            if (me.map.getLayer(`busstops-og-${zoom}-outline`)) {
-                me.setLayerVisibility(`busstops-og-${zoom}-outline`, 'none');
+            // Stop all active buses
+            for (const bus of gtfs.activeBusLookup.values()) {
+                me.stopBus(bus);
             }
         }
     }
@@ -2298,6 +2303,9 @@ export default class extends Evented {
     busStart(bus) {
         const me = this;
 
+        if (!me.busLinesEnabled) {
+            return;
+        }
         if (!me.setBusSectionData(bus)) {
             return;
         }
@@ -2948,7 +2956,7 @@ export default class extends Evented {
                     vehiclePositionUrl: source.vehiclePositionUrl,
                     color: source.color,
                     routeGroupIndex: me.trafficLayer.addRouteGroup(routeData),
-                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: source.color}])
+                    colorGroupIndex: me.trafficLayer.addColorGroup([{id, color: '#FFFFFF'}])
                 });
 
                 map.addSource(id, {
@@ -2958,7 +2966,7 @@ export default class extends Evented {
                 });
 
                 for (const key of ['busroute', 'busroute-highlighted']) {
-                    const width = key === 'busroute' ? ['get', 'width'] : ['*', ['get', 'width'], 4];
+                    const width = key === 'busroute' ? ['get', 'width'] : ['*', ['get', 'width'], 3];
 
                     me.addLayer({
                         id: `${key}-${id}-og-`,
@@ -2968,15 +2976,10 @@ export default class extends Evented {
                         paint: {
                             'line-color': {
                                 'busroute': ['get', 'color'],
-                                'busroute-highlighted': ['string', ['feature-state', 'route-highlight'], ['feature-state', 'trip-highlight'], ['get', 'color']]
+                                'busroute-highlighted': '#FFFFFF'
                             }[key],
                             'line-opacity': {
-                                'busroute': [
-                                    'case',
-                                    ['to-boolean', ['feature-state', 'hidden']],
-                                    0,
-                                    1
-                                ],
+                                'busroute': 0,
                                 'busroute-highlighted': [
                                     'case',
                                     [
@@ -2988,7 +2991,7 @@ export default class extends Evented {
                                         ],
                                         ['!', ['to-boolean', ['feature-state', 'hidden']]]
                                     ],
-                                    1,
+                                    0.8,
                                     0
                                 ]
                             }[key],
@@ -3005,6 +3008,10 @@ export default class extends Evented {
                                 22,
                                 ['*', width, 8]
                             ],
+                            'line-dasharray': {
+                                'busroute': ['literal', [1, 0]],
+                                'busroute-highlighted': ['literal', [2, 2]]
+                            }[key],
                             'line-emissive-strength': 1
                         },
                         metadata: {
@@ -3028,41 +3035,51 @@ export default class extends Evented {
                 }
 
                 for (const zoom of [14, 15, 16, 17, 18]) {
-                    const interpolate = ['interpolate', ['exponential', 2], ['zoom']],
-                        width = ['get', 'width'],
-                        lineWidth = zoom === 18 ? [...interpolate, 19, width, 22, ['*', width, 8]] : width;
-
-                    for (const key of ['busstops', 'busstops-outline']) {
-                        me.addLayer({
-                            id: `${key}-${id}-og-${zoom}`,
-                            type: key === 'busstops' ? 'fill' : 'line',
-                            source: id,
-                            filter: ['all', ['==', ['get', 'zoom'], zoom], ['==', ['get', 'type'], 1]],
-                            layout: {
-                                visibility: zoom === me.layerZoom ? 'visible' : 'none'
-                            },
-                            paint: {
-                                'busstops': {
-                                    'fill-color': ['get', 'color'],
-                                    'fill-opacity': .7,
-                                    'fill-emissive-strength': 1
-                                },
-                                'busstops-outline': {
-                                    'line-color': ['get', 'outlineColor'],
-                                    'line-width': lineWidth,
-                                    'line-emissive-strength': 1
-                                }
-                            }[key],
-                            metadata: {
-                                'mt3d:opacity-effect': true,
-                                'mt3d:opacity': 1,
-                                'mt3d:opacity-route': 0.3,
-                                'mt3d:opacity-underground': 0.25,
-                                'mt3d:opacity-underground-route': 0.3
-                            }
-                        }, 'railways-og-13');
-                        layerIds.add(`${key}-${id}-og-${zoom}`);
-                    }
+                    // Bus stops as glowing circles (light-stick style)
+                    // Only visible when route is highlighted
+                    me.addLayer({
+                        id: `busstops-${id}-og-${zoom}`,
+                        type: 'circle',
+                        source: id,
+                        filter: ['all', ['==', ['get', 'type'], 1]],
+                        layout: {
+                            visibility: zoom === me.layerZoom ? 'visible' : 'none'
+                        },
+                        paint: {
+                            'circle-radius': [
+                                'interpolate', ['linear'], ['zoom'],
+                                14, 2,
+                                18, 5,
+                                22, 12
+                            ],
+                            'circle-color': '#FFFFFF',
+                            'circle-opacity': [
+                                'case',
+                                ['to-boolean', ['feature-state', 'stop-highlight']],
+                                0.9,
+                                0
+                            ],
+                            'circle-stroke-width': 1,
+                            'circle-stroke-color': '#FFFFFF',
+                            'circle-stroke-opacity': [
+                                'case',
+                                ['to-boolean', ['feature-state', 'stop-highlight']],
+                                0.5,
+                                0
+                            ],
+                            'circle-blur': 0.3,
+                            'circle-pitch-alignment': 'map',
+                            'circle-emissive-strength': 1
+                        },
+                        metadata: {
+                            'mt3d:opacity-effect': true,
+                            'mt3d:opacity': 1,
+                            'mt3d:opacity-route': 0.3,
+                            'mt3d:opacity-underground': 0.25,
+                            'mt3d:opacity-underground-route': 0.3
+                        }
+                    }, 'railways-og-13');
+                    layerIds.add(`busstops-${id}-og-${zoom}`);
                 }
 
                 me.addLayer({

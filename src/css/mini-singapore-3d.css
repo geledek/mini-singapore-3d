@@ -410,6 +410,31 @@
     width: 0;
     text-align: right;
 }
+.mini-singapore-3d .busstop-row.busstop-past {
+    opacity: 0.4;
+}
+.mini-singapore-3d .busstop-row.busstop-current .busstop-title-box {
+    font-weight: bold;
+    color: #ffffff;
+}
+.mini-singapore-3d .bus-info-section {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.mini-singapore-3d .bus-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+    font-size: 11px;
+}
+.mini-singapore-3d .bus-info-label {
+    color: rgba(255,255,255,0.5);
+}
+.mini-singapore-3d .bus-info-highlight {
+    color: #ffffff;
+    font-weight: bold;
+}
 .mini-singapore-3d .station-panel.station-to,
 .mini-singapore-3d .station-panel.station-from {
     height: 230px;
