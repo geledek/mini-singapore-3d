@@ -3941,6 +3941,13 @@
     "Longitude": 103.7615108330155
   },
   {
+    "BusStopCode": "20089",
+    "RoadName": "Jln Ahmad Ibrahim",
+    "Description": "Opp Carrier S'pore",
+    "Latitude": 1.32702967705527,
+    "Longitude": 103.7392229529496
+  },
+  {
     "BusStopCode": "20101",
     "RoadName": "C'wealth Ave West",
     "Description": "Nan Hua Pr Sch",
@@ -3953,6 +3960,13 @@
     "Description": "Aft Clementi Fire Stn",
     "Latitude": 1.32085220079341,
     "Longitude": 103.76206999856427
+  },
+  {
+    "BusStopCode": "20121",
+    "RoadName": "West Coast Rd",
+    "Description": "Opp Blk 51",
+    "Latitude": 1.32023972200054,
+    "Longitude": 103.73707999997312
   },
   {
     "BusStopCode": "20131",
@@ -3981,6 +3995,20 @@
     "Description": "Blk 408",
     "Latitude": 1.31795969674094,
     "Longitude": 103.74897266925451
+  },
+  {
+    "BusStopCode": "20151",
+    "RoadName": "West Coast Rd",
+    "Description": "Opp Blk 411",
+    "Latitude": 1.31829668687275,
+    "Longitude": 103.74631047251557
+  },
+  {
+    "BusStopCode": "20159",
+    "RoadName": "West Coast Rd",
+    "Description": "Blk 411",
+    "Latitude": 1.31851137522994,
+    "Longitude": 103.74640166581365
   },
   {
     "BusStopCode": "20161",
@@ -4081,6 +4109,20 @@
     "Longitude": 103.73947011845992
   },
   {
+    "BusStopCode": "20241",
+    "RoadName": "Penjuru Rd",
+    "Description": "Opp Blk 54",
+    "Latitude": 1.32116277513743,
+    "Longitude": 103.73638362986378
+  },
+  {
+    "BusStopCode": "20251",
+    "RoadName": "Jurong Town Hall Rd",
+    "Description": "Bef Teban Gdns Rd",
+    "Latitude": 1.31975500989852,
+    "Longitude": 103.74447102076279
+  },
+  {
     "BusStopCode": "20259",
     "RoadName": "Jurong Town Hall Rd",
     "Description": "C'wealth Sec Sch",
@@ -4137,11 +4179,74 @@
     "Longitude": 103.75857544044081
   },
   {
+    "BusStopCode": "21011",
+    "RoadName": "Jln Ahmad Ibrahim",
+    "Description": "Aft Jurong Lake",
+    "Latitude": 1.32534328766029,
+    "Longitude": 103.72866849877529
+  },
+  {
+    "BusStopCode": "21019",
+    "RoadName": "Jln Ahmad Ibrahim",
+    "Description": "Aft Yuan Ching Rd",
+    "Latitude": 1.32554867828642,
+    "Longitude": 103.72703317988619
+  },
+  {
+    "BusStopCode": "21021",
+    "RoadName": "Jln Ahmad Ibrahim",
+    "Description": "Bef Jurong Port Rd",
+    "Latitude": 1.32419322170223,
+    "Longitude": 103.72379008890384
+  },
+  {
+    "BusStopCode": "21029",
+    "RoadName": "Jln Ahmad Ibrahim",
+    "Description": "Aft Corp Pl",
+    "Latitude": 1.32429728567538,
+    "Longitude": 103.72180766916203
+  },
+  {
     "BusStopCode": "21161",
     "RoadName": "Corporation Rd",
     "Description": "Blk 216B",
     "Latitude": 1.35043949411648,
     "Longitude": 103.7127413228723
+  },
+  {
+    "BusStopCode": "21171",
+    "RoadName": "Corporation Rd",
+    "Description": "Opp Corp Pl",
+    "Latitude": 1.3258163890121,
+    "Longitude": 103.71906611098208
+  },
+  {
+    "BusStopCode": "21179",
+    "RoadName": "Corporation Rd",
+    "Description": "Corp Pl",
+    "Latitude": 1.32586166697514,
+    "Longitude": 103.71929527796603
+  },
+  {
+    "BusStopCode": "21211",
+    "RoadName": "Corporation Rd",
+    "Description": "Opp Lakepoint Condo",
+    "Latitude": 1.34004972199531,
+    "Longitude": 103.71606833298439
+  },
+  {
+    "BusStopCode": "21219",
+    "RoadName": "Corporation Rd",
+    "Description": "Lakepoint Condo",
+    "Latitude": 1.34010356133429,
+    "Longitude": 103.71625930906035
+  },
+  {
+    "BusStopCode": "21229",
+    "RoadName": "Corporation Rd",
+    "Description": "Opp S'pore A'space Mfg",
+    "Latitude": 1.34206,
+    "Longitude": 103.716007
   },
   {
     "BusStopCode": "21241",
@@ -4198,6 +4303,132 @@
     "Description": "Blk 185",
     "Latitude": 1.34740203306581,
     "Longitude": 103.71059149459593
+  },
+  {
+    "BusStopCode": "21551",
+    "RoadName": "Yung Ho Rd",
+    "Description": "Blk 151",
+    "Latitude": 1.3266610431866,
+    "Longitude": 103.7209862100987
+  },
+  {
+    "BusStopCode": "21559",
+    "RoadName": "Yung Ho Rd",
+    "Description": "CISCO Recall",
+    "Latitude": 1.326626598883,
+    "Longitude": 103.72063909698713
+  },
+  {
+    "BusStopCode": "21561",
+    "RoadName": "Corporation Dr",
+    "Description": "Blk 158",
+    "Latitude": 1.328801,
+    "Longitude": 103.722753
+  },
+  {
+    "BusStopCode": "21569",
+    "RoadName": "Corporation Dr",
+    "Description": "Opp Blk 158",
+    "Latitude": 1.32857203912272,
+    "Longitude": 103.72289813113439
+  },
+  {
+    "BusStopCode": "21571",
+    "RoadName": "Corporation Dr",
+    "Description": "Opp Jurong Sec Sch",
+    "Latitude": 1.33056719470166,
+    "Longitude": 103.72307005592994
+  },
+  {
+    "BusStopCode": "21579",
+    "RoadName": "Corporation Dr",
+    "Description": "Jurong Sec Sch",
+    "Latitude": 1.33013472279057,
+    "Longitude": 103.72318086110512
+  },
+  {
+    "BusStopCode": "21581",
+    "RoadName": "Corporation Dr",
+    "Description": "Blk 65",
+    "Latitude": 1.33243350969467,
+    "Longitude": 103.72328639029729
+  },
+  {
+    "BusStopCode": "21589",
+    "RoadName": "Corporation Dr",
+    "Description": "Opp Blk 65",
+    "Latitude": 1.33246568746472,
+    "Longitude": 103.72345805167676
+  },
+  {
+    "BusStopCode": "21591",
+    "RoadName": "Corporation Dr",
+    "Description": "Opp Blk 117",
+    "Latitude": 1.33476103645994,
+    "Longitude": 103.72242808341083
+  },
+  {
+    "BusStopCode": "21599",
+    "RoadName": "Corporation Dr",
+    "Description": "Blk 117",
+    "Latitude": 1.33468356164521,
+    "Longitude": 103.72268493639599
+  },
+  {
+    "BusStopCode": "21601",
+    "RoadName": "Corporation Dr",
+    "Description": "Blk 357",
+    "Latitude": 1.33727029608815,
+    "Longitude": 103.72109770581518
+  },
+  {
+    "BusStopCode": "21609",
+    "RoadName": "Corporation Dr",
+    "Description": "Opp Blk 364",
+    "Latitude": 1.33775166774993,
+    "Longitude": 103.72102625466782
+  },
+  {
+    "BusStopCode": "21611",
+    "RoadName": "Corporation Dr",
+    "Description": "Blk 367",
+    "Latitude": 1.3383643422738,
+    "Longitude": 103.71931958855112
+  },
+  {
+    "BusStopCode": "21619",
+    "RoadName": "Corporation Dr",
+    "Description": "Aft Corp Rd",
+    "Latitude": 1.33793509893342,
+    "Longitude": 103.71816213921478
+  },
+  {
+    "BusStopCode": "21681",
+    "RoadName": "Boon Lay Way",
+    "Description": "Opp Blk 200",
+    "Latitude": 1.34228732259066,
+    "Longitude": 103.71466298692037
+  },
+  {
+    "BusStopCode": "21689",
+    "RoadName": "Boon Lay Way",
+    "Description": "Blk 200",
+    "Latitude": 1.34241984576482,
+    "Longitude": 103.71442338427325
+  },
+  {
+    "BusStopCode": "21691",
+    "RoadName": "Boon Lay Way",
+    "Description": "Opp Summerdale",
+    "Latitude": 1.341376,
+    "Longitude": 103.712218
+  },
+  {
+    "BusStopCode": "21699",
+    "RoadName": "Boon Lay Way",
+    "Description": "Summerdale",
+    "Latitude": 1.341617,
+    "Longitude": 103.712315
   },
   {
     "BusStopCode": "22009",
@@ -9156,11 +9387,46 @@
     "Longitude": 103.8951960850957
   },
   {
+    "BusStopCode": "82081",
+    "RoadName": "Tg Katong Rd",
+    "Description": "Aft Dunman Rd",
+    "Latitude": 1.31037284851913,
+    "Longitude": 103.89412794527634
+  },
+  {
+    "BusStopCode": "82089",
+    "RoadName": "Tg Katong Rd",
+    "Description": "Aft Ipoh Lane",
+    "Latitude": 1.310947,
+    "Longitude": 103.894254
+  },
+  {
+    "BusStopCode": "82091",
+    "RoadName": "Tg Katong Rd",
+    "Description": "Aft Queen of Peace Ch",
+    "Latitude": 1.31264667096781,
+    "Longitude": 103.89411050584133
+  },
+  {
+    "BusStopCode": "82099",
+    "RoadName": "Tg Katong Rd",
+    "Description": "CDAC Bldg",
+    "Latitude": 1.31299461549467,
+    "Longitude": 103.89427184817765
+  },
+  {
     "BusStopCode": "82109",
     "RoadName": "Geylang Rd",
     "Description": "City Plaza",
     "Latitude": 1.3151892235607,
     "Longitude": 103.89331774481381
+  },
+  {
+    "BusStopCode": "82111",
+    "RoadName": "Tg Katong Rd",
+    "Description": "Opp Tg Katong Cplx",
+    "Latitude": 1.3161193086354,
+    "Longitude": 103.89379978179137
   },
   {
     "BusStopCode": "82121",
@@ -10008,6 +10274,20 @@
     "Description": "Aft Tg Katong Rd",
     "Latitude": 1.3013063985688,
     "Longitude": 103.8952666584497
+  },
+  {
+    "BusStopCode": "91081",
+    "RoadName": "Fort Rd",
+    "Description": "Aft Katong Pk Stn Exit 2",
+    "Latitude": 1.29930499999248,
+    "Longitude": 103.88533388902762
+  },
+  {
+    "BusStopCode": "91089",
+    "RoadName": "Fort Rd",
+    "Description": "Opp Katong Pk Stn",
+    "Latitude": 1.29913832558004,
+    "Longitude": 103.88553021350832
   },
   {
     "BusStopCode": "91091",

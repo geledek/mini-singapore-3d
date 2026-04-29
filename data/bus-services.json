@@ -247,6 +247,32 @@
     "LoopDesc": ""
   },
   {
+    "ServiceNo": "30",
+    "Operator": "SBST",
+    "Direction": 1,
+    "Category": "TRUNK",
+    "OriginCode": "84009",
+    "DestinationCode": "22009",
+    "AM_Peak_Freq": "08-10",
+    "AM_Offpeak_Freq": "08-17",
+    "PM_Peak_Freq": "11-17",
+    "PM_Offpeak_Freq": "13-17",
+    "LoopDesc": ""
+  },
+  {
+    "ServiceNo": "30",
+    "Operator": "SBST",
+    "Direction": 2,
+    "Category": "TRUNK",
+    "OriginCode": "22009",
+    "DestinationCode": "84009",
+    "AM_Peak_Freq": "09-12",
+    "AM_Offpeak_Freq": "09-16",
+    "PM_Peak_Freq": "08-10",
+    "PM_Offpeak_Freq": "14-18",
+    "LoopDesc": ""
+  },
+  {
     "ServiceNo": "31",
     "Operator": "SBST",
     "Direction": 1,
