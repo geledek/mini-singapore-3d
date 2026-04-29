@@ -688,11 +688,6 @@ export default class extends Evented {
         // Apply fog
         map.setFog(theme.fog);
 
-        // Apply terrain exaggeration
-        if (map.getSource('mapbox-dem')) {
-            map.setTerrain({source: 'mapbox-dem', exaggeration: theme.terrainExaggeration});
-        }
-
         // Apply lighting
         if (!theme.useDynamicLighting) {
             const {ambient, directional, sky} = theme;
@@ -1005,14 +1000,14 @@ export default class extends Evented {
         }, 'background');
         helpersMapbox.setSunlight(map, clock.getTime());
 
-        // Enable 3D terrain
-        map.addSource('mapbox-dem', {
-            type: 'raster-dem',
-            url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
-            tileSize: 512,
-            maxzoom: 14
-        });
-        map.setTerrain({source: 'mapbox-dem', exaggeration: 1.5});
+        // Terrain disabled — focus on transport visualization
+        // map.addSource('mapbox-dem', {
+        //     type: 'raster-dem',
+        //     url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        //     tileSize: 512,
+        //     maxzoom: 14
+        // });
+        // map.setTerrain({source: 'mapbox-dem', exaggeration: 1.5});
 
         // Apply default theme
         me.themeUseDynamicLighting = true;
