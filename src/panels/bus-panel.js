@@ -1,6 +1,20 @@
 import {getTimeString, lerp} from '../helpers/helpers';
 import Panel from './panel';
 
+const OPERATOR_NAMES = {
+    'SBST': 'SBS Transit',
+    'TTS': 'Tower Transit',
+    'GAS': 'Go-Ahead Singapore',
+    'SMRT': 'SMRT Buses'
+};
+
+const OPERATOR_COLORS = {
+    'SBST': '#7B2D8B',
+    'TTS': '#006B3F',
+    'GAS': '#003D7C',
+    'SMRT': '#EE2E24'
+};
+
 export default class extends Panel {
 
     constructor(options) {
@@ -17,6 +31,9 @@ export default class extends Panel {
             {route, stops, departureTimes} = trip,
             routeInfo = gtfs.routeLookup.get(route),
             color = routeInfo.color,
+            operator = routeInfo.operator || '',
+            operatorName = OPERATOR_NAMES[operator] || operator,
+            operatorColor = OPERATOR_COLORS[operator] || color || gtfs.color,
             stopLookup = gtfs.stopLookup,
             now = map.clock.getTimeOffset();
 
@@ -30,22 +47,22 @@ export default class extends Panel {
         // Info section
         const infoHTML = [
             '<div class="bus-info-section">',
+            `<div class="bus-info-row"><span class="bus-info-label">Operator</span><span style="color:${operatorColor};font-weight:bold;">${operatorName}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Origin</span><span>${originStop ? originStop.name : '-'}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Destination</span><span>${destStop ? destStop.name : '-'}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Next Stop</span><span class="bus-info-highlight">${nextStop ? nextStop.name : '-'}</span></div>`,
             `<div class="bus-info-row"><span class="bus-info-label">Stops Remaining</span><span>${remainingStops}</span></div>`,
-            `<div class="bus-info-row"><span class="bus-info-label">Operator</span><span>${routeInfo.operator || gtfs.agency}</span></div>`,
             '</div>'
         ].join('');
 
         for (let i = 0, ilen = stops.length; i < ilen; i++) {
             const stop = stopLookup.get(stops[i]),
                 departureTime = getTimeString(departureTimes[i]),
-                isCurrent = i === currentIdx,
+                isNext = i === currentIdx,
                 isPast = i < currentIdx;
 
             busstopHTML.push([
-                `<div class="busstop-row${isCurrent ? ' busstop-current' : ''}${isPast ? ' busstop-past' : ''}">`,
+                `<div class="busstop-row${isNext ? ' busstop-next' : ''}${isPast ? ' busstop-past' : ''}">`,
                 `<div class="busstop-title-box">${stop ? stop.name : stops[i]}</div>`,
                 `<div class="busstop-time-box">${departureTime}</div>`,
                 '</div>'
@@ -70,9 +87,11 @@ export default class extends Panel {
             offsets.push(child.offsetTop + child.getBoundingClientRect().height / 2);
         }
         container.querySelector('#busroute-mark').innerHTML = [
-            `<line stroke="${color || gtfs.color}" stroke-width="10" x1="12" y1="${offsets[0]}" x2="12" y2="${offsets[offsets.length - 1]}" stroke-linecap="round" />`,
-        ].concat(offsets.map(offset =>
-            `<circle cx="12" cy="${offset}" r="3" fill="#ffffff" />`
+            `<line stroke="${operatorColor}" stroke-width="10" x1="12" y1="${offsets[0]}" x2="12" y2="${offsets[offsets.length - 1]}" stroke-linecap="round" />`,
+        ].concat(offsets.map((offset, i) =>
+            i === currentIdx
+                ? `<circle class="busstop-next-marker" cx="12" cy="${offset}" r="6" fill="#ffffff" stroke="${operatorColor}" stroke-width="2" />`
+                : `<circle cx="12" cy="${offset}" r="3" fill="#ffffff" />`
         )).join('');
 
         (function repeat() {
@@ -84,8 +103,16 @@ export default class extends Panel {
                 p = performance.now() % 1500 / 1500;
 
             container.querySelector('#bus-mark').innerHTML =
-                `<circle cx="22" cy="${y}" r="${7 + p * 15}" fill="#ffffff" opacity="${1 - p}" />` +
-                `<circle cx="22" cy="${y}" r="7" fill="#ffffff" />`;
+                `<circle cx="22" cy="${y}" r="${7 + p * 15}" fill="${operatorColor}" opacity="${1 - p}" />` +
+                `<circle cx="22" cy="${y}" r="7" fill="${operatorColor}" />`;
+
+            // Blink the next stop marker
+            const nextMarker = container.querySelector('.busstop-next-marker');
+            if (nextMarker) {
+                const blink = Math.sin(performance.now() / 500) * 0.3 + 0.7;
+                nextMarker.setAttribute('opacity', blink.toFixed(2));
+            }
+
             if (me._scrollTop === undefined || me._scrollTop === bodyElement.scrollTop) {
                 me._scrollTop = bodyElement.scrollTop = Math.round(y - height / 2 + 4);
             }
@@ -105,14 +132,16 @@ export default class extends Panel {
             {route, headsigns} = bus.trip,
             routeInfo = gtfs.routeLookup.get(route),
             {shortName, longName, color, textColor} = routeInfo,
+            operator = routeInfo.operator || '',
+            operatorColor = OPERATOR_COLORS[operator] || color || gtfs.color,
             labelStyle = [
-                textColor ? `color: ${textColor};` : 'color: #FFFFFF;',
-                color ? `background-color: ${color};` : ''
+                'color: #FFFFFF;',
+                `background-color: ${operatorColor};`
             ].join(' ');
 
         this.setTitle([
             '<div class="desc-header">',
-            `<div style="background-color: ${color || gtfs.color};"></div>`,
+            `<div style="background-color: ${operatorColor};"></div>`,
             '<div><div class="desc-first-row">',
             shortName ? `<span class="bus-route-label" style="${labelStyle}">Bus ${shortName}</span> ` : '',
             bus.stop !== undefined ? '<span class="realtime-icon"></span>' : '',

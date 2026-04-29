@@ -2967,8 +2967,6 @@ export default class extends Evented {
                 });
 
                 for (const key of ['busroute', 'busroute-highlighted']) {
-                    const width = key === 'busroute' ? ['get', 'width'] : 2;
-
                     me.addLayer({
                         id: `${key}-${id}-og-`,
                         type: 'line',
@@ -2992,30 +2990,17 @@ export default class extends Evented {
                                         ],
                                         ['!', ['to-boolean', ['feature-state', 'hidden']]]
                                     ],
-                                    0.6,
+                                    0.7,
                                     0
                                 ]
                             }[key],
-                            'line-width': [
-                                'interpolate',
-                                ['exponential', 2],
-                                ['zoom'],
-                                11,
-                                ['/', width, 2],
-                                12,
-                                width,
-                                19,
-                                width,
-                                22,
-                                ['*', width, 8]
-                            ],
-                            'line-dasharray': {
-                                'busroute': ['literal', [1, 0]],
-                                'busroute-highlighted': ['literal', [4, 3]]
+                            'line-width': {
+                                'busroute': ['interpolate', ['exponential', 2], ['zoom'], 11, 1, 14, 2, 19, 4, 22, 16],
+                                'busroute-highlighted': ['interpolate', ['linear'], ['zoom'], 12, 2, 16, 3, 20, 5]
                             }[key],
                             'line-blur': {
                                 'busroute': 0,
-                                'busroute-highlighted': 1
+                                'busroute-highlighted': 2
                             }[key],
                             'line-emissive-strength': 1
                         },
@@ -3042,6 +3027,7 @@ export default class extends Evented {
                 for (const zoom of [14, 15, 16, 17, 18]) {
                     // Bus stops as pin markers
                     // Only visible when route is highlighted (stop-highlight state)
+                    // Next stop is larger and highlighted
                     me.addLayer({
                         id: `busstops-${id}-og-${zoom}`,
                         type: 'circle',
@@ -3052,13 +3038,17 @@ export default class extends Evented {
                         },
                         paint: {
                             'circle-radius': [
-                                'interpolate', ['linear'], ['zoom'],
-                                14, 3,
-                                16, 5,
-                                18, 7,
-                                22, 14
+                                'case',
+                                ['to-boolean', ['feature-state', 'next-stop']],
+                                ['interpolate', ['linear'], ['zoom'], 14, 6, 16, 8, 18, 11, 22, 18],
+                                ['interpolate', ['linear'], ['zoom'], 14, 3, 16, 4, 18, 6, 22, 12]
                             ],
-                            'circle-color': '#FFFFFF',
+                            'circle-color': [
+                                'case',
+                                ['to-boolean', ['feature-state', 'next-stop']],
+                                '#FFD700',
+                                '#FFFFFF'
+                            ],
                             'circle-opacity': [
                                 'case',
                                 ['to-boolean', ['feature-state', 'stop-highlight']],
@@ -3066,11 +3056,17 @@ export default class extends Evented {
                                 0
                             ],
                             'circle-stroke-width': [
-                                'interpolate', ['linear'], ['zoom'],
-                                14, 1.5,
-                                18, 3
+                                'case',
+                                ['to-boolean', ['feature-state', 'next-stop']],
+                                3,
+                                ['interpolate', ['linear'], ['zoom'], 14, 1.5, 18, 2.5]
                             ],
-                            'circle-stroke-color': '#7B2D8B',
+                            'circle-stroke-color': [
+                                'case',
+                                ['to-boolean', ['feature-state', 'next-stop']],
+                                '#FFFFFF',
+                                '#7B2D8B'
+                            ],
                             'circle-stroke-opacity': [
                                 'case',
                                 ['to-boolean', ['feature-state', 'stop-highlight']],
@@ -4142,13 +4138,19 @@ export default class extends Evented {
         if ((markedObject && markedObject.type === 'bus' && markedObject.gtfsId === gtfsId && markedObject.trip.shape === id) ||
             (trackedObject && trackedObject.type === 'bus' && trackedObject.gtfsId === gtfsId && trackedObject.trip.shape === id)) {
             const gtfs = me.gtfs.get(gtfsId),
-                color = gtfs.routeLookup.get(trip.route).color;
+                color = gtfs.routeLookup.get(trip.route).color,
+                bus = markedObject && markedObject.type === 'bus' ? markedObject : trackedObject,
+                nextStopIdx = bus ? bus.sectionIndex + bus.sectionLength : -1;
 
             map.setFeatureState({source, id}, {'trip-highlight': color || gtfs.color});
 
-            // Highlight bus stops along this trip
-            for (const stopId of trip.stops) {
-                map.setFeatureState({source, id: stopId}, {'stop-highlight': true});
+            // Highlight bus stops along this trip, mark next stop
+            for (let i = 0; i < trip.stops.length; i++) {
+                const stopId = trip.stops[i];
+                map.setFeatureState({source, id: stopId}, {
+                    'stop-highlight': true,
+                    'next-stop': i === nextStopIdx
+                });
             }
         } else {
             map.removeFeatureState({source, id}, 'trip-highlight');
@@ -4156,6 +4158,7 @@ export default class extends Evented {
             // Remove stop highlights
             for (const stopId of trip.stops) {
                 map.removeFeatureState({source, id: stopId}, 'stop-highlight');
+                map.removeFeatureState({source, id: stopId}, 'next-stop');
             }
         }
     }

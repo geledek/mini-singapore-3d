@@ -413,9 +413,16 @@
 .mini-singapore-3d .busstop-row.busstop-past {
     opacity: 0.4;
 }
-.mini-singapore-3d .busstop-row.busstop-current .busstop-title-box {
+.mini-singapore-3d .busstop-row.busstop-next .busstop-title-box {
     font-weight: bold;
     color: #ffffff;
+}
+@keyframes bus-stop-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+.mini-singapore-3d .busstop-row.busstop-next {
+    animation: bus-stop-blink 1.5s ease-in-out infinite;
 }
 .mini-singapore-3d .bus-info-section {
     padding: 8px 12px;
