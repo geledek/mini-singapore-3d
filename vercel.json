@@ -1,5 +1,14 @@
 {
   "buildCommand": "npm run build && npm run build-pages && npm run build-data",
   "outputDirectory": "build",
-  "framework": null
+  "framework": null,
+  "functions": {
+    "api/*.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {"source": "/api/:path*", "destination": "/api/:path*"}
+  ]
 }

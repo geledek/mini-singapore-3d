@@ -14,6 +14,7 @@ import * as helpersGeojson from './helpers/helpers-geojson';
 import * as helpersMapbox from './helpers/helpers-mapbox';
 import {GeoJsonLayer, ThreeLayer, Tile3DLayer, TrafficLayer} from './layers';
 import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicTrainData, loadLtaBusData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
+import BusArrivalPoller from './bus-arrival-poller';
 import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, ThemePanel, TrackingModePanel, TrainPanel} from './panels';
 import Plugin from './plugin';
 import themes from './themes';
@@ -730,8 +731,10 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = true;
-        // Restart bus animations
         me.refreshBuses();
+        if (me.busArrivalPoller) {
+            me.busArrivalPoller.start();
+        }
     }
 
     /**
@@ -741,8 +744,10 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = false;
+        if (me.busArrivalPoller) {
+            me.busArrivalPoller.stop();
+        }
         for (const gtfs of me.gtfs.values()) {
-            // Stop all active buses
             for (const bus of gtfs.activeBusLookup.values()) {
                 me.stopBus(bus);
             }
@@ -3134,6 +3139,26 @@ export default class extends Evented {
         }
 
         me.updateBusRouteVisibility();
+
+        // Start real-time bus arrival poller if proxy URL is configured
+        if (!me.busArrivalPoller && configs.proxyUrl && configs.proxyUrl !== 'BUILD_PROXY_URL') {
+            me.busArrivalPoller = new BusArrivalPoller(me);
+            me.busArrivalPoller.onUpdate(updates => {
+                // Update bus load data from real-time API
+                const gtfs = me.gtfs.get('lta');
+                if (!gtfs) return;
+                for (const bus of gtfs.activeBusLookup.values()) {
+                    const serviceNo = gtfs.routeLookup.get(bus.trip.route)?.shortName;
+                    if (serviceNo) {
+                        const load = me.busArrivalPoller.getLoadForService(serviceNo);
+                        if (load) {
+                            bus.load = load;
+                        }
+                    }
+                }
+            });
+            me.busArrivalPoller.start();
+        }
     }
 
     refreshRealtimeTrainData() {
