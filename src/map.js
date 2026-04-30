@@ -1915,23 +1915,6 @@ export default class extends Evented {
                         }
                     }
 
-                    // Animate bus stop next-stop pulse
-                    if (me.gtfs.size > 0) {
-                        const p = performance.now() % 1500 / 1500;
-                        const pulseOpacity = (1 - p) * 0.5;
-                        for (const gtfs of me.gtfs.values()) {
-                            const layerId = `busstops-pulse-${gtfs.id}-og`;
-                            if (map.getLayer(layerId)) {
-                                map.setPaintProperty(layerId, 'circle-opacity', [
-                                    'case',
-                                    ['to-boolean', ['feature-state', 'next-stop']],
-                                    pulseOpacity,
-                                    0
-                                ]);
-                            }
-                        }
-                    }
-
                     map.triggerRepaint();
                     me.lastRepaint = Date.now();
                 }
