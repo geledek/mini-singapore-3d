@@ -89,7 +89,7 @@ if ( groupIndex == 0.0 ) {
 
 #ifdef BUS
 // Singapore bus livery using 4 color slots:
-// color0 = purple/primary body, color1 = white, color2 = accent (red roof), color3 = window (black)
+// color0 = primary body (lower), color1 = white (upper), color2 = roof accent, color3 = window (black)
 float absX = abs( position.x );
 float absY = abs( position.y );
 float absZ = abs( position.z );
@@ -103,24 +103,24 @@ bool isBack = absY > 0.59 && position.y < 0.0;
 bool isSide = absX > 0.29;
 
 if ( isTop ) {
-    // Roof: accent color (red)
     vInstanceColor = color2;
 } else if ( isBottom ) {
     vInstanceColor = color0;
 } else if ( isFront ) {
-    // Front: lower white, upper half black windshield (direction indicator)
-    float frontWindow = smoothstep( 0.35, 0.5, heightNorm );
-    vInstanceColor = mix( color1, color3, frontWindow );
+    // Front: body color at bottom, black windshield upper
+    vec3 frontBody = mix( color0, color1, smoothstep( 0.0, 0.4, heightNorm ) );
+    float frontWindow = smoothstep( 0.4, 0.55, heightNorm );
+    vInstanceColor = mix( frontBody, color3, frontWindow );
 } else if ( isBack ) {
-    // Back: lower half purple, upper half red
-    float backSplit = smoothstep( 0.45, 0.55, heightNorm );
+    // Back: body color bottom, accent top
+    float backSplit = smoothstep( 0.4, 0.55, heightNorm );
     vInstanceColor = mix( color0, color2, backSplit );
 } else if ( isSide ) {
-    // Side: lower purple fading to white toward front, upper black windows
-    float purpleFade = ( 1.0 - lengthNorm ) * ( 1.0 - heightNorm * 0.5 );
-    vec3 sideBody = mix( color1, color0, purpleFade );
-    float windowMask = smoothstep( 0.45, 0.55, heightNorm ) * ( 1.0 - smoothstep( 0.85, 0.92, heightNorm ) );
-    vInstanceColor = mix( sideBody, color3, windowMask * 0.9 );
+    // Side: color0 (bottom) → color1 (upper), with black window band in middle
+    vec3 sideBody = mix( color0, color1, smoothstep( 0.0, 0.45, heightNorm ) );
+    // Window band: between 50-80% height
+    float windowMask = smoothstep( 0.48, 0.55, heightNorm ) * ( 1.0 - smoothstep( 0.78, 0.85, heightNorm ) );
+    vInstanceColor = mix( sideBody, color3, windowMask );
 } else {
     vInstanceColor = color0;
 }
