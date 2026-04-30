@@ -17,9 +17,11 @@ export default class BusArrivalPoller {
         this.map = map;
         this.polling = false;
         this.timer = null;
-        this.lastResults = new Map(); // stopCode → arrival data
+        this.lastResults = new Map();
         this.listeners = [];
-        this.proxyUrl = configs.proxyUrl;
+        // Strip any extra quotes from build-time replacement
+        const proxy = configs.proxyUrl;
+        this.proxyUrl = proxy ? proxy.replace(/^["']|["']$/g, '') : null;
     }
 
     start() {
@@ -43,7 +45,8 @@ export default class BusArrivalPoller {
 
     async poll() {
         const apiKey = configs.apiUrl.ltaAccountKey;
-        if (!apiKey) return;
+        if (!apiKey && !this.proxyUrl) return;
+        if (this.proxyUrl === 'BUILD_PROXY_URL') return;
 
         // Get visible stops from viewport
         const visibleStops = this.getVisibleStops();
@@ -111,11 +114,11 @@ export default class BusArrivalPoller {
         const bounds = map.map.getBounds();
         const stops = [];
 
-        for (const [code, stop] of gtfs.stopLookup) {
+        for (const [id, stop] of gtfs.stopLookup) {
             const [lng, lat] = stop.coord;
             if (lng >= bounds.getWest() && lng <= bounds.getEast() &&
                 lat >= bounds.getSouth() && lat <= bounds.getNorth()) {
-                stops.push(stop);
+                stops.push({...stop, code: id});
             }
         }
 
@@ -128,7 +131,7 @@ export default class BusArrivalPoller {
 
             if (this.proxyUrl && this.proxyUrl !== 'BUILD_PROXY_URL') {
                 // Use proxy to avoid CORS
-                url = `${this.proxyUrl}/bus-arrival?stopCode=${stopCode}`;
+                url = `${this.proxyUrl}/api/bus-arrival?stopCode=${stopCode}`;
                 headers = {'accept': 'application/json'};
             } else {
                 // Direct (only works server-side or with CORS proxy)

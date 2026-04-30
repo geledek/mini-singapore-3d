@@ -3140,11 +3140,10 @@ export default class extends Evented {
 
         me.updateBusRouteVisibility();
 
-        // Start real-time bus arrival poller if proxy URL is configured
-        if (!me.busArrivalPoller && configs.proxyUrl && configs.proxyUrl !== 'BUILD_PROXY_URL') {
+        // Start real-time bus arrival poller
+        if (!me.busArrivalPoller) {
             me.busArrivalPoller = new BusArrivalPoller(me);
-            me.busArrivalPoller.onUpdate(updates => {
-                // Update bus load data from real-time API
+            me.busArrivalPoller.onUpdate(() => {
                 const gtfs = me.gtfs.get('lta');
                 if (!gtfs) return;
                 for (const bus of gtfs.activeBusLookup.values()) {
