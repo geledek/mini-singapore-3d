@@ -23,29 +23,33 @@ export default class extends Panel {
             const {dict, gtfs, lastDynamicUpdate} = me._map,
                 gtfsArray = [...gtfs.values()];
 
+            // Format static update (strip extra quotes from build)
+            const staticUpdate = (configs.lastStaticUpdate || '').replace(/^["']|["']$/g, '');
+
+            // Format flight timestamp
+            const flightUpdate = lastDynamicUpdate['opensky'] || lastDynamicUpdate['schedule'];
+            const flightFormatted = flightUpdate
+                ? (typeof flightUpdate === 'number' ? new Date(flightUpdate).toLocaleString() : flightUpdate)
+                : 'N/A';
+
+            // Bus data status
+            const busPoller = me._map.busArrivalPoller;
+            const busStatus = busPoller && busPoller.lastResults.size > 0
+                ? `Live (${busPoller.lastResults.size} entries)`
+                : gtfsArray.length > 0 ? 'Timetable simulation' : 'N/A';
+
             me.setHTML([
                 dict['description'].replace(/<h3>.*<\/h3>/, ''),
                 `<p>${configs.copyright}</p>`,
                 `<div class="card-title">${dict['static-update']}</div>`,
-                `<div class="card-body">${configs.lastStaticUpdate}</div>`,
+                `<div class="card-body">${staticUpdate}</div>`,
                 `<div class="card-title">${dict['dynamic-update']}</div>`,
                 '<div class="card-body">',
-                lastDynamicUpdate['SMRT'] || 'N/A',
-                ` (${dict['smrt']})<br>`,
-                lastDynamicUpdate['SBS'] || 'N/A',
-                ` (${dict['sbs']})<br>`,
-                lastDynamicUpdate['LTA'] || 'N/A',
-                ` (${dict['lta']})<br>`,
-                lastDynamicUpdate['opensky'] || lastDynamicUpdate['schedule'] || 'N/A',
-                ` (${dict['opensky']})<br>`,
-                gtfsArray.filter(({date}) => date).map(({date, agency}) => `${date} (${agency})`).join('<br>'),
-                '</div>',
-                gtfsArray.length > 0 ? [
-                    `<div class="card-title">${dict['gtfs-feed-version']}</div>`,
-                    '<div class="card-body">',
-                    gtfsArray.map(({version, agency}) => `${version} (${agency})`).join('<br>'),
-                    '</div>'
-                ].join('') : ''
+                `Timetable (${dict['smrt']})<br>`,
+                `Timetable (${dict['sbs']})<br>`,
+                `${flightFormatted} (${dict['opensky']})<br>`,
+                `${busStatus} (Bus Arrival API)`,
+                '</div>'
             ].join(''));
         }
 
