@@ -20,23 +20,30 @@ export default class extends Panel {
         const me = this;
 
         if (me.isOpen()) {
-            const {dict, gtfs, lastDynamicUpdate} = me._map,
-                gtfsArray = [...gtfs.values()];
+            const {dict, gtfs} = me._map;
 
             // Format static update (strip extra quotes from build)
             const staticUpdate = (configs.lastStaticUpdate || '').replace(/^["']|["']$/g, '');
 
-            // Format flight timestamp
-            const flightUpdate = lastDynamicUpdate['opensky'] || lastDynamicUpdate['schedule'];
-            const flightFormatted = flightUpdate
-                ? (typeof flightUpdate === 'number' ? new Date(flightUpdate).toLocaleString() : flightUpdate)
-                : 'N/A';
+            // MRT status
+            const trainCount = me._map.activeTrainLookup ? me._map.activeTrainLookup.size : 0;
 
-            // Bus data status
+            // Flight status
+            const flightCount = me._map.activeFlightLookup ? me._map.activeFlightLookup.size : 0;
+            const flightLastUpdate = me._map.lastFlightUpdate;
+            const flightStatus = flightLastUpdate
+                ? `Live — ${flightCount} active (${formatTime(flightLastUpdate)})`
+                : flightCount > 0 ? `Simulated — ${flightCount} active` : 'N/A';
+
+            // Bus status
             const busPoller = me._map.busArrivalPoller;
-            const busStatus = busPoller && busPoller.lastResults.size > 0
-                ? `Live (${busPoller.lastResults.size} entries)`
-                : gtfsArray.length > 0 ? 'Timetable simulation' : 'N/A';
+            const lta = gtfs.get('lta');
+            const busCount = lta ? lta.activeBusLookup.size : 0;
+            const busLastUpdate = busPoller ? busPoller.lastPollTime : null;
+            const busEntries = busPoller ? busPoller.lastResults.size : 0;
+            const busStatus = busEntries > 0
+                ? `Live — ${busCount} buses, ${busEntries} arrivals (${formatTime(busLastUpdate)})`
+                : busCount > 0 ? `Simulated — ${busCount} active` : 'N/A';
 
             me.setHTML([
                 dict['description'].replace(/<h3>.*<\/h3>/, ''),
@@ -45,10 +52,9 @@ export default class extends Panel {
                 `<div class="card-body">${staticUpdate}</div>`,
                 `<div class="card-title">${dict['dynamic-update']}</div>`,
                 '<div class="card-body">',
-                `Timetable (${dict['smrt']})<br>`,
-                `Timetable (${dict['sbs']})<br>`,
-                `${flightFormatted} (${dict['opensky']})<br>`,
-                `${busStatus} (Bus Arrival API)`,
+                `<strong>MRT/LRT:</strong> Simulated — ${trainCount} trains active<br>`,
+                `<strong>Flights:</strong> ${flightStatus}<br>`,
+                `<strong>Buses:</strong> ${busStatus}`,
                 '</div>'
             ].join(''));
         }
@@ -56,4 +62,10 @@ export default class extends Panel {
         return me;
     }
 
+}
+
+function formatTime(timestamp) {
+    if (!timestamp) return '';
+    const d = new Date(timestamp);
+    return d.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', second: '2-digit'});
 }

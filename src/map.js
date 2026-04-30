@@ -3155,6 +3155,7 @@ export default class extends Evented {
                         }
                     }
                 }
+                me.aboutPanel.updateContent();
             });
             me.busArrivalPoller.start();
         }
@@ -3407,6 +3408,7 @@ export default class extends Evented {
             }
 
             me.refreshFlights();
+            me.lastFlightUpdate = Date.now();
             me.aboutPanel.updateContent();
         }).catch(error => {
             me.refreshFlights();

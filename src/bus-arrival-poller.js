@@ -18,6 +18,7 @@ export default class BusArrivalPoller {
         this.polling = false;
         this.timer = null;
         this.lastResults = new Map();
+        this.lastPollTime = null;
         this.listeners = [];
         // Strip any extra quotes from build-time replacement
         const proxy = configs.proxyUrl;
@@ -98,6 +99,7 @@ export default class BusArrivalPoller {
 
         // Store results
         this.lastResults = busUpdates;
+        this.lastPollTime = Date.now();
 
         // Notify listeners
         for (const fn of this.listeners) {
