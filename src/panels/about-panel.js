@@ -48,6 +48,10 @@ export default class extends Panel {
             me.setHTML([
                 dict['description'].replace(/<h3>.*<\/h3>/, ''),
                 `<p>${configs.copyright}</p>`,
+                '<div class="card-body" style="margin-bottom:8px;">',
+                '<strong>Author:</strong> Ray Han<br>',
+                '<strong>Source:</strong> <a href="https://github.com/geledek/mini-singapore-3d" target="_blank" style="color:#4fc3f7;">github.com/geledek/mini-singapore-3d</a>',
+                '</div>',
                 `<div class="card-title">${dict['static-update']}</div>`,
                 `<div class="card-body">${staticUpdate}</div>`,
                 `<div class="card-title">${dict['dynamic-update']}</div>`,
