@@ -107,7 +107,8 @@ export default class extends Evented {
 
         me.hiddenRailways = new Set();
         me.busLinesEnabled = true;
-        me.flightsEnabled = true;
+        // ELON CUT: Flights disabled by default for Singapore rail focus. Legacy enableFlights() kept for dev but not called.
+        me.flightsEnabled = false;
         me.hiddenAirlines = new Set();
         me.searchMode = 'none';
         me.viewMode = configs.defaultViewMode;
@@ -1605,8 +1606,8 @@ export default class extends Evented {
 
         me.layerPanel = new LayerPanel({
             layers: me.plugins,
-            railways: [...me.railways.getAll()],
-            airlines: [...me.operators.getAll()].filter(op => op.type === 'airline')
+            railways: [...me.railways.getAll()]
+            // airlines intentionally removed (Elon cut - rail focus only)
         });
         me.trackingModePanel = new TrackingModePanel();
         me.themePanel = new ThemePanel();
@@ -1874,7 +1875,7 @@ export default class extends Evented {
 
                 // Flight data refreshes on a slower cadence (5 min) to stay within API limits
                 if (Math.floor((now - minDelay) / flightCheckInterval) !== Math.floor((me.lastFlightCheck || 0) / flightCheckInterval)) {
-                    if (me.searchMode === 'none' && me.clockMode === 'realtime' && !me.removing) {
+                    if (me.searchMode === 'none' && me.clockMode === 'realtime' && !me.removing && me.flightsEnabled) {
                         me.refreshRealtimeFlightData();
                     }
                     me.lastFlightCheck = now - minDelay;

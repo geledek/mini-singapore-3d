@@ -50,43 +50,14 @@ export default class extends Panel {
             '</div>'
         ].join('') : '';
 
-        // Air Traffic section
-        const airTrafficHTML = [
-            '<div class="layer-section-header" id="air-traffic-section-header">',
-            '<div class="layer-section-title" style="margin:0;cursor:pointer;display:flex;align-items:center;justify-content:space-between;">',
-            '<span>Air Traffic</span>',
-            '<span id="air-traffic-section-arrow" class="section-arrow section-arrow-open">&#9662;</span>',
-            '</div>',
-            '</div>',
-            '<div id="air-traffic-toggle-all" class="railway-toggle-row railway-toggle-enabled">',
-            '<div class="railway-color-swatch" style="background:linear-gradient(135deg,#00205B,#FFD100);border-radius:3px;"></div>',
-            '<div class="railway-toggle-name" style="font-weight:bold;">Toggle All</div>',
-            '</div>',
-            '<div id="air-traffic-list">',
-            ...airlines.map(airline => {
-                const name = airline.title ? (airline.title[map.lang] || airline.title['en'] || airline.id) : airline.id;
-                const color = airline.tailcolor || airline.color;
-                return [
-                    `<div id="airline-toggle-${airline.id}" class="railway-toggle-row railway-toggle-enabled" style="padding-left:24px;">`,
-                    `<div class="railway-color-swatch" style="background:${color}"></div>`,
-                    `<div class="railway-toggle-name">${name}</div>`,
-                    '</div>'
-                ].join('');
-            }),
-            '</div>'
-        ].join('');
-
-        const busHTML = [
-            '<div class="layer-section-title">Bus</div>',
-            '<div id="bus-lines-toggle" class="railway-toggle-row railway-toggle-enabled">',
-            '<div class="railway-color-swatch" style="background:linear-gradient(135deg,#FFFFFF,#AAAAAA);border-radius:3px;"></div>',
-            '<div class="railway-toggle-name">Bus Lines (Orchard Rd)</div>',
-            '</div>'
-        ].join('');
+        // ELON DECISION: Air Traffic + Bus UI excised for Singapore rail purity.
+        // Product = MRT/LRT trains only. Legacy flight/bus code stays in repo but is not user-facing.
+        const airTrafficHTML = '';
+        const busHTML = '';
 
         super.addTo(map)
             .setTitle(map.dict['layers'])
-            .setHTML(layersHTML + railwaysHTML + airTrafficHTML + busHTML);
+            .setHTML(layersHTML + railwaysHTML);
 
         // Wire up existing plugin layer toggles
         for (const layer of layers) {
