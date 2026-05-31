@@ -13,7 +13,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hybrid track generation combining OSM data with planned route segments for TEL
 - Per-line train counts overlay in debug view
 - Dashed rail styling and station outlines for planned TEL segments
-- AI-powered code reviews using OpenAI Codex for intelligent analysis and feedback
 - **SGRailData Integration** - High-quality Singapore rail data from community-maintained [SGRailData](https://github.com/cheeaun/sgraildata)
   - `scripts/convert-sgraildata.js` - Convert SGRailData GeoJSON to internal format
   - `scripts/merge-sgraildata.js` - Merge SGRailData with existing data
