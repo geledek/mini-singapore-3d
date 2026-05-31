@@ -41,6 +41,35 @@ const VARIABLE_HOLIDAYS = {
         {month: 5, day: 21},  // Vesak Day
         {month: 5, day: 16},  // Hari Raya Haji (estimated)
         {month: 10, day: 28}, // Deepavali (estimated)
+    ],
+    // 2028-2030: Best estimates as of 2026. Lunar dates (CNY, Hari Raya, Vesak, Deepavali) shift yearly.
+    // ACTION REQUIRED: Update this block every December with official MOM / LTA published dates for the coming year.
+    2028: [
+        {month: 1, day: 26},  // Chinese New Year (est)
+        {month: 1, day: 27},  // Chinese New Year (est)
+        {month: 2, day: 26},  // Hari Raya Puasa (est)
+        {month: 4, day: 14},  // Good Friday (est)
+        {month: 5, day: 9},   // Vesak Day (est)
+        {month: 5, day: 4},   // Hari Raya Haji (est)
+        {month: 10, day: 16}, // Deepavali (est)
+    ],
+    2029: [
+        {month: 2, day: 13},  // Chinese New Year (est)
+        {month: 2, day: 14},  // Chinese New Year (est)
+        {month: 2, day: 15},  // Hari Raya Puasa (est)
+        {month: 3, day: 30},  // Good Friday (est)
+        {month: 5, day: 28},  // Vesak Day (est)
+        {month: 4, day: 23},  // Hari Raya Haji (est)
+        {month: 11, day: 4},  // Deepavali (est)
+    ],
+    2030: [
+        {month: 2, day: 3},   // Chinese New Year (est)
+        {month: 2, day: 4},   // Chinese New Year (est)
+        {month: 2, day: 4},   // Hari Raya Puasa (est) - overlaps
+        {month: 4, day: 19},  // Good Friday (est)
+        {month: 5, day: 17},  // Vesak Day (est)
+        {month: 4, day: 13},  // Hari Raya Haji (est)
+        {month: 10, day: 25}, // Deepavali (est)
     ]
 };
 

@@ -1,4 +1,7 @@
 // Generate train timetables for all Singapore MRT/LRT lines
+// ELON NOTE: These are SYNTHETIC TIMETABLES for visualization only.
+// Real LTA schedules are more complex (different headways by segment, special events, etc.).
+// Peak frequencies tuned for visual density on major lines (NSL/EWL feel busy like reality).
 const fs = require('fs');
 const path = require('path');
 
@@ -9,24 +12,24 @@ const railwaysData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/ra
 const LINE_CONFIGS = {
 	'heavy-rail': {
 		avgTravelTime: 2,  // minutes between stations
-		avgStopTime: 1,    // minutes at each station
+		avgStopTime: 0.8,  // minutes at each station
 		schedule: [
-			{ start: 5.5, end: 7, interval: 10 },   // Early morning
-			{ start: 7, end: 9, interval: 5 },      // Morning peak
-			{ start: 9, end: 17, interval: 8 },     // Midday
-			{ start: 17, end: 20, interval: 5 },    // Evening peak
-			{ start: 20, end: 23.5, interval: 10 }  // Late evening
+			{ start: 5.5, end: 6.5, interval: 8 },   // Early morning ramp
+			{ start: 6.5, end: 9.5, interval: 3.5 }, // Morning peak (aggressive for NSL/EWL realism)
+			{ start: 9.5, end: 16.5, interval: 7 },  // Midday
+			{ start: 16.5, end: 20, interval: 3.5 }, // Evening peak
+			{ start: 20, end: 23.5, interval: 9 }    // Late evening
 		]
 	},
 	'light-rail': {
 		avgTravelTime: 1.5,  // LRT is faster, shorter distances
 		avgStopTime: 0.5,    // Shorter stops
 		schedule: [
-			{ start: 5.5, end: 7, interval: 12 },   // Early morning
-			{ start: 7, end: 9, interval: 6 },      // Morning peak
-			{ start: 9, end: 17, interval: 10 },    // Midday
-			{ start: 17, end: 20, interval: 6 },    // Evening peak
-			{ start: 20, end: 23.5, interval: 12 }  // Late evening
+			{ start: 5.5, end: 7, interval: 10 },   // Early morning
+			{ start: 7, end: 9, interval: 5 },      // Morning peak
+			{ start: 9, end: 17, interval: 8 },     // Midday
+			{ start: 17, end: 20, interval: 5 },    // Evening peak
+			{ start: 20, end: 23.5, interval: 10 }  // Late evening
 		]
 	}
 };
