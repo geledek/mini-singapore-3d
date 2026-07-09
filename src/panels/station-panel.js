@@ -104,6 +104,34 @@ export default class extends Panel {
             }
         }
 
+        // Platform crowd: worst level across the stations shown in this panel
+        // (e.g. an interchange may have multiple codes), from railFeedPoller.
+        const crowdColors = {l: '#2e7d32', m: '#f9a825', h: '#c62828'},
+            crowdSeverity = {l: 1, m: 2, h: 3},
+            crowdLabels = {l: dict['crowd-low'], m: dict['crowd-moderate'], h: dict['crowd-high']};
+        let crowdLevel = null;
+        if (map.railFeedPoller) {
+            for (const station of stations) {
+                if (!station.code) {
+                    continue;
+                }
+                const level = map.railFeedPoller.getCrowdLevel(station.code);
+                if (level && (!crowdLevel || crowdSeverity[level] > crowdSeverity[crowdLevel])) {
+                    crowdLevel = level;
+                }
+            }
+        }
+        const crowdUpdatedAt = map.railFeedPoller ? map.railFeedPoller.state.updatedAt : null,
+            crowdRow = crowdLevel ? [
+                '<div id="station-crowd-info">',
+                `<span class="station-crowd-dot" style="background-color: ${crowdColors[crowdLevel]};"></span>`,
+                `<span>${dict['platform-crowd']}: ${crowdLabels[crowdLevel]}</span>`,
+                crowdUpdatedAt ?
+                    ` <span class="station-crowd-time">(${new Date(crowdUpdatedAt).toLocaleTimeString(lang, {hour: 'numeric', minute: 'numeric'})})</span>` :
+                    '',
+                '</div>'
+            ].join('') : '';
+
         super.addTo(map)
             .setTitle([
                 '<div id="station-title-name">',
@@ -116,6 +144,7 @@ export default class extends Panel {
                     const separator = index > 0 ? ` ${dict['and']} ` : '';
                     return `${separator}${codeBadges}${title}`;
                 }).join('')}</div>`,
+                crowdRow,
                 '<div class="station-content-selector">',
                 '<span>',
                 '<input id="station-departure-button" type="radio" name="station">',

@@ -11,6 +11,11 @@ const configs = {
     // Minimum bus standing duration in milliseconds
     minBusStandingDuration: 15000,
 
+    // Additional dwell time (ms) added to a train's standing duration based on
+    // live platform crowd level ('l'/'m'/'h', from RailFeedPoller#getCrowdLevel).
+    // Unknown/missing data ('l' or null) adds no delay.
+    crowdDwellDelay: {l: 0, m: 10000, h: 25000},
+
     // Interval of refreshing object positions in milliseconds
     refreshInterval: 60000,
 

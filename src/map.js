@@ -15,6 +15,8 @@ import * as helpersMapbox from './helpers/helpers-mapbox';
 import {GeoJsonLayer, ThreeLayer, Tile3DLayer, TrafficLayer} from './layers';
 import {loadBusData, loadDynamicBusData, loadDynamicFlightData, loadDynamicTrainData, loadLtaBusData, loadStaticData, loadTimetableData, updateOdptUrl} from './loader';
 import BusArrivalPoller from './bus-arrival-poller';
+import RailFeedPoller from './rail-feed-poller';
+import {setCrowdDelayProvider} from './data-classes/train';
 import {AboutPanel, BusPanel, LayerPanel, SharePanel, StationPanel, ThemePanel, TrackingModePanel, TrainPanel} from './panels';
 import Plugin from './plugin';
 import themes from './themes';
@@ -106,7 +108,8 @@ export default class extends Evented {
         me.plugins = (options.plugins || []).map(plugin => new Plugin(plugin));
 
         me.hiddenRailways = new Set();
-        me.busLinesEnabled = true;
+        me.busLinesEnabled = false;
+        me._busDataRequested = false;
         me.flightsEnabled = true;
         me.hiddenAirlines = new Set();
         me.searchMode = 'none';
@@ -176,7 +179,8 @@ export default class extends Evented {
 
         clockPromise.then(() => {
             me.gtfs = new Map();
-            me.refreshBusData();
+            // Bus data is loaded lazily on first enableBusLines() call so
+            // startup only fetches MRT/LRT data.
         });
     }
 
@@ -509,6 +513,149 @@ export default class extends Evented {
     }
 
     /**
+     * Refreshes the service-disruption line highlight and alert banner from
+     * the current state of me.railFeedPoller. Called automatically whenever
+     * the poller notifies of new data, but can also be called manually (e.g.
+     * from the console, after stubbing me.railFeedPoller.state.alerts) to
+     * force an immediate refresh.
+     * @returns {Map} Returns itself to allow for method chaining
+     */
+    refreshAlertDisplay() {
+        const me = this,
+            {alerts} = me.railFeedPoller.state,
+            affectedIds = alerts && alerts.status === 2 ?
+                [...new Set(alerts.affected.map(({railwayId}) => railwayId).filter(id => id))] :
+                [];
+
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            const layerId = `railways-og-${zoom}`;
+
+            if (!me.map.getLayer(layerId)) {
+                continue;
+            }
+            me.map.setPaintProperty(layerId, 'line-color', affectedIds.length ? [
+                'match',
+                ['get', 'railway'],
+                ...affectedIds.flatMap(id => [id, '#d32f2f']),
+                ['get', 'color']
+            ] : ['get', 'color']);
+        }
+
+        me.updateAlertBanner(alerts);
+
+        return me;
+    }
+
+    /**
+     * Shows, updates or hides the dismissible service-disruption banner at
+     * the top of the map container based on the given alerts state.
+     * @param {Object} alerts - me.railFeedPoller.state.alerts
+     */
+    updateAlertBanner(alerts) {
+        const me = this,
+            {dict, container} = me,
+            hasMessages = alerts && alerts.status === 2 && alerts.messages && alerts.messages.length;
+
+        if (!hasMessages) {
+            if (me._alertBannerDiv) {
+                me._alertBannerDiv.remove();
+                me._alertBannerDiv = null;
+            }
+            me._dismissedAlertKey = null;
+            return;
+        }
+
+        const key = alerts.messages.map(({content, createdAt}) => `${content}|${createdAt}`).join(';');
+
+        if (key === me._dismissedAlertKey) {
+            return;
+        }
+
+        if (!me._alertBannerDiv) {
+            const banner = document.createElement('div'),
+                label = document.createElement('span'),
+                closeButton = document.createElement('span');
+
+            banner.className = 'mt3d-alert-banner';
+            label.className = 'mt3d-alert-banner-label';
+            closeButton.className = 'mt3d-alert-banner-close';
+            closeButton.textContent = '✕';
+            closeButton.addEventListener('click', () => {
+                me._dismissedAlertKey = key;
+                banner.remove();
+                me._alertBannerDiv = null;
+            });
+            banner.appendChild(label);
+            banner.appendChild(closeButton);
+            container.appendChild(banner);
+            me._alertBannerDiv = banner;
+        }
+
+        me._alertBannerDiv.querySelector('.mt3d-alert-banner-label').textContent =
+            `${dict['service-disruption']}: ${alerts.messages.map(({content}) => content).join(' ')}`;
+    }
+
+    /**
+     * Refreshes the platform-crowd tint on station circle markers from the
+     * current state of me.railFeedPoller (me.railFeedPoller.state.crowd, a
+     * Map<stationCode, 'l'|'m'|'h'>). Called automatically whenever the
+     * poller notifies of new data, but can also be called manually (e.g.
+     * from the console, after stubbing me.railFeedPoller.state.crowd) to
+     * force an immediate refresh.
+     *
+     * Station point features carry an `ids` array (the group's station IDs,
+     * e.g. multiple for interchanges) rather than station codes, so rather
+     * than rebuilding the feature data, this matches on `ids` membership via
+     * a `case`/`in` paint expression, updated with setPaintProperty.
+     * @returns {Map} Returns itself to allow for method chaining
+     */
+    refreshCrowdDisplay() {
+        const me = this,
+            crowdColors = {l: '#2e7d32', m: '#f9a825', h: '#c62828'},
+            idsByColor = {};
+
+        for (const station of me.stations.getAll()) {
+            if (!station.code) {
+                continue;
+            }
+            const level = me.railFeedPoller.getCrowdLevel(station.code),
+                color = crowdColors[level];
+
+            if (color) {
+                (idsByColor[color] = idsByColor[color] || []).push(station.id);
+            }
+        }
+
+        const colors = Object.keys(idsByColor),
+            crowdCase = defaultExpr => colors.length ? [
+                'case',
+                ...colors.flatMap(color => [
+                    ['any', ...idsByColor[color].map(id => ['in', id, ['get', 'ids']])],
+                    color
+                ]),
+                defaultExpr
+            ] : defaultExpr;
+
+        for (const zoom of [13, 14, 15, 16, 17, 18]) {
+            const defaults = {
+                [`station-circles-og-${zoom}`]: ['case', ['==', ['get', 'dashed'], 1], '#e0e0e0', '#ffffff'],
+                [`station-interchange-og-${zoom}`]: '#ffffff',
+                [`station-circles-ug-${zoom}`]: '#ffffff',
+                [`station-interchange-ug-${zoom}`]: '#ffffff'
+            };
+
+            for (const layerId of Object.keys(defaults)) {
+                if (!me.map.getLayer(layerId)) {
+                    continue;
+                }
+                me.map.setPaintProperty(layerId, 'circle-color', crowdCase(defaults[layerId]));
+            }
+        }
+
+        return me;
+    }
+
+    /**
      * Removes the layer with the given ID from the map.
      * @param {string} id - ID of the layer to remove
      * @returns {Map} Returns itself to allow for method chaining
@@ -731,6 +878,23 @@ export default class extends Evented {
         const me = this;
 
         me.busLinesEnabled = true;
+
+        if (!me._busDataRequested) {
+            // First time enabling: lazily fetch bus/GTFS data, which was
+            // skipped at startup so initial load only fetches MRT/LRT data.
+            me._busDataRequested = true;
+            me.fire({type: 'buslines-loading'});
+            me.refreshBusData().then(() => {
+                me.fire({type: 'buslines-loaded'});
+            }).catch(error => {
+                // Allow retrying on the next enable attempt
+                me._busDataRequested = false;
+                me.fire({type: 'buslines-loaded', error});
+                console.error('Failed to load bus data:', error);
+            });
+            return;
+        }
+
         me.refreshBuses();
         if (me.busArrivalPoller) {
             me.busArrivalPoller.start();
@@ -850,7 +1014,9 @@ export default class extends Evented {
             color,
             type
         }));
-        me.refreshBusData();
+        if (me._busDataRequested) {
+            me.refreshBusData();
+        }
     }
 
     initData(data) {
@@ -971,6 +1137,15 @@ export default class extends Evented {
         // me.objectUnit = Math.max(getObjectScale(initialZoom) * .19, .02);
 
         me.trafficLayer = new TrafficLayer({id: 'traffic'});
+
+        // Live rail feeds (service alerts + platform crowd density).
+        me.railFeedPoller = new RailFeedPoller();
+        me.railFeedPoller.onUpdate(() => {
+            me.refreshAlertDisplay();
+            me.refreshCrowdDisplay();
+        });
+        me.railFeedPoller.start();
+        setCrowdDelayProvider(code => me.railFeedPoller.getCrowdLevel(code));
 
         // Create debug overlay if enabled
         if (me.debugCounts && !me.debugCountsDiv) {
@@ -1835,7 +2010,9 @@ export default class extends Evented {
 
                 if (now - me.lastTimetableRefresh >= 86400000) {
                     me.refreshTrainTimetableData();
-                    me.refreshBusData(true);
+                    if (me._busDataRequested) {
+                        me.refreshBusData(true);
+                    }
                     me.lastTimetableRefresh = clock.getTime('03:00');
                 }
 
@@ -2134,7 +2311,7 @@ export default class extends Evented {
                 feature = me.featureLookup.get(`${train.r.id}.18`),
                 stationOffsets = feature.properties['station-offsets'],
                 distance = Math.abs(stationOffsets[sectionIndex + sectionLength] - stationOffsets[sectionIndex]),
-                actualDepartureTime = index !== undefined ? Math.max(departureTime + delay, now + (clock.speed === 1 ? minStandingDuration : 0)) : departureTime !== undefined ? departureTime + delay : now;
+                actualDepartureTime = index !== undefined ? Math.max(departureTime + delay, now + (clock.speed === 1 ? minStandingDuration + train.getCrowdDelay() : 0)) : departureTime !== undefined ? departureTime + delay : now;
             let {maxSpeed, acceleration, maxAccelerationTime, maxAccDistance} = configs,
                 duration, minDuration, maxDuration, accelerationTime;
 
@@ -2897,6 +3074,8 @@ export default class extends Evented {
             }
         }
 
+        const loadPromises = [];
+
         for (const source of me.dataSources) {
             const id = source.gtfsUrl || source.type;
 
@@ -2908,7 +3087,7 @@ export default class extends Evented {
                 ? loadLtaBusData(configs.dataUrl, me.clock)
                 : loadBusData(source, me.clock, me.lang);
 
-            loadPromise.then(data =>
+            loadPromises.push(loadPromise.then(data =>
                 me.initialized ? data : new Promise(resolve => me.once('initialized', () => resolve(data)))
             ).then(data =>
                 me.gtfs.has(id) ? deleteGtfs(me.gtfs.get(id)).then(() => data) : data
@@ -3135,13 +3314,13 @@ export default class extends Evented {
                         me.refreshRealtimeBusData(id);
                     }
                 }
-            });
+            }));
         }
 
         me.updateBusRouteVisibility();
 
-        // Start real-time bus arrival poller
-        if (!me.busArrivalPoller) {
+        // Start real-time bus arrival poller (only once bus lines are enabled)
+        if (me.busLinesEnabled && !me.busArrivalPoller) {
             me.busArrivalPoller = new BusArrivalPoller(me);
             me.busArrivalPoller.onUpdate(() => {
                 const gtfs = me.gtfs.get('lta');
@@ -3159,6 +3338,8 @@ export default class extends Evented {
             });
             me.busArrivalPoller.start();
         }
+
+        return Promise.all(loadPromises);
     }
 
     refreshRealtimeTrainData() {

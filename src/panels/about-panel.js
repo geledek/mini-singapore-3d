@@ -31,9 +31,9 @@ export default class extends Panel {
             // Flight status
             const flightCount = me._map.activeFlightLookup ? me._map.activeFlightLookup.size : 0;
             const flightLastUpdate = me._map.lastFlightUpdate;
-            const flightStatus = flightLastUpdate
-                ? `Live — ${flightCount} active (${formatTime(flightLastUpdate)})`
-                : flightCount > 0 ? `Simulated — ${flightCount} active` : 'N/A';
+            const flightStatus = flightLastUpdate ?
+                `Live — ${flightCount} active (${formatTime(flightLastUpdate)})` :
+                flightCount > 0 ? `Simulated — ${flightCount} active` : 'N/A';
 
             // Bus status
             const busPoller = me._map.busArrivalPoller;
@@ -41,9 +41,25 @@ export default class extends Panel {
             const busCount = lta ? lta.activeBusLookup.size : 0;
             const busLastUpdate = busPoller ? busPoller.lastPollTime : null;
             const busEntries = busPoller ? busPoller.lastResults.size : 0;
-            const busStatus = busEntries > 0
-                ? `Live — ${busCount} buses, ${busEntries} arrivals (${formatTime(busLastUpdate)})`
-                : busCount > 0 ? `Simulated — ${busCount} active` : 'N/A';
+            const busStatus = busEntries > 0 ?
+                `Live — ${busCount} buses, ${busEntries} arrivals (${formatTime(busLastUpdate)})` :
+                busCount > 0 ? `Simulated — ${busCount} active` : 'N/A';
+
+            // Service alerts status
+            const railFeedPoller = me._map.railFeedPoller;
+            const alerts = railFeedPoller ? railFeedPoller.state.alerts : null;
+            const alertsUpdatedAt = railFeedPoller ? railFeedPoller.state.updatedAt : null;
+            const disruptedLines = alerts && alerts.status === 2 ?
+                [...new Set(alerts.affected.map(seg => seg.line))].join(', ') :
+                '';
+            const alertStatus = !alerts ?
+                'N/A' :
+                alerts.status === 2 ?
+                    `Disrupted (${disruptedLines})` :
+                    'Normal';
+            const alertStatusText = alertsUpdatedAt ?
+                `${alertStatus} (${formatTime(alertsUpdatedAt)})` :
+                alertStatus;
 
             me.setHTML([
                 dict['description'].replace(/<h3>.*<\/h3>/, ''),
@@ -58,7 +74,8 @@ export default class extends Panel {
                 '<div class="card-body">',
                 `<strong>MRT/LRT:</strong> Simulated — ${trainCount} trains active<br>`,
                 `<strong>Flights:</strong> ${flightStatus}<br>`,
-                `<strong>Buses:</strong> ${busStatus}`,
+                `<strong>Buses:</strong> ${busStatus}<br>`,
+                `<strong>Service alerts:</strong> ${alertStatusText}`,
                 '</div>'
             ].join(''));
         }

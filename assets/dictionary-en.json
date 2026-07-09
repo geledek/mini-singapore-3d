@@ -38,6 +38,11 @@
 	"drone": "Drone",
 	"bird": "Bird",
 	"about": "About Mini Singapore 3D",
+	"service-disruption": "Service disruption",
+	"platform-crowd": "Platform crowd",
+	"crowd-low": "Low",
+	"crowd-moderate": "Moderate",
+	"crowd-high": "High",
 
 	"share-this": "Share this $1",
 	"train": "train",

@@ -52,6 +52,12 @@ npm run build-all
 npm start
 ```
 
+> Note: `npm run build-all` builds the app (JS/CSS bundles, static pages, and
+> data) but does not build the VuePress docs site. Docs are built separately
+> via `npm run docs:build` — as of VuePress 1.x, that command can crash with
+> an SSR error in `vue-server-renderer` (known upstream issue, unrelated to
+> the app build).
+
 Open http://localhost:8080 in your browser.
 
 ## Tech Stack

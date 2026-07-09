@@ -78,9 +78,9 @@ export default class extends Panel {
 
         const busHTML = [
             '<div class="layer-section-title">Bus</div>',
-            '<div id="bus-lines-toggle" class="railway-toggle-row railway-toggle-enabled">',
+            `<div id="bus-lines-toggle" class="railway-toggle-row${map.busLinesEnabled ? ' railway-toggle-enabled' : ''}">`,
             '<div class="railway-color-swatch" style="background:linear-gradient(135deg,#FFFFFF,#AAAAAA);border-radius:3px;"></div>',
-            '<div class="railway-toggle-name">Bus Lines (Orchard Rd)</div>',
+            '<div class="railway-toggle-name" id="bus-lines-toggle-name">Bus Lines (Orchard Rd)</div>',
             '</div>'
         ].join('');
 
@@ -252,7 +252,8 @@ export default class extends Panel {
         }
 
         // Wire up bus lines toggle
-        const busRow = me._container.querySelector('#bus-lines-toggle');
+        const busRow = me._container.querySelector('#bus-lines-toggle'),
+            busRowName = me._container.querySelector('#bus-lines-toggle-name');
 
         if (busRow) {
             busRow.addEventListener('click', () => {
@@ -261,6 +262,20 @@ export default class extends Panel {
                     map.disableBusLines();
                 } else {
                     busRow.classList.add('railway-toggle-enabled');
+                    if (!map._busDataRequested) {
+                        // First-time enable: bus data is fetched lazily, so
+                        // show a loading cue until it's ready.
+                        busRow.style.opacity = '0.6';
+                        if (busRowName) {
+                            busRowName.textContent = 'Bus Lines (Orchard Rd)…';
+                        }
+                        map.once('buslines-loaded', () => {
+                            busRow.style.opacity = '';
+                            if (busRowName) {
+                                busRowName.textContent = 'Bus Lines (Orchard Rd)';
+                            }
+                        });
+                    }
                     map.enableBusLines();
                 }
             });

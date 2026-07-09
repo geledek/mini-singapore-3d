@@ -38,6 +38,11 @@
 	"drone": "无人机",
 	"bird": "鸟",
 	"about": "关于Mini Singapore 3D",
+	"service-disruption": "服务中断",
+	"platform-crowd": "站台拥挤度",
+	"crowd-low": "低",
+	"crowd-moderate": "中等",
+	"crowd-high": "高",
 
 	"share-this": "分享此$1",
 	"train": "火车",

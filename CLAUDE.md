@@ -222,7 +222,7 @@ node scripts/test-browser.js   # Automated testing
 
 - **No real-time train positions** - LTA doesn't provide GPS data; uses timetable simulation
 - **Bus routes not implemented** - Infrastructure exists but visualization not built
-- **Some Tokyo artifacts remain** - Flight tracking code still present (unused)
+- **Flight visualization is a live feature** - Changi flights (SQ/Scoot/Star Alliance) via OpenSky with simulated fallback; toggle in layer panel. Not Tokyo leftover code — do not remove.
 
 ## Build Output
 

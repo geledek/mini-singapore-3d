@@ -1,5 +1,33 @@
 import {valueOrDefault} from '../helpers/helpers';
+import configs from '../configs';
 import TrainTimetable from './train-timetable';
+
+// Optional hook supplying live crowd-level data for a station code, wired up
+// by the host app (e.g. map.js) from RailFeedPoller#getCrowdLevel. Left unset
+// when there is no poller/data (offline dev then behaves exactly as before,
+// since getCrowdDelay() below returns 0 with no provider).
+let crowdDelayProvider = null;
+
+/**
+ * Registers the function used to look up the live crowd level for a station
+ * code. Pass null to disable crowd-weighted dwell times again.
+ * @param {Function|null} provider - (stationCode) => 'l'|'m'|'h'|null|undefined
+ */
+export function setCrowdDelayProvider(provider) {
+    crowdDelayProvider = provider;
+}
+
+/**
+ * Pure function mapping a crowd level to additional dwell time in
+ * milliseconds, per configs.crowdDwellDelay. Unknown/missing levels add 0.
+ * @param {string} [level] - 'l'|'m'|'h'|null|undefined
+ * @returns {number} Additional dwell time in milliseconds.
+ */
+export function getCrowdDwellDelay(level) {
+    const delays = configs.crowdDwellDelay;
+
+    return (delays && delays[level]) || 0;
+}
 
 export default class {
 
@@ -228,6 +256,24 @@ export default class {
         if (!isNaN(carComposition)) {
             me.carComposition = carComposition;
         }
+    }
+
+    /**
+     * Additional dwell time (ms) to add while standing at the station this
+     * train currently occupies (me.departureStation), based on live crowd
+     * data. Returns 0 when no provider is registered or no code/data is
+     * available, so offline/dev behavior is unchanged.
+     * @returns {number} Additional dwell time in milliseconds.
+     */
+    getCrowdDelay() {
+        const station = this.departureStation,
+            code = station && station.code;
+
+        if (!crowdDelayProvider || !code) {
+            return 0;
+        }
+
+        return getCrowdDwellDelay(crowdDelayProvider(code));
     }
 
 }
