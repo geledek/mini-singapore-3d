@@ -61,13 +61,18 @@ export default class extends Panel {
                 `${alertStatus} (${formatTime(alertsUpdatedAt)})` :
                 alertStatus;
 
+            // Assembled at runtime (reversed parts) so the address doesn't
+            // appear verbatim in the bundle for email scrapers to harvest.
+            const feedbackAddress = ['.ai', 'rayhan', '@', 'ray'].reverse().join(''),
+                feedbackHref = ['otliam'.split('').reverse().join(''), ':', feedbackAddress, '?subject=Mini%20Singapore%203D'].join('');
+
             me.setHTML([
                 dict['description'].replace(/<h3>.*<\/h3>/, ''),
                 `<p>${configs.copyright}</p>`,
                 '<div class="card-body" style="margin-bottom:8px;">',
                 '<strong>Author:</strong> Ray Han<br>',
                 '<strong>Source:</strong> <a href="https://github.com/geledek/mini-singapore-3d" target="_blank" style="color:#4fc3f7;">github.com/geledek/mini-singapore-3d</a><br>',
-                '<strong>Feedback:</strong> <a href="mailto:ray@rayhan.ai?subject=Mini%20Singapore%203D" style="color:#4fc3f7;">ray@rayhan.ai</a> · <a href="https://github.com/geledek/mini-singapore-3d/issues" target="_blank" style="color:#4fc3f7;">report an issue</a>',
+                `<strong>Feedback:</strong> <a href="${feedbackHref}" style="color:#4fc3f7;">${feedbackAddress}</a> · <a href="https://github.com/geledek/mini-singapore-3d/issues" target="_blank" style="color:#4fc3f7;">report an issue</a>`,
                 '</div>',
                 `<div class="card-title">${dict['static-update']}</div>`,
                 `<div class="card-body">${staticUpdate}</div>`,
